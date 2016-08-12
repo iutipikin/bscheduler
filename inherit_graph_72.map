@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$structMaster__discoverer.html" title="Master_discoverer\&lt;\l Address, Hierarchy,\l Distance \&gt;" alt="" coords="165,5,307,61"/>
+<area shape="rect" id="node3" href="$structMaster__negotiator.html" title="Master_negotiator\&lt;\l Address \&gt;" alt="" coords="169,86,303,127"/>
+<area shape="rect" id="node4" href="$structMaster__negotiator.html" title="Master_negotiator\&lt;\l addr_type \&gt;" alt="" coords="169,151,303,193"/>
+<area shape="rect" id="node5" href="$structNegotiator.html" title="Negotiator\&lt; Address \&gt;" alt="" coords="159,217,313,244"/>
+<area shape="rect" id="node6" href="$structSecret__agent.html" title="Secret_agent" alt="" coords="187,268,285,295"/>
+</map>
