@@ -11,7 +11,7 @@ var searchData=
   ['basic_5fcmdline',['basic_cmdline',['../structsys_1_1basic__cmdline.html',1,'sys']]],
   ['basic_5fcpu_5fserver',['Basic_CPU_server',['../structfactory_1_1Basic__CPU__server.html',1,'factory']]],
   ['basic_5fcsvtuple',['basic_csvtuple',['../structdiscovery_1_1basic__csvtuple.html',1,'discovery']]],
-  ['basic_5fcsvtuple_3c_20std_3a_3atuple_3c_20args_2e_2e_2e_20_3e_2c_200_2c_20sizeof_2e_2e_2e_28args_29_2d1_2c_20char_2c_20separator_20_3e',['basic_csvtuple&lt; std::tuple&lt; Args... &gt;, 0, sizeof...(Args)-1, char, separator &gt;',['../structdiscovery_1_1basic__csvtuple.html',1,'discovery']]],
+  ['basic_5fcsvtuple_3c_20std_3a_3atuple_3c_20args_2e_2e_2e_3e_2c_200_2c_20sizeof_2e_2e_2e_28args_29_2d1_2c_20char_2c_20separator_20_3e',['basic_csvtuple&lt; std::tuple&lt; Args...&gt;, 0, sizeof...(Args)-1, char, separator &gt;',['../structdiscovery_1_1basic__csvtuple.html',1,'discovery']]],
   ['basic_5fcsvtuple_3c_20tuple_2c_20last_2c_20last_2c_20char_2c_20separator_20_3e',['basic_csvtuple&lt; Tuple, last, last, Char, separator &gt;',['../structdiscovery_1_1basic__csvtuple_3_01Tuple_00_01last_00_01last_00_01Char_00_01separator_01_4.html',1,'discovery']]],
   ['basic_5fdirstream',['basic_dirstream',['../structsys_1_1basic__dirstream.html',1,'sys']]],
   ['basic_5ffdstream',['basic_fdstream',['../structsys_1_1basic__fdstream.html',1,'sys']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
   ['field',['Field',['../structstdx_1_1bits_1_1Field.html',1,'stdx::bits']]],
-  ['field_3c_20args_2e_2e_2e_20_3e',['Field&lt; Args... &gt;',['../structstdx_1_1bits_1_1Field.html',1,'stdx::bits']]],
+  ['field_3c_20args_2e_2e_2e_3e',['Field&lt; Args...&gt;',['../structstdx_1_1bits_1_1Field.html',1,'stdx::bits']]],
   ['field_3c_20key_2c_20value_20_3e',['Field&lt; Key, Value &gt;',['../structstdx_1_1bits_1_1Field_3_01Key_00_01Value_01_4.html',1,'stdx::bits']]],
-  ['field_3c_20key_2c_20value_2c_20args_2e_2e_2e_20_3e',['Field&lt; Key, Value, Args... &gt;',['../structstdx_1_1bits_1_1Field_3_01Key_00_01Value_00_01Args_8_8_8_01_4.html',1,'stdx::bits']]],
+  ['field_3c_20key_2c_20value_2c_20args_2e_2e_2e_3e',['Field&lt; Key, Value, Args...&gt;',['../structstdx_1_1bits_1_1Field_3_01Key_00_01Value_00_01Args_8_8_8_4.html',1,'stdx::bits']]],
   ['fildes',['fildes',['../structsys_1_1fildes.html',1,'sys']]],
   ['file',['file',['../structsys_1_1file.html',1,'sys']]],
   ['file_5fmode',['file_mode',['../structsys_1_1file__mode.html',1,'sys']]],

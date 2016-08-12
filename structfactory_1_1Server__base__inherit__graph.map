@@ -1,17 +1,17 @@
 <map id="factory::Server_base" name="factory::Server_base">
-<area shape="rect" id="node2" href="$structfactory_1_1Buffered__server.html" title="factory::Buffered_server\l\&lt; T, Router \&gt;" alt="" coords="216,5,379,47"/>
-<area shape="rect" id="node4" href="$structfactory_1_1Buffered__server.html" title="factory::Buffered_server\l\&lt; T, Router, Kernels \&gt;" alt="" coords="216,71,379,112"/>
-<area shape="rect" id="node5" href="$structfactory_1_1Remote__Rserver.html" title="factory::Remote_Rserver\l\&lt; T, Socket, Router, Kernels \&gt;" alt="" coords="196,136,399,177"/>
-<area shape="rect" id="node6" href="$structfactory_1_1Server__with__pool.html" title="factory::Server_with\l_pool\&lt; T, Kernels, Threads,\l Mutex, Lock, Semaphore \&gt;" alt="" coords="205,202,389,258"/>
-<area shape="rect" id="node3" href="$structfactory_1_1Process__rserver.html" title="factory::Process_rserver\l\&lt; T, Router \&gt;" alt="" coords="471,5,637,47"/>
-<area shape="rect" id="node7" href="$structfactory_1_1Basic__CPU__server.html" title="factory::Basic_CPU\l_server\&lt; T \&gt;" alt="" coords="485,85,623,127"/>
-<area shape="rect" id="node10" href="$structfactory_1_1Proxy__server.html" title="factory::Proxy_server\l\&lt; T, Rserver \&gt;" alt="" coords="481,151,627,192"/>
-<area shape="rect" id="node11" href="$structfactory_1_1Timer__server.html" title="factory::Timer_server\&lt; T \&gt;" alt="" coords="465,217,643,243"/>
-<area shape="rect" id="node12" href="$structfactory_1_1Proxy__server.html" title="Proxy_server\&lt; T, Process\l_rserver\&lt; T, Router \&gt; \&gt;" alt="" coords="467,268,641,309"/>
-<area shape="rect" id="node15" href="$structfactory_1_1Proxy__server.html" title="Proxy_server\&lt; T, Remote\l_Rserver\&lt; T, Socket, Router \&gt; \&gt;" alt="" coords="447,333,661,375"/>
-<area shape="rect" id="node8" href="$structfactory_1_1CPU__server.html" title="factory::CPU_server\&lt; T \&gt;" alt="" coords="709,67,884,94"/>
-<area shape="rect" id="node9" href="$structfactory_1_1IO__server.html" title="factory::IO_server\&lt; T \&gt;" alt="" coords="717,118,876,145"/>
-<area shape="rect" id="node13" href="$structfactory_1_1Process__child__server.html" title="factory::Process_child\l_server\&lt; T, Router \&gt;" alt="" coords="721,203,873,244"/>
-<area shape="rect" id="node14" href="$structfactory_1_1Process__iserver.html" title="factory::Process_iserver\l\&lt; T, Router \&gt;" alt="" coords="715,268,879,309"/>
-<area shape="rect" id="node16" href="$structfactory_1_1NIC__server.html" title="factory::NIC_server\l\&lt; T, Socket, Router \&gt;" alt="" coords="721,333,872,375"/>
+<area shape="rect" id="node2" href="$structfactory_1_1Buffered__server.html" title="factory::Buffered_server\l\&lt; T, Router \&gt;" alt="" coords="217,5,380,46"/>
+<area shape="rect" id="node4" href="$structfactory_1_1Buffered__server.html" title="factory::Buffered_server\l\&lt; T, Router, Kernels \&gt;" alt="" coords="217,70,380,111"/>
+<area shape="rect" id="node5" href="$structfactory_1_1Remote__Rserver.html" title="factory::Remote_Rserver\l\&lt; T, Socket, Router, Kernels \&gt;" alt="" coords="197,135,400,177"/>
+<area shape="rect" id="node6" href="$structfactory_1_1Server__with__pool.html" title="factory::Server_with\l_pool\&lt; T, Kernels, Threads,\l Mutex, Lock, Semaphore \&gt;" alt="" coords="207,200,391,256"/>
+<area shape="rect" id="node3" href="$structfactory_1_1Process__rserver.html" title="factory::Process_rserver\l\&lt; T, Router \&gt;" alt="" coords="473,5,639,46"/>
+<area shape="rect" id="node7" href="$structfactory_1_1Basic__CPU__server.html" title="factory::Basic_CPU\l_server\&lt; T \&gt;" alt="" coords="487,83,625,125"/>
+<area shape="rect" id="node10" href="$structfactory_1_1Proxy__server.html" title="factory::Proxy_server\l\&lt; T, Rserver \&gt;" alt="" coords="483,149,629,190"/>
+<area shape="rect" id="node11" href="$structfactory_1_1Timer__server.html" title="factory::Timer_server\&lt; T \&gt;" alt="" coords="467,215,645,241"/>
+<area shape="rect" id="node12" href="$structfactory_1_1Proxy__server.html" title="Proxy_server\&lt; T, Process\l_rserver\&lt; T, Router \&gt; \&gt;" alt="" coords="469,266,643,307"/>
+<area shape="rect" id="node15" href="$structfactory_1_1Proxy__server.html" title="Proxy_server\&lt; T, Remote\l_Rserver\&lt; T, Socket, Router \&gt; \&gt;" alt="" coords="449,331,663,373"/>
+<area shape="rect" id="node8" href="$structfactory_1_1CPU__server.html" title="factory::CPU_server\&lt; T \&gt;" alt="" coords="713,65,887,92"/>
+<area shape="rect" id="node9" href="$structfactory_1_1IO__server.html" title="factory::IO_server\&lt; T \&gt;" alt="" coords="721,116,879,143"/>
+<area shape="rect" id="node13" href="$structfactory_1_1Process__child__server.html" title="factory::Process_child\l_server\&lt; T, Router \&gt;" alt="" coords="724,201,876,242"/>
+<area shape="rect" id="node14" href="$structfactory_1_1Process__iserver.html" title="factory::Process_iserver\l\&lt; T, Router \&gt;" alt="" coords="718,266,882,307"/>
+<area shape="rect" id="node16" href="$structfactory_1_1NIC__server.html" title="factory::NIC_server\l\&lt; T, Socket, Router \&gt;" alt="" coords="725,331,875,373"/>
 </map>

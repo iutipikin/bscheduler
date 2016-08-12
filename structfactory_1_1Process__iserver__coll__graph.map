@@ -1,5 +1,5 @@
 <map id="factory::Process_iserver&lt; T, Router &gt;" name="factory::Process_iserver&lt; T, Router &gt;">
-<area shape="rect" id="node2" href="$structfactory_1_1Proxy__server.html" title="factory::Proxy_server\l\&lt; T, Process_rserver\l\&lt; T, Router \&gt; \&gt;" alt="" coords="67,200,214,256"/>
-<area shape="rect" id="node3" href="$structfactory_1_1Server__with__pool.html" title="Proxy_server_base\&lt;\l T, Process_rserver\l\&lt; T, Router \&gt; &#160;\&gt;" alt="" coords="69,95,212,151"/>
-<area shape="rect" id="node4" href="$structfactory_1_1Server__base.html" title="factory::Server_base" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$structfactory_1_1Proxy__server.html" title="factory::Proxy_server\l\&lt; T, Process_rserver\l\&lt; T, Router \&gt; \&gt;" alt="" coords="67,203,213,259"/>
+<area shape="rect" id="node3" href="$structfactory_1_1Server__with__pool.html" title="Proxy_server_base\&lt;\l T, Process_rserver\l\&lt; T, Router \&gt; &#160;\&gt;" alt="" coords="69,96,211,152"/>
+<area shape="rect" id="node4" href="$structfactory_1_1Server__base.html" title="factory::Server_base" alt="" coords="5,5,147,32"/>
 </map>

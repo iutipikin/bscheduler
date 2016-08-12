@@ -1,18 +1,18 @@
 <map id="factory::Kernel" name="factory::Kernel">
-<area shape="rect" id="node5" href="$structBig__kernel.html" title="Big_kernel\&lt; Size \&gt;" alt="" coords="572,5,705,32"/>
-<area shape="rect" id="node6" href="$structDummy__kernel.html" title="Dummy_kernel" alt="" coords="583,56,694,83"/>
-<area shape="rect" id="node7" href="$structfactory_1_1Map.html" title="factory::Map\&lt; F, G, I \&gt;" alt="" coords="560,107,717,133"/>
-<area shape="rect" id="node8" href="$structfactory_1_1Map_1_1Worker.html" title="factory::Map\&lt; F, G,\l I \&gt;::Worker" alt="" coords="570,158,707,199"/>
-<area shape="rect" id="node9" href="$classfactory_1_1Notification.html" title="factory::Notification" alt="" coords="571,224,707,251"/>
-<area shape="rect" id="node10" href="$structGood__kernel.html" title="Good_kernel" alt="" coords="591,275,686,301"/>
-<area shape="rect" id="node13" href="$structKernel__that__carries__its__parent.html" title="Kernel_that_carries\l_its_parent" alt="" coords="571,326,706,367"/>
-<area shape="rect" id="node14" href="$structMain.html" title="Main\&lt; Address \&gt;" alt="" coords="577,392,700,419"/>
-<area shape="rect" id="node15" href="$structSender.html" title="Sender" alt="" coords="607,443,670,469"/>
-<area shape="rect" id="node16" href="$structSleepy__kernel.html" title="Sleepy_kernel" alt="" coords="587,493,691,520"/>
-<area shape="rect" id="node17" href="$structTest__socket.html" title="Test_socket" alt="" coords="591,544,686,571"/>
-<area shape="rect" id="node2" href="$structfactory_1_1Mobile__kernel.html" title="factory::Mobile_kernel" alt="" coords="207,333,357,360"/>
-<area shape="rect" id="node3" href="$structfactory_1_1Basic__kernel.html" title="factory::Basic_kernel" alt="" coords="9,308,155,335"/>
-<area shape="rect" id="node4" href="$structfactory_1_1Kernel__header.html" title="factory::Kernel_header" alt="" coords="5,359,159,385"/>
-<area shape="rect" id="node11" href="$structKernel__that__reads__more__than__writes.html" title="Kernel_that_reads_more\l_than_writes" alt="" coords="765,234,928,275"/>
-<area shape="rect" id="node12" href="$structKernel__that__writes__more__than__reads.html" title="Kernel_that_writes\l_more_than_reads" alt="" coords="781,299,912,341"/>
+<area shape="rect" id="node5" href="$structBig__kernel.html" title="Big_kernel\&lt; Size \&gt;" alt="" coords="575,5,708,32"/>
+<area shape="rect" id="node6" href="$structDummy__kernel.html" title="Dummy_kernel" alt="" coords="586,56,697,83"/>
+<area shape="rect" id="node7" href="$structfactory_1_1Map.html" title="factory::Map\&lt; F, G, I \&gt;" alt="" coords="563,107,720,133"/>
+<area shape="rect" id="node8" href="$structfactory_1_1Map_1_1Worker.html" title="factory::Map\&lt; F, G,\l I \&gt;::Worker" alt="" coords="573,158,710,199"/>
+<area shape="rect" id="node9" href="$classfactory_1_1Notification.html" title="factory::Notification" alt="" coords="573,224,709,251"/>
+<area shape="rect" id="node10" href="$structGood__kernel.html" title="Good_kernel" alt="" coords="594,275,689,301"/>
+<area shape="rect" id="node13" href="$structKernel__that__carries__its__parent.html" title="Kernel_that_carries\l_its_parent" alt="" coords="574,326,709,367"/>
+<area shape="rect" id="node14" href="$structMain.html" title="Main\&lt; Address \&gt;" alt="" coords="580,392,703,419"/>
+<area shape="rect" id="node15" href="$structSender.html" title="Sender" alt="" coords="610,443,673,469"/>
+<area shape="rect" id="node16" href="$structSleepy__kernel.html" title="Sleepy_kernel" alt="" coords="589,493,693,520"/>
+<area shape="rect" id="node17" href="$structTest__socket.html" title="Test_socket" alt="" coords="594,544,689,571"/>
+<area shape="rect" id="node2" href="$structfactory_1_1Mobile__kernel.html" title="factory::Mobile_kernel" alt="" coords="209,333,359,360"/>
+<area shape="rect" id="node3" href="$structfactory_1_1Basic__kernel.html" title="factory::Basic_kernel" alt="" coords="10,308,155,335"/>
+<area shape="rect" id="node4" href="$structfactory_1_1Kernel__header.html" title="factory::Kernel_header" alt="" coords="6,359,159,385"/>
+<area shape="rect" id="node11" href="$structKernel__that__reads__more__than__writes.html" title="Kernel_that_reads_more\l_than_writes" alt="" coords="768,234,931,275"/>
+<area shape="rect" id="node12" href="$structKernel__that__writes__more__than__reads.html" title="Kernel_that_writes\l_more_than_reads" alt="" coords="784,299,915,341"/>
 </map>

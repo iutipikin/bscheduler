@@ -1,5 +1,5 @@
 <map id="factory::NIC_server&lt; T, Socket, Router &gt;" name="factory::NIC_server&lt; T, Socket, Router &gt;">
-<area shape="rect" id="node2" href="$structfactory_1_1Proxy__server.html" title="factory::Proxy_server\l\&lt; T, Remote_Rserver\&lt;\l T, Socket, Router \&gt; \&gt;" alt="" coords="62,200,219,256"/>
-<area shape="rect" id="node3" href="$structfactory_1_1Server__with__pool.html" title="Proxy_server_base\&lt;\l T, Remote_Rserver\&lt;\l T, Socket, Router \&gt; &#160;\&gt;" alt="" coords="63,95,218,151"/>
-<area shape="rect" id="node4" href="$structfactory_1_1Server__base.html" title="factory::Server_base" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$structfactory_1_1Proxy__server.html" title="factory::Proxy_server\l\&lt; T, Remote_Rserver\&lt;\l T, Socket, Router \&gt; \&gt;" alt="" coords="61,203,219,259"/>
+<area shape="rect" id="node3" href="$structfactory_1_1Server__with__pool.html" title="Proxy_server_base\&lt;\l T, Remote_Rserver\&lt;\l T, Socket, Router \&gt; &#160;\&gt;" alt="" coords="63,96,216,152"/>
+<area shape="rect" id="node4" href="$structfactory_1_1Server__base.html" title="factory::Server_base" alt="" coords="5,5,147,32"/>
 </map>
