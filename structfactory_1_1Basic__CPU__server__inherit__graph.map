@@ -1,6 +1,0 @@
-<map id="factory::Basic_CPU_server&lt; T &gt;" name="factory::Basic_CPU_server&lt; T &gt;">
-<area shape="rect" id="node4" href="$structfactory_1_1CPU__server.html" title="factory::CPU_server\&lt; T \&gt;" alt="" coords="5,261,179,288"/>
-<area shape="rect" id="node5" href="$structfactory_1_1IO__server.html" title="factory::IO_server\&lt; T \&gt;" alt="" coords="203,261,361,288"/>
-<area shape="rect" id="node2" href="$structfactory_1_1Server__with__pool.html" title="Standard_server_with\l_pool\&lt; T \&gt;" alt="" coords="113,81,260,122"/>
-<area shape="rect" id="node3" href="$structfactory_1_1Server__base.html" title="factory::Server_base" alt="" coords="115,5,257,32"/>
-</map>
