@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structsys_1_1bits_1_1byte__swap__chooser.html" title="sys::bits::byte_swap\l_chooser\&lt; uint8_t[bytes]\l, false \&gt;" alt="" coords="6,161,173,217"/>
+<area shape="rect" id="node2" href="$structsys_1_1bits_1_1Integral.html" title="sys::bits::Integral\l\&lt; sizeof(addr4_type)\&gt;" alt="" coords="221,5,371,46"/>
+<area shape="rect" id="node3" href="$structsys_1_1bits_1_1Integral.html" title="sys::bits::Integral\l\&lt; sizeof(double)\&gt;" alt="" coords="235,70,357,111"/>
+<area shape="rect" id="node4" href="$structsys_1_1bits_1_1Integral.html" title="sys::bits::Integral\l\&lt; sizeof(float)\&gt;" alt="" coords="235,135,357,177"/>
+<area shape="rect" id="node5" href="$structsys_1_1bits_1_1Integral.html" title="sys::bits::Integral\l\&lt; sizeof(inet6_type)\&gt;" alt="" coords="223,201,369,242"/>
+<area shape="rect" id="node6" href="$structsys_1_1bits_1_1Integral.html" title="sys::bits::Integral\l\&lt; sizeof(T)\&gt;" alt="" coords="235,266,357,307"/>
+<area shape="rect" id="node7" href="$structsys_1_1bits_1_1Integral.html" title="sys::bits::Integral\l\&lt; bytes \&gt;" alt="" coords="235,331,357,373"/>
+</map>

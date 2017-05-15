@@ -1,0 +1,35 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structfactory_1_1Basic__kernel.html" title="factory::Basic_kernel" alt="" coords="10,249,155,276"/>
+<area shape="rect" id="node2" href="$structfactory_1_1Mobile__kernel.html" title="factory::Mobile_kernel" alt="" coords="209,275,359,301"/>
+<area shape="rect" id="node3" href="$structfactory_1_1Kernel.html" title="factory::Kernel" alt="" coords="408,275,515,301"/>
+<area shape="rect" id="node4" href="$structBig__kernel.html" title="Big_kernel\&lt; Size \&gt;" alt="" coords="600,5,733,32"/>
+<area shape="rect" id="node5" href="$structDummy__kernel.html" title="Dummy_kernel" alt="" coords="611,56,722,83"/>
+<area shape="rect" id="node6" href="$structfactory_1_1Map.html" title="factory::Map\&lt; F, G, I \&gt;" alt="" coords="588,107,745,133"/>
+<area shape="rect" id="node7" href="$structfactory_1_1Map_1_1Worker.html" title="factory::Map\&lt; F, G,\l I \&gt;::Worker" alt="" coords="598,158,735,199"/>
+<area shape="rect" id="node8" href="$classfactory_1_1Notification.html" title="factory::Notification" alt="" coords="599,224,735,251"/>
+<area shape="rect" id="node9" href="$structGood__kernel.html" title="Good_kernel" alt="" coords="619,275,714,301"/>
+<area shape="rect" id="node12" href="$structKernel__that__carries__its__parent.html" title="Kernel_that_carries\l_its_parent" alt="" coords="599,326,734,367"/>
+<area shape="rect" id="node13" href="$structMain.html" title="Main\&lt; Address \&gt;" alt="" coords="605,544,728,571"/>
+<area shape="rect" id="node14" href="$structSender.html" title="Sender" alt="" coords="635,392,698,419"/>
+<area shape="rect" id="node15" href="$structSleepy__kernel.html" title="Sleepy_kernel" alt="" coords="615,443,719,469"/>
+<area shape="rect" id="node16" href="$structTest__socket.html" title="Test_socket" alt="" coords="619,493,714,520"/>
+<area shape="rect" id="node10" href="$structKernel__that__reads__more__than__writes.html" title="Kernel_that_reads_more\l_than_writes" alt="" coords="819,234,981,275"/>
+<area shape="rect" id="node11" href="$structKernel__that__writes__more__than__reads.html" title="Kernel_that_writes\l_more_than_reads" alt="" coords="835,299,965,341"/>
+<area shape="rect" id="node18" href="$structautoreg_1_1ACF__generator.html" title="autoreg::ACF_generator\&lt; T \&gt;" alt="" coords="570,595,763,621"/>
+<area shape="rect" id="node19" href="$structautoreg_1_1Autoreg__coefs.html" title="autoreg::Autoreg_coefs\&lt; T \&gt;" alt="" coords="572,645,761,672"/>
+<area shape="rect" id="node20" href="$classautoreg_1_1Autoreg__model.html" title="autoreg::Autoreg_model\&lt; T \&gt;" alt="" coords="571,696,763,723"/>
+<area shape="rect" id="node21" href="$structautoreg_1_1Generator1.html" title="autoreg::Generator1\l\&lt; T, Grid \&gt;" alt="" coords="598,747,735,789"/>
+<area shape="rect" id="node22" href="$structautoreg_1_1Solve__Yule__Walker.html" title="autoreg::Solve_Yule\l_Walker\&lt; T \&gt;" alt="" coords="597,813,736,854"/>
+<area shape="rect" id="node23" href="$classautoreg_1_1Velocity__potential.html" title="autoreg::Velocity_potential\&lt; T \&gt;" alt="" coords="563,879,771,905"/>
+<area shape="rect" id="node24" href="$structautoreg_1_1Wave__surface__generator.html" title="autoreg::Wave_surface\l_generator\&lt; T, Grid \&gt;" alt="" coords="588,930,745,971"/>
+<area shape="rect" id="node25" href="$structAutoreg__app.html" title="Autoreg_app" alt="" coords="619,996,714,1023"/>
+<area shape="rect" id="node26" href="$structDelayed__shutdown.html" title="Delayed_shutdown\&lt; Address \&gt;" alt="" coords="564,1047,769,1073"/>
+<area shape="rect" id="node27" href="$structLauncher.html" title="Launcher" alt="" coords="629,1097,704,1124"/>
+<area shape="rect" id="node28" href="$structPing.html" title="Ping" alt="" coords="643,1148,691,1175"/>
+<area shape="rect" id="node29" href="$structPing__pong.html" title="Ping_pong" alt="" coords="625,1199,708,1225"/>
+<area shape="rect" id="node30" href="$structSpec__app.html" title="Spec_app" alt="" coords="627,1249,707,1276"/>
+<area shape="rect" id="node31" href="$structSpectrum__kernel.html" title="Spectrum_kernel" alt="" coords="607,1300,727,1327"/>
+<area shape="rect" id="node32" href="$structStation__kernel.html" title="Station_kernel" alt="" coords="614,1351,719,1377"/>
+<area shape="rect" id="node33" href="$structYear__kernel.html" title="Year_kernel" alt="" coords="621,1401,712,1428"/>
+<area shape="rect" id="node34" href="$structfactory_1_1Kernel__header.html" title="factory::Kernel_header" alt="" coords="6,300,159,327"/>
+</map>

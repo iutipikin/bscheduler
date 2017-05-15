@@ -1,0 +1,4 @@
+<map id="factory::Web_socket" name="factory::Web_socket">
+<area shape="rect" id="node2" href="$structsys_1_1socket.html" title="sys::socket" alt="" coords="31,80,121,107"/>
+<area shape="rect" id="node3" href="$structsys_1_1fildes.html" title="sys::fildes" alt="" coords="35,5,116,32"/>
+</map>
