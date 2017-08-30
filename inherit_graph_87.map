@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$structstdx_1_1back__insert__iterator.html" title="stdx::back_insert_iterator\l\&lt; Container \&gt;" alt="" coords="121,5,290,46"/>
-<area shape="rect" id="node3" href="$structstdx_1_1front__pop__iterator.html" title="stdx::front_pop_iterator\l\&lt; Container \&gt;" alt="" coords="127,70,283,111"/>
-<area shape="rect" id="node4" href="$structstdx_1_1intersperse__iterator.html" title="stdx::intersperse_iterator\l\&lt; T, Delim, Ch, Tr \&gt;" alt="" coords="122,135,289,177"/>
-<area shape="rect" id="node5" href="$structstdx_1_1paired__iterator.html" title="stdx::paired_iterator\l\&lt; It1, It2 \&gt;" alt="" coords="137,201,274,242"/>
-<area shape="rect" id="node6" href="$classsys_1_1basic__istream__iterator.html" title="sys::basic_istream\l_iterator\&lt; Stream, Value \&gt;" alt="" coords="117,266,293,307"/>
-<area shape="rect" id="node7" href="$structsys_1_1ifaddrs__iterator.html" title="sys::ifaddrs_iterator" alt="" coords="137,332,274,359"/>
-<area shape="rect" id="node8" href="$structsys_1_1subnet__iterator.html" title="sys::subnet_iterator\l\&lt; Address \&gt;" alt="" coords="137,383,274,425"/>
-</map>
