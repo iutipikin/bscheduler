@@ -133,26 +133,29 @@ typedef Socket&#160;</td><td class="memItemRight" valign="bottom"><b>socket_type
 <tr class="memitem:a6f4916a62c8bc9b5ae4bf9efb11acb53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f4916a62c8bc9b5ae4bf9efb11acb53"></a>
 typedef Router&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
 <tr class="separator:a6f4916a62c8bc9b5ae4bf9efb11acb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c1865bd1bd62117c0d1566e31896297"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c1865bd1bd62117c0d1566e31896297"></a>
+<tr class="memitem:aefb6275850d468b195c62dd9d77eb37d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefb6275850d468b195c62dd9d77eb37d"></a>
+typedef <a class="el" href="structfactory_1_1remote__client.html">remote_client</a>&lt; T, <br class="typebreak"/>
+Socket, Router &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>remote_client_type</b></td></tr>
+<tr class="separator:aefb6275850d468b195c62dd9d77eb37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abee05cd2c69d36505bd18577500e15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1abee05cd2c69d36505bd18577500e15"></a>
 typedef <a class="el" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline</a><br class="typebreak"/>
-&lt; T, <a class="el" href="structfactory_1_1remote__client.html">remote_client</a>&lt; T, Socket, <br class="typebreak"/>
-Router &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
-<tr class="separator:a9c1865bd1bd62117c0d1566e31896297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bac7995faf11bae770a4d9be1708274"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bac7995faf11bae770a4d9be1708274"></a>
-typedef std::map<br class="typebreak"/>
+&lt; T, <a class="el" href="structfactory_1_1remote__client.html">remote_client_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
+<tr class="separator:a1abee05cd2c69d36505bd18577500e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d9a0ee5952c07e0c682b4eb39a9aff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31d9a0ee5952c07e0c682b4eb39a9aff"></a>
+typedef std::unordered_map<br class="typebreak"/>
 &lt; sys::endpoint, <br class="typebreak"/>
 event_handler_ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>upstream_type</b></td></tr>
-<tr class="separator:a1bac7995faf11bae770a4d9be1708274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a31d9a0ee5952c07e0c682b4eb39a9aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3b17c69e8e74f4ac6c873e65473065"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd3b17c69e8e74f4ac6c873e65473065"></a>
 typedef upstream_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_type</b></td></tr>
 <tr class="separator:afd3b17c69e8e74f4ac6c873e65473065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f88bde09009a7981493d28cee897ac3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f88bde09009a7981493d28cee897ac3"></a>
+<tr class="memitem:a54e9cb7397677290ad26982a5f304209"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54e9cb7397677290ad26982a5f304209"></a>
 typedef sys::ifaddr<br class="typebreak"/>
-&lt; sys::ipv4_addr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>network_type</b></td></tr>
-<tr class="separator:a8f88bde09009a7981493d28cee897ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeaa50062c618e5353177adc22c63367"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeaa50062c618e5353177adc22c63367"></a>
-typedef network_type::rep_type&#160;</td><td class="memItemRight" valign="bottom"><b>rep_type</b></td></tr>
-<tr class="separator:aeeaa50062c618e5353177adc22c63367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; sys::ipv4_addr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
+<tr class="separator:a54e9cb7397677290ad26982a5f304209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d328608da345652c0bf6b2e4b53b0ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d328608da345652c0bf6b2e4b53b0ec"></a>
+typedef ifaddr_type::rep_type&#160;</td><td class="memItemRight" valign="bottom"><b>rep_type</b></td></tr>
+<tr class="separator:a2d328608da345652c0bf6b2e4b53b0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce673a409f67e3b2678ac0fc33e7fe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ce673a409f67e3b2678ac0fc33e7fe1"></a>
 typedef mobile_kernel::id_type&#160;</td><td class="memItemRight" valign="bottom"><b>id_type</b></td></tr>
 <tr class="separator:a8ce673a409f67e3b2678ac0fc33e7fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
