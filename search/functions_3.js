@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['send',['send',['../structfactory_1_1remote__client.html#ab4dae8c409771f5bc680234bfbb6f067',1,'factory::remote_client']]]
+];
