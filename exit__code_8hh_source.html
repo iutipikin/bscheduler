@@ -119,33 +119,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        undefined = 1,</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        error = 2,</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        endpoint_not_connected = 3,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        no_principal_found = 4</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    to_string(exit_code rhs) noexcept;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">inline</span> std::ostream&amp;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, exit_code rhs) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> out &lt;&lt; to_string(rhs);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">inline</span> sys::pstream&amp;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    operator&lt;&lt;(sys::pstream&amp; out, exit_code rhs) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> out &lt;&lt; exit_code_type(rhs);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">inline</span> sys::pstream&amp;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    operator&gt;&gt;(sys::pstream&amp; in, exit_code&amp; rhs) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        exit_code_type tmp;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        in &gt;&gt; tmp;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        rhs = exit_code(tmp);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> in;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        no_principal_found = 4,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        no_upstream_servers_available = 5</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    to_string(exit_code rhs) noexcept;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">inline</span> std::ostream&amp;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, exit_code rhs) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> out &lt;&lt; to_string(rhs);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">inline</span> sys::pstream&amp;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    operator&lt;&lt;(sys::pstream&amp; out, exit_code rhs) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> out &lt;&lt; exit_code_type(rhs);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">inline</span> sys::pstream&amp;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    operator&gt;&gt;(sys::pstream&amp; in, exit_code&amp; rhs) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        exit_code_type tmp;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        in &gt;&gt; tmp;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        rhs = exit_code(tmp);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> in;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

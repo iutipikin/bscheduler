@@ -474,7 +474,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        ~<a class="code" href="structfactory_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        remove_pipeline(event_handler_ptr ptr)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        remove_client(event_handler_ptr ptr)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            this-&gt;_apps.erase(ptr-&gt;childpid());</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
@@ -643,7 +643,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="structfactory_1_1child__process__pipeline.html">child_process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        remove_pipeline(event_handler_ptr ptr)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        remove_client(event_handler_ptr ptr)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;is_stopped()) {</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                this-&gt;stop();</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                <span class="comment">// this-&gt;factory()-&gt;stop();</span></div>
@@ -702,7 +702,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structfactory_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:26</div></div>
+<div class="ttc" id="structfactory_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:27</div></div>
 <div class="ttc" id="classfactory_1_1Error_html"><div class="ttname"><a href="classfactory_1_1Error.html">factory::Error</a></div><div class="ttdef"><b>Definition:</b> error.hh:9</div></div>
 <div class="ttc" id="structfactory_1_1pipeline__base_html"><div class="ttname"><a href="structfactory_1_1pipeline__base.html">factory::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:14</div></div>
 <div class="ttc" id="structfactory_1_1process__pipeline_html"><div class="ttname"><a href="structfactory_1_1process__pipeline.html">factory::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:340</div></div>

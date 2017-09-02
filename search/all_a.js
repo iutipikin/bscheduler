@@ -5,5 +5,6 @@ var searchData=
   ['lbuffer_3c_20char_20_3e',['LBuffer&lt; char &gt;',['../structfactory_1_1LBuffer.html',1,'factory']]],
   ['lbuffertest',['LBufferTest',['../structLBufferTest.html',1,'']]],
   ['local_5fserver',['local_server',['../classfactory_1_1local__server.html',1,'factory']]],
+  ['localservertest',['LocalServerTest',['../structLocalServerTest.html',1,'']]],
   ['location',['Location',['../structdiscovery_1_1Location.html',1,'discovery']]]
 ];

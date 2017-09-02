@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: factory::local_server&lt; Addr &gt; Class Template Reference</title>
+        <title>Factory: factory::local_server&lt; Addr, Socket &gt; Class Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -109,24 +109,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfactory_1_1local__server-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">factory::local_server&lt; Addr &gt; Class Template Reference</div>  </div>
+<div class="title">factory::local_server&lt; Addr, Socket &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:add3965332165ce87e472c824dc9ca923"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add3965332165ce87e472c824dc9ca923"></a>
+<tr class="memitem:a4e9ad74d4ea45ba94f080427db76f629"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e9ad74d4ea45ba94f080427db76f629"></a>
 typedef Addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_type</b></td></tr>
-<tr class="separator:add3965332165ce87e472c824dc9ca923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc2e42ec0b19cc885a928ecaaea497c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cc2e42ec0b19cc885a928ecaaea497c"></a>
+<tr class="separator:a4e9ad74d4ea45ba94f080427db76f629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa373a32ff77df5bff100d8d043cc22da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa373a32ff77df5bff100d8d043cc22da"></a>
+typedef Socket&#160;</td><td class="memItemRight" valign="bottom"><b>socket_type</b></td></tr>
+<tr class="separator:aa373a32ff77df5bff100d8d043cc22da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52886efbe006810c8ad525a575360b6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52886efbe006810c8ad525a575360b6c"></a>
 typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
-<tr class="separator:a4cc2e42ec0b19cc885a928ecaaea497c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a52886efbe006810c8ad525a575360b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274594bc871efdf29bf0043675dbf42c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a274594bc871efdf29bf0043675dbf42c"></a>
+typedef ifaddr_type::rep_type&#160;</td><td class="memItemRight" valign="bottom"><b>id_type</b></td></tr>
+<tr class="separator:a274594bc871efdf29bf0043675dbf42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fe50cbae3060bfd6b56a54aabe2520"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78fe50cbae3060bfd6b56a54aabe2520"></a>
+typedef id_type&#160;</td><td class="memItemRight" valign="bottom"><b>counter_type</b></td></tr>
+<tr class="separator:a78fe50cbae3060bfd6b56a54aabe2520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d5c081ad9efe4f9f216987926b495db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d5c081ad9efe4f9f216987926b495db"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>local_server</b> (const ifaddr_type &amp;ifaddr)</td></tr>
-<tr class="separator:a1d5c081ad9efe4f9f216987926b495db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175e2d92a6453aa7480255b878fd2c97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a175e2d92a6453aa7480255b878fd2c97"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>local_server</b> (const ifaddr_type &amp;ifaddr, sys::port_type port)</td></tr>
+<tr class="separator:a175e2d92a6453aa7480255b878fd2c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa27c9e442de3d7e1b627a7796c00a70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa27c9e442de3d7e1b627a7796c00a70"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>local_server</b> (<a class="el" href="classfactory_1_1local__server.html">local_server</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:aaa27c9e442de3d7e1b627a7796c00a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6404a42892c71ba33278a40b61618546"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6404a42892c71ba33278a40b61618546"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>local_server</b> (const <a class="el" href="classfactory_1_1local__server.html">local_server</a> &amp;)=delete</td></tr>
+<tr class="separator:a6404a42892c71ba33278a40b61618546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb3d43b1c95bc57aeabd8f3130169b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eb3d43b1c95bc57aeabd8f3130169b1"></a>
+<a class="el" href="classfactory_1_1local__server.html">local_server</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classfactory_1_1local__server.html">local_server</a> &amp;)=delete</td></tr>
+<tr class="separator:a5eb3d43b1c95bc57aeabd8f3130169b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bf6f21ab87dba8a5b5636c88c02cba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24bf6f21ab87dba8a5b5636c88c02cba"></a>
+<a class="el" href="classfactory_1_1local__server.html">local_server</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfactory_1_1local__server.html">local_server</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a24bf6f21ab87dba8a5b5636c88c02cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b949560817ecf81ca7dfd8c9745caec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b949560817ecf81ca7dfd8c9745caec"></a>
+const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>endpoint</b> () const noexcept</td></tr>
+<tr class="separator:a3b949560817ecf81ca7dfd8c9745caec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78fe1c9679942b5c73ff0bc8746724b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa78fe1c9679942b5c73ff0bc8746724b"></a>
+const socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () const noexcept</td></tr>
+<tr class="separator:aa78fe1c9679942b5c73ff0bc8746724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb6a46da21614745e9eff3cf3b94a38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecb6a46da21614745e9eff3cf3b94a38"></a>
+socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () noexcept</td></tr>
+<tr class="separator:aecb6a46da21614745e9eff3cf3b94a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea378361e70eea5b49a4f5d79769aa09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea378361e70eea5b49a4f5d79769aa09"></a>
+id_type&#160;</td><td class="memItemRight" valign="bottom"><b>generate_id</b> () noexcept</td></tr>
+<tr class="separator:aea378361e70eea5b49a4f5d79769aa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/travis/build/igankevich/factory/src/factory/ppl/<a class="el" href="local__server_8hh_source.html">local_server.hh</a></li>
