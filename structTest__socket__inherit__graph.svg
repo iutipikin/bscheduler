@@ -11,70 +11,70 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-192 239,-192 239,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="39.5,-0.5 39.5,-19.5 110.5,-19.5 110.5,-0.5 39.5,-0.5"/>
-<text text-anchor="middle" x="75" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Test_socket</text>
+<polygon fill="#bfbfbf" stroke="black" points="119.5,-0.5 119.5,-19.5 190.5,-19.5 190.5,-0.5 119.5,-0.5"/>
+<text text-anchor="middle" x="155" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Test_socket</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<polygon fill="white" stroke="#bfbfbf" points="13,-56.5 13,-75.5 57,-75.5 57,-56.5 13,-56.5"/>
-<text text-anchor="middle" x="35" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kernel</text>
-</g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M47.6997,-47.8554C54.626,-38.5048 62.9063,-27.3265 68.5177,-19.7511"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="44.745,-45.9641 41.6052,-56.083 50.37,-50.1307 44.745,-45.9641"/>
-</g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="structfactory_1_1Kernel.html" target="_top" xlink:title="factory::Kernel">
+<g id="a_node2"><a xlink:href="structfactory_1_1Kernel.html" target="_top" xlink:title="factory::Kernel">
 <polygon fill="white" stroke="black" points="75,-56.5 75,-75.5 155,-75.5 155,-56.5 75,-56.5"/>
 <text text-anchor="middle" x="115" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::Kernel</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node1 -->
-<g id="edge2" class="edge"><title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M102.3,-47.8554C95.374,-38.5048 87.0937,-27.3265 81.4823,-19.7511"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="99.63,-50.1307 108.395,-56.083 105.255,-45.9641 99.63,-50.1307"/>
+<!-- Node2&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<path fill="none" stroke="midnightblue" d="M127.7,-47.8554C134.626,-38.5048 142.906,-27.3265 148.518,-19.7511"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="124.745,-45.9641 121.605,-56.083 130.37,-50.1307 124.745,-45.9641"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classfactory_1_1mobile__kernel.html" target="_top" xlink:title="factory::mobile_kernel">
+<!-- Node3 -->
+<g id="node3" class="node"><title>Node3</title>
+<g id="a_node3"><a xlink:href="classfactory_1_1mobile__kernel.html" target="_top" xlink:title="factory::mobile_kernel">
 <polygon fill="white" stroke="black" points="58.5,-112.5 58.5,-131.5 171.5,-131.5 171.5,-112.5 58.5,-112.5"/>
 <text text-anchor="middle" x="115" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::mobile_kernel</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
+<!-- Node3&#45;&gt;Node2 -->
+<g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
 <path fill="none" stroke="midnightblue" d="M115,-101.805C115,-92.9102 115,-82.7798 115,-75.7511"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="111.5,-102.083 115,-112.083 118.5,-102.083 111.5,-102.083"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classfactory_1_1kernel__base.html" target="_top" xlink:title="factory::kernel_base">
+<!-- Node4 -->
+<g id="node4" class="node"><title>Node4</title>
+<g id="a_node4"><a xlink:href="classfactory_1_1kernel__base.html" target="_top" xlink:title="factory::kernel_base">
 <polygon fill="white" stroke="black" points="-0.5,-168.5 -0.5,-187.5 104.5,-187.5 104.5,-168.5 -0.5,-168.5"/>
 <text text-anchor="middle" x="52" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::kernel_base</text>
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge4" class="edge"><title>Node5&#45;&gt;Node4</title>
+<!-- Node4&#45;&gt;Node3 -->
+<g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M70.0399,-161.537C81.2731,-151.909 95.3191,-139.869 104.694,-131.834"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="67.4368,-159.159 62.122,-168.324 71.9924,-164.473 67.4368,-159.159"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="classfactory_1_1kernel__header.html" target="_top" xlink:title="factory::kernel_header">
+<!-- Node5 -->
+<g id="node5" class="node"><title>Node5</title>
+<g id="a_node5"><a xlink:href="classfactory_1_1kernel__header.html" target="_top" xlink:title="factory::kernel_header">
 <polygon fill="white" stroke="black" points="122.5,-168.5 122.5,-187.5 235.5,-187.5 235.5,-168.5 122.5,-168.5"/>
 <text text-anchor="middle" x="179" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::kernel_header</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node4 -->
-<g id="edge5" class="edge"><title>Node6&#45;&gt;Node4</title>
+<!-- Node5&#45;&gt;Node3 -->
+<g id="edge4" class="edge"><title>Node5&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M161.009,-161.82C149.542,-152.145 135.087,-139.948 125.47,-131.834"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="158.817,-164.55 168.717,-168.324 163.331,-159.2 158.817,-164.55"/>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node"><title>Node6</title>
+<polygon fill="white" stroke="#bfbfbf" points="173,-56.5 173,-75.5 217,-75.5 217,-56.5 173,-56.5"/>
+<text text-anchor="middle" x="195" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kernel</text>
+</g>
+<!-- Node6&#45;&gt;Node1 -->
+<g id="edge5" class="edge"><title>Node6&#45;&gt;Node1</title>
+<path fill="none" stroke="midnightblue" d="M182.3,-47.8554C175.374,-38.5048 167.094,-27.3265 161.482,-19.7511"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="179.63,-50.1307 188.395,-56.083 185.255,-45.9641 179.63,-50.1307"/>
 </g>
 </g>
 </svg>

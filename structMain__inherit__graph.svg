@@ -28,7 +28,7 @@
 <polygon fill="midnightblue" stroke="midnightblue" points="118.603,-45.7115 116.439,-56.083 124.598,-49.3246 118.603,-45.7115"/>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge6" class="edge"><title>Node2&#45;&gt;Node1</title>
+<g id="edge5" class="edge"><title>Node2&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M133.554,-48.4314C141.458,-38.9673 149.582,-27.4827 153.649,-19.7511"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="130.785,-46.278 126.772,-56.083 136.024,-50.9212 130.785,-46.278"/>
 </g>
@@ -77,7 +77,7 @@
 <text text-anchor="middle" x="195" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kernel</text>
 </g>
 <!-- Node6&#45;&gt;Node1 -->
-<g id="edge5" class="edge"><title>Node6&#45;&gt;Node1</title>
+<g id="edge6" class="edge"><title>Node6&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M176.446,-48.4314C168.542,-38.9673 160.418,-27.4827 156.351,-19.7511"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="173.976,-50.9212 183.228,-56.083 179.215,-46.278 173.976,-50.9212"/>
 </g>
