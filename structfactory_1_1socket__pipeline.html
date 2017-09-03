@@ -133,20 +133,24 @@ typedef Socket&#160;</td><td class="memItemRight" valign="bottom"><b>socket_type
 <tr class="memitem:a6f4916a62c8bc9b5ae4bf9efb11acb53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f4916a62c8bc9b5ae4bf9efb11acb53"></a>
 typedef Router&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
 <tr class="separator:a6f4916a62c8bc9b5ae4bf9efb11acb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb6275850d468b195c62dd9d77eb37d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefb6275850d468b195c62dd9d77eb37d"></a>
-typedef <a class="el" href="structfactory_1_1remote__client.html">remote_client</a>&lt; T, <br class="typebreak"/>
-Socket, Router &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>remote_client_type</b></td></tr>
-<tr class="separator:aefb6275850d468b195c62dd9d77eb37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1abee05cd2c69d36505bd18577500e15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1abee05cd2c69d36505bd18577500e15"></a>
-typedef <a class="el" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline</a><br class="typebreak"/>
-&lt; T, <a class="el" href="structfactory_1_1remote__client.html">remote_client_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
-<tr class="separator:a1abee05cd2c69d36505bd18577500e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e29154df8febbf656557e0d7fd768f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85e29154df8febbf656557e0d7fd768f"></a>
 typedef sys::ipv4_addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_type</b></td></tr>
 <tr class="separator:a85e29154df8febbf656557e0d7fd768f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada61e98b9fcfc521efc8e5be53227f73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada61e98b9fcfc521efc8e5be53227f73"></a>
 typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
 <tr class="separator:ada61e98b9fcfc521efc8e5be53227f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb6275850d468b195c62dd9d77eb37d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefb6275850d468b195c62dd9d77eb37d"></a>
+typedef <a class="el" href="structfactory_1_1remote__client.html">remote_client</a>&lt; T, <br class="typebreak"/>
+Socket, Router &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>remote_client_type</b></td></tr>
+<tr class="separator:aefb6275850d468b195c62dd9d77eb37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb6780f39d6799e17acc984ed92160a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cb6780f39d6799e17acc984ed92160a"></a>
+typedef <a class="el" href="classfactory_1_1local__server.html">local_server</a><br class="typebreak"/>
+&lt; addr_type, socket_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>server_type</b></td></tr>
+<tr class="separator:a0cb6780f39d6799e17acc984ed92160a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abee05cd2c69d36505bd18577500e15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1abee05cd2c69d36505bd18577500e15"></a>
+typedef <a class="el" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline</a><br class="typebreak"/>
+&lt; T, <a class="el" href="structfactory_1_1remote__client.html">remote_client_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
+<tr class="separator:a1abee05cd2c69d36505bd18577500e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62fb0aaa8eb06f217375e14c72b5f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac62fb0aaa8eb06f217375e14c72b5f27"></a>
 typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
 <tr class="separator:ac62fb0aaa8eb06f217375e14c72b5f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,15 +234,18 @@ sys::queue_pop_iterator<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9b0fdcf2d132ac8d672a37db2bc9c7da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b0fdcf2d132ac8d672a37db2bc9c7da"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>socket_pipeline</b> (<a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;&amp;rhs) noexcept</td></tr>
-<tr class="separator:a9b0fdcf2d132ac8d672a37db2bc9c7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d5283c2619e8534ff5cdead326a7ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81d5283c2619e8534ff5cdead326a7ab"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>socket_pipeline</b> (<a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:a81d5283c2619e8534ff5cdead326a7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7d9dff788354565194651b90834192"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f7d9dff788354565194651b90834192"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>socket_pipeline</b> (const <a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;)=delete</td></tr>
 <tr class="separator:a9f7d9dff788354565194651b90834192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6764dca25039107514e9436606e35edb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6764dca25039107514e9436606e35edb"></a>
 <a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;)=delete</td></tr>
 <tr class="separator:a6764dca25039107514e9436606e35edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b741eef8f1de064613a8b1e91cd34f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59b741eef8f1de064613a8b1e91cd34f"></a>
+<a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a59b741eef8f1de064613a8b1e91cd34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32451bf0b324907837c64c43b355abe9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32451bf0b324907837c64c43b355abe9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_server</b> (sys::fd_type fd) override</td></tr>
 <tr class="separator:a32451bf0b324907837c64c43b355abe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,15 +264,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_server</b> (const
 <tr class="memitem:ab7b620568681a7ffb22ad135afaf1ff8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7b620568681a7ffb22ad135afaf1ff8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_server</b> (const sys::endpoint &amp;rhs, addr_type netmask)</td></tr>
 <tr class="separator:ab7b620568681a7ffb22ad135afaf1ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab957870589e57d29156c2ac682958324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab957870589e57d29156c2ac682958324"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_server</b> (const ifaddr_type &amp;ifaddr)</td></tr>
+<tr class="separator:ab957870589e57d29156c2ac682958324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5392557306412710a87beb597549e2ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5392557306412710a87beb597549e2ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_port</b> (sys::port_type rhs) noexcept</td></tr>
 <tr class="separator:a5392557306412710a87beb597549e2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be4908085a2be73ffe6a415ee3f23f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5be4908085a2be73ffe6a415ee3f23f1"></a>
-ifaddr_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddrs_begin</b> () const noexcept</td></tr>
-<tr class="separator:a5be4908085a2be73ffe6a415ee3f23f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dffdf64957ce34c5d70fa742e8bcee8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dffdf64957ce34c5d70fa742e8bcee8"></a>
-ifaddr_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddrs_end</b> () const noexcept</td></tr>
-<tr class="separator:a3dffdf64957ce34c5d70fa742e8bcee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e7985d4e36407e84dac65b4829698b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9e7985d4e36407e84dac65b4829698b"></a>
+server_const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>servers_begin</b> () const noexcept</td></tr>
+<tr class="separator:ad9e7985d4e36407e84dac65b4829698b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8d51ad0d552ae26f5edb5dcd989dfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d8d51ad0d552ae26f5edb5dcd989dfb"></a>
+server_const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>servers_end</b> () const noexcept</td></tr>
+<tr class="separator:a7d8d51ad0d552ae26f5edb5dcd989dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structfactory_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structfactory_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline&lt; T, remote_client&lt; T, Socket, Router &gt; &gt;</a></td></tr>
 <tr class="memitem:a99b9c2c5f51d6fe89bc53be5c58279fb inherit pub_methods_structfactory_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99b9c2c5f51d6fe89bc53be5c58279fb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>basic_socket_pipeline</b> (<a class="el" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline</a> &amp;&amp;rhs) noexcept</td></tr>

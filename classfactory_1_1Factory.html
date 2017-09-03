@@ -142,14 +142,10 @@ typedef <a class="el" href="structfactory_1_1io__pipeline.html">io_pipeline</a>&
 <tr class="memitem:a61722164cdce63bc08e62d9b65ae9314"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61722164cdce63bc08e62d9b65ae9314"></a>
 typedef <a class="el" href="classfactory_1_1Multi__pipeline.html">Multi_pipeline</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>downstream_pipeline_type</b></td></tr>
 <tr class="separator:a61722164cdce63bc08e62d9b65ae9314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40e73aad59b037a745948fc988329ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa40e73aad59b037a745948fc988329ef"></a>
-typedef <a class="el" href="structfactory_1_1socket__pipeline.html">socket_pipeline</a>&lt; T, <br class="typebreak"/>
-sys::socket, <a class="el" href="structfactory_1_1basic__router.html">basic_router</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parent_pipeline_type</b></td></tr>
-<tr class="separator:aa40e73aad59b037a745948fc988329ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa942c330e2d8d206cd1ea46323490b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa942c330e2d8d206cd1ea46323490b2"></a>
-typedef <a class="el" href="structfactory_1_1process__pipeline.html">process_pipeline</a>&lt; T, <br class="typebreak"/>
-<a class="el" href="structfactory_1_1basic__router.html">basic_router</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>child_pipeline_type</b></td></tr>
-<tr class="separator:aaa942c330e2d8d206cd1ea46323490b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5921b21380522701195017813cfd5fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5921b21380522701195017813cfd5fb"></a>
+typedef <a class="el" href="structfactory_1_1child__process__pipeline.html">child_process_pipeline</a><br class="typebreak"/>
+&lt; T, <a class="el" href="structfactory_1_1basic__router.html">basic_router</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parent_pipeline_type</b></td></tr>
+<tr class="separator:aa5921b21380522701195017813cfd5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -171,30 +167,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>send_timer</b> (kerne
 <tr class="memitem:a68364b793014e7c8bdd3920b99fd2d58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68364b793014e7c8bdd3920b99fd2d58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send_timer</b> (kernel_type **kernel, size_t n)</td></tr>
 <tr class="separator:a68364b793014e7c8bdd3920b99fd2d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af45db83ee4c049ba5f31da711ebe1bb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af45db83ee4c049ba5f31da711ebe1bb2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>send_child</b> (kernel_type *kernel)</td></tr>
-<tr class="separator:af45db83ee4c049ba5f31da711ebe1bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dee422fdeaab88f8959f1bac4bea0a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dee422fdeaab88f8959f1bac4bea0a1"></a>
-<a class="el" href="structfactory_1_1process__pipeline.html">child_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>child</b> () noexcept</td></tr>
-<tr class="separator:a3dee422fdeaab88f8959f1bac4bea0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a83174ddffe6fd0128a6ccc1fc2ae2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56a83174ddffe6fd0128a6ccc1fc2ae2"></a>
-const <a class="el" href="structfactory_1_1process__pipeline.html">child_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>child</b> () const noexcept</td></tr>
-<tr class="separator:a56a83174ddffe6fd0128a6ccc1fc2ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c6b31a95558eccc1fdf330d605f47b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3c6b31a95558eccc1fdf330d605f47b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (const <a class="el" href="classfactory_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
-<tr class="separator:ac3c6b31a95558eccc1fdf330d605f47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dfbad8b2b1a654a86c837db493a22eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dfbad8b2b1a654a86c837db493a22eb"></a>
-<a class="el" href="structfactory_1_1socket__pipeline.html">parent_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () noexcept</td></tr>
+<a class="el" href="structfactory_1_1child__process__pipeline.html">parent_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () noexcept</td></tr>
 <tr class="separator:a2dfbad8b2b1a654a86c837db493a22eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a934d48e97dc9fd7efb1766baf2c13a58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a934d48e97dc9fd7efb1766baf2c13a58"></a>
-const <a class="el" href="structfactory_1_1socket__pipeline.html">parent_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const noexcept</td></tr>
+const <a class="el" href="structfactory_1_1child__process__pipeline.html">parent_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const noexcept</td></tr>
 <tr class="separator:a934d48e97dc9fd7efb1766baf2c13a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f8cf34d62c248df19ff3f5959545d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5f8cf34d62c248df19ff3f5959545d2"></a>
-<a class="el" href="structfactory_1_1socket__pipeline.html">parent_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nic</b> () noexcept</td></tr>
-<tr class="separator:ae5f8cf34d62c248df19ff3f5959545d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d087512e345d782215a903c7a110f09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d087512e345d782215a903c7a110f09"></a>
-const <a class="el" href="structfactory_1_1socket__pipeline.html">parent_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nic</b> () const noexcept</td></tr>
-<tr class="separator:a0d087512e345d782215a903c7a110f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bbbe82ee689d468019fd74eae4902cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bbbe82ee689d468019fd74eae4902cc"></a>
 <a class="el" href="structfactory_1_1timer__pipeline.html">timer_pipeline_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>timer</b> () noexcept</td></tr>
 <tr class="separator:a4bbbe82ee689d468019fd74eae4902cc"><td class="memSeparator" colspan="2">&#160;</td></tr>

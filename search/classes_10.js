@@ -9,7 +9,6 @@ var searchData=
   ['slice',['Slice',['../structSlice.html',1,'']]],
   ['smallsizetest',['SmallSizeTest',['../structSmallSizeTest.html',1,'']]],
   ['socket_5fpipeline',['socket_pipeline',['../structfactory_1_1socket__pipeline.html',1,'factory']]],
-  ['socket_5fpipeline_3c_20t_2c_20sys_3a_3asocket_2c_20basic_5frouter_3c_20t_20_3e_20_3e',['socket_pipeline&lt; T, sys::socket, basic_router&lt; T &gt; &gt;',['../structfactory_1_1socket__pipeline.html',1,'factory']]],
   ['solve_5fyule_5fwalker',['Solve_Yule_Walker',['../structautoreg_1_1Solve__Yule__Walker.html',1,'autoreg']]],
   ['spec_5fapp',['Spec_app',['../structSpec__app.html',1,'']]],
   ['spectrum_5fapp',['Spectrum_app',['../structSpectrum__app.html',1,'']]],
