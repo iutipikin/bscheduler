@@ -4,7 +4,7 @@
 <area shape="rect" id="node8" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="424,197,576,253"/>
 <area shape="rect" id="node10" href="$structfactory_1_1basic__socket__pipeline.html" title="factory::basic_socket\l_pipeline\&lt; T, Handler \&gt;" alt="" coords="421,277,579,318"/>
 <area shape="rect" id="node11" href="$structfactory_1_1timer__pipeline.html" title="factory::timer_pipeline\&lt; T \&gt;" alt="" coords="409,343,591,369"/>
-<area shape="rect" id="node2" href="$structfactory_1_1pipeline__base.html" title="factory::pipeline_base" alt="" coords="5,212,155,239"/>
+<area shape="rect" id="node2" href="$classfactory_1_1pipeline__base.html" title="factory::pipeline_base" alt="" coords="5,212,155,239"/>
 <area shape="rect" id="node4" href="$structfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, basic_router\l\&lt; T \&gt; \&gt;" alt="" coords="641,5,813,61"/>
 <area shape="rect" id="node6" href="$structfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, Router \&gt;" alt="" coords="651,85,803,126"/>
 <area shape="rect" id="node7" href="$structfactory_1_1process__pipeline.html" title="factory::process_pipeline\l\&lt; T, Router \&gt;" alt="" coords="643,150,810,191"/>

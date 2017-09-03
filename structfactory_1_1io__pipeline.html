@@ -176,6 +176,16 @@ typedef <br class="typebreak"/>
 sys::queue_pop_iterator<br class="typebreak"/>
 &lt; kernel_pool, traits_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue_popper</b></td></tr>
 <tr class="separator:adbb54f7e99cb89d779d50bc8245364c3 inherit pub_types_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
+<tr class="memitem:a617710c91e4f05f899c1f4bbca57bc81 inherit pub_types_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a617710c91e4f05f899c1f4bbca57bc81"></a>
+typedef std::chrono::system_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock_type</b></td></tr>
+<tr class="separator:a617710c91e4f05f899c1f4bbca57bc81 inherit pub_types_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a43ecd7fd4fce0cd947d58672bfa4ba inherit pub_types_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a43ecd7fd4fce0cd947d58672bfa4ba"></a>
+typedef clock_type::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>time_point</b></td></tr>
+<tr class="separator:a3a43ecd7fd4fce0cd947d58672bfa4ba inherit pub_types_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8aa4bf5e2f82df5a8f78e617da5bc7 inherit pub_types_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b8aa4bf5e2f82df5a8f78e617da5bc7"></a>
+typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="separator:a6b8aa4bf5e2f82df5a8f78e617da5bc7 inherit pub_types_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -245,28 +255,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>wait</b> ()</td></tr>
 <tr class="memitem:abd1d0de93aab87db3540fdc0fbb67a5e inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd1d0de93aab87db3540fdc0fbb67a5e"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>concurrency</b> () const noexcept</td></tr>
 <tr class="separator:abd1d0de93aab87db3540fdc0fbb67a5e inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_structfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
-<tr class="memitem:afdd758f8405dc1eac4c9580a5227e058 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdd758f8405dc1eac4c9580a5227e058"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (<a class="el" href="structfactory_1_1pipeline__base.html">pipeline_base</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:afdd758f8405dc1eac4c9580a5227e058 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abacf4da9e5aefa8135a852803977f837 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abacf4da9e5aefa8135a852803977f837"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (const <a class="el" href="structfactory_1_1pipeline__base.html">pipeline_base</a> &amp;)=delete</td></tr>
-<tr class="separator:abacf4da9e5aefa8135a852803977f837 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7afa6ebe359ce7c4d58c0ae21e6df52b inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7afa6ebe359ce7c4d58c0ae21e6df52b"></a>
-<a class="el" href="structfactory_1_1pipeline__base.html">pipeline_base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="structfactory_1_1pipeline__base.html">pipeline_base</a> &amp;)=delete</td></tr>
-<tr class="separator:a7afa6ebe359ce7c4d58c0ae21e6df52b inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3344018db79698d02636151e5a460a3 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3344018db79698d02636151e5a460a3"></a>
+<tr class="inherit_header pub_methods_classfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
+<tr class="memitem:afdd758f8405dc1eac4c9580a5227e058 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdd758f8405dc1eac4c9580a5227e058"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (<a class="el" href="classfactory_1_1pipeline__base.html">pipeline_base</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:afdd758f8405dc1eac4c9580a5227e058 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacf4da9e5aefa8135a852803977f837 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abacf4da9e5aefa8135a852803977f837"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (const <a class="el" href="classfactory_1_1pipeline__base.html">pipeline_base</a> &amp;)=delete</td></tr>
+<tr class="separator:abacf4da9e5aefa8135a852803977f837 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afa6ebe359ce7c4d58c0ae21e6df52b inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7afa6ebe359ce7c4d58c0ae21e6df52b"></a>
+<a class="el" href="classfactory_1_1pipeline__base.html">pipeline_base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfactory_1_1pipeline__base.html">pipeline_base</a> &amp;)=delete</td></tr>
+<tr class="separator:a7afa6ebe359ce7c4d58c0ae21e6df52b inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3344018db79698d02636151e5a460a3 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3344018db79698d02636151e5a460a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setstate</b> (pipeline_state rhs) noexcept</td></tr>
-<tr class="separator:ae3344018db79698d02636151e5a460a3 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a25dac8ba70ce12e3009a7a87b5314 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a25dac8ba70ce12e3009a7a87b5314"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopped</b> () const noexcept</td></tr>
-<tr class="separator:a49a25dac8ba70ce12e3009a7a87b5314 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a834caf7a4c9ff542ab8b84e7f7615bd1 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a834caf7a4c9ff542ab8b84e7f7615bd1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopping</b> () const noexcept</td></tr>
-<tr class="separator:a834caf7a4c9ff542ab8b84e7f7615bd1 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41aa6cdf47a4ccdb042f5237e4d994d5 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41aa6cdf47a4ccdb042f5237e4d994d5"></a>
+<tr class="separator:ae3344018db79698d02636151e5a460a3 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68b70ce4b45ca654abdb986fb0d414d inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af68b70ce4b45ca654abdb986fb0d414d"></a>
+pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const noexcept</td></tr>
+<tr class="separator:af68b70ce4b45ca654abdb986fb0d414d inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a6c8774633f674daabd92962edd839 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38a6c8774633f674daabd92962edd839"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_starting</b> () const noexcept</td></tr>
+<tr class="separator:a38a6c8774633f674daabd92962edd839 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41aa6cdf47a4ccdb042f5237e4d994d5 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41aa6cdf47a4ccdb042f5237e4d994d5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_started</b> () const noexcept</td></tr>
-<tr class="separator:a41aa6cdf47a4ccdb042f5237e4d994d5 inherit pub_methods_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a41aa6cdf47a4ccdb042f5237e4d994d5 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834caf7a4c9ff542ab8b84e7f7615bd1 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a834caf7a4c9ff542ab8b84e7f7615bd1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopping</b> () const noexcept</td></tr>
+<tr class="separator:a834caf7a4c9ff542ab8b84e7f7615bd1 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a25dac8ba70ce12e3009a7a87b5314 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a25dac8ba70ce12e3009a7a87b5314"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopped</b> () const noexcept</td></tr>
+<tr class="separator:a49a25dac8ba70ce12e3009a7a87b5314 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ae69556cb555d327a9cd3b0d1cc028 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ae69556cb555d327a9cd3b0d1cc028"></a>
+time_point&#160;</td><td class="memItemRight" valign="bottom"><b>start_time_point</b> () const noexcept</td></tr>
+<tr class="separator:a34ae69556cb555d327a9cd3b0d1cc028 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -297,10 +316,13 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td
 <tr class="memitem:aca7edf670100930ee4f21f63fda0fe88 inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca7edf670100930ee4f21f63fda0fe88"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_number</b></td></tr>
 <tr class="separator:aca7edf670100930ee4f21f63fda0fe88 inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_structfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_structfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="structfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
-<tr class="memitem:ae604e727ec986f1e31a64b4a0065649a inherit pro_attribs_structfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae604e727ec986f1e31a64b4a0065649a"></a>
+<tr class="inherit_header pro_attribs_classfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
+<tr class="memitem:ae604e727ec986f1e31a64b4a0065649a inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae604e727ec986f1e31a64b4a0065649a"></a>
 volatile pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b> = pipeline_state::initial</td></tr>
-<tr class="separator:ae604e727ec986f1e31a64b4a0065649a inherit pro_attribs_structfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae604e727ec986f1e31a64b4a0065649a inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0119e1e2605fe39525ab458c616c880 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0119e1e2605fe39525ab458c616c880"></a>
+time_point&#160;</td><td class="memItemRight" valign="bottom"><b>_start</b></td></tr>
+<tr class="separator:aa0119e1e2605fe39525ab458c616c880 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/travis/build/igankevich/factory/src/factory/ppl/<a class="el" href="io__pipeline_8hh_source.html">io_pipeline.hh</a></li>

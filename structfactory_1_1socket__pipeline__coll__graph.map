@@ -1,5 +1,5 @@
 <map id="factory::socket_pipeline&lt; T, Socket, Router &gt;" name="factory::socket_pipeline&lt; T, Socket, Router &gt;">
 <area shape="rect" id="node2" href="$structfactory_1_1basic__socket__pipeline.html" title="factory::basic_socket\l_pipeline\&lt; T, remote\l_client\&lt; T, Socket, Router \&gt; \&gt;" alt="" coords="211,203,409,259"/>
 <area shape="rect" id="node3" href="$classfactory_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; T, remote_client\&lt;\l T, Socket, Router \&gt; &#160;\&gt;" alt="" coords="233,96,387,152"/>
-<area shape="rect" id="node4" href="$structfactory_1_1pipeline__base.html" title="factory::pipeline_base" alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node4" href="$classfactory_1_1pipeline__base.html" title="factory::pipeline_base" alt="" coords="5,5,153,32"/>
 </map>

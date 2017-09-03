@@ -134,9 +134,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> Router, <span class="keyword">class</span> Kernels=std::deque&lt;T*&gt;,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">class</span> Traits=sys::deque_traits&lt;Kernels&gt;&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structfactory_1_1Buffered__pipeline.html">   30</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structfactory_1_1Buffered__pipeline.html">Buffered_pipeline</a>: <span class="keyword">public</span> <a class="code" href="structfactory_1_1pipeline__base.html">pipeline_base</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structfactory_1_1Buffered__pipeline.html">   30</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structfactory_1_1Buffered__pipeline.html">Buffered_pipeline</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1pipeline__base.html">pipeline_base</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1pipeline__base.html">pipeline_base</a> <a class="code" href="structfactory_1_1pipeline__base.html">base_pipeline</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1pipeline__base.html">pipeline_base</a> <a class="code" href="classfactory_1_1pipeline__base.html">base_pipeline</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">typedef</span> Router router_type;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">typedef</span> Kernels pool_type;</div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="structfactory_1_1Buffered__pipeline.html">Buffered_pipeline</a>(<a class="code" href="structfactory_1_1Buffered__pipeline.html">Buffered_pipeline</a>&amp;&amp; rhs):</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="structfactory_1_1pipeline__base.html">base_pipeline</a>(std::move(rhs)),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classfactory_1_1pipeline__base.html">base_pipeline</a>(std::move(rhs)),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        _buffer(std::move(rhs._buffer)),</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _router(rhs._router)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {}</div>
@@ -697,9 +697,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;}</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structfactory_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:27</div></div>
+<div class="ttc" id="structfactory_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:28</div></div>
 <div class="ttc" id="classfactory_1_1Error_html"><div class="ttname"><a href="classfactory_1_1Error.html">factory::Error</a></div><div class="ttdef"><b>Definition:</b> error.hh:9</div></div>
-<div class="ttc" id="structfactory_1_1pipeline__base_html"><div class="ttname"><a href="structfactory_1_1pipeline__base.html">factory::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:14</div></div>
 <div class="ttc" id="structfactory_1_1process__pipeline_html"><div class="ttname"><a href="structfactory_1_1process__pipeline.html">factory::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:340</div></div>
 <div class="ttc" id="classfactory_1_1kernel__error_html"><div class="ttname"><a href="classfactory_1_1kernel__error.html">factory::kernel_error</a></div><div class="ttdef"><b>Definition:</b> kernel_error.hh:10</div></div>
 <div class="ttc" id="structfactory_1_1Buffered__pipeline_html"><div class="ttname"><a href="structfactory_1_1Buffered__pipeline.html">factory::Buffered_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:30</div></div>
@@ -708,6 +707,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classfactory_1_1kernel__header_html"><div class="ttname"><a href="classfactory_1_1kernel__header.html">factory::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:9</div></div>
 <div class="ttc" id="structfactory_1_1Application_html"><div class="ttname"><a href="structfactory_1_1Application.html">factory::Application</a></div><div class="ttdef"><b>Definition:</b> application.hh:10</div></div>
 <div class="ttc" id="structfactory_1_1process__handler_html"><div class="ttname"><a href="structfactory_1_1process__handler.html">factory::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:135</div></div>
+<div class="ttc" id="classfactory_1_1pipeline__base_html"><div class="ttname"><a href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

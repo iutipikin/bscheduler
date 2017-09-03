@@ -1,12 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structfactory_1_1pipeline__base.html" title="factory::pipeline_base" alt="" coords="5,312,155,339"/>
+<area shape="rect" id="node1" href="$classfactory_1_1pipeline__base.html" title="factory::pipeline_base" alt="" coords="5,312,155,339"/>
 <area shape="rect" id="node2" href="$classfactory_1_1basic__pipeline.html" title="factory::basic_pipeline\&lt; T \&gt;" alt="" coords="208,28,392,55"/>
 <area shape="rect" id="node5" href="$structfactory_1_1Buffered__pipeline.html" title="factory::Buffered_pipeline\l\&lt; T, Router \&gt;" alt="" coords="215,123,385,165"/>
 <area shape="rect" id="node7" href="$classfactory_1_1basic__pipeline.html" title="factory::basic_pipeline\l\&lt; T, Kernels, Traits,\l Threads, Mutex, Lock,\l Semaphore \&gt;" alt="" coords="221,210,379,281"/>
 <area shape="rect" id="node17" href="$structfactory_1_1Buffered__pipeline.html" title="factory::Buffered_pipeline\l\&lt; T, Router, Kernels, Traits \&gt;" alt="" coords="203,305,397,346"/>
 <area shape="rect" id="node18" href="$classfactory_1_1Factory.html" title="factory::Factory\&lt; T \&gt;" alt="" coords="227,371,373,397"/>
 <area shape="rect" id="node19" href="$classfactory_1_1Multi__pipeline.html" title="factory::Multi_pipeline\&lt; T \&gt;" alt="" coords="209,421,391,448"/>
-<area shape="rect" id="node20" href="$structfactory_1_1remote__client.html" title="factory::remote_client\l\&lt; T, Socket, Router, Kernels,\l Traits \&gt;" alt="" coords="203,472,397,528"/>
+<area shape="rect" id="node20" href="$classfactory_1_1remote__client.html" title="factory::remote_client\l\&lt; T, Socket, Router, Kernels,\l Traits \&gt;" alt="" coords="203,472,397,528"/>
 <area shape="rect" id="node3" href="$classfactory_1_1parallel__pipeline.html" title="factory::parallel_pipeline\&lt; T \&gt;" alt="" coords="448,5,643,32"/>
 <area shape="rect" id="node4" href="$structfactory_1_1io__pipeline.html" title="factory::io_pipeline\&lt; T \&gt;" alt="" coords="699,5,861,32"/>
 <area shape="rect" id="node6" href="$structfactory_1_1process__handler.html" title="factory::process_handler\l\&lt; T, Router \&gt;" alt="" coords="463,57,628,98"/>

@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-396 650,-396 650,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="structfactory_1_1pipeline__base.html" target="_top" xlink:title="factory::pipeline_base">
+<g id="a_node1"><a xlink:href="classfactory_1_1pipeline__base.html" target="_top" xlink:title="factory::pipeline_base">
 <polygon fill="white" stroke="black" points="0,-142.5 0,-161.5 112,-161.5 112,-142.5 0,-142.5"/>
 <text text-anchor="middle" x="56" y="-149.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::pipeline_base</text>
 </a>
@@ -102,7 +102,7 @@
 </g>
 <!-- Node20 -->
 <g id="node20" class="node"><title>Node20</title>
-<g id="a_node20"><a xlink:href="structfactory_1_1remote__client.html" target="_top" xlink:title="factory::remote_client\l\&lt; T, Socket, Router, Kernels,\l Traits \&gt;">
+<g id="a_node20"><a xlink:href="classfactory_1_1remote__client.html" target="_top" xlink:title="factory::remote_client\l\&lt; T, Socket, Router, Kernels,\l Traits \&gt;">
 <polygon fill="white" stroke="black" points="148,-0.5 148,-41.5 294,-41.5 294,-0.5 148,-0.5"/>
 <text text-anchor="start" x="156" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::remote_client</text>
 <text text-anchor="start" x="156" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, Socket, Router, Kernels,</text>

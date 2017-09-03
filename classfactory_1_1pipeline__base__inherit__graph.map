@@ -5,7 +5,7 @@
 <area shape="rect" id="node17" href="$structfactory_1_1Buffered__pipeline.html" title="factory::Buffered_pipeline\l\&lt; T, Router, Kernels, Traits \&gt;" alt="" coords="203,289,397,330"/>
 <area shape="rect" id="node18" href="$classfactory_1_1Factory.html" title="factory::Factory\&lt; T \&gt;" alt="" coords="227,355,373,381"/>
 <area shape="rect" id="node19" href="$classfactory_1_1Multi__pipeline.html" title="factory::Multi_pipeline\&lt; T \&gt;" alt="" coords="209,405,391,432"/>
-<area shape="rect" id="node20" href="$structfactory_1_1remote__client.html" title="factory::remote_client\l\&lt; T, Socket, Router, Kernels,\l Traits \&gt;" alt="" coords="203,456,397,512"/>
+<area shape="rect" id="node20" href="$classfactory_1_1remote__client.html" title="factory::remote_client\l\&lt; T, Socket, Router, Kernels,\l Traits \&gt;" alt="" coords="203,456,397,512"/>
 <area shape="rect" id="node3" href="$classfactory_1_1parallel__pipeline.html" title="factory::parallel_pipeline\&lt; T \&gt;" alt="" coords="445,5,640,32"/>
 <area shape="rect" id="node4" href="$structfactory_1_1io__pipeline.html" title="factory::io_pipeline\&lt; T \&gt;" alt="" coords="693,5,856,32"/>
 <area shape="rect" id="node6" href="$structfactory_1_1process__handler.html" title="factory::process_handler\l\&lt; T, Router \&gt;" alt="" coords="460,57,625,98"/>

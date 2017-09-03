@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="structfactory_1_1pipeline__base.html" target="_top" xlink:title="factory::pipeline_base">
+<g id="a_node3"><a xlink:href="classfactory_1_1pipeline__base.html" target="_top" xlink:title="factory::pipeline_base">
 <polygon fill="white" stroke="black" points="0,-150.5 0,-169.5 112,-169.5 112,-150.5 0,-150.5"/>
 <text text-anchor="middle" x="56" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::pipeline_base</text>
 </a>
