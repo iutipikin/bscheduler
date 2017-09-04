@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classfactory_1_1basic__kernelbuf-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">factory::basic_kernelbuf&lt; Base &gt; Class Template Reference</div>  </div>
@@ -128,17 +127,12 @@ Collaboration diagram for factory::basic_kernelbuf&lt; Base &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac3bdcd485c65ff1700f897107701b86f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>initial</b>, 
-<b>header_is_ready</b>, 
-<b>payload_is_ready</b>
- }</td></tr>
-<tr class="separator:ac3bdcd485c65ff1700f897107701b86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32fe90be747961af2ab5116ade2c0dad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32fe90be747961af2ab5116ade2c0dad"></a>
 typedef Base&#160;</td><td class="memItemRight" valign="bottom"><b>base_type</b></td></tr>
 <tr class="separator:a32fe90be747961af2ab5116ade2c0dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fb2e4e27770f76d274d1b75002962e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7fb2e4e27770f76d274d1b75002962e"></a>
-typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
-<tr class="separator:ad7fb2e4e27770f76d274d1b75002962e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7b388d88f539fb55e6e2331eb2c2fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b7b388d88f539fb55e6e2331eb2c2fb"></a>
+typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>portable_size_type</b></td></tr>
+<tr class="separator:a5b7b388d88f539fb55e6e2331eb2c2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a716e39363435145683a3492dcd259521"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a716e39363435145683a3492dcd259521"></a>
 typedef sys::basic_packetbuf<br class="typebreak"/>
 &lt; char_type, traits_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>good_base_type</b></td></tr>
@@ -146,43 +140,18 @@ typedef sys::basic_packetbuf<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acfef9e97629e818e575991190f9046ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfef9e97629e818e575991190f9046ba"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>basic_kernelbuf</b> (<a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:acfef9e97629e818e575991190f9046ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f0895f38c6727f8b4e58f9119d62ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82f0895f38c6727f8b4e58f9119d62ca"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>basic_kernelbuf</b> (<a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a82f0895f38c6727f8b4e58f9119d62ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad221803c2263aec705ecfcc0d0e65556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad221803c2263aec705ecfcc0d0e65556"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>basic_kernelbuf</b> (const <a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;)=delete</td></tr>
 <tr class="separator:ad221803c2263aec705ecfcc0d0e65556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5009c36c0d1f288eefe1adc83ae9bafc"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5009c36c0d1f288eefe1adc83ae9bafc"></a>
-template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:a5009c36c0d1f288eefe1adc83ae9bafc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_kernelbuf</b> (Args &amp;&amp;...args)</td></tr>
-<tr class="separator:a5009c36c0d1f288eefe1adc83ae9bafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff18b4fe5d040f62fd2b9a6d385a3a9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff18b4fe5d040f62fd2b9a6d385a3a9c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sync</b> () override</td></tr>
-<tr class="separator:aff18b4fe5d040f62fd2b9a6d385a3a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53707c0541ed5ad7b3f954f1733cad2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53707c0541ed5ad7b3f954f1733cad2a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>read_packet</b> () override</td></tr>
-<tr class="separator:a53707c0541ed5ad7b3f954f1733cad2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab702608e336cea9fb79550e7b1b54a61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab702608e336cea9fb79550e7b1b54a61"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>skip_packet</b> () override</td></tr>
-<tr class="separator:ab702608e336cea9fb79550e7b1b54a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ba55fce4c376bf193ebf2e7c2e1f17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9ba55fce4c376bf193ebf2e7c2e1f17"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>payload_is_ready</b> () const </td></tr>
-<tr class="separator:ae9ba55fce4c376bf193ebf2e7c2e1f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d5fa28e32749406f311e97302c2d77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12d5fa28e32749406f311e97302c2d77"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>dirty</b> () const </td></tr>
-<tr class="separator:a12d5fa28e32749406f311e97302c2d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bcca26f3af836184dc83456aa71fea0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bcca26f3af836184dc83456aa71fea0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>begin_packet</b> () override</td></tr>
-<tr class="separator:a5bcca26f3af836184dc83456aa71fea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c702f936970c773084cec8fbad9beb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0c702f936970c773084cec8fbad9beb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>end_packet</b> () override</td></tr>
-<tr class="separator:ac0c702f936970c773084cec8fbad9beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a256f54eeb8f00f5a2e85ad387e215687"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a256f54eeb8f00f5a2e85ad387e215687"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, State rhs)</td></tr>
-<tr class="separator:a256f54eeb8f00f5a2e85ad387e215687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5deb3f98b58837812f1c485747502a74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5deb3f98b58837812f1c485747502a74"></a>
+<a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a5deb3f98b58837812f1c485747502a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa718ffff97754fbc6e66d5faa4c09cb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa718ffff97754fbc6e66d5faa4c09cb6"></a>
+<a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a> &amp;)=delete</td></tr>
+<tr class="separator:aa718ffff97754fbc6e66d5faa4c09cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/travis/build/igankevich/factory/src/factory/kernel/<a class="el" href="kernelbuf_8hh_source.html">kernelbuf.hh</a></li>

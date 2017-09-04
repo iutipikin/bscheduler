@@ -296,6 +296,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_server</b> (const
 <tr class="memitem:ab957870589e57d29156c2ac682958324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab957870589e57d29156c2ac682958324"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_server</b> (const ifaddr_type &amp;ifaddr)</td></tr>
 <tr class="separator:ab957870589e57d29156c2ac682958324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059e6d9252fb2986c997a9dee6fce22d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a059e6d9252fb2986c997a9dee6fce22d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (const <a class="el" href="classfactory_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
+<tr class="separator:a059e6d9252fb2986c997a9dee6fce22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5392557306412710a87beb597549e2ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5392557306412710a87beb597549e2ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_port</b> (sys::port_type rhs) noexcept</td></tr>
 <tr class="separator:a5392557306412710a87beb597549e2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,12 +334,6 @@ server_const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>serv
 <tr class="memitem:a9c388f9abe9c62bc3ec4e71687f76c99 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c388f9abe9c62bc3ec4e71687f76c99"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *kernel)</td></tr>
 <tr class="separator:a9c388f9abe9c62bc3ec4e71687f76c99 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9660d26a088cc055a1bca2286dfb7c64 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9660d26a088cc055a1bca2286dfb7c64"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *rhs) noexcept</td></tr>
-<tr class="separator:a9660d26a088cc055a1bca2286dfb7c64 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4beae6adc1cb1804df26241bda81e4 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c4beae6adc1cb1804df26241bda81e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_number</b> (unsigned rhs) noexcept</td></tr>
-<tr class="separator:a4c4beae6adc1cb1804df26241bda81e4 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd83275cd0f05e7aba28f99198c8330 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accd83275cd0f05e7aba28f99198c8330"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type **kernels, size_t n)</td></tr>
 <tr class="separator:accd83275cd0f05e7aba28f99198c8330 inherit pub_methods_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,6 +380,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopped</b> () con
 <tr class="memitem:a34ae69556cb555d327a9cd3b0d1cc028 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ae69556cb555d327a9cd3b0d1cc028"></a>
 time_point&#160;</td><td class="memItemRight" valign="bottom"><b>start_time_point</b> () const noexcept</td></tr>
 <tr class="separator:a34ae69556cb555d327a9cd3b0d1cc028 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc08e7cf149592cab874d66cee6e928 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cc08e7cf149592cab874d66cee6e928"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const noexcept</td></tr>
+<tr class="separator:a3cc08e7cf149592cab874d66cee6e928 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14907d0b04620c4b9555b6dbedb00787 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14907d0b04620c4b9555b6dbedb00787"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *rhs) noexcept</td></tr>
+<tr class="separator:a14907d0b04620c4b9555b6dbedb00787 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50230fbb71c3c9c2584f6213d229ed1 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae50230fbb71c3c9c2584f6213d229ed1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_number</b> (unsigned rhs) noexcept</td></tr>
+<tr class="separator:ae50230fbb71c3c9c2584f6213d229ed1 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c13f571188fcf83098cc8b5a2d8fee7 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0c13f571188fcf83098cc8b5a2d8fee7"></a>
+template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a0c13f571188fcf83098cc8b5a2d8fee7 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>log</b> (const Args &amp;...args)</td></tr>
+<tr class="separator:a0c13f571188fcf83098cc8b5a2d8fee7 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -421,12 +431,6 @@ mutex_type&#160;</td><td class="memItemRight" valign="bottom"><b>_mutex</b></td>
 <tr class="memitem:acfca88bf73ee778fa22bacb9b42c664e inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfca88bf73ee778fa22bacb9b42c664e"></a>
 sem_type&#160;</td><td class="memItemRight" valign="bottom"><b>_semaphore</b></td></tr>
 <tr class="separator:acfca88bf73ee778fa22bacb9b42c664e inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45df346bfb4c0690df79a1c9be37ee4 inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab45df346bfb4c0690df79a1c9be37ee4"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b> = &quot;ppl&quot;</td></tr>
-<tr class="separator:ab45df346bfb4c0690df79a1c9be37ee4 inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7edf670100930ee4f21f63fda0fe88 inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca7edf670100930ee4f21f63fda0fe88"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_number</b> = 0</td></tr>
-<tr class="separator:aca7edf670100930ee4f21f63fda0fe88 inherit pro_attribs_classfactory_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
 <tr class="memitem:ae604e727ec986f1e31a64b4a0065649a inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae604e727ec986f1e31a64b4a0065649a"></a>
 volatile pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b> = pipeline_state::initial</td></tr>
@@ -434,6 +438,12 @@ volatile pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>_s
 <tr class="memitem:aa0119e1e2605fe39525ab458c616c880 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0119e1e2605fe39525ab458c616c880"></a>
 time_point&#160;</td><td class="memItemRight" valign="bottom"><b>_start</b></td></tr>
 <tr class="separator:aa0119e1e2605fe39525ab458c616c880 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ed1d8baeb8d2d8a560c9f92876f801 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80ed1d8baeb8d2d8a560c9f92876f801"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b> = &quot;ppl&quot;</td></tr>
+<tr class="separator:a80ed1d8baeb8d2d8a560c9f92876f801 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3b1f72a020efefce96082718d87b51 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e3b1f72a020efefce96082718d87b51"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_number</b> = 0</td></tr>
+<tr class="separator:a6e3b1f72a020efefce96082718d87b51 inherit pro_attribs_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_structfactory_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_structfactory_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline&lt; T, remote_client&lt; T, Socket, Router &gt; &gt;</a></td></tr>
 <tr class="memitem:a0bae675e3b04847567b4ed5d45dab2e0 inherit pro_static_attribs_structfactory_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bae675e3b04847567b4ed5d45dab2e0"></a>
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_STOP_ITERATIONS</b></td></tr>

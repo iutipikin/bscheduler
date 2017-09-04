@@ -16,8 +16,8 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<polygon fill="white" stroke="#bfbfbf" points="29,-56.5 29,-75.5 81,-75.5 81,-56.5 29,-56.5"/>
-<text text-anchor="middle" x="55" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">pstream</text>
+<polygon fill="white" stroke="#bfbfbf" points="18,-56.5 18,-75.5 92,-75.5 92,-56.5 18,-56.5"/>
+<text text-anchor="middle" x="55" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">sys::pstream</text>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>

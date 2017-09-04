@@ -1,7 +1,7 @@
 var searchData=
 [
   ['secret_5fagent',['Secret_agent',['../structSecret__agent.html',1,'']]],
-  ['send',['send',['../classfactory_1_1remote__client.html#ab4dae8c409771f5bc680234bfbb6f067',1,'factory::remote_client']]],
+  ['send',['send',['../classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71',1,'factory::kernel_protocol']]],
   ['sender',['Sender',['../structSender.html',1,'']]],
   ['sha1',['SHA1',['../structfactory_1_1SHA1.html',1,'factory']]],
   ['sha1test',['SHA1Test',['../structSHA1Test.html',1,'']]],

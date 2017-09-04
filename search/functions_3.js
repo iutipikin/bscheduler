@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['send',['send',['../classfactory_1_1remote__client.html#ab4dae8c409771f5bc680234bfbb6f067',1,'factory::remote_client']]]
+  ['send',['send',['../classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71',1,'factory::kernel_protocol']]]
 ];
