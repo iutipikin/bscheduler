@@ -135,13 +135,14 @@ typedef <a class="el" href="structfactory_1_1basic__socket__pipeline.html">basic
 &lt; T, <a class="el" href="classfactory_1_1process__handler.html">process_handler</a>&lt; T, <br class="typebreak"/>
 Router &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
 <tr class="separator:a532c4f2e6ac6ff7507df1f971271bcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d77afdd2f42116f1c110768317327e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d77afdd2f42116f1c110768317327e3"></a>
-typedef sys::pid_type&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b></td></tr>
-<tr class="separator:a8d77afdd2f42116f1c110768317327e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe175847137e3ec4e45eeea54bd515ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe175847137e3ec4e45eeea54bd515ca"></a>
-typedef std::map&lt; key_type, <br class="typebreak"/>
+<tr class="memitem:a2f4db1f87feb10a12c39f4c25c311ff0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4db1f87feb10a12c39f4c25c311ff0"></a>
+typedef std::map<br class="typebreak"/>
+&lt; application_type, <br class="typebreak"/>
 event_handler_ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map_type</b></td></tr>
-<tr class="separator:abe175847137e3ec4e45eeea54bd515ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a2f4db1f87feb10a12c39f4c25c311ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab0db19b7996dc2faf7517d794f693e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acab0db19b7996dc2faf7517d794f693e"></a>
+typedef map_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>app_iterator</b></td></tr>
+<tr class="separator:acab0db19b7996dc2faf7517d794f693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62fb0aaa8eb06f217375e14c72b5f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac62fb0aaa8eb06f217375e14c72b5f27"></a>
 typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
 <tr class="separator:ac62fb0aaa8eb06f217375e14c72b5f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,7 +266,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_client</b> (ev
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_kernels</b> () override</td></tr>
 <tr class="separator:aac0c0ac6596c3d008c66e40d0263ec57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa84e75fc5d7685234f266d757d9ec746"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84e75fc5d7685234f266d757d9ec746"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const <a class="el" href="structfactory_1_1Application.html">Application</a> &amp;app)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const <a class="el" href="classfactory_1_1Application.html">Application</a> &amp;app)</td></tr>
 <tr class="separator:aa84e75fc5d7685234f266d757d9ec746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae965ba3d0e7e23167de1b5f548fa7726"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae965ba3d0e7e23167de1b5f548fa7726"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_run</b> () override</td></tr>
