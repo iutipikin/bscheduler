@@ -1,19 +1,22 @@
 <map id="factory::pipeline_base" name="factory::pipeline_base">
 <area shape="rect" id="node2" href="$classfactory_1_1basic__pipeline.html" title="factory::basic_pipeline\&lt; T \&gt;" alt="" coords="203,81,387,108"/>
-<area shape="rect" id="node5" href="$classfactory_1_1basic__pipeline.html" title="factory::basic_pipeline\l\&lt; T, Kernels, Traits,\l Threads, Mutex, Lock,\l Semaphore \&gt;" alt="" coords="216,169,373,239"/>
-<area shape="rect" id="node15" href="$classfactory_1_1Factory.html" title="factory::Factory\&lt; T \&gt;" alt="" coords="221,264,368,291"/>
-<area shape="rect" id="node16" href="$classfactory_1_1Multi__pipeline.html" title="factory::Multi_pipeline\&lt; T \&gt;" alt="" coords="204,315,385,341"/>
-<area shape="rect" id="node17" href="$classfactory_1_1process__handler.html" title="factory::process_handler\l\&lt; T, Router \&gt;" alt="" coords="212,366,377,407"/>
-<area shape="rect" id="node18" href="$classfactory_1_1remote__client.html" title="factory::remote_client\l\&lt; T, Socket, Router \&gt;" alt="" coords="219,431,370,473"/>
+<area shape="rect" id="node5" href="$classfactory_1_1basic__pipeline.html" title="factory::basic_pipeline\l\&lt; T, Kernels, Traits,\l Threads, Mutex, Lock,\l Semaphore \&gt;" alt="" coords="216,209,373,279"/>
+<area shape="rect" id="node17" href="$classfactory_1_1external__process__handler.html" title="factory::external_process\l_handler\&lt; T, Router \&gt;" alt="" coords="210,303,379,345"/>
+<area shape="rect" id="node18" href="$classfactory_1_1Factory.html" title="factory::Factory\&lt; T \&gt;" alt="" coords="221,369,368,396"/>
+<area shape="rect" id="node19" href="$classfactory_1_1Multi__pipeline.html" title="factory::Multi_pipeline\&lt; T \&gt;" alt="" coords="204,420,385,447"/>
+<area shape="rect" id="node20" href="$classfactory_1_1process__handler.html" title="factory::process_handler\l\&lt; T, Router \&gt;" alt="" coords="212,471,377,513"/>
+<area shape="rect" id="node21" href="$classfactory_1_1remote__client.html" title="factory::remote_client\l\&lt; T, Socket, Router \&gt;" alt="" coords="219,537,370,578"/>
 <area shape="rect" id="node3" href="$classfactory_1_1parallel__pipeline.html" title="factory::parallel_pipeline\&lt; T \&gt;" alt="" coords="435,5,629,32"/>
 <area shape="rect" id="node4" href="$structfactory_1_1io__pipeline.html" title="factory::io_pipeline\&lt; T \&gt;" alt="" coords="683,5,845,32"/>
-<area shape="rect" id="node6" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="443,56,621,112"/>
-<area shape="rect" id="node8" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, Router \&gt; \&gt;" alt="" coords="457,136,607,192"/>
-<area shape="rect" id="node11" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="456,216,608,272"/>
-<area shape="rect" id="node13" href="$structfactory_1_1basic__socket__pipeline.html" title="factory::basic_socket\l_pipeline\&lt; T, Handler \&gt;" alt="" coords="453,295,611,337"/>
-<area shape="rect" id="node14" href="$structfactory_1_1timer__pipeline.html" title="factory::timer_pipeline\&lt; T \&gt;" alt="" coords="441,361,623,388"/>
-<area shape="rect" id="node7" href="$structfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, basic_router\l\&lt; T \&gt; \&gt;" alt="" coords="678,56,850,112"/>
-<area shape="rect" id="node9" href="$structfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, Router \&gt;" alt="" coords="688,135,840,177"/>
-<area shape="rect" id="node10" href="$structfactory_1_1process__pipeline.html" title="factory::process_pipeline\l\&lt; T, Router \&gt;" alt="" coords="681,201,847,242"/>
-<area shape="rect" id="node12" href="$structfactory_1_1socket__pipeline.html" title="factory::socket_pipeline\l\&lt; T, Socket, Router \&gt;" alt="" coords="684,266,844,307"/>
+<area shape="rect" id="node6" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, external_process\l_handler\&lt; T, Router \&gt; \&gt;" alt="" coords="451,56,613,112"/>
+<area shape="rect" id="node8" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="443,136,621,192"/>
+<area shape="rect" id="node10" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, Router \&gt; \&gt;" alt="" coords="457,216,607,272"/>
+<area shape="rect" id="node13" href="$structfactory_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="456,296,608,352"/>
+<area shape="rect" id="node15" href="$structfactory_1_1basic__socket__pipeline.html" title="factory::basic_socket\l_pipeline\&lt; T, Handler \&gt;" alt="" coords="453,375,611,417"/>
+<area shape="rect" id="node16" href="$structfactory_1_1timer__pipeline.html" title="factory::timer_pipeline\&lt; T \&gt;" alt="" coords="441,441,623,468"/>
+<area shape="rect" id="node7" href="$classfactory_1_1unix__domain__socket__pipeline.html" title="factory::unix_domain\l_socket_pipeline\&lt; T,\l Router \&gt;" alt="" coords="693,56,835,112"/>
+<area shape="rect" id="node9" href="$structfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, basic_router\l\&lt; T \&gt; \&gt;" alt="" coords="678,136,850,192"/>
+<area shape="rect" id="node11" href="$structfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, Router \&gt;" alt="" coords="688,215,840,257"/>
+<area shape="rect" id="node12" href="$classfactory_1_1process__pipeline.html" title="factory::process_pipeline\l\&lt; T, Router \&gt;" alt="" coords="681,281,847,322"/>
+<area shape="rect" id="node14" href="$structfactory_1_1socket__pipeline.html" title="factory::socket_pipeline\l\&lt; T, Socket, Router \&gt;" alt="" coords="684,346,844,387"/>
 </map>
