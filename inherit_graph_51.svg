@@ -11,9 +11,9 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-24 144,-24 144,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="structfactory_1_1Compare__time.html" target="_top" xlink:title="factory::Compare_time\&lt; T \&gt;">
-<polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 140,-19.5 140,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="70" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::Compare_time&lt; T &gt;</text>
+<g id="a_node1"><a xlink:href="structfactory_1_1bits_1_1no__router.html" target="_top" xlink:title="factory::bits::no_router\&lt; T \&gt;">
+<polygon fill="white" stroke="black" points="0.5,-0.5 0.5,-19.5 139.5,-19.5 139.5,-0.5 0.5,-0.5"/>
+<text text-anchor="middle" x="70" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::bits::no_router&lt; T &gt;</text>
 </a>
 </g>
 </g>

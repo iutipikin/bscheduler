@@ -133,11 +133,6 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b><
 <tr class="memitem:a5975bf811f0646795a0c9538a777f914"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5975bf811f0646795a0c9538a777f914"></a>
 typedef Router&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
 <tr class="separator:a5975bf811f0646795a0c9538a777f914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc0feaf665a59a8ed8b7e42e6fef2309"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc0feaf665a59a8ed8b7e42e6fef2309"></a>
-typedef sys::basic_fdstream<br class="typebreak"/>
-&lt; char, std::char_traits&lt; char &gt;<br class="typebreak"/>
-, sys::socket &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_type</b></td></tr>
-<tr class="separator:afc0feaf665a59a8ed8b7e42e6fef2309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
 <tr class="memitem:a617710c91e4f05f899c1f4bbca57bc81 inherit pub_types_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a617710c91e4f05f899c1f4bbca57bc81"></a>
 typedef std::chrono::system_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock_type</b></td></tr>
@@ -151,9 +146,15 @@ typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom">
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a935a4980645bfb0fd4c3c016073fe627"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a935a4980645bfb0fd4c3c016073fe627"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>external_process_handler</b> (const sys::endpoint &amp;e, sys::socket &amp;&amp;sock)</td></tr>
+<tr class="separator:a935a4980645bfb0fd4c3c016073fe627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb97b1dbb6f368cad42e1d0ef625f3dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb97b1dbb6f368cad42e1d0ef625f3dd"></a>
 const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>endpoint</b> () const noexcept</td></tr>
 <tr class="separator:adb97b1dbb6f368cad42e1d0ef625f3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a65eb200f551a6f2c0d3e7a24c2f77d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a65eb200f551a6f2c0d3e7a24c2f77d"></a>
+sys::socket &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () noexcept</td></tr>
+<tr class="separator:a3a65eb200f551a6f2c0d3e7a24c2f77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802828f3416bcfadcc5ca7269b309691"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a802828f3416bcfadcc5ca7269b309691"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (sys::poll_event &amp;event)</td></tr>
 <tr class="separator:a802828f3416bcfadcc5ca7269b309691"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +180,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_starting</b> () co
 <tr class="memitem:a41aa6cdf47a4ccdb042f5237e4d994d5 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41aa6cdf47a4ccdb042f5237e4d994d5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_started</b> () const noexcept</td></tr>
 <tr class="separator:a41aa6cdf47a4ccdb042f5237e4d994d5 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2e16cfb53c8dc81fac11396090e285 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e2e16cfb53c8dc81fac11396090e285"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_running</b> () const noexcept</td></tr>
+<tr class="separator:a7e2e16cfb53c8dc81fac11396090e285 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834caf7a4c9ff542ab8b84e7f7615bd1 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a834caf7a4c9ff542ab8b84e7f7615bd1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopping</b> () const noexcept</td></tr>
 <tr class="separator:a834caf7a4c9ff542ab8b84e7f7615bd1 inherit pub_methods_classfactory_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
