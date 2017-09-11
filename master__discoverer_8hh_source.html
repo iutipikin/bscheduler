@@ -118,21 +118,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">typedef</span> Address addr_type;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">typedef</span> Hierarchy hierarchy_type;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">typedef</span> Distance distance_type;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">typedef</span> sys::ifaddr&lt;addr_type&gt; network_type;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">typedef</span> sys::ifaddr&lt;addr_type&gt; ifaddr_type;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">typedef</span> sys::ipaddr_traits&lt;addr_type&gt; traits_type;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">typedef</span> std::multimap&lt;distance_type,addr_type&gt; rankedlist_type;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> rankedlist_type::iterator rankedlist_iterator;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="structNegotiator.html">Negotiator&lt;addr_type&gt;</a> <a class="code" href="structNegotiator.html">negotiator_type</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="structMaster__discoverer.html">Master_discoverer</a>(<span class="keyword">const</span> network_type&amp; network, <span class="keyword">const</span> sys::port_type port):</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _hierarchy(network, port),</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="structMaster__discoverer.html">Master_discoverer</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, <span class="keyword">const</span> sys::port_type port):</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _hierarchy(ifaddr, port),</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    _port(port),</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    _rankedhosts(),</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    _currenthost(),</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    _negotiator(<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//  _cache(_hierarchy.this_addr(), _hierarchy),</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        generate_ranked_hosts(network);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        generate_ranked_hosts(ifaddr);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="structMaster__discoverer.html">Master_discoverer</a>(<span class="keyword">const</span> <a class="code" href="structMaster__discoverer.html">Master_discoverer</a>&amp;) = <span class="keyword">delete</span>;</div>
@@ -186,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    generate_ranked_hosts(<span class="keyword">const</span> network_type&amp; rhs) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    generate_ranked_hosts(<span class="keyword">const</span> ifaddr_type&amp; rhs) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> fanout = 64;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        _rankedhosts.clear();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        std::transform(</div>
@@ -223,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    skip_this_host() {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (_currenthost != _rankedhosts.end() and _currenthost-&gt;second == _hierarchy.network().address()) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (_currenthost != _rankedhosts.end() and _currenthost-&gt;second == _hierarchy.ifaddr().address()) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            ++_currenthost;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>

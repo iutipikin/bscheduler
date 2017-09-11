@@ -120,9 +120,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8a8a4a7d451b08f1ba28d565422fd7a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a8a4a7d451b08f1ba28d565422fd7a3"></a>
 typedef Addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_type</b></td></tr>
 <tr class="separator:a8a8a4a7d451b08f1ba28d565422fd7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a384f005b3b0e136c806dd9881b415"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89a384f005b3b0e136c806dd9881b415"></a>
-typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>network_type</b></td></tr>
-<tr class="separator:a89a384f005b3b0e136c806dd9881b415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027e7c72492495fb0cae67a163858a0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a027e7c72492495fb0cae67a163858a0f"></a>
+typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
+<tr class="separator:a027e7c72492495fb0cae67a163858a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c83b3550d1c9f105fed4b3b775dff5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c83b3550d1c9f105fed4b3b775dff5"></a>
 typedef std::set<br class="typebreak"/>
 &lt; sys::endpoint &gt;::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
@@ -130,18 +130,18 @@ typedef std::set<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa66621a5c02fc40dd603673fc982d900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa66621a5c02fc40dd603673fc982d900"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (const network_type &amp;net, const sys::port_type port)</td></tr>
-<tr class="separator:aa66621a5c02fc40dd603673fc982d900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1f6b588c105d50e9bad1991751479b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba1f6b588c105d50e9bad1991751479b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (const ifaddr_type &amp;net, const sys::port_type port)</td></tr>
+<tr class="separator:aba1f6b588c105d50e9bad1991751479b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fb8ac487744ecf74640bbe9b3961e12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fb8ac487744ecf74640bbe9b3961e12"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (const <a class="el" href="structdiscovery_1_1Hierarchy.html">Hierarchy</a> &amp;)=default</td></tr>
 <tr class="separator:a6fb8ac487744ecf74640bbe9b3961e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2b4c41ff909ea8531eccd249ad1f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c2b4c41ff909ea8531eccd249ad1f27"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (<a class="el" href="structdiscovery_1_1Hierarchy.html">Hierarchy</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a1c2b4c41ff909ea8531eccd249ad1f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e193d3f745442321809d5d90c757ad7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e193d3f745442321809d5d90c757ad7"></a>
-const network_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>network</b> () const noexcept</td></tr>
-<tr class="separator:a7e193d3f745442321809d5d90c757ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6074f0ea55d14f7d2e83d9224d00fbab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6074f0ea55d14f7d2e83d9224d00fbab"></a>
+const ifaddr_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr</b> () const noexcept</td></tr>
+<tr class="separator:a6074f0ea55d14f7d2e83d9224d00fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97e0c453953b2ff3037f065cc7395104"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97e0c453953b2ff3037f065cc7395104"></a>
 const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>bindaddr</b> () const noexcept</td></tr>
 <tr class="separator:a97e0c453953b2ff3037f065cc7395104"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,9 +166,9 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><b>num_subordinates
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a540623ea575f4c430c18cc229fd8f421"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a540623ea575f4c430c18cc229fd8f421"></a>
-network_type&#160;</td><td class="memItemRight" valign="bottom"><b>_network</b></td></tr>
-<tr class="separator:a540623ea575f4c430c18cc229fd8f421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4515f3d3f89094247b6e8f477426a8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4515f3d3f89094247b6e8f477426a8b"></a>
+ifaddr_type&#160;</td><td class="memItemRight" valign="bottom"><b>_ifaddr</b></td></tr>
+<tr class="separator:aa4515f3d3f89094247b6e8f477426a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4c396b687b33082bb8a92980aec353"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a4c396b687b33082bb8a92980aec353"></a>
 sys::endpoint&#160;</td><td class="memItemRight" valign="bottom"><b>_bindaddr</b></td></tr>
 <tr class="separator:a7a4c396b687b33082bb8a92980aec353"><td class="memSeparator" colspan="2">&#160;</td></tr>
