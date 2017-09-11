@@ -19,5 +19,5 @@
 <area shape="rect" id="node9" href="$classfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, basic_router\l\&lt; T \&gt; \&gt;" alt="" coords="699,140,871,196"/>
 <area shape="rect" id="node11" href="$classfactory_1_1child__process__pipeline.html" title="factory::child_process\l_pipeline\&lt; T, Router \&gt;" alt="" coords="709,219,861,261"/>
 <area shape="rect" id="node12" href="$classfactory_1_1process__pipeline.html" title="factory::process_pipeline\l\&lt; T, Router \&gt;" alt="" coords="702,285,869,326"/>
-<area shape="rect" id="node14" href="$structfactory_1_1socket__pipeline.html" title="factory::socket_pipeline\l\&lt; T, Socket, Router \&gt;" alt="" coords="705,350,865,391"/>
+<area shape="rect" id="node14" href="$classfactory_1_1socket__pipeline.html" title="factory::socket_pipeline\l\&lt; T, Socket, Router \&gt;" alt="" coords="705,350,865,391"/>
 </map>
