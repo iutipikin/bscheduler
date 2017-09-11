@@ -241,7 +241,7 @@
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="structfactory_1_1child__process__pipeline.html" target="_top" xlink:title="factory::child_process\l_pipeline\&lt; T, basic_router\l\&lt; T \&gt; \&gt;">
+<g id="a_node9"><a xlink:href="classfactory_1_1child__process__pipeline.html" target="_top" xlink:title="factory::child_process\l_pipeline\&lt; T, basic_router\l\&lt; T \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="504.5,-289.5 504.5,-330.5 633.5,-330.5 633.5,-289.5 504.5,-289.5"/>
 <text text-anchor="start" x="512.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">factory::child_process</text>
 <text text-anchor="start" x="512.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">_pipeline&lt; T, basic_router</text>
@@ -256,7 +256,7 @@
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="structfactory_1_1child__process__pipeline.html" target="_top" xlink:title="factory::child_process\l_pipeline\&lt; T, Router \&gt;">
+<g id="a_node11"><a xlink:href="classfactory_1_1child__process__pipeline.html" target="_top" xlink:title="factory::child_process\l_pipeline\&lt; T, Router \&gt;">
 <polygon fill="white" stroke="black" points="512,-241 512,-271 626,-271 626,-241 512,-241"/>
 <text text-anchor="start" x="520" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">factory::child_process</text>
 <text text-anchor="middle" x="569" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00">_pipeline&lt; T, Router &gt;</text>
