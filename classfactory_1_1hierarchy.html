@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: discovery::Hierarchy&lt; Addr &gt; Struct Template Reference</title>
+        <title>Factory: factory::hierarchy&lt; Addr &gt; Class Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>discovery</b></li><li class="navelem"><a class="el" href="structdiscovery_1_1Hierarchy.html">Hierarchy</a></li>  </ul>
+<li class="navelem"><b>factory</b></li><li class="navelem"><a class="el" href="classfactory_1_1hierarchy.html">hierarchy</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -109,84 +109,88 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="structdiscovery_1_1Hierarchy-members.html">List of all members</a>  </div>
+<a href="classfactory_1_1hierarchy-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">discovery::Hierarchy&lt; Addr &gt; Struct Template Reference</div>  </div>
+<div class="title">factory::hierarchy&lt; Addr &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8a8a4a7d451b08f1ba28d565422fd7a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a8a4a7d451b08f1ba28d565422fd7a3"></a>
+<tr class="memitem:abf0b2b65195860d77728873def36ca0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf0b2b65195860d77728873def36ca0e"></a>
 typedef Addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_type</b></td></tr>
-<tr class="separator:a8a8a4a7d451b08f1ba28d565422fd7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027e7c72492495fb0cae67a163858a0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a027e7c72492495fb0cae67a163858a0f"></a>
+<tr class="separator:abf0b2b65195860d77728873def36ca0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eae60183defe571779746ad077abc08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eae60183defe571779746ad077abc08"></a>
 typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
-<tr class="separator:a027e7c72492495fb0cae67a163858a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c83b3550d1c9f105fed4b3b775dff5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c83b3550d1c9f105fed4b3b775dff5"></a>
-typedef std::set<br class="typebreak"/>
-&lt; sys::endpoint &gt;::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
-<tr class="separator:a27c83b3550d1c9f105fed4b3b775dff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3eae60183defe571779746ad077abc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd337b2721edfb9a20af64fc81ab6e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcd337b2721edfb9a20af64fc81ab6e3"></a>
+typedef std::unordered_set<br class="typebreak"/>
+&lt; sys::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>container_type</b></td></tr>
+<tr class="separator:afcd337b2721edfb9a20af64fc81ab6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633682f5f46567fd7db220d07eb5272f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633682f5f46567fd7db220d07eb5272f"></a>
+typedef container_type::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
+<tr class="separator:a633682f5f46567fd7db220d07eb5272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aba1f6b588c105d50e9bad1991751479b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba1f6b588c105d50e9bad1991751479b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (const ifaddr_type &amp;net, const sys::port_type port)</td></tr>
-<tr class="separator:aba1f6b588c105d50e9bad1991751479b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fb8ac487744ecf74640bbe9b3961e12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fb8ac487744ecf74640bbe9b3961e12"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (const <a class="el" href="structdiscovery_1_1Hierarchy.html">Hierarchy</a> &amp;)=default</td></tr>
-<tr class="separator:a6fb8ac487744ecf74640bbe9b3961e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2b4c41ff909ea8531eccd249ad1f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c2b4c41ff909ea8531eccd249ad1f27"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Hierarchy</b> (<a class="el" href="structdiscovery_1_1Hierarchy.html">Hierarchy</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a1c2b4c41ff909ea8531eccd249ad1f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6074f0ea55d14f7d2e83d9224d00fbab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6074f0ea55d14f7d2e83d9224d00fbab"></a>
+<tr class="memitem:a372469e6c9089e5568b3d3913b3c0eff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a372469e6c9089e5568b3d3913b3c0eff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hierarchy</b> (const ifaddr_type &amp;ifaddr, const sys::port_type port)</td></tr>
+<tr class="separator:a372469e6c9089e5568b3d3913b3c0eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7430203a3b950be88ed7e81a0f8c9516"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7430203a3b950be88ed7e81a0f8c9516"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hierarchy</b> (const <a class="el" href="classfactory_1_1hierarchy.html">hierarchy</a> &amp;)=default</td></tr>
+<tr class="separator:a7430203a3b950be88ed7e81a0f8c9516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb76023761c3038836c45ad843b54ecc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb76023761c3038836c45ad843b54ecc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hierarchy</b> (<a class="el" href="classfactory_1_1hierarchy.html">hierarchy</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:abb76023761c3038836c45ad843b54ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68862ab45871ea5e25d3a922a24b980"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab68862ab45871ea5e25d3a922a24b980"></a>
 const ifaddr_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr</b> () const noexcept</td></tr>
-<tr class="separator:a6074f0ea55d14f7d2e83d9224d00fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e0c453953b2ff3037f065cc7395104"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97e0c453953b2ff3037f065cc7395104"></a>
-const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>bindaddr</b> () const noexcept</td></tr>
-<tr class="separator:a97e0c453953b2ff3037f065cc7395104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6335d96de578cfdf343fec584d70f91b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6335d96de578cfdf343fec584d70f91b"></a>
+<tr class="separator:ab68862ab45871ea5e25d3a922a24b980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841c94f4b97f35943069593fc4a24b12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a841c94f4b97f35943069593fc4a24b12"></a>
+const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>endpoint</b> () const noexcept</td></tr>
+<tr class="separator:a841c94f4b97f35943069593fc4a24b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dad4edb32ba4ead0f53fa07219394a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dad4edb32ba4ead0f53fa07219394a5"></a>
 const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>principal</b> () const noexcept</td></tr>
-<tr class="separator:a6335d96de578cfdf343fec584d70f91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa521c61168db24d9adaa94e8e09800"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaa521c61168db24d9adaa94e8e09800"></a>
+<tr class="separator:a1dad4edb32ba4ead0f53fa07219394a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18591230c5ed2832d3cac85c471f2fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac18591230c5ed2832d3cac85c471f2fe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unset_principal</b> () noexcept</td></tr>
-<tr class="separator:abaa521c61168db24d9adaa94e8e09800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8683407deeec88446362e8cdedb46a00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8683407deeec88446362e8cdedb46a00"></a>
+<tr class="separator:ac18591230c5ed2832d3cac85c471f2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51b8e86b55c707dda0576f8545d1fc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af51b8e86b55c707dda0576f8545d1fc2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_principal</b> (const sys::endpoint &amp;new_princ)</td></tr>
-<tr class="separator:a8683407deeec88446362e8cdedb46a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885a896439f0baaac2b93954bb44e84b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a885a896439f0baaac2b93954bb44e84b"></a>
+<tr class="separator:af51b8e86b55c707dda0576f8545d1fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11afe0679ee99b059376be820f41a9fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11afe0679ee99b059376be820f41a9fa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_subordinate</b> (const sys::endpoint &amp;addr)</td></tr>
-<tr class="separator:a885a896439f0baaac2b93954bb44e84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c7fccb65f0e0c279ca30adce124756"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44c7fccb65f0e0c279ca30adce124756"></a>
+<tr class="separator:a11afe0679ee99b059376be820f41a9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d113d13c0abf923462eb7fe24f59fdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d113d13c0abf923462eb7fe24f59fdf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_subordinate</b> (const sys::endpoint &amp;addr)</td></tr>
-<tr class="separator:a44c7fccb65f0e0c279ca30adce124756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa08c21aa0db8eaf67d729cfbb373a477"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa08c21aa0db8eaf67d729cfbb373a477"></a>
+<tr class="separator:a2d113d13c0abf923462eb7fe24f59fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b0660638fff8dcf48fd2d5252c6e5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56b0660638fff8dcf48fd2d5252c6e5f"></a>
 size_type&#160;</td><td class="memItemRight" valign="bottom"><b>num_subordinates</b> () const noexcept</td></tr>
-<tr class="separator:aa08c21aa0db8eaf67d729cfbb373a477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a56b0660638fff8dcf48fd2d5252c6e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa4515f3d3f89094247b6e8f477426a8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4515f3d3f89094247b6e8f477426a8b"></a>
+<tr class="memitem:ad1eb41d96568247619626d252234c720"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1eb41d96568247619626d252234c720"></a>
 ifaddr_type&#160;</td><td class="memItemRight" valign="bottom"><b>_ifaddr</b></td></tr>
-<tr class="separator:aa4515f3d3f89094247b6e8f477426a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4c396b687b33082bb8a92980aec353"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a4c396b687b33082bb8a92980aec353"></a>
-sys::endpoint&#160;</td><td class="memItemRight" valign="bottom"><b>_bindaddr</b></td></tr>
-<tr class="separator:a7a4c396b687b33082bb8a92980aec353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3444cb24a968b302eaa3384b4e896068"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3444cb24a968b302eaa3384b4e896068"></a>
+<tr class="separator:ad1eb41d96568247619626d252234c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40b75b7ec8339b9aed930a565a7cd1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa40b75b7ec8339b9aed930a565a7cd1a"></a>
+sys::endpoint&#160;</td><td class="memItemRight" valign="bottom"><b>_endpoint</b></td></tr>
+<tr class="separator:aa40b75b7ec8339b9aed930a565a7cd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0686ea428a50629067b088c937a474c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0686ea428a50629067b088c937a474c4"></a>
 sys::endpoint&#160;</td><td class="memItemRight" valign="bottom"><b>_principal</b></td></tr>
-<tr class="separator:a3444cb24a968b302eaa3384b4e896068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68fc5330ea456a0ed7b913ac0889359"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68fc5330ea456a0ed7b913ac0889359"></a>
-std::set&lt; sys::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_subordinates</b></td></tr>
-<tr class="separator:aa68fc5330ea456a0ed7b913ac0889359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0686ea428a50629067b088c937a474c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b518f244972f92cc050bf57e30549c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38b518f244972f92cc050bf57e30549c"></a>
+container_type&#160;</td><td class="memItemRight" valign="bottom"><b>_subordinates</b></td></tr>
+<tr class="separator:a38b518f244972f92cc050bf57e30549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a046310d0f0207a9ff818ec9f186049ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a046310d0f0207a9ff818ec9f186049ae"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="structdiscovery_1_1Hierarchy.html">Hierarchy</a> &amp;rhs)</td></tr>
-<tr class="separator:a046310d0f0207a9ff818ec9f186049ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8619e41d34fe34fdf426b9292709a596"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8619e41d34fe34fdf426b9292709a596"></a>
+template&lt;class X &gt; </td></tr>
+<tr class="memitem:a8619e41d34fe34fdf426b9292709a596"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classfactory_1_1hierarchy.html">hierarchy</a>&lt; X &gt; &amp;rhs)</td></tr>
+<tr class="separator:a8619e41d34fe34fdf426b9292709a596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/travis/build/igankevich/factory/src/apps/discovery/<a class="el" href="discovery_2hierarchy_8hh_source.html">hierarchy.hh</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/travis/build/igankevich/factory/src/apps/factory/<a class="el" href="factory_2hierarchy_8hh_source.html">hierarchy.hh</a></li>
 </ul>
 </div><!-- contents -->
 
