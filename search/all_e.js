@@ -7,6 +7,7 @@ var searchData=
   ['pipeline_5fbase',['pipeline_base',['../classfactory_1_1pipeline__base.html',1,'factory']]],
   ['point',['Point',['../structdiscovery_1_1Point.html',1,'discovery']]],
   ['poly',['Poly',['../classautoreg_1_1Poly.html',1,'autoreg']]],
+  ['position_5fin_5ftree',['position_in_tree',['../classfactory_1_1position__in__tree.html',1,'factory']]],
   ['priority_5fkernel',['Priority_kernel',['../structfactory_1_1Priority__kernel.html',1,'factory']]],
   ['process_5fhandler',['process_handler',['../classfactory_1_1process__handler.html',1,'factory']]],
   ['process_5fpipeline',['process_pipeline',['../classfactory_1_1process__pipeline.html',1,'factory']]]
