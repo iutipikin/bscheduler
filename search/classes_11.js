@@ -5,5 +5,6 @@ var searchData=
   ['timer_5fpipeline',['timer_pipeline',['../structfactory_1_1timer__pipeline.html',1,'factory']]],
   ['topology',['Topology',['../structTopology.html',1,'']]],
   ['tree_5fhierarchy_5fiterator',['tree_hierarchy_iterator',['../classfactory_1_1tree__hierarchy__iterator.html',1,'factory']]],
+  ['tree_5fhierarchy_5fiterator_3c_20addr_5ftype_20_3e',['tree_hierarchy_iterator&lt; addr_type &gt;',['../classfactory_1_1tree__hierarchy__iterator.html',1,'factory']]],
   ['typepair',['TypePair',['../structTypePair.html',1,'']]]
 ];
