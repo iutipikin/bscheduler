@@ -220,52 +220,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        decrement_layer() noexcept {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            --this-&gt;_layer;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            this-&gt;_offset = 0;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        pos_type</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        num_nodes() const noexcept;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        pos_type</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        to_position_in_address_range() const noexcept;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        template &lt;class X&gt;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        friend std::ostream&amp;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        operator&lt;&lt;(std::ostream&amp; out, const position_in_tree&lt;X&gt;&amp; rhs);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (this-&gt;_layer &gt; 0) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                --this-&gt;_layer;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                this-&gt;_offset = 0;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        pos_type</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        num_nodes() const noexcept;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        pos_type</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        to_position_in_address_range() const noexcept;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        template &lt;class X&gt;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        friend std::ostream&amp;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        operator&lt;&lt;(std::ostream&amp; out, const position_in_tree&lt;X&gt;&amp; rhs);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    template &lt;class Addr&gt;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    std::ostream&amp;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, const position_in_tree&lt;Addr&gt;&amp; rhs);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    };</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    template &lt;class Addr&gt;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    std::ostream&amp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, const position_in_tree&lt;Addr&gt;&amp; rhs);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;namespace std {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Addr&gt;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01factory_1_1position__in__tree_3_01Addr_01_4_01_4.html">  142</a></span>&#160;    <span class="keyword">struct </span>hash&lt;factory::position_in_tree&lt;Addr&gt;&gt;:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">public</span> std::hash&lt;typename factory::position_in_tree&lt;Addr&gt;::pos_type&gt; {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> result_type;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1position__in__tree.html">factory::position_in_tree&lt;Addr&gt;</a> <a class="code" href="classfactory_1_1position__in__tree.html">argument_type</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> factory::position_in_tree&lt;Addr&gt;::pos_type pos_type;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">inline</span> result_type</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        operator()(<span class="keyword">const</span> <a class="code" href="classfactory_1_1position__in__tree.html">argument_type</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keyword">typedef</span> std::hash&lt;pos_type&gt; tp;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                tp::operator()(rhs.layer()) ^</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                tp::operator()(rhs.offset());</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;namespace std {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Addr&gt;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01factory_1_1position__in__tree_3_01Addr_01_4_01_4.html">  144</a></span>&#160;    <span class="keyword">struct </span>hash&lt;factory::position_in_tree&lt;Addr&gt;&gt;:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">public</span> std::hash&lt;typename factory::position_in_tree&lt;Addr&gt;::pos_type&gt; {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> result_type;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1position__in__tree.html">factory::position_in_tree&lt;Addr&gt;</a> <a class="code" href="classfactory_1_1position__in__tree.html">argument_type</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> factory::position_in_tree&lt;Addr&gt;::pos_type pos_type;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">inline</span> result_type</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        operator()(<span class="keyword">const</span> <a class="code" href="classfactory_1_1position__in__tree.html">argument_type</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keyword">typedef</span> std::hash&lt;pos_type&gt; tp;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                tp::operator()(rhs.layer()) ^</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                tp::operator()(rhs.offset());</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    };</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    };</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
 <div class="ttc" id="classfactory_1_1position__in__tree_html"><div class="ttname"><a href="classfactory_1_1position__in__tree.html">factory::position_in_tree</a></div><div class="ttdef"><b>Definition:</b> position_in_tree.hh:13</div></div>
 <div class="ttc" id="classfactory_1_1position__in__tree_html_ac2567df923f343abbc71b0531396089b"><div class="ttname"><a href="classfactory_1_1position__in__tree.html#ac2567df923f343abbc71b0531396089b">factory::position_in_tree::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const position_in_tree &amp;rhs) const noexcept</div><div class="ttdoc">N.B. Fanout is not used in this method. </div><div class="ttdef"><b>Definition:</b> position_in_tree.hh:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
