@@ -4,12 +4,15 @@
 <area shape="rect" id="node4" href="$structfactory_1_1api_1_1Map.html" title="factory::api::Map\&lt;\l F, G, I \&gt;" alt="" coords="152,107,280,149"/>
 <area shape="rect" id="node5" href="$structfactory_1_1api_1_1Map_1_1Worker.html" title="factory::api::Map\&lt;\l F, G, I \&gt;::Worker" alt="" coords="152,173,280,214"/>
 <area shape="rect" id="node6" href="$classfactory_1_1api_1_1Notification.html" title="factory::api::Notification" alt="" coords="135,239,297,265"/>
-<area shape="rect" id="node7" href="$classfactory_1_1master__discoverer.html" title="factory::master_discoverer" alt="" coords="127,289,305,316"/>
-<area shape="rect" id="node8" href="$classfactory_1_1resident__kernel.html" title="factory::resident_kernel" alt="" coords="137,340,295,367"/>
-<area shape="rect" id="node9" href="$classfactoryd_1_1network__master.html" title="factoryd::network_master" alt="" coords="131,391,301,417"/>
-<area shape="rect" id="node10" href="$classfactoryd_1_1network__timer.html" title="factoryd::network_timer" alt="" coords="137,441,295,468"/>
-<area shape="rect" id="node11" href="$structLauncher.html" title="Launcher" alt="" coords="179,492,253,519"/>
-<area shape="rect" id="node12" href="$structPing.html" title="Ping" alt="" coords="192,543,240,569"/>
-<area shape="rect" id="node13" href="$structPing__pong.html" title="Ping_pong" alt="" coords="175,593,257,620"/>
-<area shape="rect" id="node14" href="$structYear__kernel.html" title="Year_kernel" alt="" coords="171,644,261,671"/>
+<area shape="rect" id="node7" href="$classfactory_1_1discovery__timer.html" title="factory::discovery\l_timer" alt="" coords="153,290,279,331"/>
+<area shape="rect" id="node8" href="$classfactory_1_1network__master.html" title="factory::network_master" alt="" coords="135,356,297,383"/>
+<area shape="rect" id="node9" href="$classfactory_1_1network__timer.html" title="factory::network_timer" alt="" coords="140,407,292,433"/>
+<area shape="rect" id="node10" href="$classfactory_1_1probe.html" title="factory::probe" alt="" coords="165,457,267,484"/>
+<area shape="rect" id="node11" href="$classfactory_1_1prober.html" title="factory::prober" alt="" coords="163,508,269,535"/>
+<area shape="rect" id="node12" href="$classfactory_1_1resident__kernel.html" title="factory::resident_kernel" alt="" coords="137,559,295,585"/>
+<area shape="rect" id="node14" href="$structLauncher.html" title="Launcher" alt="" coords="179,609,253,636"/>
+<area shape="rect" id="node15" href="$structPing.html" title="Ping" alt="" coords="192,660,240,687"/>
+<area shape="rect" id="node16" href="$structPing__pong.html" title="Ping_pong" alt="" coords="175,711,257,737"/>
+<area shape="rect" id="node17" href="$structYear__kernel.html" title="Year_kernel" alt="" coords="171,761,261,788"/>
+<area shape="rect" id="node13" href="$classfactory_1_1master__discoverer.html" title="factory::master_discoverer" alt="" coords="369,559,546,585"/>
 </map>

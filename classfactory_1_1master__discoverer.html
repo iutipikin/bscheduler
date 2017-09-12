@@ -115,13 +115,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for factory::master_discoverer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfactory_1_1master__discoverer__inherit__graph.svg" width="187" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfactory_1_1master__discoverer__inherit__graph.svg" width="187" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for factory::master_discoverer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfactory_1_1master__discoverer__coll__graph.svg" width="187" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfactory_1_1master__discoverer__coll__graph.svg" width="187" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -130,6 +130,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9991eaa664d1e76be23eb23b9c0f59d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9991eaa664d1e76be23eb23b9c0f59d6"></a>
 typedef sys::ipv4_addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_type</b></td></tr>
 <tr class="separator:a9991eaa664d1e76be23eb23b9c0f59d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35cffd57df8c2f050c0d72397712a1c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35cffd57df8c2f050c0d72397712a1c7"></a>
+typedef addr_type::rep_type&#160;</td><td class="memItemRight" valign="bottom"><b>uint_type</b></td></tr>
+<tr class="separator:a35cffd57df8c2f050c0d72397712a1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad094b968ea958fcd24d21a970540702b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad094b968ea958fcd24d21a970540702b"></a>
 typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
 <tr class="separator:ad094b968ea958fcd24d21a970540702b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,21 +144,51 @@ typedef <br class="typebreak"/>
 <tr class="memitem:a6c9a90b7f357425ea4160bb502a0f4c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c9a90b7f357425ea4160bb502a0f4c9"></a>
 typedef <a class="el" href="classfactory_1_1hierarchy.html">hierarchy</a>&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hierarchy_type</b></td></tr>
 <tr class="separator:a6c9a90b7f357425ea4160bb502a0f4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3543c95221e79bbd9a216b7a08bf6aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3543c95221e79bbd9a216b7a08bf6aaf"></a>
+typedef std::chrono::system_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock_type</b></td></tr>
+<tr class="separator:a3543c95221e79bbd9a216b7a08bf6aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0514923b6e24bbf96f5b3709d72e0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c0514923b6e24bbf96f5b3709d72e0f"></a>
+typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="separator:a6c0514923b6e24bbf96f5b3709d72e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a464f6dd769bc31fa19229d76777d64c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a464f6dd769bc31fa19229d76777d64c6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>master_discoverer</b> (const ifaddr_type &amp;ifaddr, const sys::port_type port)</td></tr>
 <tr class="separator:a464f6dd769bc31fa19229d76777d64c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e876255d21c2eee30a046f9462e0f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77e876255d21c2eee30a046f9462e0f6"></a>
+<tr class="memitem:a208199f8ded92a79e67d0746a4936dd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a208199f8ded92a79e67d0746a4936dd9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_start</b> () override</td></tr>
+<tr class="separator:a208199f8ded92a79e67d0746a4936dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29999aeafbda3b891435e81b763af568"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29999aeafbda3b891435e81b763af568"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_kernel</b> (factory::api::Kernel *k) override</td></tr>
+<tr class="separator:a29999aeafbda3b891435e81b763af568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfactory_1_1resident__kernel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfactory_1_1resident__kernel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfactory_1_1resident__kernel.html">factory::resident_kernel</a></td></tr>
+<tr class="memitem:a24f6193a6165982b08301d15551d33d5 inherit pub_methods_classfactory_1_1resident__kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24f6193a6165982b08301d15551d33d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="separator:a24f6193a6165982b08301d15551d33d5 inherit pub_methods_classfactory_1_1resident__kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9610ca6289722ffd43aea067adaf5cf1 inherit pub_methods_classfactory_1_1resident__kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9610ca6289722ffd43aea067adaf5cf1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="separator:a9610ca6289722ffd43aea067adaf5cf1 inherit pub_methods_classfactory_1_1resident__kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdf46cdf959d550788fc1fbe1f2cd46 inherit pub_methods_classfactory_1_1resident__kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cdf46cdf959d550788fc1fbe1f2cd46"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>act</b> () override</td></tr>
-<tr class="separator:a77e876255d21c2eee30a046f9462e0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed06b9dea00acc4a6ba871724ed997fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed06b9dea00acc4a6ba871724ed997fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>react</b> (factory::api::Kernel *k) override</td></tr>
-<tr class="separator:aed06b9dea00acc4a6ba871724ed997fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a2cdf46cdf959d550788fc1fbe1f2cd46 inherit pub_methods_classfactory_1_1resident__kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a3f9092d62bf6012656db36fdf925e inherit pub_methods_classfactory_1_1resident__kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33a3f9092d62bf6012656db36fdf925e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>react</b> (factory::api::Kernel *kernel) override</td></tr>
+<tr class="separator:a33a3f9092d62bf6012656db36fdf925e inherit pub_methods_classfactory_1_1resident__kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classfactory_1_1resident__kernel"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfactory_1_1resident__kernel')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfactory_1_1resident__kernel.html">factory::resident_kernel</a></td></tr>
+<tr class="memitem:a1281a27b448357f927ff67ad5b4ee40b inherit pro_methods_classfactory_1_1resident__kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1281a27b448357f927ff67ad5b4ee40b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_stop</b> ()</td></tr>
+<tr class="separator:a1281a27b448357f927ff67ad5b4ee40b inherit pro_methods_classfactory_1_1resident__kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acc192feccd261d66b59a21c66925a1 inherit pro_methods_classfactory_1_1resident__kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6acc192feccd261d66b59a21c66925a1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_kernel</b> (factory::api::Kernel *kernel)</td></tr>
+<tr class="separator:a6acc192feccd261d66b59a21c66925a1 inherit pro_methods_classfactory_1_1resident__kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/travis/build/igankevich/factory/src/apps/factory/<a class="el" href="factory_2master__discoverer_8hh_source.html">master_discoverer.hh</a></li>
+<li>/home/travis/build/igankevich/factory/src/apps/factory/master_discoverer.cc</li>
 </ul>
 </div><!-- contents -->
 
