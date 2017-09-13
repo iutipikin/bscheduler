@@ -115,96 +115,118 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/ipv4_addr&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;factory/api.hh&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;hierarchy.hh&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;probe.hh&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;prober.hh&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;resident_kernel.hh&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;tree_hierarchy_iterator.hh&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>factory {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfactory_1_1discovery__timer.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1discovery__timer.html">discovery_timer</a>: <span class="keyword">public</span> factory::api::Kernel {};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">enum class</span> probe_result {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        add_subordinate = 0,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        remove_subordinate,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        reject_subordinate,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        retain</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::ostream&amp;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, probe_result rhs);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfactory_1_1master__discoverer.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1master__discoverer.html">master_discoverer</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1resident__kernel.html">resident_kernel</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">typedef</span> sys::ipv4_addr addr_type;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">typedef</span> addr_type::rep_type uint_type;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">typedef</span> sys::ifaddr&lt;addr_type&gt; ifaddr_type;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1tree__hierarchy__iterator.html">tree_hierarchy_iterator&lt;addr_type&gt;</a> <a class="code" href="classfactory_1_1tree__hierarchy__iterator.html">iterator</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1hierarchy.html">hierarchy&lt;addr_type&gt;</a> <a class="code" href="classfactory_1_1hierarchy.html">hierarchy_type</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">typedef</span> std::chrono::system_clock clock_type;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">typedef</span> clock_type::duration duration;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        duration _interval = std::chrono::minutes(1);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        uint_type _fanout = 10000;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html">hierarchy_type</a> _hierarchy;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classfactory_1_1tree__hierarchy__iterator.html">iterator</a> _iterator, _end;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classfactory_1_1discovery__timer.html">discovery_timer</a>* _timer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classfactory_1_1master__discoverer.html">master_discoverer</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, <span class="keyword">const</span> sys::port_type port):</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        _hierarchy(ifaddr, port),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        _iterator(ifaddr, this-&gt;_fanout)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        on_start() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        on_kernel(factory::api::Kernel* k) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/socket_pipeline_event.hh&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;hierarchy.hh&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;probe.hh&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;prober.hh&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;resident_kernel.hh&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;tree_hierarchy_iterator.hh&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfactory_1_1discovery__timer.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1discovery__timer.html">discovery_timer</a>: <span class="keyword">public</span> factory::api::Kernel {};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">enum class</span> probe_result {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        add_subordinate = 0,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        remove_subordinate,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        reject_subordinate,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        retain</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::ostream&amp;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, probe_result rhs);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classfactory_1_1master__discoverer.html">   35</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1master__discoverer.html">master_discoverer</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1resident__kernel.html">resident_kernel</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">typedef</span> sys::ipv4_addr addr_type;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">typedef</span> addr_type::rep_type uint_type;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">typedef</span> sys::ifaddr&lt;addr_type&gt; ifaddr_type;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1tree__hierarchy__iterator.html">tree_hierarchy_iterator&lt;addr_type&gt;</a> <a class="code" href="classfactory_1_1tree__hierarchy__iterator.html">iterator</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1hierarchy.html">hierarchy&lt;addr_type&gt;</a> <a class="code" href="classfactory_1_1hierarchy.html">hierarchy_type</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">typedef</span> std::chrono::system_clock clock_type;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">typedef</span> clock_type::duration duration;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">enum class</span> state_type {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            initial,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            waiting,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            probing</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        duration _interval = std::chrono::minutes(1);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        uint_type _fanout = 10000;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html">hierarchy_type</a> _hierarchy;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classfactory_1_1tree__hierarchy__iterator.html">iterator</a> _iterator, _end;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classfactory_1_1discovery__timer.html">discovery_timer</a>* _timer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        state_type _state = state_type::initial;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">inline</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classfactory_1_1master__discoverer.html">master_discoverer</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, <span class="keyword">const</span> sys::port_type port):</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        _hierarchy(ifaddr, port),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        _iterator(ifaddr, this-&gt;_fanout)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">const</span> ifaddr_type&amp;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        ifaddr() <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> this-&gt;_hierarchy.ifaddr();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        sys::port_type</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        port() <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> this-&gt;_hierarchy.port();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        probe_next_node();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        on_start() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        on_kernel(factory::api::Kernel* k) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">const</span> ifaddr_type&amp;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        ifaddr() <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> this-&gt;_hierarchy.ifaddr();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        send_timer();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        update_subordinates(<a class="code" href="classfactory_1_1probe.html">probe</a>* p);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        probe_result</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        process_probe(<a class="code" href="classfactory_1_1probe.html">probe</a>* p);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        update_principal(<a class="code" href="classfactory_1_1prober.html">prober</a>* p);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        sys::port_type</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        port() <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> this-&gt;_hierarchy.port();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        probe_next_node();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        send_timer();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        update_subordinates(<a class="code" href="classfactory_1_1probe.html">probe</a>* p);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        probe_result</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        process_probe(<a class="code" href="classfactory_1_1probe.html">probe</a>* p);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classfactory_1_1discovery__timer_html"><div class="ttname"><a href="classfactory_1_1discovery__timer.html">factory::discovery_timer</a></div><div class="ttdef"><b>Definition:</b> master_discoverer.hh:22</div></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        update_principal(<a class="code" href="classfactory_1_1prober.html">prober</a>* p);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        setstate(state_type rhs) noexcept {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            this-&gt;_state = rhs;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">inline</span> state_type</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        state() <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> this-&gt;_state;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        on_event(<a class="code" href="classfactory_1_1socket__pipeline__kernel.html">socket_pipeline_kernel</a>* k);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="classfactory_1_1discovery__timer_html"><div class="ttname"><a href="classfactory_1_1discovery__timer.html">factory::discovery_timer</a></div><div class="ttdef"><b>Definition:</b> master_discoverer.hh:23</div></div>
+<div class="ttc" id="classfactory_1_1socket__pipeline__kernel_html"><div class="ttname"><a href="classfactory_1_1socket__pipeline__kernel.html">factory::socket_pipeline_kernel</a></div><div class="ttdef"><b>Definition:</b> socket_pipeline_event.hh:20</div></div>
 <div class="ttc" id="classfactory_1_1resident__kernel_html"><div class="ttname"><a href="classfactory_1_1resident__kernel.html">factory::resident_kernel</a></div><div class="ttdef"><b>Definition:</b> resident_kernel.hh:8</div></div>
 <div class="ttc" id="classfactory_1_1probe_html"><div class="ttname"><a href="classfactory_1_1probe.html">factory::probe</a></div><div class="ttdef"><b>Definition:</b> probe.hh:12</div></div>
 <div class="ttc" id="classfactory_1_1tree__hierarchy__iterator_html"><div class="ttname"><a href="classfactory_1_1tree__hierarchy__iterator.html">factory::tree_hierarchy_iterator&lt; addr_type &gt;</a></div></div>
-<div class="ttc" id="classfactory_1_1master__discoverer_html"><div class="ttname"><a href="classfactory_1_1master__discoverer.html">factory::master_discoverer</a></div><div class="ttdef"><b>Definition:</b> master_discoverer.hh:34</div></div>
+<div class="ttc" id="classfactory_1_1master__discoverer_html"><div class="ttname"><a href="classfactory_1_1master__discoverer.html">factory::master_discoverer</a></div><div class="ttdef"><b>Definition:</b> master_discoverer.hh:35</div></div>
 <div class="ttc" id="classfactory_1_1hierarchy_html"><div class="ttname"><a href="classfactory_1_1hierarchy.html">factory::hierarchy&lt; addr_type &gt;</a></div></div>
 <div class="ttc" id="classfactory_1_1prober_html"><div class="ttname"><a href="classfactory_1_1prober.html">factory::prober</a></div><div class="ttdef"><b>Definition:</b> prober.hh:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
