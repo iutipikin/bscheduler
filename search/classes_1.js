@@ -2,9 +2,6 @@ var searchData=
 [
   ['backward',['Backward',['../structBackward.html',1,'']]],
   ['backward_5f2',['Backward_2',['../structBackward__2.html',1,'']]],
-  ['basic_5fcsvtuple',['basic_csvtuple',['../structdiscovery_1_1basic__csvtuple.html',1,'discovery']]],
-  ['basic_5fcsvtuple_3c_20std_3a_3atuple_3c_20args_2e_2e_2e_3e_2c_200_2c_20sizeof_2e_2e_2e_28args_29_2d1_2c_20char_2c_20separator_20_3e',['basic_csvtuple&lt; std::tuple&lt; Args...&gt;, 0, sizeof...(Args)-1, char, separator &gt;',['../structdiscovery_1_1basic__csvtuple.html',1,'discovery']]],
-  ['basic_5fcsvtuple_3c_20tuple_2c_20last_2c_20last_2c_20char_2c_20separator_20_3e',['basic_csvtuple&lt; Tuple, last, last, Char, separator &gt;',['../structdiscovery_1_1basic__csvtuple_3_01Tuple_00_01last_00_01last_00_01Char_00_01separator_01_4.html',1,'discovery']]],
   ['basic_5fkernelbuf',['basic_kernelbuf',['../classfactory_1_1basic__kernelbuf.html',1,'factory']]],
   ['basic_5fpipeline',['basic_pipeline',['../classfactory_1_1basic__pipeline.html',1,'factory']]],
   ['basic_5fpipeline_3c_20t_20_3e',['basic_pipeline&lt; T &gt;',['../classfactory_1_1basic__pipeline.html',1,'factory']]],

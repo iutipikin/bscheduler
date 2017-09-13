@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['secret_5fagent',['Secret_agent',['../structSecret__agent.html',1,'']]],
   ['send',['send',['../classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71',1,'factory::kernel_protocol']]],
   ['sender',['Sender',['../structSender.html',1,'']]],
   ['sha1',['SHA1',['../structfactory_1_1SHA1.html',1,'factory']]],
@@ -16,7 +15,6 @@ var searchData=
   ['spectrum_5fapp',['Spectrum_app',['../structSpectrum__app.html',1,'']]],
   ['spectrum_5fkernel',['Spectrum_kernel',['../structSpectrum__kernel.html',1,'']]],
   ['springy_5fgraph',['Springy_graph',['../structspringy_1_1Springy__graph.html',1,'springy']]],
-  ['springy_5fgraph_3c_20sys_3a_3aendpoint_20_3e',['Springy_graph&lt; sys::endpoint &gt;',['../structspringy_1_1Springy__graph.html',1,'springy']]],
   ['station_5fkernel',['Station_kernel',['../structStation__kernel.html',1,'']]],
   ['surface_5fpart',['Surface_part',['../structautoreg_1_1Surface__part.html',1,'autoreg']]]
 ];
