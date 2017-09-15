@@ -1,7 +1,6 @@
 var searchData=
 [
   ['sender',['Sender',['../structSender.html',1,'']]],
-  ['sha1test',['SHA1Test',['../structSHA1Test.html',1,'']]],
   ['skew_5fnormal',['Skew_normal',['../classautoreg_1_1Skew__normal.html',1,'autoreg']]],
   ['sleepy_5fkernel',['Sleepy_kernel',['../structSleepy__kernel.html',1,'']]],
   ['slice',['Slice',['../structSlice.html',1,'']]],

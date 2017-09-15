@@ -1,8 +1,7 @@
 <map id="/home/travis/build/igankevich/factory/src/apps" name="/home/travis/build/igankevich/factory/src/apps">
-<area shape="rect" id="node2" href="dir_1667a0e0ae003b1e9efd2e913ca7d2a6.html" title="autoreg" alt="" coords="325,63,397,111"/>
-<area shape="rect" id="node3" href="dir_24536ee32fa6f18c1ab4cc4a85cd7755.html" title="factory" alt="" coords="229,63,301,111"/>
-<area shape="rect" id="node4" href="dir_f9cead73bb5e69e9f75c5a9a06c4ff5a.html" title="spec" alt="" coords="133,63,205,111"/>
-<area shape="rect" id="node5" href="dir_babd3d2367546d3c8753a845daedbdb5.html" title="web" alt="" coords="37,63,109,111"/>
-<area shape="rect" id="clust2" href="dir_53adf0b982dc8545998aae3f283a5a58.html" alt="" coords="27,52,504,121"/>
-<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,515,132"/>
+<area shape="rect" id="node2" href="dir_1667a0e0ae003b1e9efd2e913ca7d2a6.html" title="autoreg" alt="" coords="229,63,301,111"/>
+<area shape="rect" id="node3" href="dir_24536ee32fa6f18c1ab4cc4a85cd7755.html" title="factory" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="node4" href="dir_f9cead73bb5e69e9f75c5a9a06c4ff5a.html" title="spec" alt="" coords="37,63,109,111"/>
+<area shape="rect" id="clust2" href="dir_53adf0b982dc8545998aae3f283a5a58.html" alt="" coords="27,52,408,121"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,419,132"/>
 </map>

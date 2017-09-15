@@ -2,7 +2,6 @@ var searchData=
 [
   ['send',['send',['../classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71',1,'factory::kernel_protocol']]],
   ['sender',['Sender',['../structSender.html',1,'']]],
-  ['sha1test',['SHA1Test',['../structSHA1Test.html',1,'']]],
   ['skew_5fnormal',['Skew_normal',['../classautoreg_1_1Skew__normal.html',1,'autoreg']]],
   ['sleepy_5fkernel',['Sleepy_kernel',['../structSleepy__kernel.html',1,'']]],
   ['slice',['Slice',['../structSlice.html',1,'']]],
