@@ -164,6 +164,9 @@ typedef Router&#160;</td><td class="memItemRight" valign="bottom"><b>router_type
 <tr class="memitem:ac3cb111d45c958cfe95f3bd166b4ce03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3cb111d45c958cfe95f3bd166b4ce03"></a>
 typedef sys::pid_type&#160;</td><td class="memItemRight" valign="bottom"><b>app_type</b></td></tr>
 <tr class="separator:ac3cb111d45c958cfe95f3bd166b4ce03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae438d746841910bf3cb99cec2cc5a2f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae438d746841910bf3cb99cec2cc5a2f6"></a>
+typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>weight_type</b></td></tr>
+<tr class="separator:ae438d746841910bf3cb99cec2cc5a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classfactory_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfactory_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></td></tr>
 <tr class="memitem:a617710c91e4f05f899c1f4bbca57bc81 inherit pub_types_classfactory_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a617710c91e4f05f899c1f4bbca57bc81"></a>
 typedef std::chrono::system_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock_type</b></td></tr>
@@ -210,6 +213,12 @@ socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</
 <tr class="memitem:ab8774bcf46fc4c5fb3a09bd2691ba865"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8774bcf46fc4c5fb3a09bd2691ba865"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> (sys::socket &amp;&amp;rhs)</td></tr>
 <tr class="separator:ab8774bcf46fc4c5fb3a09bd2691ba865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b12deab12288c8dd894e552e227687"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27b12deab12288c8dd894e552e227687"></a>
+weight_type&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> () const noexcept</td></tr>
+<tr class="separator:a27b12deab12288c8dd894e552e227687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1094121b362648bab778508b7f423f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef1094121b362648bab778508b7f423f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> (weight_type rhs) noexcept</td></tr>
+<tr class="separator:aef1094121b362648bab778508b7f423f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e572ada5c58484cc7d9ab6ca909482"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5e572ada5c58484cc7d9ab6ca909482"></a>
 const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vaddr</b> () const </td></tr>
 <tr class="separator:ac5e572ada5c58484cc7d9ab6ca909482"><td class="memSeparator" colspan="2">&#160;</td></tr>

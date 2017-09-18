@@ -127,6 +127,10 @@ typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign
 typedef std::unordered_set<br class="typebreak"/>
 &lt; sys::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>container_type</b></td></tr>
 <tr class="separator:afcd337b2721edfb9a20af64fc81ab6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6231a3c1e97e2d3a78d07fb7482260b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6231a3c1e97e2d3a78d07fb7482260b"></a>
+typedef <br class="typebreak"/>
+container_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:ac6231a3c1e97e2d3a78d07fb7482260b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a633682f5f46567fd7db220d07eb5272f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633682f5f46567fd7db220d07eb5272f"></a>
 typedef container_type::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
 <tr class="separator:a633682f5f46567fd7db220d07eb5272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,15 +164,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_principal</b> (co
 <tr class="memitem:a11afe0679ee99b059376be820f41a9fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11afe0679ee99b059376be820f41a9fa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_subordinate</b> (const sys::endpoint &amp;addr)</td></tr>
 <tr class="separator:a11afe0679ee99b059376be820f41a9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d113d13c0abf923462eb7fe24f59fdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d113d13c0abf923462eb7fe24f59fdf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_subordinate</b> (const sys::endpoint &amp;addr)</td></tr>
-<tr class="separator:a2d113d13c0abf923462eb7fe24f59fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cb86213d9af4b2bb06be4730a12112"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3cb86213d9af4b2bb06be4730a12112"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove_subordinate</b> (const sys::endpoint &amp;addr)</td></tr>
+<tr class="separator:aa3cb86213d9af4b2bb06be4730a12112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b0660638fff8dcf48fd2d5252c6e5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56b0660638fff8dcf48fd2d5252c6e5f"></a>
 size_type&#160;</td><td class="memItemRight" valign="bottom"><b>num_subordinates</b> () const noexcept</td></tr>
 <tr class="separator:a56b0660638fff8dcf48fd2d5252c6e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaacd0dd4bc5d474ffa2de7d87f1b5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accaacd0dd4bc5d474ffa2de7d87f1b5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_principal</b> () const noexcept</td></tr>
+<tr class="separator:accaacd0dd4bc5d474ffa2de7d87f1b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17335881698023006b6276c412fa1e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af17335881698023006b6276c412fa1e9"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>num_neighbours</b> () const noexcept</td></tr>
+<tr class="separator:af17335881698023006b6276c412fa1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d7173c6e7cf9add58667a05e7ac939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1d7173c6e7cf9add58667a05e7ac939"></a>
 sys::port_type&#160;</td><td class="memItemRight" valign="bottom"><b>port</b> () const noexcept</td></tr>
 <tr class="separator:ad1d7173c6e7cf9add58667a05e7ac939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35bd47d891e3dfc43f5023901ee8709"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae35bd47d891e3dfc43f5023901ee8709"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const noexcept</td></tr>
+<tr class="separator:ae35bd47d891e3dfc43f5023901ee8709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b5be0cb56ca1a4dd2a47485c04f194"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60b5be0cb56ca1a4dd2a47485c04f194"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const noexcept</td></tr>
+<tr class="separator:a60b5be0cb56ca1a4dd2a47485c04f194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

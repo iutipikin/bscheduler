@@ -161,8 +161,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        kernel_pool _kernels;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        thread_pool _threads;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        mutex_type _mutex;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        sem_type _semaphore;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">mutable</span> mutex_type _mutex;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">mutable</span> sem_type _semaphore;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classfactory_1_1basic__pipeline.html">basic_pipeline</a>() = <span class="keywordflow">default</span>;</div>
