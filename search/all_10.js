@@ -11,7 +11,6 @@ var searchData=
   ['spec_5fapp',['Spec_app',['../structSpec__app.html',1,'']]],
   ['spectrum_5fapp',['Spectrum_app',['../structSpectrum__app.html',1,'']]],
   ['spectrum_5fkernel',['Spectrum_kernel',['../structSpectrum__kernel.html',1,'']]],
-  ['springy_5fgraph',['Springy_graph',['../structspringy_1_1Springy__graph.html',1,'springy']]],
   ['station_5fkernel',['Station_kernel',['../structStation__kernel.html',1,'']]],
   ['surface_5fpart',['Surface_part',['../structautoreg_1_1Surface__part.html',1,'autoreg']]]
 ];
