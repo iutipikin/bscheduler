@@ -105,6 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfactory_1_1hierarchy__kernel-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -124,11 +125,23 @@ Collaboration diagram for factory::hierarchy_kernel:</div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2a0cce1ac1111bed10a061b22f8783cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a0cce1ac1111bed10a061b22f8783cc"></a>
+typedef sys::ipv4_addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_type</b></td></tr>
+<tr class="separator:a2a0cce1ac1111bed10a061b22f8783cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d01805a064dcf16f00f96ceca3a3cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72d01805a064dcf16f00f96ceca3a3cb"></a>
+typedef sys::ifaddr&lt; addr_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr_type</b></td></tr>
+<tr class="separator:a72d01805a064dcf16f00f96ceca3a3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:accba1c7a6a188d6fcc3dcbc4dd1d87e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accba1c7a6a188d6fcc3dcbc4dd1d87e3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>hierarchy_kernel</b> (uint32_t weight)</td></tr>
-<tr class="separator:accba1c7a6a188d6fcc3dcbc4dd1d87e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00f1a5f1c22231f8beafd4ea74d36a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad00f1a5f1c22231f8beafd4ea74d36a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hierarchy_kernel</b> (const ifaddr_type &amp;ifaddr, uint32_t weight)</td></tr>
+<tr class="separator:ad00f1a5f1c22231f8beafd4ea74d36a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9547a0e5f705a9967ca3335e63c68c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff9547a0e5f705a9967ca3335e63c68c"></a>
+const ifaddr_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ifaddr</b> () const noexcept</td></tr>
+<tr class="separator:aff9547a0e5f705a9967ca3335e63c68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43d042ac6d331d7b211157e6491d0e27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d042ac6d331d7b211157e6491d0e27"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> (uint32_t rhs) noexcept</td></tr>
 <tr class="separator:a43d042ac6d331d7b211157e6491d0e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
