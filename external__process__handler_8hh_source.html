@@ -111,134 +111,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unistdx/io/fildesbuf&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/endpoint&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/pstream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/socket&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kstream.hh&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/application.hh&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/application_kernel.hh&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/pipeline_base.hh&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>factory {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> Router&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classfactory_1_1external__process__handler.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1external__process__handler.html">external_process_handler</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1pipeline__base.html">pipeline_base</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> Router router_type;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&lt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            sys::basic_fildesbuf&lt;char, std::char_traits&lt;char&gt;, sys::socket&gt;&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> std::unique_ptr&lt;kernelbuf_type&gt; kernelbuf_ptr;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1kstream.html">kstream&lt;T&gt;</a> <a class="code" href="structfactory_1_1kstream.html">stream_type</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">typedef</span> sys::ipacket_guard&lt;stream_type&gt; ipacket_guard;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">typedef</span> sys::opacket_guard&lt;stream_type&gt; opacket_guard;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        sys::endpoint _endpoint;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        kernelbuf_ptr _buffer;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="structfactory_1_1kstream.html">stream_type</a> _stream;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classfactory_1_1external__process__handler.html">external_process_handler</a>(<span class="keyword">const</span> sys::endpoint&amp; e, sys::socket&amp;&amp; sock):</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        _endpoint(e),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        _buffer(<span class="keyword">new</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        _stream(_buffer.get())</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;_buffer-&gt;setfd(std::move(sock));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> sys::endpoint&amp;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        endpoint() <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> this-&gt;_endpoint;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">inline</span> sys::socket&amp;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        socket() noexcept {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> this-&gt;_buffer-&gt;fd();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        handle(sys::poll_event&amp; event) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span> (this-&gt;is_starting()) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                this-&gt;setstate(pipeline_state::started);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            this-&gt;_stream.sync();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            this-&gt;receive_kernels(this-&gt;_stream);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            this-&gt;_stream.sync();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        receive_kernels(<a class="code" href="structfactory_1_1kstream.html">stream_type</a>&amp; stream) noexcept {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">while</span> (stream.read_packet()) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <a class="code" href="classfactory_1_1Application__kernel.html">Application_kernel</a>* k = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    <span class="comment">// eats remaining bytes on exception</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    application_type a;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    ipacket_guard g(stream);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    kernel_type* kernel = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    stream &gt;&gt; a;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    stream &gt;&gt; kernel;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    k = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classfactory_1_1Application__kernel.html">Application_kernel</a>*<span class="keyword">&gt;</span>(kernel);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    this-&gt;log(<span class="stringliteral">&quot;recv _&quot;</span>, *k);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    <a class="code" href="classfactory_1_1Application.html">Application</a> app(k-&gt;arguments(), k-&gt;environment());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    sys::user_credentials creds = this-&gt;socket().credentials();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    app.set_credentials(creds.uid, creds.gid);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        router_type::execute(app);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                        k-&gt;return_to_parent(exit_code::success);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; err) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        k-&gt;return_to_parent(exit_code::error);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        k-&gt;set_error(err.what());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        k-&gt;return_to_parent(exit_code::error);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        k-&gt;set_error(<span class="stringliteral">&quot;unknown error&quot;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="classfactory_1_1Error.html">Error</a>&amp; err) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    this-&gt;log(<span class="stringliteral">&quot;read error _&quot;</span>, err);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; err) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    this-&gt;log(<span class="stringliteral">&quot;read error _ &quot;</span>, err.what());</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    this-&gt;log(<span class="stringliteral">&quot;read error _&quot;</span>, <span class="stringliteral">&quot;&lt;unknown&gt;&quot;</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">if</span> (k) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        opacket_guard g(stream);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        stream.begin_packet();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        stream &lt;&lt; this_application::get_id();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        stream &lt;&lt; k;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        stream.end_packet();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="classfactory_1_1Error.html">Error</a>&amp; err) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;write error _&quot;</span>, err);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; err) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;write error _&quot;</span>, err.what());</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;write error _&quot;</span>, <span class="stringliteral">&quot;&lt;unknown&gt;&quot;</span>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <span class="keyword">delete</span> k;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    };</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistdx/io/poller&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/endpoint&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/pstream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/socket&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kstream.hh&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/application.hh&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/application_kernel.hh&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/pipeline_base.hh&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> Router&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classfactory_1_1external__process__handler.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1external__process__handler.html">external_process_handler</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1pipeline__base.html">pipeline_base</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typedef</span> Router router_type;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&lt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            sys::basic_fildesbuf&lt;char, std::char_traits&lt;char&gt;, sys::socket&gt;&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> std::unique_ptr&lt;kernelbuf_type&gt; kernelbuf_ptr;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1kstream.html">kstream&lt;T&gt;</a> <a class="code" href="structfactory_1_1kstream.html">stream_type</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">typedef</span> sys::ipacket_guard&lt;stream_type&gt; ipacket_guard;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> sys::opacket_guard&lt;stream_type&gt; opacket_guard;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        sys::endpoint _endpoint;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        kernelbuf_ptr _buffer;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="structfactory_1_1kstream.html">stream_type</a> _stream;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">inline</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classfactory_1_1external__process__handler.html">external_process_handler</a>(<span class="keyword">const</span> sys::endpoint&amp; e, sys::socket&amp;&amp; sock):</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        _endpoint(e),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        _buffer(<span class="keyword">new</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        _stream(_buffer.get())</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;_buffer-&gt;setfd(std::move(sock));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> sys::endpoint&amp;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        endpoint() <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> this-&gt;_endpoint;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">inline</span> sys::socket&amp;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        socket() noexcept {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> this-&gt;_buffer-&gt;fd();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        handle(sys::poll_event&amp; event);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        receive_kernels(<a class="code" href="structfactory_1_1kstream.html">stream_type</a>&amp; stream) noexcept;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
 <div class="ttc" id="structfactory_1_1kstream_html"><div class="ttname"><a href="structfactory_1_1kstream.html">factory::kstream</a></div><div class="ttdef"><b>Definition:</b> kstream.hh:67</div></div>
-<div class="ttc" id="classfactory_1_1external__process__handler_html"><div class="ttname"><a href="classfactory_1_1external__process__handler.html">factory::external_process_handler</a></div><div class="ttdef"><b>Definition:</b> external_process_handler.hh:19</div></div>
-<div class="ttc" id="classfactory_1_1Application__kernel_html"><div class="ttname"><a href="classfactory_1_1Application__kernel.html">factory::Application_kernel</a></div><div class="ttdef"><b>Definition:</b> application_kernel.hh:11</div></div>
-<div class="ttc" id="classfactory_1_1Error_html"><div class="ttname"><a href="classfactory_1_1Error.html">factory::Error</a></div><div class="ttdef"><b>Definition:</b> error.hh:9</div></div>
+<div class="ttc" id="classfactory_1_1external__process__handler_html"><div class="ttname"><a href="classfactory_1_1external__process__handler.html">factory::external_process_handler</a></div><div class="ttdef"><b>Definition:</b> external_process_handler.hh:20</div></div>
 <div class="ttc" id="classfactory_1_1basic__kernelbuf_html"><div class="ttname"><a href="classfactory_1_1basic__kernelbuf.html">factory::basic_kernelbuf</a></div><div class="ttdef"><b>Definition:</b> kernelbuf.hh:12</div></div>
-<div class="ttc" id="classfactory_1_1Application_html"><div class="ttname"><a href="classfactory_1_1Application.html">factory::Application</a></div><div class="ttdef"><b>Definition:</b> application.hh:15</div></div>
 <div class="ttc" id="classfactory_1_1pipeline__base_html"><div class="ttname"><a href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
