@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,36 +110,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel.hh&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/basic_pipeline.hh&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    act(Kernel* kernel) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    act(Kernel* k) {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">bool</span> del = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">if</span> (kernel-&gt;result() == exit_code::undefined) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordflow">if</span> (kernel-&gt;principal()) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                kernel-&gt;principal()-&gt;react(kernel);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keywordflow">if</span> (!kernel-&gt;isset(kernel_flag::do_not_delete)) {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">if</span> (k-&gt;return_code() == exit_code::undefined) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordflow">if</span> (k-&gt;principal()) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                k-&gt;principal()-&gt;react(k);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keywordflow">if</span> (!k-&gt;isset(kernel_flag::do_not_delete)) {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                    del = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    kernel-&gt;unsetf(kernel_flag::do_not_delete);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    k-&gt;unsetf(kernel_flag::do_not_delete);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                kernel-&gt;act();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                k-&gt;act();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">if</span> (!kernel-&gt;principal()) {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                del = !kernel-&gt;parent();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">if</span> (!k-&gt;principal()) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                del = !k-&gt;parent();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                del = *kernel-&gt;principal() == *kernel-&gt;parent();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">if</span> (kernel-&gt;result() == exit_code::success) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    kernel-&gt;principal()-&gt;react(kernel);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                del = *k-&gt;principal() == *k-&gt;parent();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">if</span> (k-&gt;return_code() == exit_code::success) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    k-&gt;principal()-&gt;react(k);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    kernel-&gt;principal()-&gt;error(kernel);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    k-&gt;principal()-&gt;error(k);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">if</span> (del) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">delete</span> kernel;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">delete</span> k;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>

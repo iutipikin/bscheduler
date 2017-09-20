@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,27 +116,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/application.hh&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/process_handler.hh&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> K, <span class="keyword">class</span> R&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classfactory_1_1child__process__pipeline.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1child__process__pipeline.html">child_process_pipeline</a>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">public</span> <a class="code" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,process_handler&lt;K,R&gt;&gt; {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classasc_1_1child__process__pipeline.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1child__process__pipeline.html">child_process_pipeline</a>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">public</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,process_handler&lt;K,R&gt;&gt; {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,process_handler&lt;K, R&gt;</a>&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="structfactory_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,process_handler&lt;K, R&gt;</a>&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="structasc_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::kernel_type;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::mutex_type;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::sem_type;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::kernel_pool;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classfactory_1_1process__handler.html">base_pipeline::event_handler_type</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classasc_1_1process__handler.html">base_pipeline::event_handler_type</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_ptr;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::queue_popper;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::traits_type;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">typedef</span> R router_type;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classfactory_1_1child__process__pipeline.html">child_process_pipeline</a>():</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classasc_1_1child__process__pipeline.html">child_process_pipeline</a>():</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        _parent(std::make_shared&lt;event_handler_type&gt;(</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    sys::pipe {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        this_application::get_input_fd(),</div>
@@ -149,10 +148,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            this-&gt;set_name(<span class="stringliteral">&quot;chld&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classfactory_1_1child__process__pipeline.html">child_process_pipeline</a>(<a class="code" href="classfactory_1_1child__process__pipeline.html">child_process_pipeline</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classasc_1_1child__process__pipeline.html">child_process_pipeline</a>(<a class="code" href="classasc_1_1child__process__pipeline.html">child_process_pipeline</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        ~<a class="code" href="classfactory_1_1child__process__pipeline.html">child_process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        ~<a class="code" href="classasc_1_1child__process__pipeline.html">child_process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        remove_client(event_handler_ptr ptr)<span class="keyword"> override </span>{</div>
@@ -179,15 +178,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        send(kernel_type* kernel) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        send(kernel_type* k) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">            #ifndef NDEBUG</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>            this-&gt;log(<span class="stringliteral">&quot;send _&quot;</span>, *kernel);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>            this-&gt;log(<span class="stringliteral">&quot;send _&quot;</span>, *k);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">            #endif</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span>            lock_type lock(this-&gt;_mutex);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;_parent) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                router_type::send_local(kernel);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                router_type::send_local(k);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                traits_type::push(this-&gt;_kernels, kernel);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                traits_type::push(this-&gt;_kernels, k);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                this-&gt;_semaphore.notify_one();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
@@ -231,9 +230,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classfactory_1_1child__process__pipeline_html"><div class="ttname"><a href="classfactory_1_1child__process__pipeline.html">factory::child_process_pipeline</a></div><div class="ttdef"><b>Definition:</b> child_process_pipeline.hh:16</div></div>
-<div class="ttc" id="structfactory_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
-<div class="ttc" id="classfactory_1_1process__handler_html"><div class="ttname"><a href="classfactory_1_1process__handler.html">factory::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:17</div></div>
+<div class="ttc" id="structasc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structasc_1_1basic__socket__pipeline.html">asc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
+<div class="ttc" id="classasc_1_1process__handler_html"><div class="ttname"><a href="classasc_1_1process__handler.html">asc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:17</div></div>
+<div class="ttc" id="classasc_1_1child__process__pipeline_html"><div class="ttname"><a href="classasc_1_1child__process__pipeline.html">asc::child_process_pipeline</a></div><div class="ttdef"><b>Definition:</b> child_process_pipeline.hh:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,12 +113,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel_type.hh&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel_type_error.hh&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classfactory_1_1kernel__type__registry.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1kernel__type__registry.html">kernel_type_registry</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__type__registry.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1kernel__type__registry.html">kernel_type_registry</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1kernel__type.html#ad731aabb71258f16bb11a6b4cb1ebcf2">kernel_type::id_type</a> id_type;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">kernel_type::id_type</a> id_type;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;kernel_type&gt; container_type;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">typedef</span> container_type::iterator iterator;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">typedef</span> container_type::const_iterator const_iterator;</div>
@@ -146,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        register_type(<a class="code" href="classfactory_1_1kernel__type.html">kernel_type</a> type);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        register_type(<a class="code" href="classasc_1_1kernel__type.html">kernel_type</a> type);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> X&gt;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span></div>
@@ -154,16 +153,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;register_type({</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                this-&gt;generate_id(),</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                [] (sys::pstream&amp; in) -&gt; <span class="keywordtype">void</span>* {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    X* kernel = <span class="keyword">new</span> X;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    kernel-&gt;read(in);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">return</span> kernel;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    X* k = <span class="keyword">new</span> X;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    k-&gt;read(in);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">return</span> k;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                },</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keyword">typeid</span>(X)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            });</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">friend</span> std::ostream&amp;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__type__registry.html">kernel_type_registry</a>&amp; rhs);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__type__registry.html">kernel_type_registry</a>&amp; rhs);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span>*</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        read_object(sys::pstream&amp; packet);</div>
@@ -178,9 +177,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::ostream&amp;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__type__registry.html">kernel_type_registry</a>&amp; rhs);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__type__registry.html">kernel_type_registry</a>&amp; rhs);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">extern</span> <a class="code" href="classfactory_1_1kernel__type__registry.html">kernel_type_registry</a> types;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">extern</span> <a class="code" href="classasc_1_1kernel__type__registry.html">kernel_type_registry</a> types;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> X&gt;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
@@ -189,16 +188,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    register_type(<span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__type.html">kernel_type</a>&amp; rhs) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    register_type(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__type.html">kernel_type</a>&amp; rhs) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        types.register_type(rhs);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classfactory_1_1kernel__type_html"><div class="ttname"><a href="classfactory_1_1kernel__type.html">factory::kernel_type</a></div><div class="ttdef"><b>Definition:</b> kernel_type.hh:13</div></div>
-<div class="ttc" id="classfactory_1_1kernel__type_html_ad731aabb71258f16bb11a6b4cb1ebcf2"><div class="ttname"><a href="classfactory_1_1kernel__type.html#ad731aabb71258f16bb11a6b4cb1ebcf2">factory::kernel_type::id_type</a></div><div class="ttdeci">uint16_t id_type</div><div class="ttdoc">A portable type id. </div><div class="ttdef"><b>Definition:</b> kernel_type.hh:17</div></div>
-<div class="ttc" id="classfactory_1_1kernel__type__registry_html"><div class="ttname"><a href="classfactory_1_1kernel__type__registry.html">factory::kernel_type_registry</a></div><div class="ttdef"><b>Definition:</b> kernel_type_registry.hh:12</div></div>
+<div class="ttc" id="classasc_1_1kernel__type_html"><div class="ttname"><a href="classasc_1_1kernel__type.html">asc::kernel_type</a></div><div class="ttdef"><b>Definition:</b> kernel_type.hh:13</div></div>
+<div class="ttc" id="classasc_1_1kernel__type__registry_html"><div class="ttname"><a href="classasc_1_1kernel__type__registry.html">asc::kernel_type_registry</a></div><div class="ttdef"><b>Definition:</b> kernel_type_registry.hh:12</div></div>
+<div class="ttc" id="classasc_1_1kernel__type_html_ae916b90fc06abf23a615a78e9f8f532e"><div class="ttname"><a href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">asc::kernel_type::id_type</a></div><div class="ttdeci">uint16_t id_type</div><div class="ttdoc">A portable type id. </div><div class="ttdef"><b>Definition:</b> kernel_type.hh:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

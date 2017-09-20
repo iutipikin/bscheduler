@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classfactory_1_1Application__kernel.html" title="factory::Application\l_kernel" alt="" coords="255,5,390,46"/>
-<area shape="rect" id="node3" href="$classfactory_1_1socket__pipeline__kernel.html" title="factory::socket_pipeline\l_kernel" alt="" coords="243,70,403,111"/>
+<area shape="rect" id="node2" href="$structasc_1_1kstream.html" title="asc::kstream\&lt; T \&gt;" alt="" coords="123,5,253,32"/>
+<area shape="rect" id="node3" href="$structasc_1_1kstream.html" title="asc::kstream\&lt; K \&gt;" alt="" coords="123,56,253,83"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="asc::unix_domain_socket_pipeline&lt; K, R &gt;" name="asc::unix_domain_socket_pipeline&lt; K, R &gt;">
+<area shape="rect" id="node2" href="$structasc_1_1basic__socket__pipeline.html" title="asc::basic_socket_pipeline\l\&lt; K, external_process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="5,184,203,240"/>
+<area shape="rect" id="node3" href="$classasc_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; K , external_process\l_handler\&lt; K, R \&gt; &#160;\&gt;" alt="" coords="27,80,180,136"/>
+<area shape="rect" id="node4" href="$classasc_1_1pipeline__base.html" title="asc::pipeline_base" alt="" coords="39,5,168,32"/>
+</map>

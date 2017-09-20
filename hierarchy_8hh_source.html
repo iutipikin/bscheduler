@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,10 +115,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;hierarchy_node.hh&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Addr&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classfactory_1_1hierarchy.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1hierarchy.html">hierarchy</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classasc_1_1hierarchy.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1hierarchy.html">hierarchy</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">typedef</span> Addr addr_type;</div>
@@ -127,27 +126,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">typedef</span> std::unordered_set&lt;hierarchy_node&gt; container_type;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> container_type::const_iterator const_iterator;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> container_type::size_type size_type;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1hierarchy__node.html">hierarchy_node</a> <a class="code" href="classfactory_1_1hierarchy__node.html">node_type</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a> <a class="code" href="classasc_1_1hierarchy__node.html">node_type</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typedef</span> node_type::weight_type weight_type;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        ifaddr_type _ifaddr;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        sys::endpoint _endpoint;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classfactory_1_1hierarchy__node.html">hierarchy_node</a> _principal;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a> _principal;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        container_type _subordinates;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html">hierarchy</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, <span class="keyword">const</span> sys::port_type port):</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classasc_1_1hierarchy.html">hierarchy</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, <span class="keyword">const</span> sys::port_type port):</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        _ifaddr(ifaddr),</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        _endpoint(ifaddr.address(), port),</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        _principal(),</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        _subordinates()</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html">hierarchy</a>(<span class="keyword">const</span> <a class="code" href="classfactory_1_1hierarchy.html">hierarchy</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classasc_1_1hierarchy.html">hierarchy</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy.html">hierarchy</a>&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html">hierarchy</a>(<a class="code" href="classfactory_1_1hierarchy.html">hierarchy</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classasc_1_1hierarchy.html">hierarchy</a>(<a class="code" href="classasc_1_1hierarchy.html">hierarchy</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> ifaddr_type&amp;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        ifaddr() <span class="keyword">const</span> noexcept {</div>
@@ -159,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> this-&gt;_endpoint;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <a class="code" href="classfactory_1_1hierarchy__node.html">node_type</a>&amp;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">node_type</a>&amp;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        principal() <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> this-&gt;_principal;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
@@ -182,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        remove_subordinate(<span class="keyword">const</span> sys::endpoint&amp; addr) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> this-&gt;_subordinates.erase(<a class="code" href="classfactory_1_1hierarchy__node.html">node_type</a>(addr)) &gt; 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> this-&gt;_subordinates.erase(<a class="code" href="classasc_1_1hierarchy__node.html">node_type</a>(addr)) &gt; 0;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        size_type</div>
@@ -202,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        has_subordinate(<span class="keyword">const</span> sys::endpoint&amp; rhs) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> this-&gt;_subordinates.find(<a class="code" href="classfactory_1_1hierarchy__node.html">node_type</a>(rhs)) !=</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> this-&gt;_subordinates.find(<a class="code" href="classasc_1_1hierarchy__node.html">node_type</a>(rhs)) !=</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                   this-&gt;_subordinates.end();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
@@ -237,10 +236,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        weight_type</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html#aea6992d08ade6c8af5ed33b24c05b055">total_weight</a>() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="classasc_1_1hierarchy.html#a220858ddab6a0ce6f649945ace7923ee">total_weight</a>() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        weight_type</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="classfactory_1_1hierarchy.html#a06ffefb251b98b3feafff0d3514df601">total_subordinate_weight</a>() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="classasc_1_1hierarchy.html#a177b3ee7114569870a9a4466c09cf13e">total_subordinate_weight</a>() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">inline</span> weight_type</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        principal_weight() <span class="keyword">const</span> noexcept {</div>
@@ -264,10 +263,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classfactory_1_1hierarchy_html_a06ffefb251b98b3feafff0d3514df601"><div class="ttname"><a href="classfactory_1_1hierarchy.html#a06ffefb251b98b3feafff0d3514df601">factory::hierarchy::total_subordinate_weight</a></div><div class="ttdeci">weight_type total_subordinate_weight() const noexcept</div><div class="ttdef"><b>Definition:</b> hierarchy.cc:49</div></div>
-<div class="ttc" id="classfactory_1_1hierarchy_html_aea6992d08ade6c8af5ed33b24c05b055"><div class="ttname"><a href="classfactory_1_1hierarchy.html#aea6992d08ade6c8af5ed33b24c05b055">factory::hierarchy::total_weight</a></div><div class="ttdeci">weight_type total_weight() const noexcept</div><div class="ttdef"><b>Definition:</b> hierarchy.cc:42</div></div>
-<div class="ttc" id="classfactory_1_1hierarchy_html"><div class="ttname"><a href="classfactory_1_1hierarchy.html">factory::hierarchy</a></div><div class="ttdef"><b>Definition:</b> hierarchy.hh:15</div></div>
-<div class="ttc" id="classfactory_1_1hierarchy__node_html"><div class="ttname"><a href="classfactory_1_1hierarchy__node.html">factory::hierarchy_node</a></div><div class="ttdef"><b>Definition:</b> hierarchy_node.hh:10</div></div>
+<div class="ttc" id="classasc_1_1hierarchy_html_a177b3ee7114569870a9a4466c09cf13e"><div class="ttname"><a href="classasc_1_1hierarchy.html#a177b3ee7114569870a9a4466c09cf13e">asc::hierarchy::total_subordinate_weight</a></div><div class="ttdeci">weight_type total_subordinate_weight() const noexcept</div><div class="ttdef"><b>Definition:</b> hierarchy.cc:49</div></div>
+<div class="ttc" id="classasc_1_1hierarchy__node_html"><div class="ttname"><a href="classasc_1_1hierarchy__node.html">asc::hierarchy_node</a></div><div class="ttdef"><b>Definition:</b> hierarchy_node.hh:10</div></div>
+<div class="ttc" id="classasc_1_1hierarchy_html"><div class="ttname"><a href="classasc_1_1hierarchy.html">asc::hierarchy</a></div><div class="ttdef"><b>Definition:</b> hierarchy.hh:15</div></div>
+<div class="ttc" id="classasc_1_1hierarchy_html_a220858ddab6a0ce6f649945ace7923ee"><div class="ttname"><a href="classasc_1_1hierarchy.html#a220858ddab6a0ce6f649945ace7923ee">asc::hierarchy::total_weight</a></div><div class="ttdeci">weight_type total_weight() const noexcept</div><div class="ttdef"><b>Definition:</b> hierarchy.cc:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

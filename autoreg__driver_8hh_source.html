@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>autoreg {</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classautoreg_1_1Autoreg__model.html">    7</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classautoreg_1_1Autoreg__model.html">Autoreg_model</a>: <span class="keyword">public</span> Kernel {</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classautoreg_1_1Autoreg__model.html">    7</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classautoreg_1_1Autoreg__model.html">Autoreg_model</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structautoreg_1_1Uniform__grid.html">Uniform_grid</a> <a class="code" href="structautoreg_1_1Uniform__grid.html">grid_type</a>;</div>
@@ -160,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            write_log(<span class="stringliteral">&quot;Interval:&quot;</span>, interval);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            write_log(<span class="stringliteral">&quot;Size factor:&quot;</span>, size_factor());</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            upstream&lt;Local&gt;(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            asc::upstream(</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keyword">new</span> <a class="code" href="structautoreg_1_1ACF__generator.html">ACF_generator&lt;T&gt;</a>(</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    alpha,</div>
@@ -215,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        react(Kernel* child) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        react(<a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a>* child) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classautoreg_1_1Domain.html">Domain&lt;T, 3&gt;</a></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        domain() <span class="keyword">const</span> noexcept {</div>
@@ -298,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        do_it() {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            acf_pure = acf_model;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            upstream&lt;Local&gt;(</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            asc::upstream(</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keyword">new</span> <a class="code" href="structautoreg_1_1Autoreg__coefs.html">Autoreg_coefs&lt;T&gt;</a>(</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    acf_model,</div>
@@ -346,7 +345,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*child) == <span class="keyword">typeid</span>(Autoreg_coefs&lt;T&gt;)) {</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">//      write&lt;T&gt;(&quot;1.ar_coefs&quot;, ar_coefs);</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            { std::ofstream out(<span class="stringliteral">&quot;ar_coefs&quot;</span>); out &lt;&lt; ar_coefs; }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            upstream&lt;Local&gt;(<span class="keyword">this</span>, <span class="keyword">new</span> Variance_WN&lt;T&gt;(ar_coefs, acf_model));</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            asc::upstream(<span class="keyword">this</span>, <span class="keyword">new</span> Variance_WN&lt;T&gt;(ar_coefs, acf_model));</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*child) == <span class="keyword">typeid</span>(Variance_WN&lt;T&gt;)) {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            T var_wn = <span class="keyword">reinterpret_cast&lt;</span>Variance_WN&lt;T&gt;*<span class="keyword">&gt;</span>(child)-&gt;get_sum();</div>
@@ -358,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">//      std::size_t modulo = homogeneous ? 1 : 2;</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            grid_type grid_2(zsize2[0], max_num_parts);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            grid_type grid(zsize[0], max_num_parts);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            generator_type* kernel = <span class="keyword">new</span> generator_type(</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            generator_type* k = <span class="keyword">new</span> generator_type(</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                ar_coefs,</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                fsize,</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                var_wn,</div>
@@ -370,10 +369,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                grid_2</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                     );</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">        #if defined(FACTORY_TEST_SLAVE_FAILURE)</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span>            upstream&lt;Local&gt;(<span class="keyword">this</span>, kernel);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span>            asc::upstream(<span class="keyword">this</span>, k);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">        #else</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span>            kernel-&gt;setf(factory::kernel_flag::carries_parent);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            upstream&lt;Remote&gt;(<span class="keyword">this</span>, kernel);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span>            k-&gt;setf(asc::kernel_flag::carries_parent);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            asc::upstream&lt;asc::Remote&gt;(<span class="keyword">this</span>, k);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span>        }</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*child) == <span class="keyword">typeid</span>(generator_type)) {</div>
@@ -384,7 +383,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                timerun_log &lt;&lt; float(_time1 - _time0)/1000/1000/1000 &lt;&lt;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    std::endl;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            commit&lt;Local&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            asc::commit(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
@@ -435,10 +434,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structautoreg_1_1Wave__surface__generator_html"><div class="ttname"><a href="structautoreg_1_1Wave__surface__generator.html">autoreg::Wave_surface_generator</a></div><div class="ttdef"><b>Definition:</b> autoreg.hh:685</div></div>
-<div class="ttc" id="structautoreg_1_1ACF__generator_html"><div class="ttname"><a href="structautoreg_1_1ACF__generator.html">autoreg::ACF_generator</a></div><div class="ttdef"><b>Definition:</b> autoreg.hh:214</div></div>
+<div class="ttc" id="structautoreg_1_1Wave__surface__generator_html"><div class="ttname"><a href="structautoreg_1_1Wave__surface__generator.html">autoreg::Wave_surface_generator</a></div><div class="ttdef"><b>Definition:</b> autoreg.hh:683</div></div>
+<div class="ttc" id="structautoreg_1_1ACF__generator_html"><div class="ttname"><a href="structautoreg_1_1ACF__generator.html">autoreg::ACF_generator</a></div><div class="ttdef"><b>Definition:</b> autoreg.hh:212</div></div>
 <div class="ttc" id="classautoreg_1_1Domain_html"><div class="ttname"><a href="classautoreg_1_1Domain.html">autoreg::Domain</a></div><div class="ttdef"><b>Definition:</b> domain.hh:12</div></div>
-<div class="ttc" id="structautoreg_1_1Autoreg__coefs_html"><div class="ttname"><a href="structautoreg_1_1Autoreg__coefs.html">autoreg::Autoreg_coefs</a></div><div class="ttdef"><b>Definition:</b> autoreg.hh:359</div></div>
+<div class="ttc" id="structasc_1_1Kernel_html"><div class="ttname"><a href="structasc_1_1Kernel.html">asc::Kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
+<div class="ttc" id="structautoreg_1_1Autoreg__coefs_html"><div class="ttname"><a href="structautoreg_1_1Autoreg__coefs.html">autoreg::Autoreg_coefs</a></div><div class="ttdef"><b>Definition:</b> autoreg.hh:357</div></div>
 <div class="ttc" id="structautoreg_1_1Uniform__grid_html"><div class="ttname"><a href="structautoreg_1_1Uniform__grid.html">autoreg::Uniform_grid</a></div><div class="ttdef"><b>Definition:</b> grid.hh:64</div></div>
 <div class="ttc" id="classautoreg_1_1Vector_html"><div class="ttname"><a href="classautoreg_1_1Vector.html">autoreg::Vector</a></div><div class="ttdef"><b>Definition:</b> vector_n.hh:7</div></div>
 <div class="ttc" id="classautoreg_1_1Autoreg__model_html"><div class="ttname"><a href="classautoreg_1_1Autoreg__model.html">autoreg::Autoreg_model</a></div><div class="ttdef"><b>Definition:</b> autoreg_driver.hh:7</div></div>

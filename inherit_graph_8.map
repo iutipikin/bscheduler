@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structautoreg_1_1Surface__part.html" title="autoreg::Surface_part" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$classasc_1_1Error.html" title="asc::Error" alt="" coords="173,5,251,32"/>
+<area shape="rect" id="node4" href="$classasc_1_1kernel__error.html" title="asc::kernel_error" alt="" coords="153,56,271,83"/>
+<area shape="rect" id="node3" href="$classasc_1_1kenel__type__error.html" title="asc::kenel_type_error" alt="" coords="320,5,467,32"/>
 </map>

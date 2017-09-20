@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,40 +117,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/kernel_protocol.hh&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/pipeline_base.hh&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> K, <span class="keyword">class</span> R&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classfactory_1_1process__handler.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1process__handler.html">process_handler</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1pipeline__base.html">pipeline_base</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classasc_1_1process__handler.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1process__handler.html">process_handler</a>: <span class="keyword">public</span> <a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a> {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">typedef</span> K kernel_type;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">typedef</span> R router_type;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf&lt;sys::fildesbuf&gt;</a> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf&lt;sys::fildesbuf&gt;</a> <a class="code" href="classasc_1_1basic__kernelbuf.html">kernelbuf_type</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">typedef</span> std::unique_ptr&lt;kernelbuf_type&gt; kernelbuf_ptr;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1kstream.html">kstream&lt;K&gt;</a> <a class="code" href="structfactory_1_1kstream.html">stream_type</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol&lt;K,R,bits::forward_to_parent&lt;R&gt;</a>&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="classfactory_1_1kernel__protocol.html">protocol_type</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structasc_1_1kstream.html">kstream&lt;K&gt;</a> <a class="code" href="structasc_1_1kstream.html">stream_type</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol&lt;K,R,bits::forward_to_parent&lt;R&gt;</a>&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="classasc_1_1kernel__protocol.html">protocol_type</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        sys::pid_type _childpid;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        kernelbuf_ptr _outbuf;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="structfactory_1_1kstream.html">stream_type</a> _ostream;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="structasc_1_1kstream.html">stream_type</a> _ostream;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        kernelbuf_ptr _inbuf;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="structfactory_1_1kstream.html">stream_type</a> _istream;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html">protocol_type</a> _proto;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="structasc_1_1kstream.html">stream_type</a> _istream;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">protocol_type</a> _proto;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classfactory_1_1process__handler.html">process_handler</a>(</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classasc_1_1process__handler.html">process_handler</a>(</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            sys::pid_type&amp;&amp; child,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            sys::two_way_pipe&amp;&amp; pipe</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ):</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        _childpid(child),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        _outbuf(<span class="keyword">new</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        _outbuf(<span class="keyword">new</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        _ostream(_outbuf.get()),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _inbuf(<span class="keyword">new</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _inbuf(<span class="keyword">new</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        _istream(_inbuf.get()),</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        _proto()</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
@@ -162,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//          this-&gt;_proto.setf(kernel_proto_flag::prepend_source_and_destination);</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classfactory_1_1process__handler.html">process_handler</a>(<a class="code" href="classfactory_1_1process__handler.html">process_handler</a>&amp;&amp; rhs):</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classasc_1_1process__handler.html">process_handler</a>(<a class="code" href="classasc_1_1process__handler.html">process_handler</a>&amp;&amp; rhs):</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        _childpid(rhs._childpid),</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        _outbuf(std::move(rhs._outbuf)),</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        _ostream(std::move(rhs._ostream)),</div>
@@ -177,11 +176,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">explicit</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classfactory_1_1process__handler.html">process_handler</a>(sys::pipe&amp;&amp; pipe):</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classasc_1_1process__handler.html">process_handler</a>(sys::pipe&amp;&amp; pipe):</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        _childpid(sys::this_process::id()),</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        _outbuf(<span class="keyword">new</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        _outbuf(<span class="keyword">new</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        _ostream(_outbuf.get()),</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        _inbuf(<span class="keyword">new</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        _inbuf(<span class="keyword">new</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">kernelbuf_type</a>),</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        _istream(_inbuf.get()),</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        _proto()</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
@@ -191,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">virtual</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        ~<a class="code" href="classfactory_1_1process__handler.html">process_handler</a>() {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        ~<a class="code" href="classasc_1_1process__handler.html">process_handler</a>() {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="comment">// recover kernels from upstream and downstream buffer</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            this-&gt;_proto.recover_kernels(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
@@ -208,15 +207,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        send(kernel_type* kernel) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            this-&gt;_proto.<a class="code" href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">send</a>(kernel, this-&gt;_ostream);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        send(kernel_type* k) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            this-&gt;_proto.<a class="code" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">send</a>(k, this-&gt;_ostream);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        handle(sys::poll_event&amp; event);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        forward(<span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        forward(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            this-&gt;_proto.forward(hdr, istr, this-&gt;_ostream);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
@@ -225,13 +224,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structfactory_1_1kstream_html"><div class="ttname"><a href="structfactory_1_1kstream.html">factory::kstream&lt; K &gt;</a></div></div>
-<div class="ttc" id="classfactory_1_1kernel__protocol_html_a39bf95cf5bae24ef2c7bdec1ef11ab71"><div class="ttname"><a href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">factory::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *kernel, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
-<div class="ttc" id="classfactory_1_1kernel__protocol_html"><div class="ttname"><a href="classfactory_1_1kernel__protocol.html">factory::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
-<div class="ttc" id="classfactory_1_1process__handler_html"><div class="ttname"><a href="classfactory_1_1process__handler.html">factory::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:17</div></div>
-<div class="ttc" id="classfactory_1_1basic__kernelbuf_html"><div class="ttname"><a href="classfactory_1_1basic__kernelbuf.html">factory::basic_kernelbuf</a></div><div class="ttdef"><b>Definition:</b> kernelbuf.hh:12</div></div>
-<div class="ttc" id="classfactory_1_1kernel__header_html"><div class="ttname"><a href="classfactory_1_1kernel__header.html">factory::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
-<div class="ttc" id="classfactory_1_1pipeline__base_html"><div class="ttname"><a href="classfactory_1_1pipeline__base.html">factory::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:17</div></div>
+<div class="ttc" id="classasc_1_1kernel__protocol_html_acedc17221dfcbe23e2aad6cbdca1e09f"><div class="ttname"><a href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">asc::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *k, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
+<div class="ttc" id="classasc_1_1pipeline__base_html"><div class="ttname"><a href="classasc_1_1pipeline__base.html">asc::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:17</div></div>
+<div class="ttc" id="structasc_1_1kstream_html"><div class="ttname"><a href="structasc_1_1kstream.html">asc::kstream&lt; K &gt;</a></div></div>
+<div class="ttc" id="classasc_1_1process__handler_html"><div class="ttname"><a href="classasc_1_1process__handler.html">asc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:17</div></div>
+<div class="ttc" id="classasc_1_1basic__kernelbuf_html"><div class="ttname"><a href="classasc_1_1basic__kernelbuf.html">asc::basic_kernelbuf</a></div><div class="ttdef"><b>Definition:</b> kernelbuf.hh:12</div></div>
+<div class="ttc" id="classasc_1_1kernel__header_html"><div class="ttname"><a href="classasc_1_1kernel__header.html">asc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
+<div class="ttc" id="classasc_1_1kernel__protocol_html"><div class="ttname"><a href="classasc_1_1kernel__protocol.html">asc::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

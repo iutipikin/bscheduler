@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;unistdx/it/queue_popper&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;unistdx/ipc/process&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span> &lt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">class </span>T,</div>
@@ -127,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">class </span>Forward=bits::no_forward&lt;Router&gt;,</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">class </span>Kernels=std::deque&lt;T*&gt;,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">class </span>Traits=sys::deque_traits&lt;Kernels&gt;&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfactory_1_1kernel__protocol.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__protocol.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
@@ -137,14 +136,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> Traits traits_type;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1kstream.html">kstream&lt;T&gt;</a> <a class="code" href="structfactory_1_1kstream.html">stream_type</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structasc_1_1kstream.html">kstream&lt;T&gt;</a> <a class="code" href="structasc_1_1kstream.html">stream_type</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">typedef</span> sys::queue_pop_iterator&lt;Kernels,Traits&gt; queue_popper;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> T::id_type id_type;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">typedef</span> sys::ipacket_guard&lt;stream_type&gt; ipacket_guard;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">typedef</span> sys::opacket_guard&lt;stream_type&gt; opacket_guard;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classfactory_1_1kernel__proto__flag.html">kernel_proto_flag</a> _flags = <a class="code" href="classfactory_1_1kernel__proto__flag.html">kernel_proto_flag</a>(0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classasc_1_1kernel__proto__flag.html">kernel_proto_flag</a> _flags = <a class="code" href="classasc_1_1kernel__proto__flag.html">kernel_proto_flag</a>(0);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        sys::endpoint _endpoint;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        application_type _thisapp = this_application::get_id();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        pool_type _upstream;</div>
@@ -154,48 +153,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>(<a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>(<a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>(<span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ~<a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ~<a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>() {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            sys::delete_each(queue_popper(this-&gt;_upstream), queue_popper());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            sys::delete_each(queue_popper(this-&gt;_downstream), queue_popper());</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">   65</a></span>&#160;        <a class="code" href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">send</a>(kernel_type* kernel, <a class="code" href="structfactory_1_1kstream.html">stream_type</a>&amp; stream) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">   65</a></span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">send</a>(kernel_type* k, <a class="code" href="structasc_1_1kstream.html">stream_type</a>&amp; stream) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">bool</span> delete_kernel = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (kernel_goes_in_upstream_buffer(kernel)) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                this-&gt;ensure_has_id(kernel);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                this-&gt;ensure_has_id(kernel-&gt;parent());</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;save parent for _&quot;</span>, *kernel);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                traits_type::push(this-&gt;_upstream, kernel);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (kernel_goes_in_upstream_buffer(k)) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                this-&gt;ensure_has_id(k);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                this-&gt;ensure_has_id(k-&gt;parent());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;save parent for _&quot;</span>, *k);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                traits_type::push(this-&gt;_upstream, k);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span> (kernel_goes_in_downstream_buffer(kernel)) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                traits_type::push(this-&gt;_downstream, kernel);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span> (kernel_goes_in_downstream_buffer(k)) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                traits_type::push(this-&gt;_downstream, k);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (!kernel-&gt;moves_everywhere()) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (!k-&gt;moves_everywhere()) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                delete_kernel = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            sys::log_message(</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="stringliteral">&quot;proto&quot;</span>,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="stringliteral">&quot;send to _ kernel _&quot;</span>,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                this-&gt;_endpoint,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                *kernel</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                *k</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            );</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            this-&gt;write_kernel(kernel, stream);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            this-&gt;write_kernel(k, stream);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">if</span> (delete_kernel) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keyword">delete</span> kernel;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keyword">delete</span> k;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        forward(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__header.html">kernel_header</a>&amp; hdr,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__header.html">kernel_header</a>&amp; hdr,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            sys::pstream&amp; istr,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            stream_type&amp; ostr</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        ) {</div>
@@ -224,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                            );</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">                            #endif</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span>                            k-&gt;principal(k-&gt;parent());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                            this-&gt;<a class="code" href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">send</a>(k, stream);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                            this-&gt;<a class="code" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">send</a>(k, stream);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                            router_type::send_local(k);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        }</div>
@@ -263,11 +262,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">// send {{{</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        write_kernel(kernel_type* kernel, stream_type&amp; stream) noexcept {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        write_kernel(kernel_type* k, stream_type&amp; stream) noexcept {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                opacket_guard g(stream);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                stream.begin_packet();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                this-&gt;do_write_kernel(*kernel, stream);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                this-&gt;do_write_kernel(*k, stream);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                stream.end_packet();</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> Error&amp; err) {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;write error _&quot;</span>, err);</div>
@@ -279,12 +278,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        do_write_kernel(kernel_type&amp; kernel, stream_type&amp; stream) {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            stream &lt;&lt; kernel.app();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        do_write_kernel(kernel_type&amp; k, stream_type&amp; stream) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            stream &lt;&lt; k.app();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">if</span> (this-&gt;has_src_and_dest()) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                stream &lt;&lt; kernel.from() &lt;&lt; kernel.to();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                stream &lt;&lt; k.from() &lt;&lt; k.to();</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            stream &lt;&lt; kernel;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            stream &lt;&lt; k;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span></div>
@@ -301,7 +300,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// receive {{{</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        kernel_type*</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        read_kernel(stream_type&amp; stream) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            kernel_type* kernel = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            kernel_type* k = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            application_type app;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            stream &gt;&gt; app;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">if</span> (app != this-&gt;_thisapp) {</div>
@@ -326,19 +325,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">if</span> (b) {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    stream &gt;&gt; from &gt;&gt; to;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                stream &gt;&gt; kernel;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                kernel-&gt;setapp(app);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                stream &gt;&gt; k;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                k-&gt;setapp(app);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordflow">if</span> (b) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    kernel-&gt;from(from);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    kernel-&gt;to(to);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    k-&gt;from(from);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    k-&gt;to(to);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    kernel-&gt;from(this-&gt;_endpoint);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    k-&gt;from(this-&gt;_endpoint);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">if</span> (kernel-&gt;carries_parent()) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    kernel-&gt;parent()-&gt;setapp(app);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">if</span> (k-&gt;carries_parent()) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    k-&gt;parent()-&gt;setapp(app);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">return</span> kernel;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">return</span> k;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">bool</span></div>
@@ -350,7 +349,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                instances_guard g(instances);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <span class="keyword">auto</span> result = instances.find(k-&gt;principal_id());</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordflow">if</span> (result == instances.end()) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    k-&gt;result(exit_code::no_principal_found);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    k-&gt;return_code(exit_code::no_principal_found);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    ok = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                k-&gt;principal(result-&gt;second);</div>
@@ -410,7 +409,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor"></span>                sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;destination is unreachable for _&quot;</span>, *k);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">                #endif</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span>                k-&gt;from(k-&gt;to());</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                k-&gt;result(exit_code::endpoint_not_connected);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                k-&gt;return_code(exit_code::endpoint_not_connected);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                k-&gt;principal(k-&gt;parent());</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                router_type::send_local(k);</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (k-&gt;moves_downstream() &amp;&amp; k-&gt;carries_parent()) {</div>
@@ -425,9 +424,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="comment">// }}}</span></div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        ensure_has_id(kernel_type* kernel) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (!kernel-&gt;has_id()) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                kernel-&gt;id(this-&gt;generate_id());</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        ensure_has_id(kernel_type* k) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (!k-&gt;has_id()) {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                k-&gt;id(this-&gt;generate_id());</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            }</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        }</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
@@ -474,11 +473,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structfactory_1_1kstream_html"><div class="ttname"><a href="structfactory_1_1kstream.html">factory::kstream</a></div><div class="ttdef"><b>Definition:</b> kstream.hh:67</div></div>
-<div class="ttc" id="classfactory_1_1kernel__protocol_html_a39bf95cf5bae24ef2c7bdec1ef11ab71"><div class="ttname"><a href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">factory::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *kernel, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
-<div class="ttc" id="classfactory_1_1kernel__protocol_html"><div class="ttname"><a href="classfactory_1_1kernel__protocol.html">factory::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
-<div class="ttc" id="classfactory_1_1kernel__proto__flag_html"><div class="ttname"><a href="classfactory_1_1kernel__proto__flag.html">factory::kernel_proto_flag</a></div><div class="ttdef"><b>Definition:</b> kernel_proto_flag.hh:6</div></div>
-<div class="ttc" id="classfactory_1_1kernel__header_html"><div class="ttname"><a href="classfactory_1_1kernel__header.html">factory::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
+<div class="ttc" id="classasc_1_1kernel__protocol_html_acedc17221dfcbe23e2aad6cbdca1e09f"><div class="ttname"><a href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">asc::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *k, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
+<div class="ttc" id="structasc_1_1kstream_html"><div class="ttname"><a href="structasc_1_1kstream.html">asc::kstream</a></div><div class="ttdef"><b>Definition:</b> kstream.hh:67</div></div>
+<div class="ttc" id="classasc_1_1kernel__proto__flag_html"><div class="ttname"><a href="classasc_1_1kernel__proto__flag.html">asc::kernel_proto_flag</a></div><div class="ttdef"><b>Definition:</b> kernel_proto_flag.hh:6</div></div>
+<div class="ttc" id="classasc_1_1kernel__header_html"><div class="ttname"><a href="classasc_1_1kernel__header.html">asc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
+<div class="ttc" id="classasc_1_1kernel__protocol_html"><div class="ttname"><a href="classasc_1_1kernel__protocol.html">asc::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

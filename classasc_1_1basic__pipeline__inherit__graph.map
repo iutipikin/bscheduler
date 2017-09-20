@@ -1,0 +1,14 @@
+<map id="asc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;" name="asc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;">
+<area shape="rect" id="node3" href="$structasc_1_1basic__socket__pipeline.html" title="asc::basic_socket_pipeline\l\&lt; T, Handler \&gt;" alt="" coords="389,6,568,47"/>
+<area shape="rect" id="node4" href="$structasc_1_1timer__pipeline.html" title="asc::timer_pipeline\&lt; T \&gt;" alt="" coords="397,72,560,99"/>
+<area shape="rect" id="node5" href="$structasc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;" alt="" coords="403,123,554,179"/>
+<area shape="rect" id="node7" href="$structasc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="403,203,554,259"/>
+<area shape="rect" id="node10" href="$structasc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="390,283,567,339"/>
+<area shape="rect" id="node12" href="$structasc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="403,363,555,419"/>
+<area shape="rect" id="node2" href="$classasc_1_1pipeline__base.html" title="asc::pipeline_base" alt="" coords="5,177,136,204"/>
+<area shape="rect" id="node6" href="$classasc_1_1unix__domain__socket__pipeline.html" title="asc::unix_domain_socket\l_pipeline\&lt; K, R \&gt;" alt="" coords="616,91,787,133"/>
+<area shape="rect" id="node8" href="$classasc_1_1child__process__pipeline.html" title="asc::child_process\l_pipeline\&lt; K, R \&gt;" alt="" coords="636,157,767,198"/>
+<area shape="rect" id="node9" href="$classasc_1_1process__pipeline.html" title="asc::process_pipeline\l\&lt; K, R \&gt;" alt="" coords="627,222,775,263"/>
+<area shape="rect" id="node11" href="$classasc_1_1child__process__pipeline.html" title="asc::child_process\l_pipeline\&lt; T, basic\l_router\&lt; T \&gt; \&gt;" alt="" coords="635,287,767,343"/>
+<area shape="rect" id="node13" href="$classasc_1_1socket__pipeline.html" title="asc::socket_pipeline\l\&lt; T, Socket, Router \&gt;" alt="" coords="626,370,777,411"/>
+</map>

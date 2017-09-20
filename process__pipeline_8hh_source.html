@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,17 +119,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/basic_socket_pipeline.hh&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/process_handler.hh&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> K, <span class="keyword">class</span> R&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classfactory_1_1process__pipeline.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span> <a class="code" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,process_handler&lt;K,R&gt;&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classasc_1_1process__pipeline.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,process_handler&lt;K,R&gt;&gt; {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structfactory_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,process_handler&lt;K, R&gt;</a>&gt; <a class="code" href="structfactory_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,process_handler&lt;K, R&gt;</a>&gt; <a class="code" href="structasc_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::queue_popper;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_ptr;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classfactory_1_1process__handler.html">base_pipeline::event_handler_type</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classasc_1_1process__handler.html">base_pipeline::event_handler_type</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> std::map&lt;application_type,event_handler_ptr&gt; map_type;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> map_type::iterator app_iterator;</div>
@@ -145,16 +144,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>(<span class="keyword">const</span> <a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>&amp;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        operator=(<span class="keyword">const</span> <a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>&amp;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        operator=(<span class="keyword">const</span> <a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>(<a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>(<a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        ~<a class="code" href="classfactory_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        ~<a class="code" href="classasc_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        remove_client(event_handler_ptr ptr) <span class="keyword">override</span>;</div>
@@ -163,13 +162,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        process_kernels() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        add(<span class="keyword">const</span> <a class="code" href="classfactory_1_1Application.html">Application</a>&amp; app);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        add(<span class="keyword">const</span> <a class="code" href="classasc_1_1application.html">application</a>&amp; app);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        do_run() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        forward(<span class="keyword">const</span> <a class="code" href="classfactory_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        forward(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
@@ -195,11 +194,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structfactory_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structfactory_1_1basic__socket__pipeline.html">factory::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
-<div class="ttc" id="classfactory_1_1process__handler_html"><div class="ttname"><a href="classfactory_1_1process__handler.html">factory::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:17</div></div>
-<div class="ttc" id="classfactory_1_1kernel__header_html"><div class="ttname"><a href="classfactory_1_1kernel__header.html">factory::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
-<div class="ttc" id="classfactory_1_1Application_html"><div class="ttname"><a href="classfactory_1_1Application.html">factory::Application</a></div><div class="ttdef"><b>Definition:</b> application.hh:15</div></div>
-<div class="ttc" id="classfactory_1_1process__pipeline_html"><div class="ttname"><a href="classfactory_1_1process__pipeline.html">factory::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:19</div></div>
+<div class="ttc" id="structasc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structasc_1_1basic__socket__pipeline.html">asc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
+<div class="ttc" id="classasc_1_1application_html"><div class="ttname"><a href="classasc_1_1application.html">asc::application</a></div><div class="ttdef"><b>Definition:</b> application.hh:15</div></div>
+<div class="ttc" id="classasc_1_1process__handler_html"><div class="ttname"><a href="classasc_1_1process__handler.html">asc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:17</div></div>
+<div class="ttc" id="classasc_1_1process__pipeline_html"><div class="ttname"><a href="classasc_1_1process__pipeline.html">asc::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:19</div></div>
+<div class="ttc" id="classasc_1_1kernel__header_html"><div class="ttname"><a href="classasc_1_1kernel__header.html">asc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

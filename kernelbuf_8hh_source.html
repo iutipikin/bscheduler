@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,10 +112,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unistdx/base/packetbuf&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/byte_order&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Base&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classfactory_1_1basic__kernelbuf.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>: <span class="keyword">public</span> Base {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classasc_1_1basic__kernelbuf.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>: <span class="keyword">public</span> Base {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">typedef</span> Base base_type;</div>
@@ -134,16 +133,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">typedef</span> sys::bytes&lt;portable_size_type, char_type&gt; bytes_type;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>() {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>() {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            this-&gt;set_oheader(header_size());</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>(<a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>(<span class="keyword">const</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp; operator=(<a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classfactory_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>(<a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp; operator=(<a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classasc_1_1basic__kernelbuf.html">basic_kernelbuf</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -183,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classfactory_1_1basic__kernelbuf_html"><div class="ttname"><a href="classfactory_1_1basic__kernelbuf.html">factory::basic_kernelbuf</a></div><div class="ttdef"><b>Definition:</b> kernelbuf.hh:12</div></div>
+<div class="ttc" id="classasc_1_1basic__kernelbuf_html"><div class="ttname"><a href="classasc_1_1basic__kernelbuf.html">asc::basic_kernelbuf</a></div><div class="ttdef"><b>Definition:</b> kernelbuf.hh:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

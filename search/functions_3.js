@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run',['run',['../structfactory_1_1basic__socket__pipeline.html#a5167fe06de084cb3cc4c02be19d38b99',1,'factory::basic_socket_pipeline']]]
+  ['run',['run',['../structasc_1_1basic__socket__pipeline.html#abc4a51ef9106513842ff6aa0e69f6cde',1,'asc::basic_socket_pipeline']]]
 ];

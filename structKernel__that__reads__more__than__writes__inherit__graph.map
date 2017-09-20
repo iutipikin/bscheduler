@@ -1,7 +1,7 @@
 <map id="Kernel_that_reads_more_than_writes" name="Kernel_that_reads_more_than_writes">
-<area shape="rect" id="node2" href="$structGood__kernel.html" title="Good_kernel" alt="" coords="111,229,205,256"/>
-<area shape="rect" id="node3" href="$structfactory_1_1Kernel.html" title="factory::Kernel" alt="" coords="105,155,212,181"/>
-<area shape="rect" id="node4" href="$classfactory_1_1mobile__kernel.html" title="factory::mobile_kernel" alt="" coords="83,80,233,107"/>
-<area shape="rect" id="node5" href="$classfactory_1_1kernel__base.html" title="factory::kernel_base" alt="" coords="5,5,144,32"/>
-<area shape="rect" id="node6" href="$classfactory_1_1kernel__header.html" title="factory::kernel_header" alt="" coords="169,5,319,32"/>
+<area shape="rect" id="node2" href="$structGood__kernel.html" title="Good_kernel" alt="" coords="93,229,187,256"/>
+<area shape="rect" id="node3" href="$structasc_1_1Kernel.html" title="asc::Kernel" alt="" coords="96,155,184,181"/>
+<area shape="rect" id="node4" href="$classasc_1_1mobile__kernel.html" title="asc::mobile_kernel" alt="" coords="75,80,204,107"/>
+<area shape="rect" id="node5" href="$classasc_1_1kernel__base.html" title="asc::kernel_base" alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node6" href="$classasc_1_1kernel__header.html" title="asc::kernel_header" alt="" coords="150,5,281,32"/>
 </map>

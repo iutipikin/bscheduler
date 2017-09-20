@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,9 +110,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel_base.hh&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel_header.hh&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>factory {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>asc {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classfactory_1_1mobile__kernel.html">    9</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1mobile__kernel.html">mobile_kernel</a>: <span class="keyword">public</span> <a class="code" href="classfactory_1_1kernel__base.html">kernel_base</a>, <span class="keyword">public</span> <a class="code" href="classfactory_1_1kernel__header.html">kernel_header</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classasc_1_1mobile__kernel.html">    9</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1mobile__kernel.html">mobile_kernel</a>: <span class="keyword">public</span> <a class="code" href="classasc_1_1kernel__base.html">kernel_base</a>, <span class="keyword">public</span> <a class="code" href="classasc_1_1kernel__header.html">kernel_header</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">typedef</span> uint64_t id_type;</div>
@@ -149,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        operator==(<span class="keyword">const</span> <a class="code" href="classfactory_1_1mobile__kernel.html">mobile_kernel</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        operator==(<span class="keyword">const</span> <a class="code" href="classasc_1_1mobile__kernel.html">mobile_kernel</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span> == &amp;rhs || (</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                this-&gt;id() == rhs.id()</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                &amp;&amp; this-&gt;has_id()</div>
@@ -158,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        operator!=(<span class="keyword">const</span> <a class="code" href="classfactory_1_1mobile__kernel.html">mobile_kernel</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        operator!=(<span class="keyword">const</span> <a class="code" href="classasc_1_1mobile__kernel.html">mobile_kernel</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
@@ -178,9 +177,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classfactory_1_1kernel__base_html"><div class="ttname"><a href="classfactory_1_1kernel__base.html">factory::kernel_base</a></div><div class="ttdef"><b>Definition:</b> kernel_base.hh:13</div></div>
-<div class="ttc" id="classfactory_1_1kernel__header_html"><div class="ttname"><a href="classfactory_1_1kernel__header.html">factory::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
-<div class="ttc" id="classfactory_1_1mobile__kernel_html"><div class="ttname"><a href="classfactory_1_1mobile__kernel.html">factory::mobile_kernel</a></div><div class="ttdef"><b>Definition:</b> mobile_kernel.hh:9</div></div>
+<div class="ttc" id="classasc_1_1mobile__kernel_html"><div class="ttname"><a href="classasc_1_1mobile__kernel.html">asc::mobile_kernel</a></div><div class="ttdef"><b>Definition:</b> mobile_kernel.hh:9</div></div>
+<div class="ttc" id="classasc_1_1kernel__base_html"><div class="ttname"><a href="classasc_1_1kernel__base.html">asc::kernel_base</a></div><div class="ttdef"><b>Definition:</b> kernel_base.hh:13</div></div>
+<div class="ttc" id="classasc_1_1kernel__header_html"><div class="ttname"><a href="classasc_1_1kernel__header.html">asc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

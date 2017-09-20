@@ -55,7 +55,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="tutorial.html"><span>Tutorial</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -134,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">float</span> Real;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structAutoreg__app.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAutoreg__app.html">Autoreg_app</a>: <span class="keyword">public</span> Kernel {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structAutoreg__app.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAutoreg__app.html">Autoreg_app</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a> {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>():</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    model_filename(<span class="stringliteral">&quot;autoreg.model&quot;</span>)</div>
@@ -160,14 +159,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::cerr &lt;&lt; e.what();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            exit(1);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        upstream&lt;Local&gt;(<span class="keyword">this</span>, model);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        asc::upstream(<span class="keyword">this</span>, model);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> react(Kernel*) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> react(<a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a>*) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        #ifndef NDEBUG</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>        sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;finished all&quot;</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        #endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>        commit&lt;Local&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>        asc::commit(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
@@ -177,6 +176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="structasc_1_1Kernel_html"><div class="ttname"><a href="structasc_1_1Kernel.html">asc::Kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
 <div class="ttc" id="structAutoreg__app_html"><div class="ttname"><a href="structAutoreg__app.html">Autoreg_app</a></div><div class="ttdef"><b>Definition:</b> autoreg_app.hh:30</div></div>
 <div class="ttc" id="classautoreg_1_1Autoreg__model_html"><div class="ttname"><a href="classautoreg_1_1Autoreg__model.html">autoreg::Autoreg_model</a></div><div class="ttdef"><b>Definition:</b> autoreg_driver.hh:7</div></div>
 </div><!-- fragment --></div><!-- contents -->

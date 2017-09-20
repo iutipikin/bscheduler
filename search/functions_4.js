@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['send',['send',['../classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71',1,'factory::kernel_protocol']]]
+  ['send',['send',['../classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f',1,'asc::kernel_protocol']]]
 ];
