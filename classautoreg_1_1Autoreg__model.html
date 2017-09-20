@@ -143,10 +143,6 @@ std::chrono::nanoseconds::rep&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a3b32053a0849b3010fe1a880a93f3b17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b32053a0849b3010fe1a880a93f3b17"></a>
 typedef std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><b>Nanoseconds</b></td></tr>
 <tr class="separator:a3b32053a0849b3010fe1a880a93f3b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf3756fcaeb9e06ced4a46507016f1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecf3756fcaeb9e06ced4a46507016f1d"></a>
-typedef std::make_signed&lt; Time &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memItemRight" valign="bottom"><b>Skew</b></td></tr>
-<tr class="separator:aecf3756fcaeb9e06ced4a46507016f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -165,12 +161,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (sys::pstrea
 <tr class="memitem:ab98ddf8a6febdca3a4f9f155888d00bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab98ddf8a6febdca3a4f9f155888d00bf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>react</b> (Kernel *child) override</td></tr>
 <tr class="separator:ab98ddf8a6febdca3a4f9f155888d00bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a342f79f46ca24d4028a4fc9dd1d5a3bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a342f79f46ca24d4028a4fc9dd1d5a3bf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gather_statistics</b> ()</td></tr>
-<tr class="separator:a342f79f46ca24d4028a4fc9dd1d5a3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca86d456c542d98ab2cbeddfa9be72c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca86d456c542d98ab2cbeddfa9be72c6"></a>
-const <a class="el" href="classautoreg_1_1Domain.html">Domain</a>&lt; T, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>domain</b> () const </td></tr>
-<tr class="separator:aca86d456c542d98ab2cbeddfa9be72c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35316ba8e4d4b5ff8d186f49bac7fe8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35316ba8e4d4b5ff8d186f49bac7fe8c"></a>
+const <a class="el" href="classautoreg_1_1Domain.html">Domain</a>&lt; T, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>domain</b> () const noexcept</td></tr>
+<tr class="separator:a35316ba8e4d4b5ff8d186f49bac7fe8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -180,10 +173,10 @@ static Time&#160;</td><td class="memItemRight" valign="bottom"><b>current_time_n
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a19d615352b147efd1579406e75f53f04"><td class="memTemplParams" colspan="2"><a class="anchor" id="a19d615352b147efd1579406e75f53f04"></a>
+<tr class="memitem:a9ae238cd7c9da9dabcff0dc5e7a65564"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9ae238cd7c9da9dabcff0dc5e7a65564"></a>
 template&lt;class V &gt; </td></tr>
-<tr class="memitem:a19d615352b147efd1579406e75f53f04"><td class="memTemplItemLeft" align="right" valign="top">istream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;&gt;</b> (istream &amp;in, <a class="el" href="classautoreg_1_1Autoreg__model.html">Autoreg_model</a>&lt; V &gt; &amp;model)</td></tr>
-<tr class="separator:a19d615352b147efd1579406e75f53f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae238cd7c9da9dabcff0dc5e7a65564"><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::istream &amp;in, <a class="el" href="classautoreg_1_1Autoreg__model.html">Autoreg_model</a>&lt; V &gt; &amp;model)</td></tr>
+<tr class="separator:a9ae238cd7c9da9dabcff0dc5e7a65564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/travis/build/igankevich/factory/src/examples/autoreg/<a class="el" href="autoreg__driver_8hh_source.html">autoreg_driver.hh</a></li>

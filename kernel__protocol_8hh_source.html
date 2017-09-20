@@ -124,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span> &lt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">class </span>T,</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">class </span>Router,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">class </span><a class="code" href="structForward.html">Forward</a>=bits::no_forward&lt;Router&gt;,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">class </span>Forward=bits::no_forward&lt;Router&gt;,</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">class </span>Kernels=std::deque&lt;T*&gt;,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">class </span>Traits=sys::deque_traits&lt;Kernels&gt;&gt;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfactory_1_1kernel__protocol.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfactory_1_1kernel__protocol.html">kernel_protocol</a> {</div>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">typedef</span> Router router_type;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structForward.html">Forward</a> <a class="code" href="structForward.html">forward_type</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> Forward forward_type;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> Kernels pool_type;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> Traits traits_type;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        application_type _thisapp = this_application::get_id();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        pool_type _upstream;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        pool_type _downstream;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="structForward.html">forward_type</a> _forward;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        forward_type _forward;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        id_type _counter = 0;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
@@ -476,7 +476,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
 <div class="ttc" id="structfactory_1_1kstream_html"><div class="ttname"><a href="structfactory_1_1kstream.html">factory::kstream</a></div><div class="ttdef"><b>Definition:</b> kstream.hh:67</div></div>
 <div class="ttc" id="classfactory_1_1kernel__protocol_html_a39bf95cf5bae24ef2c7bdec1ef11ab71"><div class="ttname"><a href="classfactory_1_1kernel__protocol.html#a39bf95cf5bae24ef2c7bdec1ef11ab71">factory::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *kernel, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
-<div class="ttc" id="structForward_html"><div class="ttname"><a href="structForward.html">Forward</a></div><div class="ttdef"><b>Definition:</b> fourier.hh:17</div></div>
 <div class="ttc" id="classfactory_1_1kernel__protocol_html"><div class="ttname"><a href="classfactory_1_1kernel__protocol.html">factory::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
 <div class="ttc" id="classfactory_1_1kernel__proto__flag_html"><div class="ttname"><a href="classfactory_1_1kernel__proto__flag.html">factory::kernel_proto_flag</a></div><div class="ttdef"><b>Definition:</b> kernel_proto_flag.hh:6</div></div>
 <div class="ttc" id="classfactory_1_1kernel__header_html"><div class="ttname"><a href="classfactory_1_1kernel__header.html">factory::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>

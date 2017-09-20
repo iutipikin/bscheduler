@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classautoreg_1_1Vector.html" title="autoreg::Vector\&lt; T, 3 \&gt;" alt="" coords="6,5,165,32"/>
+<area shape="rect" id="node2" href="$structfactory_1_1bits_1_1forward__to__child.html" title="factory::bits::forward\l_to_child\&lt; Router \&gt;" alt="" coords="125,5,267,46"/>
+<area shape="rect" id="node3" href="$structfactory_1_1bits_1_1forward__to__parent.html" title="factory::bits::forward\l_to_parent\&lt; Router \&gt;" alt="" coords="123,70,269,111"/>
+<area shape="rect" id="node4" href="$structfactory_1_1bits_1_1no__forward.html" title="factory::bits::no_forward\l\&lt; Router \&gt;" alt="" coords="115,135,277,177"/>
 </map>

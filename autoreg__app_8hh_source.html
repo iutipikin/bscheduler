@@ -126,62 +126,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;mapreduce.hh&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;ssysv.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;domain.hh&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;spectrum.hh&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;autoreg.hh&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;nonlinear_omp.hh&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;fourier.hh&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pressure.hh&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;autoreg_driver.hh&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using namespace </span>autoreg;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;autoreg.hh&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;valarray_ext.hh&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;autoreg_driver.hh&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">using namespace </span>autoreg;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">float</span> Real;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">float</span> Real;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structAutoreg__app.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAutoreg__app.html">Autoreg_app</a>: <span class="keyword">public</span> Kernel {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>():</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    model_filename(<span class="stringliteral">&quot;autoreg.model&quot;</span>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> XXX&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>(XXX&amp;, <span class="keywordtype">int</span>, <span class="keywordtype">char</span>**):</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> act() {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classautoreg_1_1Autoreg__model.html">Autoreg_model&lt;Real&gt;</a>* model = <span class="keyword">new</span> <a class="code" href="classautoreg_1_1Autoreg__model.html">Autoreg_model&lt;Real&gt;</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            std::ifstream cfg(model_filename.c_str());</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (cfg.is_open()) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                cfg &gt;&gt; *model;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                #ifndef NDEBUG</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>                sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;using default parameters&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">                #endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span>            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            std::cerr &lt;&lt; e.what();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            exit(1);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        upstream&lt;Local&gt;(<span class="keyword">this</span>, model);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> react(Kernel*) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">        #ifndef NDEBUG</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>        sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;finished all&quot;</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">        #endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>        commit&lt;Local&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string model_filename;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structAutoreg__app_html"><div class="ttname"><a href="structAutoreg__app.html">Autoreg_app</a></div><div class="ttdef"><b>Definition:</b> autoreg_app.hh:33</div></div>
-<div class="ttc" id="classautoreg_1_1Autoreg__model_html"><div class="ttname"><a href="classautoreg_1_1Autoreg__model.html">autoreg::Autoreg_model</a></div><div class="ttdef"><b>Definition:</b> autoreg_driver.hh:20</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structAutoreg__app.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAutoreg__app.html">Autoreg_app</a>: <span class="keyword">public</span> Kernel {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>():</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    model_filename(<span class="stringliteral">&quot;autoreg.model&quot;</span>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> XXX&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>(XXX&amp;, <span class="keywordtype">int</span>, <span class="keywordtype">char</span>**):</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="structAutoreg__app.html">Autoreg_app</a>()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> act() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classautoreg_1_1Autoreg__model.html">Autoreg_model&lt;Real&gt;</a>* model = <span class="keyword">new</span> <a class="code" href="classautoreg_1_1Autoreg__model.html">Autoreg_model&lt;Real&gt;</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::ifstream cfg(model_filename.c_str());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (cfg.is_open()) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                cfg &gt;&gt; *model;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                #ifndef NDEBUG</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span>                sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;using default parameters&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">                #endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>            }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::cerr &lt;&lt; e.what();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            exit(1);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        upstream&lt;Local&gt;(<span class="keyword">this</span>, model);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> react(Kernel*) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        #ifndef NDEBUG</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>        sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;finished all&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>        commit&lt;Local&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string model_filename;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="structAutoreg__app_html"><div class="ttname"><a href="structAutoreg__app.html">Autoreg_app</a></div><div class="ttdef"><b>Definition:</b> autoreg_app.hh:30</div></div>
+<div class="ttc" id="classautoreg_1_1Autoreg__model_html"><div class="ttname"><a href="classautoreg_1_1Autoreg__model.html">autoreg::Autoreg_model</a></div><div class="ttdef"><b>Definition:</b> autoreg_driver.hh:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

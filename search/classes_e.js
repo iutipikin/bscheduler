@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['parallel_5fmt',['parallel_mt',['../structautoreg_1_1parallel__mt.html',1,'autoreg']]],
   ['parallel_5fpipeline',['parallel_pipeline',['../classfactory_1_1parallel__pipeline.html',1,'factory']]],
   ['pipeline_5fbase',['pipeline_base',['../classfactory_1_1pipeline__base.html',1,'factory']]],
-  ['poly',['Poly',['../classautoreg_1_1Poly.html',1,'autoreg']]],
   ['position_5fin_5ftree',['position_in_tree',['../classfactory_1_1position__in__tree.html',1,'factory']]],
   ['position_5fin_5ftree_3c_20addr_5ftype_20_3e',['position_in_tree&lt; addr_type &gt;',['../classfactory_1_1position__in__tree.html',1,'factory']]],
   ['probe',['probe',['../classfactory_1_1probe.html',1,'factory']]],
