@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Tutorial </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Every Factory application is composed of computational <a class="el" href="structbsc_1_1kernel.html"><em> kernels</em></a> &mdash; self-contained objects which store data and have routines to process it. In each routine a kernel may create any number of <em>subordinates</em> to decompose application into smaller parts. Some kernels can be transferred to another cluster node to make application distributed. An application exits when there are no kernels left to process.</p>
+<div class="textblock"><p>Every Bscheduler application is composed of computational <a class="el" href="structbsc_1_1kernel.html"><em> kernels</em></a> &mdash; self-contained objects which store data and have routines to process it. In each routine a kernel may create any number of <em>subordinates</em> to decompose application into smaller parts. Some kernels can be transferred to another cluster node to make application distributed. An application exits when there are no kernels left to process.</p>
 <p>Kernels are processed by <a class="el" href="classbsc_1_1basic__pipeline.html"><em>pipelines</em></a> &mdash; kernel queues with processing threads attached. Each device has its own pipeline (there is a pipeline for CPU, I/O device and NIC) which allows them to work in parallel: process one part of data with CPU pipeline and simultaneously write another one with disk pipeline. Every pipeline work until application exit.</p>
 <p>Each programme begins with starting all necessary pipelines and sending the main kernel to one of the them. After that programme execution resembles that of sequential programme with each nested call to a procedure replaced with construction of a subordinate kernel and sending it to appropriate pipeline. The difference is that pipelines process kernels <em>asynchronously</em>, so procedure code is decomposed into <a class="el" href=""><code>act()</code></a> routine which constructs subordinates and <a class="el" href=""><code>react()</code></a> routine which processes results they return.</p>
 <h1><a class="anchor" id="api"></a>
@@ -142,18 +142,18 @@ Automatic failure handling</h1>
 <li>failure of a <em>subordinate</em> node &mdash; a node which connects only to its principal and no other node &mdash; and</li>
 <li>failure of a <em>principal</em> node &mdash; a node with multiple connections.</li>
 </ul>
-<p>In Factory the "node" refers both to a cluster node and to a kernel, failures of which are handled differently.</p>
+<p>In Bscheduler the "node" refers both to a cluster node and to a kernel, failures of which are handled differently.</p>
 <h2><a class="anchor" id="kernel-failures"></a>
 Handling kernel failures</h2>
-<p>Since any subordinate kernel is part of a hierarchy the simplest method of handling its failure is to let its principal restart it on a healthy cluster node. Factory does this automatically for any kernel that has parent. This approach works well unless your hierarchy is deep and require restarting a lot of kernels upon a failure; however, this approach does not work for the main kernel &mdash; the first kernel of an application that does not have a parent.</p>
-<p>In case of the main kernel failure the only option is to keep a copy of it on some other cluster node and restore from it when the former node fails. Factory implements this for any kernel with the <a class="el" href="">bsc::kernel_base::Flag::carries_parent</a> flag set, but the approach works only for those principal kernels that have only one subordinate at a time (extending algorithm to cover more cases is one of the goals of ongoing research).</p>
+<p>Since any subordinate kernel is part of a hierarchy the simplest method of handling its failure is to let its principal restart it on a healthy cluster node. Bscheduler does this automatically for any kernel that has parent. This approach works well unless your hierarchy is deep and require restarting a lot of kernels upon a failure; however, this approach does not work for the main kernel &mdash; the first kernel of an application that does not have a parent.</p>
+<p>In case of the main kernel failure the only option is to keep a copy of it on some other cluster node and restore from it when the former node fails. Bscheduler implements this for any kernel with the <a class="el" href=""><code>carries_parent</code></a> flag set, but the approach works only for those principal kernels that have only one subordinate at a time (extending algorithm to cover more cases is one of the goals of ongoing research).</p>
 <p>At present, a kernel is considered failed when a node to which it was sent fails, and a node is considered failed when the corresponding connection closes unexpectedly. At the moment, there is no mechanism that deals with unreliable connections other than timeouts configured in underlying operating system.</p>
 <h2><a class="anchor" id="node-failures"></a>
 Handling cluster node failures</h2>
-<p>Cluster node failures are much simpler to mitigate: there is no state to be lost and the only invariant that should be preserved in a cluster is connectivity of nodes. All nodes should "know" each other and be able to establish arbitrary connections between each other; in other words, nodes should be able to <em>discover</em> each other. Factory implements this functionality without distributed consensus algorithm: the framework builds tree hierarchy of nodes using IP addresses and pre-set fan-out value to rank nodes. Using this algorithm a node computes IP address of its would-be principal and tries to connect to it; if the connection fails it tries another node from the same or higher level of tree hierarchy. If it reaches the root of the tree and no node responds, it becomes the root node. This algorithm is used both during node bootstrap phase and upon a failure of any principal.</p>
+<p>Cluster node failures are much simpler to mitigate: there is no state to be lost and the only invariant that should be preserved in a cluster is connectivity of nodes. All nodes should "know" each other and be able to establish arbitrary connections between each other; in other words, nodes should be able to <em>discover</em> each other. Bscheduler implements this functionality without distributed consensus algorithm: the framework builds tree hierarchy of nodes using IP addresses and pre-set fan-out value to rank nodes. Using this algorithm a node computes IP address of its would-be principal and tries to connect to it; if the connection fails it tries another node from the same or higher level of tree hierarchy. If it reaches the root of the tree and no node responds, it becomes the root node. This algorithm is used both during node bootstrap phase and upon a failure of any principal.</p>
 <h1><a class="anchor" id="hierarchy"></a>
 Hierarchical architecture</h1>
-<p>At high-level Factory framework is composed of multiple layers:</p>
+<p>At high-level Bscheduler framework is composed of multiple layers:</p>
 <ul>
 <li>physical layer (fully-connected servers and network switches),</li>
 <li>middleware layer (hierarchy of nodes),</li>
@@ -162,13 +162,13 @@ Hierarchical architecture</h1>
 <p>Load balancing is implemented by superimposing hierarchy of kernels on the hierarchy of nodes: When a node pipelines are overflown by kernels some of them may be "spilled" to subordinate nodes (planned feature), much like water flows from the top of a cocktail pyramid down to its bottom when volume of glasses in the current layer is to small to hold it.</p>
 <h1><a class="anchor" id="bottomup"></a>
 Bottom-up design</h1>
-<p>Factory framework uses <a href="http://www.paulgraham.com/progbot.html">bottom-up</a> source code development approach which means we create low-level abstractions to simplify high-level code and make it clean and readable. There are two layers of abstractions:</p>
+<p>Bscheduler framework uses <a href="http://www.paulgraham.com/progbot.html">bottom-up</a> source code development approach which means we create low-level abstractions to simplify high-level code and make it clean and readable. There are three layers of abstractions:</p>
 <ul>
 <li><a class="el" href="">operating system layer</a>, which contains thin C++ wrappers for POSIX and Linux system calls and data structures, and</li>
-<li><a class="el" href="">generic C++ abstractions layer</a>, which consists of template routines and classes (e.g. iterators, I/O stream manipulators, guard objects etc.) that are missing in STL.</li>
+<li>generic C++ abstractions layer,</li>
+<li>top layer which contains all business logic.</li>
 </ul>
-<p>From developer perspective it is unclear which layer is the bottom one, but still we would like to separate them via <a href="https://erdani.com/publications/xp2000.pdf">policy-based programming</a> and <a href="http://erdani.com/publications/traits.html">traits classes</a>.</p>
-<p>It is easy to extend Factory source code base: just put all system-related abstractions into <code>sys</code> directory, all generic structures and functions into <code>stdx</code> directory and all framework-specific abstractions into <code>factory</code> directory. </p>
+<p>From the developer perspective it is unclear which layer is the bottom one, but still we would like to separate them via <a href="https://erdani.com/publications/xp2000.pdf">policy-based programming</a> and <a href="http://erdani.com/publications/traits.html">traits classes</a>. </p>
 </div></div><!-- contents -->
 
 </article>

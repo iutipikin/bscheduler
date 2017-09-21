@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['invitation_20to_20factory',['Invitation to Factory',['../index.html',1,'']]]
+  ['introduction_20to_20bscheduler',['Introduction to Bscheduler',['../index.html',1,'']]]
 ];

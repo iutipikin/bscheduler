@@ -1,7 +1,7 @@
 var searchData=
 [
   ['id_5ftype',['id_type',['../classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7',1,'bsc::kernel_type']]],
-  ['invitation_20to_20factory',['Invitation to Factory',['../index.html',1,'']]],
+  ['introduction_20to_20bscheduler',['Introduction to Bscheduler',['../index.html',1,'']]],
   ['index',['Index',['../classautoreg_1_1Index.html',1,'autoreg']]],
   ['index_3c_201_20_3e',['Index&lt; 1 &gt;',['../classautoreg_1_1Index_3_011_01_4.html',1,'autoreg']]],
   ['index_3c_202_20_3e',['Index&lt; 2 &gt;',['../classautoreg_1_1Index_3_012_01_4.html',1,'autoreg']]],
