@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/kernel/kernel_instance_registry.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/kernel/kernel_instance_registry.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_214c3115d404e621f6ea9a265980ce66.html">kernel</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_cd2ce5e2c8584e866c53e83e2e4fa35c.html">kernel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,21 +104,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">kernel_instance_registry.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_KERNEL_KERNEL_INSTANCE_REGISTRY_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_KERNEL_KERNEL_INSTANCE_REGISTRY_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_KERNEL_KERNEL_INSTANCE_REGISTRY_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_KERNEL_KERNEL_INSTANCE_REGISTRY_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;factory/config.hh&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bscheduler/config.hh&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__instance__registry.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1kernel__instance__registry.html">kernel_instance_registry</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classbsc_1_1kernel__instance__registry.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1kernel__instance__registry.html">kernel_instance_registry</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">kernel_type::id_type</a> id_type;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">kernel_type::id_type</a> id_type;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">typedef</span> std::unordered_map&lt;id_type, kernel_type*&gt; container_type;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> container_type::iterator iterator;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> container_type::const_iterator const_iterator;</div>
@@ -179,15 +179,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::ostream&amp;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, const kernel_instance_registry&lt;T&gt;&amp; rhs);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classasc_1_1kernel__instance__registry.html">kernel_instance_registry&lt;FACTORY_KERNEL_TYPE&gt;</a> <a class="code" href="classasc_1_1kernel__instance__registry.html">instance_registry_type</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classbsc_1_1kernel__instance__registry.html">kernel_instance_registry&lt;BSCHEDULER_KERNEL_TYPE&gt;</a> <a class="code" href="classbsc_1_1kernel__instance__registry.html">instance_registry_type</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">typedef</span> std::lock_guard&lt;instance_registry_type&gt; instances_guard;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">extern</span> <a class="code" href="classasc_1_1kernel__instance__registry.html">instance_registry_type</a> instances;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">extern</span> <a class="code" href="classbsc_1_1kernel__instance__registry.html">instance_registry_type</a> instances;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1kernel__instance__registry_html"><div class="ttname"><a href="classasc_1_1kernel__instance__registry.html">asc::kernel_instance_registry</a></div><div class="ttdef"><b>Definition:</b> kernel_instance_registry.hh:11</div></div>
-<div class="ttc" id="classasc_1_1kernel__type_html_ae916b90fc06abf23a615a78e9f8f532e"><div class="ttname"><a href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">asc::kernel_type::id_type</a></div><div class="ttdeci">uint16_t id_type</div><div class="ttdoc">A portable type id. </div><div class="ttdef"><b>Definition:</b> kernel_type.hh:17</div></div>
+<div class="ttc" id="classbsc_1_1kernel__instance__registry_html"><div class="ttname"><a href="classbsc_1_1kernel__instance__registry.html">bsc::kernel_instance_registry</a></div><div class="ttdef"><b>Definition:</b> kernel_instance_registry.hh:11</div></div>
+<div class="ttc" id="classbsc_1_1kernel__type_html_ac6b4473a03871a14e0f31af5d72ed0d7"><div class="ttname"><a href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">bsc::kernel_type::id_type</a></div><div class="ttdeci">uint16_t id_type</div><div class="ttdoc">A portable type id. </div><div class="ttdef"><b>Definition:</b> kernel_type.hh:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

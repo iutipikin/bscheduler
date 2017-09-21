@@ -16,9 +16,9 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="structstd_1_1hash_3_01asc_1_1hierarchy__node_01_4.html" target="_top" xlink:title="std::hash\&lt; asc::hierarchy\l_node \&gt;">
+<g id="a_node2"><a xlink:href="structstd_1_1hash_3_01bsc_1_1hierarchy__node_01_4.html" target="_top" xlink:title="std::hash\&lt; bsc::hierarchy\l_node \&gt;">
 <polygon fill="white" stroke="black" points="74,-0 74,-30 202,-30 202,-0 74,-0"/>
-<text text-anchor="start" x="82" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; asc::hierarchy</text>
+<text text-anchor="start" x="82" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; bsc::hierarchy</text>
 <text text-anchor="middle" x="138" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_node &gt;</text>
 </a>
 </g>

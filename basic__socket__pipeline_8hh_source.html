@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/ppl/basic_socket_pipeline.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/ppl/basic_socket_pipeline.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_4c6c3c1b5f0f1153d2596cd6ce56813f.html">ppl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_ad561abfde7f3df40495259e7ef59026.html">ppl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">basic_socket_pipeline.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_PPL_BASIC_SOCKET_PIPELINE_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_PPL_BASIC_SOCKET_PIPELINE_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_PPL_BASIC_SOCKET_PIPELINE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_PPL_BASIC_SOCKET_PIPELINE_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
@@ -120,10 +120,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;unistdx/io/poller&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/pstream&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kstream.hh&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/basic_pipeline.hh&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;bscheduler/kernel/kstream.hh&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/basic_pipeline.hh&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class </span>T, <span class="keyword">class </span>Handler,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">class </span>Kernels=std::queue&lt;T*&gt;,</div>
@@ -135,14 +135,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        sys::event_poller&lt;std::shared_ptr&lt;Handler&gt;&gt;&gt;;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> Handler&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structasc_1_1basic__socket__pipeline.html">   32</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>: <span class="keyword">public</span> <a class="code" href="classasc_1_1basic__pipeline.html">Proxy_pipeline_base</a>&lt;T,Handler&gt; {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structbsc_1_1basic__socket__pipeline.html">   32</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>: <span class="keyword">public</span> <a class="code" href="classbsc_1_1basic__pipeline.html">Proxy_pipeline_base</a>&lt;T,Handler&gt; {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">typedef</span> Handler event_handler_type;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> event_handler_type::clock_type clock_type;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> event_handler_type::time_point time_point;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> event_handler_type::duration duration;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1basic__pipeline.html">Proxy_pipeline_base&lt;T,Handler&gt;</a> <a class="code" href="classasc_1_1basic__pipeline.html">base_pipeline</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classbsc_1_1basic__pipeline.html">Proxy_pipeline_base&lt;T,Handler&gt;</a> <a class="code" href="classbsc_1_1basic__pipeline.html">base_pipeline</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::kernel_type;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::mutex_type;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
@@ -151,18 +151,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> sem_type::handler_type event_handler_ptr;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> sem_type::const_iterator handler_const_iterator;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>(<a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp;&amp; rhs) noexcept:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classasc_1_1basic__pipeline.html">base_pipeline</a>(std::move(rhs)),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>(<a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp;&amp; rhs) noexcept:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classbsc_1_1basic__pipeline.html">base_pipeline</a>(std::move(rhs)),</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        _start_timeout(rhs._start_timeout)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>():</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classasc_1_1basic__pipeline.html">base_pipeline</a>(1u)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>():</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classbsc_1_1basic__pipeline.html">base_pipeline</a>(1u)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ~<a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>(<span class="keyword">const</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ~<a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>(<span class="keyword">const</span> <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
@@ -219,7 +219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        accept_connection(sys::poll_event&amp;) {}</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structasc_1_1basic__socket__pipeline.html#abc4a51ef9106513842ff6aa0e69f6cde">  116</a></span>&#160;        <a class="code" href="structasc_1_1basic__socket__pipeline.html#abc4a51ef9106513842ff6aa0e69f6cde">run</a>(<a class="code" href="structasc_1_1Thread__context.html">Thread_context</a>*)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structbsc_1_1basic__socket__pipeline.html#a347cc73a4000f328c9a6ec8d6ea13718">  116</a></span>&#160;        <a class="code" href="structbsc_1_1basic__socket__pipeline.html#a347cc73a4000f328c9a6ec8d6ea13718">run</a>(<a class="code" href="structbsc_1_1Thread__context.html">Thread_context</a>*)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            do_run();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
@@ -343,10 +343,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structasc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structasc_1_1basic__socket__pipeline.html">asc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
-<div class="ttc" id="classasc_1_1basic__pipeline_html"><div class="ttname"><a href="classasc_1_1basic__pipeline.html">asc::basic_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_pipeline.hh:39</div></div>
-<div class="ttc" id="structasc_1_1Thread__context_html"><div class="ttname"><a href="structasc_1_1Thread__context.html">asc::Thread_context</a></div><div class="ttdef"><b>Definition:</b> thread_context.hh:10</div></div>
-<div class="ttc" id="structasc_1_1basic__socket__pipeline_html_abc4a51ef9106513842ff6aa0e69f6cde"><div class="ttname"><a href="structasc_1_1basic__socket__pipeline.html#abc4a51ef9106513842ff6aa0e69f6cde">asc::basic_socket_pipeline::run</a></div><div class="ttdeci">void run(Thread_context *) override</div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:116</div></div>
+<div class="ttc" id="classbsc_1_1basic__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__pipeline.html">bsc::basic_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_pipeline.hh:39</div></div>
+<div class="ttc" id="structbsc_1_1basic__socket__pipeline_html_a347cc73a4000f328c9a6ec8d6ea13718"><div class="ttname"><a href="structbsc_1_1basic__socket__pipeline.html#a347cc73a4000f328c9a6ec8d6ea13718">bsc::basic_socket_pipeline::run</a></div><div class="ttdeci">void run(Thread_context *) override</div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:116</div></div>
+<div class="ttc" id="structbsc_1_1Thread__context_html"><div class="ttname"><a href="structbsc_1_1Thread__context.html">bsc::Thread_context</a></div><div class="ttdef"><b>Definition:</b> thread_context.hh:10</div></div>
+<div class="ttc" id="structbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/kernel/kernel_type.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/kernel/kernel_type.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_214c3115d404e621f6ea9a265980ce66.html">kernel</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_cd2ce5e2c8584e866c53e83e2e4fa35c.html">kernel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">kernel_type.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_KERNEL_KERNEL_TYPE_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_KERNEL_KERNEL_TYPE_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_KERNEL_KERNEL_TYPE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_KERNEL_KERNEL_TYPE_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;typeindex&gt;</span></div>
@@ -114,29 +114,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/pstream&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__type.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1kernel__type.html">kernel_type</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classbsc_1_1kernel__type.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1kernel__type.html">kernel_type</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">   17</a></span>&#160;        <span class="keyword">typedef</span> uint16_t <a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">id_type</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">   17</a></span>&#160;        <span class="keyword">typedef</span> uint16_t <a class="code" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">id_type</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">typedef</span> std::function&lt;void* (sys::pstream&amp;)&gt; read_type;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">id_type</a> _id;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">id_type</a> _id;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        read_type _read;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::type_index _index;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classasc_1_1kernel__type.html">kernel_type</a>(<a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">id_type</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> read_type&amp; f, std::type_index idx) noexcept:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classbsc_1_1kernel__type.html">kernel_type</a>(<a class="code" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">id_type</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> read_type&amp; f, std::type_index idx) noexcept:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        _id(<span class="keywordtype">id</span>),</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        _read(f),</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        _index(idx)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classasc_1_1kernel__type.html">kernel_type</a>(<span class="keyword">const</span> read_type&amp; f, std::type_index idx) noexcept:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classbsc_1_1kernel__type.html">kernel_type</a>(<span class="keyword">const</span> read_type&amp; f, std::type_index idx) noexcept:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        _id(0),</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        _read(f),</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        _index(idx)</div>
@@ -152,13 +152,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> this-&gt;_index;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">inline</span> <a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">id_type</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">inline</span> <a class="code" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">id_type</a></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        id() const noexcept {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> this-&gt;_id;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        setid(<a class="code" href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">id_type</a> rhs) noexcept {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        setid(<a class="code" href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">id_type</a> rhs) noexcept {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this-&gt;_id = rhs;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -205,14 +205,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">namespace </span>std {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01asc_1_1kernel__type_01_4.html">  103</a></span>&#160;    <span class="keyword">struct </span>hash&lt;asc::kernel_type&gt;: <span class="keyword">public</span> std::hash&lt;asc::kernel_type::id_type&gt; {</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01bsc_1_1kernel__type_01_4.html">  103</a></span>&#160;    <span class="keyword">struct </span>hash&lt;bsc::kernel_type&gt;: <span class="keyword">public</span> std::hash&lt;bsc::kernel_type::id_type&gt; {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> result_type;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1kernel__type.html">asc::kernel_type</a> <a class="code" href="classasc_1_1kernel__type.html">argument_type</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classbsc_1_1kernel__type.html">bsc::kernel_type</a> <a class="code" href="classbsc_1_1kernel__type.html">argument_type</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">size_t</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        operator()(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__type.html">asc::kernel_type</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">return</span> std::hash&lt;asc::kernel_type::id_type&gt;::operator()(rhs.id());</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        operator()(<span class="keyword">const</span> <a class="code" href="classbsc_1_1kernel__type.html">bsc::kernel_type</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">return</span> std::hash&lt;bsc::kernel_type::id_type&gt;::operator()(rhs.id());</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    };</div>
@@ -220,8 +220,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1kernel__type_html"><div class="ttname"><a href="classasc_1_1kernel__type.html">asc::kernel_type</a></div><div class="ttdef"><b>Definition:</b> kernel_type.hh:13</div></div>
-<div class="ttc" id="classasc_1_1kernel__type_html_ae916b90fc06abf23a615a78e9f8f532e"><div class="ttname"><a href="classasc_1_1kernel__type.html#ae916b90fc06abf23a615a78e9f8f532e">asc::kernel_type::id_type</a></div><div class="ttdeci">uint16_t id_type</div><div class="ttdoc">A portable type id. </div><div class="ttdef"><b>Definition:</b> kernel_type.hh:17</div></div>
+<div class="ttc" id="classbsc_1_1kernel__type_html_ac6b4473a03871a14e0f31af5d72ed0d7"><div class="ttname"><a href="classbsc_1_1kernel__type.html#ac6b4473a03871a14e0f31af5d72ed0d7">bsc::kernel_type::id_type</a></div><div class="ttdeci">uint16_t id_type</div><div class="ttdoc">A portable type id. </div><div class="ttdef"><b>Definition:</b> kernel_type.hh:17</div></div>
+<div class="ttc" id="classbsc_1_1kernel__type_html"><div class="ttname"><a href="classbsc_1_1kernel__type.html">bsc::kernel_type</a></div><div class="ttdef"><b>Definition:</b> kernel_type.hh:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

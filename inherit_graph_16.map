@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classasc_1_1kernel__protocol.html" title="asc::kernel_protocol\l\&lt; K, R, bits::forward\l_to_parent\&lt; R \&gt; \&gt;" alt="" coords="5,4,147,60"/>
+<area shape="rect" id="node2" href="$classbsc_1_1Application__kernel.html" title="bsc::Application_kernel" alt="" coords="272,5,429,32"/>
+<area shape="rect" id="node3" href="$classbsc_1_1socket__pipeline__kernel.html" title="bsc::socket_pipeline\l_kernel" alt="" coords="280,57,421,98"/>
 </map>

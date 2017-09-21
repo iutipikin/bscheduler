@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['send',['send',['../classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f',1,'asc::kernel_protocol']]]
+  ['send',['send',['../classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d',1,'bsc::kernel_protocol']]]
 ];

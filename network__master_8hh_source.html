@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/examples/factory/network_master.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/daemon/network_master.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e931c1a3f0014e624d0645a271726ad2.html">examples</a></li><li class="navelem"><a class="el" href="dir_39a7156680b0b07371d868a2a5b07519.html">factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_4bc0a80f170c59706b7d73392bd9ebae.html">daemon</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,22 +104,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">network_master.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APPS_FACTORY_NETWORK_MASTER_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APPS_FACTORY_NETWORK_MASTER_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_DAEMON_NETWORK_MASTER_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_DAEMON_NETWORK_MASTER_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;factory/api.hh&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bscheduler/api.hh&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/ifaddrs&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;master_discoverer.hh&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/socket_pipeline_event.hh&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/socket_pipeline_event.hh&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classasc_1_1network__timer.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1network__timer.html">network_timer</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a> {};</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classbsc_1_1network__timer.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1network__timer.html">network_timer</a>: <span class="keyword">public</span> <a class="code" href="structbsc_1_1kernel.html">bsc::kernel</a> {};</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classasc_1_1network__master.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1network__master.html">network_master</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classbsc_1_1network__master.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1network__master.html">network_master</a>: <span class="keyword">public</span> <a class="code" href="structbsc_1_1kernel.html">bsc::kernel</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">typedef</span> sys::ipv4_addr addr_type;</div>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        map_type _ifaddrs;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        uint_type _fanout = 10000;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classasc_1_1network__timer.html">network_timer</a>* _timer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classbsc_1_1network__timer.html">network_timer</a>* _timer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        act() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        react(<a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a>* child) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        react(<a class="code" href="structbsc_1_1kernel.html">bsc::kernel</a>* child) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        fanout(uint_type rhs) noexcept {</div>
@@ -166,28 +166,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        remove_ifaddr(<span class="keyword">const</span> ifaddr_type&amp; rhs);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        forward_probe(<a class="code" href="classasc_1_1probe.html">probe</a>* p);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        forward_probe(<a class="code" href="classbsc_1_1probe.html">probe</a>* p);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        forward_hierarchy_kernel(<a class="code" href="classasc_1_1hierarchy__kernel.html">hierarchy_kernel</a>* p);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        forward_hierarchy_kernel(<a class="code" href="classbsc_1_1hierarchy__kernel.html">hierarchy_kernel</a>* p);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        map_iterator</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        find_discoverer(<span class="keyword">const</span> addr_type&amp; a);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        on_event(<a class="code" href="classasc_1_1socket__pipeline__kernel.html">socket_pipeline_kernel</a>* k);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        on_event(<a class="code" href="classbsc_1_1socket__pipeline__kernel.html">socket_pipeline_kernel</a>* k);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    };</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1network__timer_html"><div class="ttname"><a href="classasc_1_1network__timer.html">asc::network_timer</a></div><div class="ttdef"><b>Definition:</b> network_master.hh:14</div></div>
-<div class="ttc" id="structasc_1_1Kernel_html"><div class="ttname"><a href="structasc_1_1Kernel.html">asc::Kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
-<div class="ttc" id="classasc_1_1network__master_html"><div class="ttname"><a href="classasc_1_1network__master.html">asc::network_master</a></div><div class="ttdef"><b>Definition:</b> network_master.hh:16</div></div>
-<div class="ttc" id="classasc_1_1probe_html"><div class="ttname"><a href="classasc_1_1probe.html">asc::probe</a></div><div class="ttdef"><b>Definition:</b> probe.hh:12</div></div>
-<div class="ttc" id="classasc_1_1socket__pipeline__kernel_html"><div class="ttname"><a href="classasc_1_1socket__pipeline__kernel.html">asc::socket_pipeline_kernel</a></div><div class="ttdef"><b>Definition:</b> socket_pipeline_event.hh:20</div></div>
-<div class="ttc" id="classasc_1_1hierarchy__kernel_html"><div class="ttname"><a href="classasc_1_1hierarchy__kernel.html">asc::hierarchy_kernel</a></div><div class="ttdef"><b>Definition:</b> hierarchy_kernel.hh:11</div></div>
+<div class="ttc" id="classbsc_1_1probe_html"><div class="ttname"><a href="classbsc_1_1probe.html">bsc::probe</a></div><div class="ttdef"><b>Definition:</b> probe.hh:12</div></div>
+<div class="ttc" id="classbsc_1_1network__timer_html"><div class="ttname"><a href="classbsc_1_1network__timer.html">bsc::network_timer</a></div><div class="ttdef"><b>Definition:</b> network_master.hh:14</div></div>
+<div class="ttc" id="classbsc_1_1hierarchy__kernel_html"><div class="ttname"><a href="classbsc_1_1hierarchy__kernel.html">bsc::hierarchy_kernel</a></div><div class="ttdef"><b>Definition:</b> hierarchy_kernel.hh:11</div></div>
+<div class="ttc" id="structbsc_1_1kernel_html"><div class="ttname"><a href="structbsc_1_1kernel.html">bsc::kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
+<div class="ttc" id="classbsc_1_1socket__pipeline__kernel_html"><div class="ttname"><a href="classbsc_1_1socket__pipeline__kernel.html">bsc::socket_pipeline_kernel</a></div><div class="ttdef"><b>Definition:</b> socket_pipeline_event.hh:20</div></div>
+<div class="ttc" id="classbsc_1_1network__master_html"><div class="ttname"><a href="classbsc_1_1network__master.html">bsc::network_master</a></div><div class="ttdef"><b>Definition:</b> network_master.hh:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

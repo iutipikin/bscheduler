@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/ppl/pipeline_base.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/ppl/pipeline_base.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_4c6c3c1b5f0f1153d2596cd6ce56813f.html">ppl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_ad561abfde7f3df40495259e7ef59026.html">ppl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,13 +104,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">pipeline_base.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_PPL_PIPELINE_BASE_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_PPL_PIPELINE_BASE_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_PPL_PIPELINE_BASE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_PPL_PIPELINE_BASE_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;unistdx/base/log_message&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">enum struct</span> pipeline_state {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        initial,</div>
@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        stopped</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    };</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classasc_1_1pipeline__base.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classbsc_1_1pipeline__base.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a> {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">typedef</span> std::chrono::system_clock clock_type;</div>
@@ -134,17 +134,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">unsigned</span> _number = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">virtual</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        ~<a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        ~<a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>(<a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>(<a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>(<span class="keyword">const</span> <a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>&amp;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        operator=(<a class="code" href="classasc_1_1pipeline__base.html">pipeline_base</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>&amp;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        operator=(<a class="code" href="classbsc_1_1pipeline__base.html">pipeline_base</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        setstate(pipeline_state rhs) noexcept {</div>
@@ -216,7 +216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1pipeline__base_html"><div class="ttname"><a href="classasc_1_1pipeline__base.html">asc::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:17</div></div>
+<div class="ttc" id="classbsc_1_1pipeline__base_html"><div class="ttname"><a href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

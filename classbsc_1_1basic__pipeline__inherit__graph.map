@@ -1,0 +1,14 @@
+<map id="bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;" name="bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;">
+<area shape="rect" id="node3" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;" alt="" coords="403,20,554,76"/>
+<area shape="rect" id="node5" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="403,117,554,173"/>
+<area shape="rect" id="node8" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="390,197,567,253"/>
+<area shape="rect" id="node10" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="403,277,555,333"/>
+<area shape="rect" id="node12" href="$structbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;" alt="" coords="389,357,568,398"/>
+<area shape="rect" id="node13" href="$structbsc_1_1timer__pipeline.html" title="bsc::timer_pipeline\&lt; T \&gt;" alt="" coords="397,423,560,449"/>
+<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,252,136,279"/>
+<area shape="rect" id="node4" href="$classbsc_1_1unix__domain__socket__pipeline.html" title="bsc::unix_domain_socket\l_pipeline\&lt; K, R \&gt;" alt="" coords="616,6,787,47"/>
+<area shape="rect" id="node6" href="$classbsc_1_1child__process__pipeline.html" title="bsc::child_process\l_pipeline\&lt; K, R \&gt;" alt="" coords="636,71,767,113"/>
+<area shape="rect" id="node7" href="$classbsc_1_1process__pipeline.html" title="bsc::process_pipeline\l\&lt; K, R \&gt;" alt="" coords="627,137,775,178"/>
+<area shape="rect" id="node9" href="$classbsc_1_1child__process__pipeline.html" title="bsc::child_process\l_pipeline\&lt; T, basic\l_router\&lt; T \&gt; \&gt;" alt="" coords="635,201,767,257"/>
+<area shape="rect" id="node11" href="$classbsc_1_1socket__pipeline.html" title="bsc::socket_pipeline\l\&lt; T, Socket, Router \&gt;" alt="" coords="626,285,777,326"/>
+</map>

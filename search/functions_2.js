@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c',['operator&lt;',['../classasc_1_1position__in__tree.html#aa8a9d9c8ca5f3d82ddda799bf7450921',1,'asc::position_in_tree']]]
+  ['operator_3c',['operator&lt;',['../classbsc_1_1position__in__tree.html#a36ab9deb259310ca10fba7c0ccf0439a',1,'bsc::position_in_tree']]]
 ];

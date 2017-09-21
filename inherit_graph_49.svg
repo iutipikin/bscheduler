@@ -16,9 +16,9 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="structstd_1_1hash_3_01asc_1_1kernel__type_01_4.html" target="_top" xlink:title="std::hash\&lt; asc::kernel\l_type \&gt;">
+<g id="a_node2"><a xlink:href="structstd_1_1hash_3_01bsc_1_1kernel__type_01_4.html" target="_top" xlink:title="std::hash\&lt; bsc::kernel\l_type \&gt;">
 <polygon fill="white" stroke="black" points="78,-49 78,-79 192,-79 192,-49 78,-49"/>
-<text text-anchor="start" x="86" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; asc::kernel</text>
+<text text-anchor="start" x="86" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; bsc::kernel</text>
 <text text-anchor="middle" x="135" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">_type &gt;</text>
 </a>
 </g>
@@ -30,9 +30,9 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="structstd_1_1hash_3_01asc_1_1position__in__tree_3_01Addr_01_4_01_4.html" target="_top" xlink:title="std::hash\&lt; asc::position\l_in_tree\&lt; Addr \&gt; \&gt;">
+<g id="a_node3"><a xlink:href="structstd_1_1hash_3_01bsc_1_1position__in__tree_3_01Addr_01_4_01_4.html" target="_top" xlink:title="std::hash\&lt; bsc::position\l_in_tree\&lt; Addr \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="74,-0 74,-30 196,-30 196,-0 74,-0"/>
-<text text-anchor="start" x="82" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; asc::position</text>
+<text text-anchor="start" x="82" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; bsc::position</text>
 <text text-anchor="middle" x="135" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_in_tree&lt; Addr &gt; &gt;</text>
 </a>
 </g>

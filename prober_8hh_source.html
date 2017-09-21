@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/examples/factory/prober.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/daemon/prober.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e931c1a3f0014e624d0645a271726ad2.html">examples</a></li><li class="navelem"><a class="el" href="dir_39a7156680b0b07371d868a2a5b07519.html">factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_4bc0a80f170c59706b7d73392bd9ebae.html">daemon</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,20 +104,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">prober.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APPS_FACTORY_PROBER_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APPS_FACTORY_PROBER_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_DAEMON_PROBER_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_DAEMON_PROBER_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/endpoint&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/ifaddr&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/ipv4_addr&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;factory/api.hh&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;bscheduler/api.hh&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;probe.hh&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classasc_1_1prober.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1prober.html">prober</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classbsc_1_1prober.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1prober.html">prober</a>: <span class="keyword">public</span> <a class="code" href="structbsc_1_1kernel.html">bsc::kernel</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">typedef</span> sys::ipv4_addr addr_type;</div>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classasc_1_1prober.html">prober</a>(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classbsc_1_1prober.html">prober</a>(</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keyword">const</span> ifaddr_type&amp; ifaddr,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keyword">const</span> sys::endpoint&amp; oldprinc,</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">const</span> sys::endpoint&amp; newprinc</div>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        act() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        react(<a class="code" href="structasc_1_1Kernel.html">asc::Kernel</a>* k) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        react(<a class="code" href="structbsc_1_1kernel.html">bsc::kernel</a>* k) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> sys::endpoint&amp;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        new_principal() <span class="keyword">const</span> noexcept {</div>
@@ -168,8 +168,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structasc_1_1Kernel_html"><div class="ttname"><a href="structasc_1_1Kernel.html">asc::Kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
-<div class="ttc" id="classasc_1_1prober_html"><div class="ttname"><a href="classasc_1_1prober.html">asc::prober</a></div><div class="ttdef"><b>Definition:</b> prober.hh:14</div></div>
+<div class="ttc" id="structbsc_1_1kernel_html"><div class="ttname"><a href="structbsc_1_1kernel.html">bsc::kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
+<div class="ttc" id="classbsc_1_1prober_html"><div class="ttname"><a href="classbsc_1_1prober.html">bsc::prober</a></div><div class="ttdef"><b>Definition:</b> prober.hh:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

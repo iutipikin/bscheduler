@@ -16,9 +16,9 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="structasc_1_1Kernel.html" target="_top" xlink:title="asc::Kernel">
-<polygon fill="white" stroke="black" points="68,-59.5 68,-78.5 134,-78.5 134,-59.5 68,-59.5"/>
-<text text-anchor="middle" x="101" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">asc::Kernel</text>
+<g id="a_node2"><a xlink:href="structbsc_1_1kernel.html" target="_top" xlink:title="bsc::kernel">
+<polygon fill="white" stroke="black" points="68.5,-59.5 68.5,-78.5 133.5,-78.5 133.5,-59.5 68.5,-59.5"/>
+<text text-anchor="middle" x="101" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::kernel</text>
 </a>
 </g>
 </g>
@@ -44,16 +44,16 @@
 </g>
 <!-- Node2&#45;&gt;Node2 -->
 <g id="edge5" class="edge"><title>Node2&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M144.647,-73.6366C149.133,-72.7236 152,-71.178 152,-69 152,-65.4258 144.278,-63.5549 134.354,-63.3874"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="143.979,-70.1841 134.354,-74.6126 144.64,-77.1528 143.979,-70.1841"/>
-<text text-anchor="middle" x="174.5" y="-72" font-family="Helvetica,sans-Serif" font-size="10.00"> _principal</text>
-<text text-anchor="middle" x="174.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">_parent</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M143.791,-73.6366C148.189,-72.7236 151,-71.178 151,-69 151,-65.4258 143.43,-63.5549 133.7,-63.3874"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="143.317,-70.166 133.7,-74.6126 143.991,-77.1335 143.317,-70.166"/>
+<text text-anchor="middle" x="173.5" y="-72" font-family="Helvetica,sans-Serif" font-size="10.00"> _principal</text>
+<text text-anchor="middle" x="173.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">_parent</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classasc_1_1mobile__kernel.html" target="_top" xlink:title="asc::mobile_kernel">
+<g id="a_node3"><a xlink:href="classbsc_1_1mobile__kernel.html" target="_top" xlink:title="bsc::mobile_kernel">
 <polygon fill="white" stroke="black" points="52,-118.5 52,-137.5 150,-137.5 150,-118.5 52,-118.5"/>
-<text text-anchor="middle" x="101" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">asc::mobile_kernel</text>
+<text text-anchor="middle" x="101" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::mobile_kernel</text>
 </a>
 </g>
 </g>
@@ -64,9 +64,9 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classasc_1_1kernel__base.html" target="_top" xlink:title="asc::kernel_base">
+<g id="a_node4"><a xlink:href="classbsc_1_1kernel__base.html" target="_top" xlink:title="bsc::kernel_base">
 <polygon fill="white" stroke="black" points="-0.5,-176.5 -0.5,-195.5 90.5,-195.5 90.5,-176.5 -0.5,-176.5"/>
-<text text-anchor="middle" x="45" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">asc::kernel_base</text>
+<text text-anchor="middle" x="45" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::kernel_base</text>
 </a>
 </g>
 </g>
@@ -77,9 +77,9 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classasc_1_1kernel__header.html" target="_top" xlink:title="asc::kernel_header">
+<g id="a_node5"><a xlink:href="classbsc_1_1kernel__header.html" target="_top" xlink:title="bsc::kernel_header">
 <polygon fill="white" stroke="black" points="108.5,-176.5 108.5,-195.5 207.5,-195.5 207.5,-176.5 108.5,-176.5"/>
-<text text-anchor="middle" x="158" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">asc::kernel_header</text>
+<text text-anchor="middle" x="158" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::kernel_header</text>
 </a>
 </g>
 </g>

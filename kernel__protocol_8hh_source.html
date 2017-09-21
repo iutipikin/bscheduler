@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/ppl/kernel_protocol.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/ppl/kernel_protocol.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_4c6c3c1b5f0f1153d2596cd6ce56813f.html">ppl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_ad561abfde7f3df40495259e7ef59026.html">ppl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,21 +104,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">kernel_protocol.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_PPL_KERNEL_PROTOCOL_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_PPL_KERNEL_PROTOCOL_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_PPL_KERNEL_PROTOCOL_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_PPL_KERNEL_PROTOCOL_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel_header.hh&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kernel_instance_registry.hh&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;factory/kernel/kstream.hh&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/application.hh&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/kernel_proto_flag.hh&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bscheduler/kernel/kernel_header.hh&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;bscheduler/kernel/kernel_instance_registry.hh&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;bscheduler/kernel/kstream.hh&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/application.hh&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/kernel_proto_flag.hh&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;unistdx/base/delete_each&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;unistdx/it/queue_popper&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;unistdx/ipc/process&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span> &lt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">class </span>T,</div>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">class </span>Forward=bits::no_forward&lt;Router&gt;,</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">class </span>Kernels=std::deque&lt;T*&gt;,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">class </span>Traits=sys::deque_traits&lt;Kernels&gt;&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__protocol.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classbsc_1_1kernel__protocol.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> T kernel_type;</div>
@@ -136,14 +136,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> Traits traits_type;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structasc_1_1kstream.html">kstream&lt;T&gt;</a> <a class="code" href="structasc_1_1kstream.html">stream_type</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structbsc_1_1kstream.html">kstream&lt;T&gt;</a> <a class="code" href="structbsc_1_1kstream.html">stream_type</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">typedef</span> sys::queue_pop_iterator&lt;Kernels,Traits&gt; queue_popper;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> T::id_type id_type;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">typedef</span> sys::ipacket_guard&lt;stream_type&gt; ipacket_guard;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">typedef</span> sys::opacket_guard&lt;stream_type&gt; opacket_guard;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classasc_1_1kernel__proto__flag.html">kernel_proto_flag</a> _flags = <a class="code" href="classasc_1_1kernel__proto__flag.html">kernel_proto_flag</a>(0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classbsc_1_1kernel__proto__flag.html">kernel_proto_flag</a> _flags = <a class="code" href="classbsc_1_1kernel__proto__flag.html">kernel_proto_flag</a>(0);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        sys::endpoint _endpoint;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        application_type _thisapp = this_application::get_id();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        pool_type _upstream;</div>
@@ -153,20 +153,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>(<a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>(<a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>(<span class="keyword">const</span> <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&amp; operator=(<a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ~<a class="code" href="classasc_1_1kernel__protocol.html">kernel_protocol</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ~<a class="code" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>() {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            sys::delete_each(queue_popper(this-&gt;_upstream), queue_popper());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            sys::delete_each(queue_popper(this-&gt;_downstream), queue_popper());</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">   65</a></span>&#160;        <a class="code" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">send</a>(kernel_type* k, <a class="code" href="structasc_1_1kstream.html">stream_type</a>&amp; stream) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d">   65</a></span>&#160;        <a class="code" href="classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d">send</a>(kernel_type* k, <a class="code" href="structbsc_1_1kstream.html">stream_type</a>&amp; stream) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">bool</span> delete_kernel = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (kernel_goes_in_upstream_buffer(k)) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                this-&gt;ensure_has_id(k);</div>
@@ -194,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        forward(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">const</span> <a class="code" href="classasc_1_1kernel__header.html">kernel_header</a>&amp; hdr,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">const</span> <a class="code" href="classbsc_1_1kernel__header.html">kernel_header</a>&amp; hdr,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            sys::pstream&amp; istr,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            stream_type&amp; ostr</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        ) {</div>
@@ -223,12 +223,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                            );</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">                            #endif</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span>                            k-&gt;principal(k-&gt;parent());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                            this-&gt;<a class="code" href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">send</a>(k, stream);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                            this-&gt;<a class="code" href="classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d">send</a>(k, stream);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                            router_type::send_local(k);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                } <span class="keywordflow">catch</span> (<span class="keyword">const</span> Error&amp; err) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                } <span class="keywordflow">catch</span> (<span class="keyword">const</span> error&amp; err) {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    sys::log_message(</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        <span class="stringliteral">&quot;proto&quot;</span>,</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        <span class="stringliteral">&quot;read error _ app=_,pid=_&quot;</span>,</div>
@@ -268,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                stream.begin_packet();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                this-&gt;do_write_kernel(*k, stream);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                stream.end_packet();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> Error&amp; err) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> error&amp; err) {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;write error _&quot;</span>, err);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; err) {</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                sys::log_message(<span class="stringliteral">&quot;proto&quot;</span>, <span class="stringliteral">&quot;write error _&quot;</span>, err.what());</div>
@@ -473,11 +473,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1kernel__protocol_html_acedc17221dfcbe23e2aad6cbdca1e09f"><div class="ttname"><a href="classasc_1_1kernel__protocol.html#acedc17221dfcbe23e2aad6cbdca1e09f">asc::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *k, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
-<div class="ttc" id="structasc_1_1kstream_html"><div class="ttname"><a href="structasc_1_1kstream.html">asc::kstream</a></div><div class="ttdef"><b>Definition:</b> kstream.hh:67</div></div>
-<div class="ttc" id="classasc_1_1kernel__proto__flag_html"><div class="ttname"><a href="classasc_1_1kernel__proto__flag.html">asc::kernel_proto_flag</a></div><div class="ttdef"><b>Definition:</b> kernel_proto_flag.hh:6</div></div>
-<div class="ttc" id="classasc_1_1kernel__header_html"><div class="ttname"><a href="classasc_1_1kernel__header.html">asc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
-<div class="ttc" id="classasc_1_1kernel__protocol_html"><div class="ttname"><a href="classasc_1_1kernel__protocol.html">asc::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
+<div class="ttc" id="classbsc_1_1kernel__protocol_html"><div class="ttname"><a href="classbsc_1_1kernel__protocol.html">bsc::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:23</div></div>
+<div class="ttc" id="classbsc_1_1kernel__proto__flag_html"><div class="ttname"><a href="classbsc_1_1kernel__proto__flag.html">bsc::kernel_proto_flag</a></div><div class="ttdef"><b>Definition:</b> kernel_proto_flag.hh:6</div></div>
+<div class="ttc" id="classbsc_1_1kernel__protocol_html_a3553ca26979a892ba52e5d491fd79e5d"><div class="ttname"><a href="classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d">bsc::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *k, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:65</div></div>
+<div class="ttc" id="classbsc_1_1kernel__header_html"><div class="ttname"><a href="classbsc_1_1kernel__header.html">bsc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:10</div></div>
+<div class="ttc" id="structbsc_1_1kstream_html"><div class="ttname"><a href="structbsc_1_1kstream.html">bsc::kstream</a></div><div class="ttdef"><b>Definition:</b> kstream.hh:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

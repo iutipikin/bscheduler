@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/ppl/unix_domain_socket_pipeline.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/ppl/unix_domain_socket_pipeline.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_4c6c3c1b5f0f1153d2596cd6ce56813f.html">ppl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_ad561abfde7f3df40495259e7ef59026.html">ppl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">unix_domain_socket_pipeline.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_PPL_UNIX_DOMAIN_SOCKET_PIPELINE_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_PPL_UNIX_DOMAIN_SOCKET_PIPELINE_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_PPL_UNIX_DOMAIN_SOCKET_PIPELINE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_PPL_UNIX_DOMAIN_SOCKET_PIPELINE_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
@@ -116,23 +116,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/endpoint&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/socket&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/basic_socket_pipeline.hh&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;factory/ppl/external_process_handler.hh&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/basic_socket_pipeline.hh&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/external_process_handler.hh&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> K, <span class="keyword">class</span> R&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classasc_1_1unix__domain__socket__pipeline.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,external_process_handler&lt;K,R&gt;&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classbsc_1_1unix__domain__socket__pipeline.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span> <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,external_process_handler&lt;K,R&gt;&gt; {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structasc_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,external_process_handler&lt;K,R&gt;</a>&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="structasc_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,external_process_handler&lt;K,R&gt;</a>&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="structbsc_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::sem_type;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::queue_popper;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_ptr;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classasc_1_1external__process__handler.html">base_pipeline::event_handler_type</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classbsc_1_1external__process__handler.html">base_pipeline::event_handler_type</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> sem_type::const_iterator client_iterator;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">typedef</span> event_handler_ptr client_type;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">typedef</span> std::pair&lt;sys::endpoint, sys::socket&gt; server_type;</div>
@@ -147,14 +147,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        server_container _servers;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        ~<a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        ~<a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>&amp; rhs) =</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>(<span class="keyword">const</span> <a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>&amp; rhs) =</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>(<a class="code" href="classasc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>&amp;&amp; rhs) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>(<a class="code" href="classbsc_1_1unix__domain__socket__pipeline.html">unix_domain_socket_pipeline</a>&amp;&amp; rhs) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        add_server(<span class="keyword">const</span> sys::endpoint&amp; rhs);</div>
@@ -198,9 +198,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structasc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structasc_1_1basic__socket__pipeline.html">asc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
-<div class="ttc" id="classasc_1_1unix__domain__socket__pipeline_html"><div class="ttname"><a href="classasc_1_1unix__domain__socket__pipeline.html">asc::unix_domain_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> unix_domain_socket_pipeline.hh:19</div></div>
-<div class="ttc" id="classasc_1_1external__process__handler_html"><div class="ttname"><a href="classasc_1_1external__process__handler.html">asc::external_process_handler</a></div><div class="ttdef"><b>Definition:</b> external_process_handler.hh:20</div></div>
+<div class="ttc" id="classbsc_1_1unix__domain__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1unix__domain__socket__pipeline.html">bsc::unix_domain_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> unix_domain_socket_pipeline.hh:19</div></div>
+<div class="ttc" id="classbsc_1_1external__process__handler_html"><div class="ttname"><a href="classbsc_1_1external__process__handler.html">bsc::external_process_handler</a></div><div class="ttdef"><b>Definition:</b> external_process_handler.hh:20</div></div>
+<div class="ttc" id="structbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

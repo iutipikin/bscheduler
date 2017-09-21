@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['call',['call',['../structasc_1_1Kernel.html#aafb4b4ea98197a6888448f30e17ea4a8',1,'asc::Kernel']]]
+  ['call',['call',['../structbsc_1_1kernel.html#a7d21256f08674ebae9b6d6ef209b72fc',1,'bsc::kernel']]]
 ];

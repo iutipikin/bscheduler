@@ -104,23 +104,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">mapreduce.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APPS_AUTOREG_MAPREDUCE_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APPS_AUTOREG_MAPREDUCE_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXAMPLES_AUTOREG_MAPREDUCE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXAMPLES_AUTOREG_MAPREDUCE_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;factory/api.hh&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bscheduler/api.hh&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classasc_1_1Notification.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1Notification.html">Notification</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">Kernel</a> {};</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classbsc_1_1Notification.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1Notification.html">Notification</a>: <span class="keyword">public</span> <a class="code" href="structbsc_1_1kernel.html">kernel</a> {};</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> F, <span class="keyword">class</span> G, <span class="keyword">class</span> I&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structasc_1_1Map.html">   11</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structasc_1_1Map.html">Map</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">Kernel</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structbsc_1_1Map.html">   11</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structbsc_1_1Map.html">Map</a>: <span class="keyword">public</span> <a class="code" href="structbsc_1_1kernel.html">kernel</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="structasc_1_1Map.html">Map</a>(F f_, G g_, I a_, I b_, I bs_=1):</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="structbsc_1_1Map.html">Map</a>(F f_, G g_, I a_, I b_, I bs_=1):</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        f(f_), g(g_), a(a_), b(b_), bs(bs_), n(0), m(calc_m()) {}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structasc_1_1Map_1_1Worker.html">   16</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structasc_1_1Map_1_1Worker.html">Worker</a>: <span class="keyword">public</span> <a class="code" href="structasc_1_1Kernel.html">Kernel</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <a class="code" href="structasc_1_1Map_1_1Worker.html">Worker</a>(F&amp; f_, I a_, I b_):</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structbsc_1_1Map_1_1Worker.html">   16</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structbsc_1_1Map_1_1Worker.html">Worker</a>: <span class="keyword">public</span> <a class="code" href="structbsc_1_1kernel.html">kernel</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <a class="code" href="structbsc_1_1Map_1_1Worker.html">Worker</a>(F&amp; f_, I a_, I b_):</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            f(f_), a(a_), b(b_) {}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            act() {</div>
@@ -135,12 +135,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        act() {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">for</span> (I i=a; i&lt;b; i+=bs) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                upstream&lt;Local&gt;(<span class="keyword">this</span>, <span class="keyword">new</span> <a class="code" href="structasc_1_1Map_1_1Worker.html">Worker</a>(f, i, std::min(i+bs, b)));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                upstream&lt;Local&gt;(<span class="keyword">this</span>, <span class="keyword">new</span> <a class="code" href="structbsc_1_1Map_1_1Worker.html">Worker</a>(f, i, std::min(i+bs, b)));</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        react(Kernel* k) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        react(kernel* k) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Worker* w = <span class="keyword">dynamic_cast&lt;</span>Worker*<span class="keyword">&gt;</span>(k);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            I x1 = w-&gt;a, x2 = w-&gt;b;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">for</span> (I i=x1; i&lt;x2; ++i) g(i);</div>
@@ -169,10 +169,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structasc_1_1Map_html"><div class="ttname"><a href="structasc_1_1Map.html">asc::Map</a></div><div class="ttdef"><b>Definition:</b> mapreduce.hh:11</div></div>
-<div class="ttc" id="structasc_1_1Kernel_html"><div class="ttname"><a href="structasc_1_1Kernel.html">asc::Kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
-<div class="ttc" id="classasc_1_1Notification_html"><div class="ttname"><a href="classasc_1_1Notification.html">asc::Notification</a></div><div class="ttdef"><b>Definition:</b> mapreduce.hh:8</div></div>
-<div class="ttc" id="structasc_1_1Map_1_1Worker_html"><div class="ttname"><a href="structasc_1_1Map_1_1Worker.html">asc::Map::Worker</a></div><div class="ttdef"><b>Definition:</b> mapreduce.hh:16</div></div>
+<div class="ttc" id="classbsc_1_1Notification_html"><div class="ttname"><a href="classbsc_1_1Notification.html">bsc::Notification</a></div><div class="ttdef"><b>Definition:</b> mapreduce.hh:8</div></div>
+<div class="ttc" id="structbsc_1_1Map_html"><div class="ttname"><a href="structbsc_1_1Map.html">bsc::Map</a></div><div class="ttdef"><b>Definition:</b> mapreduce.hh:11</div></div>
+<div class="ttc" id="structbsc_1_1Map_1_1Worker_html"><div class="ttname"><a href="structbsc_1_1Map_1_1Worker.html">bsc::Map::Worker</a></div><div class="ttdef"><b>Definition:</b> mapreduce.hh:16</div></div>
+<div class="ttc" id="structbsc_1_1kernel_html"><div class="ttname"><a href="structbsc_1_1kernel.html">bsc::kernel</a></div><div class="ttdef"><b>Definition:</b> kernel.hh:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

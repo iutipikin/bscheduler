@@ -1,5 +1,0 @@
-<map id="asc::socket_pipeline&lt; T, Socket, Router &gt;" name="asc::socket_pipeline&lt; T, Socket, Router &gt;">
-<area shape="rect" id="node2" href="$structasc_1_1basic__socket__pipeline.html" title="asc::basic_socket_pipeline\l\&lt; T, remote_client\&lt; T, Socket,\l Router \&gt; \&gt;" alt="" coords="191,203,392,259"/>
-<area shape="rect" id="node3" href="$classasc_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; T, remote_client\&lt;\l T, Socket, Router \&gt; &#160;\&gt;" alt="" coords="215,96,368,152"/>
-<area shape="rect" id="node4" href="$classasc_1_1pipeline__base.html" title="asc::pipeline_base" alt="" coords="5,5,135,32"/>
-</map>

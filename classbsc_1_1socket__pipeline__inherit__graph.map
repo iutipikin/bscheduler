@@ -1,0 +1,5 @@
+<map id="bsc::socket_pipeline&lt; T, Socket, Router &gt;" name="bsc::socket_pipeline&lt; T, Socket, Router &gt;">
+<area shape="rect" id="node2" href="$structbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; T, remote_client\&lt; T, Socket,\l Router \&gt; \&gt;" alt="" coords="5,184,205,240"/>
+<area shape="rect" id="node3" href="$classbsc_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; T, remote_client\&lt;\l T, Socket, Router \&gt; &#160;\&gt;" alt="" coords="28,80,181,136"/>
+<area shape="rect" id="node4" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="40,5,169,32"/>
+</map>

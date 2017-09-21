@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/examples/factory/hierarchy_node.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/daemon/hierarchy_node.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e931c1a3f0014e624d0645a271726ad2.html">examples</a></li><li class="navelem"><a class="el" href="dir_39a7156680b0b07371d868a2a5b07519.html">factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_4bc0a80f170c59706b7d73392bd9ebae.html">daemon</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,16 +104,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">hierarchy_node.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXAMPLES_FACTORY_HIERARCHY_NODE_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXAMPLES_FACTORY_HIERARCHY_NODE_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_DAEMON_HIERARCHY_NODE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_DAEMON_HIERARCHY_NODE_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/endpoint&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classasc_1_1hierarchy__node.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classbsc_1_1hierarchy__node.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">typedef</span> uint32_t weight_type;</div>
@@ -124,15 +124,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">inline</span> <span class="keyword">explicit</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>(<span class="keyword">const</span> sys::endpoint&amp; endpoint):</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>(<span class="keyword">const</span> sys::endpoint&amp; endpoint):</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        _endpoint(endpoint)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>(<span class="keyword">const</span> sys::endpoint&amp; endpoint, weight_type w):</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>(<span class="keyword">const</span> sys::endpoint&amp; endpoint, weight_type w):</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        _endpoint(endpoint),</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        _weight(w)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {}</div>
@@ -164,25 +164,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        operator==(<span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        operator==(<span class="keyword">const</span> <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> this-&gt;_endpoint == rhs._endpoint;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        operator!=(<span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        operator!=(<span class="keyword">const</span> <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">friend</span> std::ostream&amp;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::ostream&amp;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>&amp; rhs);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    operator==(<span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">hierarchy_node</a>&amp; lhs, <span class="keyword">const</span> sys::endpoint&amp; rhs) noexcept {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    operator==(<span class="keyword">const</span> <a class="code" href="classbsc_1_1hierarchy__node.html">hierarchy_node</a>&amp; lhs, <span class="keyword">const</span> sys::endpoint&amp; rhs) noexcept {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> lhs.endpoint() == rhs;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
@@ -196,13 +196,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">namespace </span>std {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01asc_1_1hierarchy__node_01_4.html">   93</a></span>&#160;    <span class="keyword">struct </span>hash&lt;asc::hierarchy_node&gt;: <span class="keyword">public</span> hash&lt;sys::endpoint&gt; {</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01bsc_1_1hierarchy__node_01_4.html">   93</a></span>&#160;    <span class="keyword">struct </span>hash&lt;bsc::hierarchy_node&gt;: <span class="keyword">public</span> hash&lt;sys::endpoint&gt; {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> result_type;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classasc_1_1hierarchy__node.html">asc::hierarchy_node</a> <a class="code" href="classasc_1_1hierarchy__node.html">argument_type</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classbsc_1_1hierarchy__node.html">bsc::hierarchy_node</a> <a class="code" href="classbsc_1_1hierarchy__node.html">argument_type</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        operator()(<span class="keyword">const</span> <a class="code" href="classasc_1_1hierarchy__node.html">argument_type</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        operator()(<span class="keyword">const</span> <a class="code" href="classbsc_1_1hierarchy__node.html">argument_type</a>&amp; rhs) <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">return</span> this-&gt;hash&lt;sys::endpoint&gt;::operator()(rhs.endpoint());</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
@@ -211,7 +211,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1hierarchy__node_html"><div class="ttname"><a href="classasc_1_1hierarchy__node.html">asc::hierarchy_node</a></div><div class="ttdef"><b>Definition:</b> hierarchy_node.hh:10</div></div>
+<div class="ttc" id="classbsc_1_1hierarchy__node_html"><div class="ttname"><a href="classbsc_1_1hierarchy__node.html">bsc::hierarchy_node</a></div><div class="ttdef"><b>Definition:</b> hierarchy_node.hh:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

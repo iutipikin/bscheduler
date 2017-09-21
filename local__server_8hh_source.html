@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: /home/travis/build/igankevich/factory/src/factory/ppl/local_server.hh Source File</title>
+        <title>Factory: /home/travis/build/igankevich/factory/src/bscheduler/ppl/local_server.hh Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_339115f1b781ea71218b7406990eb67d.html">factory</a></li><li class="navelem"><a class="el" href="dir_4c6c3c1b5f0f1153d2596cd6ce56813f.html">ppl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9064d019dae850459a9718f9c65e62b5.html">bscheduler</a></li><li class="navelem"><a class="el" href="dir_ad561abfde7f3df40495259e7ef59026.html">ppl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -104,15 +104,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">local_server.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_PPL_LOCAL_SERVER_HH</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FACTORY_PPL_LOCAL_SERVER_HH</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BSCHEDULER_PPL_LOCAL_SERVER_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BSCHEDULER_PPL_LOCAL_SERVER_HH</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/endpoint&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistdx/net/ifaddr&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>asc {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>bsc {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Addr&gt;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Addr, <span class="keyword">class</span> Socket&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classasc_1_1local__server.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classasc_1_1local__server.html">local_server</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classbsc_1_1local__server.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1local__server.html">local_server</a> {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">typedef</span> Addr addr_type;</div>
@@ -158,14 +158,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">inline</span> <span class="keyword">explicit</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classasc_1_1local__server.html">local_server</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, sys::port_type port):</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classbsc_1_1local__server.html">local_server</a>(<span class="keyword">const</span> ifaddr_type&amp; ifaddr, sys::port_type port):</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        _ifaddr(ifaddr),</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        _endpoint(ifaddr.address(), port),</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        _socket(sys::endpoint(ifaddr.address(), port))</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        { this-&gt;init(); }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">inline</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classasc_1_1local__server.html">local_server</a>(<a class="code" href="classasc_1_1local__server.html">local_server</a>&amp;&amp; rhs):</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classbsc_1_1local__server.html">local_server</a>(<a class="code" href="classbsc_1_1local__server.html">local_server</a>&amp;&amp; rhs):</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        _ifaddr(rhs._ifaddr),</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        _endpoint(rhs._endpoint),</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        _pos0(rhs._pos0),</div>
@@ -174,10 +174,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        _socket(std::move(rhs._socket))</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classasc_1_1local__server.html">local_server</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classasc_1_1local__server.html">local_server</a>(<span class="keyword">const</span> <a class="code" href="classasc_1_1local__server.html">local_server</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classasc_1_1local__server.html">local_server</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classasc_1_1local__server.html">local_server</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classasc_1_1local__server.html">local_server</a>&amp; operator=(<a class="code" href="classasc_1_1local__server.html">local_server</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classbsc_1_1local__server.html">local_server</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classbsc_1_1local__server.html">local_server</a>(<span class="keyword">const</span> <a class="code" href="classbsc_1_1local__server.html">local_server</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classbsc_1_1local__server.html">local_server</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classbsc_1_1local__server.html">local_server</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classbsc_1_1local__server.html">local_server</a>&amp; operator=(<a class="code" href="classbsc_1_1local__server.html">local_server</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> ifaddr_type</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        ifaddr() <span class="keyword">const</span> noexcept {</div>
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classasc_1_1local__server_html"><div class="ttname"><a href="classasc_1_1local__server.html">asc::local_server</a></div><div class="ttdef"><b>Definition:</b> local_server.hh:36</div></div>
+<div class="ttc" id="classbsc_1_1local__server_html"><div class="ttname"><a href="classbsc_1_1local__server.html">bsc::local_server</a></div><div class="ttdef"><b>Definition:</b> local_server.hh:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

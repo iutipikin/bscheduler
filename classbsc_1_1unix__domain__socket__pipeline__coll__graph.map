@@ -1,0 +1,5 @@
+<map id="bsc::unix_domain_socket_pipeline&lt; K, R &gt;" name="bsc::unix_domain_socket_pipeline&lt; K, R &gt;">
+<area shape="rect" id="node2" href="$structbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; K, external_process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="193,203,391,259"/>
+<area shape="rect" id="node3" href="$classbsc_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; K , external_process\l_handler\&lt; K, R \&gt; &#160;\&gt;" alt="" coords="215,96,368,152"/>
+<area shape="rect" id="node4" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,5,135,32"/>
+</map>
