@@ -145,9 +145,9 @@ typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom">
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a75e3b4e3aa3070b239b7f4bc758eeeaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75e3b4e3aa3070b239b7f4bc758eeeaa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>process_handler</b> (sys::pid_type &amp;&amp;child, sys::two_way_pipe &amp;&amp;pipe)</td></tr>
-<tr class="separator:a75e3b4e3aa3070b239b7f4bc758eeeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cbcb30aecd3bcac8321e9cf07706ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75cbcb30aecd3bcac8321e9cf07706ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>process_handler</b> (sys::pid_type &amp;&amp;child, sys::two_way_pipe &amp;&amp;pipe, const <a class="el" href="classbsc_1_1application.html">application</a> &amp;app)</td></tr>
+<tr class="separator:a75cbcb30aecd3bcac8321e9cf07706ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc45b861a632c6d29697659eb6164f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdc45b861a632c6d29697659eb6164f9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>process_handler</b> (<a class="el" href="classbsc_1_1process__handler.html">process_handler</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:afdc45b861a632c6d29697659eb6164f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8dc3945c6b2c16df887c8e62a550766c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dc3945c6b2c16df887c8e62a550766c"></a>
 const sys::pid_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>childpid</b> () const </td></tr>
 <tr class="separator:a8dc3945c6b2c16df887c8e62a550766c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8060c7cb88fc89102b75947c221fab44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8060c7cb88fc89102b75947c221fab44"></a>
+const <a class="el" href="classbsc_1_1application.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>app</b> () const noexcept</td></tr>
+<tr class="separator:a8060c7cb88fc89102b75947c221fab44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f55573658e7e5c3ef9f25734590597"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2f55573658e7e5c3ef9f25734590597"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
 <tr class="separator:ac2f55573658e7e5c3ef9f25734590597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,18 +191,18 @@ pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> (
 <tr class="memitem:ac4bce14089a42dba65b9f8ab7049108c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4bce14089a42dba65b9f8ab7049108c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_starting</b> () const noexcept</td></tr>
 <tr class="separator:ac4bce14089a42dba65b9f8ab7049108c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e99ca645f6f1dabe2352ebcd6ed635 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47e99ca645f6f1dabe2352ebcd6ed635"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_started</b> () const noexcept</td></tr>
-<tr class="separator:a47e99ca645f6f1dabe2352ebcd6ed635 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d9bfcc4d9d2f2f6b5a557792cc31692 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d9bfcc4d9d2f2f6b5a557792cc31692"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_started</b> () const noexcept</td></tr>
+<tr class="separator:a1d9bfcc4d9d2f2f6b5a557792cc31692 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68abdc64b69585dcd727aa4422f1c2ee inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68abdc64b69585dcd727aa4422f1c2ee"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_running</b> () const noexcept</td></tr>
 <tr class="separator:a68abdc64b69585dcd727aa4422f1c2ee inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f110cbf00558f3500078b79b5b4e7df inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f110cbf00558f3500078b79b5b4e7df"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopping</b> () const noexcept</td></tr>
 <tr class="separator:a7f110cbf00558f3500078b79b5b4e7df inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2847aca8bb1e04a8f5937a7fffea4833 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2847aca8bb1e04a8f5937a7fffea4833"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_stopped</b> () const noexcept</td></tr>
-<tr class="separator:a2847aca8bb1e04a8f5937a7fffea4833 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2d5ad2d384467751b8a7d06b8685b8 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a2d5ad2d384467751b8a7d06b8685b8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_stopped</b> () const noexcept</td></tr>
+<tr class="separator:a9a2d5ad2d384467751b8a7d06b8685b8 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2028d4c87d97114112ecd894d48cda7b inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2028d4c87d97114112ecd894d48cda7b"></a>
 time_point&#160;</td><td class="memItemRight" valign="bottom"><b>start_time_point</b> () const noexcept</td></tr>
 <tr class="separator:a2028d4c87d97114112ecd894d48cda7b inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>

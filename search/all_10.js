@@ -2,6 +2,7 @@ var searchData=
 [
   ['send',['send',['../classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d',1,'bsc::kernel_protocol']]],
   ['sender',['Sender',['../structSender.html',1,'']]],
+  ['slave_5fkernel',['slave_kernel',['../classslave__kernel.html',1,'']]],
   ['sleepy_5fkernel',['Sleepy_kernel',['../structSleepy__kernel.html',1,'']]],
   ['socket_5fpipeline',['socket_pipeline',['../classbsc_1_1socket__pipeline.html',1,'bsc']]],
   ['socket_5fpipeline_5fkernel',['socket_pipeline_kernel',['../classbsc_1_1socket__pipeline__kernel.html',1,'bsc']]],

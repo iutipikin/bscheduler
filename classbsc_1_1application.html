@@ -130,6 +130,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9801736e8ab1fd5d3c426b2936a153a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9801736e8ab1fd5d3c426b2936a153a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>application</b> (const container_type &amp;args, const container_type &amp;env)</td></tr>
 <tr class="separator:a9801736e8ab1fd5d3c426b2936a153a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda2c5cc404f15c4518cb8253e436511"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acda2c5cc404f15c4518cb8253e436511"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>application</b> (<a class="el" href="classbsc_1_1application.html">application</a> &amp;&amp;rhs)=default</td></tr>
+<tr class="separator:acda2c5cc404f15c4518cb8253e436511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73e20cb39e78fef882058cac24d5741"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa73e20cb39e78fef882058cac24d5741"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>application</b> (const <a class="el" href="classbsc_1_1application.html">application</a> &amp;rhs)=default</td></tr>
+<tr class="separator:aa73e20cb39e78fef882058cac24d5741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad178292e8af0f9641db1e54130e67ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad178292e8af0f9641db1e54130e67ca6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>workdir</b> (const sys::canonical_path &amp;rhs)</td></tr>
 <tr class="separator:ad178292e8af0f9641db1e54130e67ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,15 +151,36 @@ id_type&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const no
 <tr class="memitem:a0a4971e27ba5b1a7944571ccd0f4d8f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4971e27ba5b1a7944571ccd0f4d8f8"></a>
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b> () const noexcept</td></tr>
 <tr class="separator:a0a4971e27ba5b1a7944571ccd0f4d8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa19af4d5546617098a313b3ddda0682"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa19af4d5546617098a313b3ddda0682"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_master</b> () const noexcept</td></tr>
+<tr class="separator:aaa19af4d5546617098a313b3ddda0682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec419d825f7e104b6bc1162f20845dba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec419d825f7e104b6bc1162f20845dba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_slave</b> () const noexcept</td></tr>
+<tr class="separator:aec419d825f7e104b6bc1162f20845dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f8c1e5b798e503c66b3f66903a7851"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2f8c1e5b798e503c66b3f66903a7851"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_master</b> () const noexcept</td></tr>
+<tr class="separator:ab2f8c1e5b798e503c66b3f66903a7851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0eb92a0372d52453711f0d1e212349b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0eb92a0372d52453711f0d1e212349b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_slave</b> () const noexcept</td></tr>
+<tr class="separator:af0eb92a0372d52453711f0d1e212349b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a623c926afbea78c46279518c195c1b7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a623c926afbea78c46279518c195c1b7e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (const sys::two_way_pipe &amp;pipe) const </td></tr>
 <tr class="separator:a623c926afbea78c46279518c195c1b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef98a87af7a338d61312a0ebca2b0e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef98a87af7a338d61312a0ebca2b0e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (sys::pstream &amp;out) const </td></tr>
+<tr class="separator:a5ef98a87af7a338d61312a0ebca2b0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bbecfb08db069c7cd36a461262328d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5bbecfb08db069c7cd36a461262328d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (sys::pstream &amp;in)</td></tr>
+<tr class="separator:aa5bbecfb08db069c7cd36a461262328d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ae8fced8d481f28ea10ad67b91731e401"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8fced8d481f28ea10ad67b91731e401"></a>
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classbsc_1_1application.html">application</a> &amp;rhs)</td></tr>
 <tr class="separator:ae8fced8d481f28ea10ad67b91731e401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1803b800a6e194d6b42b39c0e8c0cac5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1803b800a6e194d6b42b39c0e8c0cac5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classbsc_1_1application.html">application</a> &amp;lhs, <a class="el" href="classbsc_1_1application.html">application</a> &amp;rhs)</td></tr>
+<tr class="separator:a1803b800a6e194d6b42b39c0e8c0cac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/<a class="el" href="application_8hh_source.html">application.hh</a></li>

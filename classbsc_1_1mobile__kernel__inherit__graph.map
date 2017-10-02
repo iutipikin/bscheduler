@@ -1,7 +1,7 @@
 <map id="bsc::mobile_kernel" name="bsc::mobile_kernel">
-<area shape="rect" id="node4" href="$structbsc_1_1kernel.html" title="bsc::kernel" alt="" coords="366,903,453,929"/>
-<area shape="rect" id="node2" href="$classbsc_1_1kernel__base.html" title="bsc::kernel_base" alt="" coords="11,877,133,904"/>
-<area shape="rect" id="node3" href="$classbsc_1_1kernel__header.html" title="bsc::kernel_header" alt="" coords="6,928,138,955"/>
+<area shape="rect" id="node4" href="$structbsc_1_1kernel.html" title="bsc::kernel" alt="" coords="366,953,453,980"/>
+<area shape="rect" id="node2" href="$classbsc_1_1kernel__base.html" title="bsc::kernel_base" alt="" coords="11,928,133,955"/>
+<area shape="rect" id="node3" href="$classbsc_1_1kernel__header.html" title="bsc::kernel_header" alt="" coords="6,979,138,1005"/>
 <area shape="rect" id="node5" href="$structautoreg_1_1ACF__generator.html" title="autoreg::ACF_generator\&lt; T \&gt;" alt="" coords="502,5,695,32"/>
 <area shape="rect" id="node6" href="$structautoreg_1_1Autoreg__coefs.html" title="autoreg::Autoreg_coefs\&lt; T \&gt;" alt="" coords="504,56,693,83"/>
 <area shape="rect" id="node7" href="$classautoreg_1_1Autoreg__model.html" title="autoreg::Autoreg_model\&lt; T \&gt;" alt="" coords="503,107,695,133"/>
@@ -25,13 +25,15 @@
 <area shape="rect" id="node28" href="$structKernel__that__carries__its__parent.html" title="Kernel_that_carries\l_its_parent" alt="" coords="531,1081,666,1122"/>
 <area shape="rect" id="node29" href="$structLauncher.html" title="Launcher" alt="" coords="561,1147,636,1173"/>
 <area shape="rect" id="node30" href="$classMain.html" title="Main" alt="" coords="573,1197,624,1224"/>
-<area shape="rect" id="node31" href="$structSender.html" title="Sender" alt="" coords="567,1248,630,1275"/>
-<area shape="rect" id="node32" href="$structSleepy__kernel.html" title="Sleepy_kernel" alt="" coords="547,1299,651,1325"/>
-<area shape="rect" id="node33" href="$structSpec__app.html" title="Spec_app" alt="" coords="559,1349,639,1376"/>
-<area shape="rect" id="node34" href="$structSpectrum__kernel.html" title="Spectrum_kernel" alt="" coords="539,1400,659,1427"/>
-<area shape="rect" id="node35" href="$structStation__kernel.html" title="Station_kernel" alt="" coords="546,1451,651,1477"/>
-<area shape="rect" id="node36" href="$structTest__socket.html" title="Test_socket" alt="" coords="551,1501,646,1528"/>
-<area shape="rect" id="node37" href="$structYear__kernel.html" title="Year_kernel" alt="" coords="553,1552,644,1579"/>
+<area shape="rect" id="node31" href="$classmaster__kernel.html" title="master_kernel" alt="" coords="547,1248,651,1275"/>
+<area shape="rect" id="node32" href="$structSender.html" title="Sender" alt="" coords="567,1299,630,1325"/>
+<area shape="rect" id="node33" href="$classslave__kernel.html" title="slave_kernel" alt="" coords="551,1349,646,1376"/>
+<area shape="rect" id="node34" href="$structSleepy__kernel.html" title="Sleepy_kernel" alt="" coords="547,1400,651,1427"/>
+<area shape="rect" id="node35" href="$structSpec__app.html" title="Spec_app" alt="" coords="559,1451,639,1477"/>
+<area shape="rect" id="node36" href="$structSpectrum__kernel.html" title="Spectrum_kernel" alt="" coords="539,1501,659,1528"/>
+<area shape="rect" id="node37" href="$structStation__kernel.html" title="Station_kernel" alt="" coords="546,1552,651,1579"/>
+<area shape="rect" id="node38" href="$structTest__socket.html" title="Test_socket" alt="" coords="551,1603,646,1629"/>
+<area shape="rect" id="node39" href="$structYear__kernel.html" title="Year_kernel" alt="" coords="553,1653,644,1680"/>
 <area shape="rect" id="node23" href="$classbsc_1_1master__discoverer.html" title="bsc::master_discoverer" alt="" coords="746,928,905,955"/>
 <area shape="rect" id="node26" href="$structKernel__that__reads__more__than__writes.html" title="Kernel_that_reads_more\l_than_writes" alt="" coords="744,1001,907,1042"/>
 <area shape="rect" id="node27" href="$structKernel__that__writes__more__than__reads.html" title="Kernel_that_writes\l_more_than_reads" alt="" coords="760,1066,891,1107"/>

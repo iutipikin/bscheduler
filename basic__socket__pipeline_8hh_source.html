@@ -181,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// start processing as early as possible</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            poller().notify_one();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            lock_type lock(this-&gt;_mutex);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">while</span> (!this-&gt;is_stopped()) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">while</span> (!this-&gt;has_stopped()) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordtype">bool</span> timeout = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">if</span> (this-&gt;_start_timeout &gt; duration::zero()) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    handler_const_iterator result =</div>
@@ -263,7 +263,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            this-&gt;poller().for_each_ordinary_fd(</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                [<span class="keyword">this</span>,timeout,&amp;now,&amp;i] (sys::poll_event&amp; ev, event_handler_ptr&amp; h) {</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    <span class="keywordflow">if</span> (!ev ||</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        h-&gt;is_stopped() ||</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        h-&gt;has_stopped() ||</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                        (timeout &amp;&amp; this-&gt;is_timed_out(*h, now))) {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        this-&gt;remove_client(h);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    }</div>
@@ -273,7 +273,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        process_kernels_if_any() {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">if</span> (this-&gt;is_stopped()) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">if</span> (this-&gt;has_stopped()) {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                this-&gt;try_to_stop_gracefully();</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                poller().for_each_pipe_fd([<span class="keyword">this</span>] (sys::poll_event&amp; ev) {</div>
