@@ -136,12 +136,15 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b><
 <tr class="memitem:a05af4d5962a9a3b30dcd52621a25c4fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05af4d5962a9a3b30dcd52621a25c4fc"></a>
 typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>Ch</b></td></tr>
 <tr class="separator:a05af4d5962a9a3b30dcd52621a25c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a0424d5506e617e3fa2f6c5b042cc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4a0424d5506e617e3fa2f6c5b042cc3"></a>
+<tr class="memitem:aced77c7c1bbf13ac64fcd7a2de3f3a8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aced77c7c1bbf13ac64fcd7a2de3f3a8b"></a>
+typedef sys::basic_fildesbuf<br class="typebreak"/>
+&lt; Ch, std::char_traits&lt; Ch &gt;<br class="typebreak"/>
+, sys::socket &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fildesbuf_type</b></td></tr>
+<tr class="separator:aced77c7c1bbf13ac64fcd7a2de3f3a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab074a2cc97c2d67de3fabc53f8f5fbb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab074a2cc97c2d67de3fabc53f8f5fbb5"></a>
 typedef <a class="el" href="classbsc_1_1basic__kernelbuf.html">basic_kernelbuf</a><br class="typebreak"/>
-&lt; sys::basic_fildesbuf&lt; Ch, <br class="typebreak"/>
-std::char_traits&lt; Ch &gt;<br class="typebreak"/>
-, sys::socket &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_type</b></td></tr>
-<tr class="separator:ab4a0424d5506e617e3fa2f6c5b042cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; fildesbuf_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_type</b></td></tr>
+<tr class="separator:ab074a2cc97c2d67de3fabc53f8f5fbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f5f8a00bcd608f5f09fc3ff8cbd00e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17f5f8a00bcd608f5f09fc3ff8cbd00e"></a>
 typedef std::unique_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classbsc_1_1basic__kernelbuf.html">kernelbuf_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_ptr</b></td></tr>
@@ -197,9 +200,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6adcfab78a124ac9ef1cc553df13e8dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6adcfab78a124ac9ef1cc553df13e8dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *k)</td></tr>
 <tr class="separator:a6adcfab78a124ac9ef1cc553df13e8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7942fc244d96cfacd6b90cf0e6499d96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7942fc244d96cfacd6b90cf0e6499d96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (const <a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
-<tr class="separator:a7942fc244d96cfacd6b90cf0e6499d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69ce11d8e6daa5f4927eed12eb35c3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69ce11d8e6daa5f4927eed12eb35c3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (<a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
+<tr class="separator:af69ce11d8e6daa5f4927eed12eb35c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf270ae540dd080630038ff39276c3ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf270ae540dd080630038ff39276c3ed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (sys::poll_event &amp;event)</td></tr>
 <tr class="separator:aaf270ae540dd080630038ff39276c3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,12 +221,9 @@ weight_type&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> () 
 <tr class="memitem:a48705a90ee6232ca45b913e94e055670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48705a90ee6232ca45b913e94e055670"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> (weight_type rhs) noexcept</td></tr>
 <tr class="separator:a48705a90ee6232ca45b913e94e055670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c2952b661c0b64172dce67effc242f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02c2952b661c0b64172dce67effc242f"></a>
-const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vaddr</b> () const </td></tr>
-<tr class="separator:a02c2952b661c0b64172dce67effc242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4021436c810f08cbc3ea2224e26954b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4021436c810f08cbc3ea2224e26954b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setvaddr</b> (const sys::endpoint &amp;rhs)</td></tr>
-<tr class="separator:a4021436c810f08cbc3ea2224e26954b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fe5cf10d80fcb9f69834af41345cd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69fe5cf10d80fcb9f69834af41345cd1"></a>
+const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vaddr</b> () const noexcept</td></tr>
+<tr class="separator:a69fe5cf10d80fcb9f69834af41345cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbsc_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbsc_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></td></tr>
 <tr class="memitem:af4bb964c13092939e4580ed571861f72 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4bb964c13092939e4580ed571861f72"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (<a class="el" href="classbsc_1_1pipeline__base.html">pipeline_base</a> &amp;&amp;)=default</td></tr>

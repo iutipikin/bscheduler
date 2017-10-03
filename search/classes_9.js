@@ -5,6 +5,7 @@ var searchData=
   ['kernel_5fbase',['kernel_base',['../classbsc_1_1kernel__base.html',1,'bsc']]],
   ['kernel_5ferror',['kernel_error',['../classbsc_1_1kernel__error.html',1,'bsc']]],
   ['kernel_5fheader',['kernel_header',['../classbsc_1_1kernel__header.html',1,'bsc']]],
+  ['kernel_5fheader_5fflag',['kernel_header_flag',['../classbsc_1_1kernel__header__flag.html',1,'bsc']]],
   ['kernel_5finstance_5fregistry',['kernel_instance_registry',['../classbsc_1_1kernel__instance__registry.html',1,'bsc']]],
   ['kernel_5fproto_5fflag',['kernel_proto_flag',['../classbsc_1_1kernel__proto__flag.html',1,'bsc']]],
   ['kernel_5fprotocol',['kernel_protocol',['../classbsc_1_1kernel__protocol.html',1,'bsc']]],

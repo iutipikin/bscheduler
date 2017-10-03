@@ -156,6 +156,14 @@ typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a32b76c254d99b446e12876181b448135 inherit pub_types_classbsc_1_1kernel__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32b76c254d99b446e12876181b448135"></a>
 typedef std::bitset&lt; 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>flags_type</b></td></tr>
 <tr class="separator:a32b76c254d99b446e12876181b448135 inherit pub_types_classbsc_1_1kernel__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classbsc_1_1kernel__header"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbsc_1_1kernel__header')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbsc_1_1kernel__header.html">bsc::kernel_header</a></td></tr>
+<tr class="memitem:a17324ea22cf5f6a5d8951ce97fbecf66 inherit pub_types_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17324ea22cf5f6a5d8951ce97fbecf66"></a>
+typedef std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classbsc_1_1application.html">application</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>application_ptr</b></td></tr>
+<tr class="separator:a17324ea22cf5f6a5d8951ce97fbecf66 inherit pub_types_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db1e492d7d0516aec25a754f99cd70b inherit pub_types_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1db1e492d7d0516aec25a754f99cd70b"></a>
+typedef <a class="el" href="classbsc_1_1kernel__header__flag.html">kernel_header_flag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flag_type</b></td></tr>
+<tr class="separator:a1db1e492d7d0516aec25a754f99cd70b inherit pub_types_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -235,6 +243,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>react</b> (<a
 <tr class="memitem:a105c7e915da5eb987d40bc695bdc0e9e inherit pub_methods_structbsc_1_1kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a105c7e915da5eb987d40bc695bdc0e9e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> (<a class="el" href="structbsc_1_1kernel.html">kernel</a> *rhs)</td></tr>
 <tr class="separator:a105c7e915da5eb987d40bc695bdc0e9e inherit pub_methods_structbsc_1_1kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8718f2503f04340ee7341ceb5da81b inherit pub_methods_structbsc_1_1kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8718f2503f04340ee7341ceb5da81b"></a>
+const <a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>header</b> () const noexcept</td></tr>
+<tr class="separator:aeb8718f2503f04340ee7341ceb5da81b inherit pub_methods_structbsc_1_1kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b787a56575d9ca41d2c201a0c30728d inherit pub_methods_structbsc_1_1kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b787a56575d9ca41d2c201a0c30728d"></a>
+<a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>header</b> () noexcept</td></tr>
+<tr class="separator:a7b787a56575d9ca41d2c201a0c30728d inherit pub_methods_structbsc_1_1kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d21256f08674ebae9b6d6ef209b72fc inherit pub_methods_structbsc_1_1kernel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d21256f08674ebae9b6d6ef209b72fc"></a>
 <a class="el" href="structbsc_1_1kernel.html">kernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbsc_1_1kernel.html#a7d21256f08674ebae9b6d6ef209b72fc">call</a> (<a class="el" href="structbsc_1_1kernel.html">kernel</a> *rhs) noexcept</td></tr>
 <tr class="memdesc:a7d21256f08674ebae9b6d6ef209b72fc inherit pub_methods_structbsc_1_1kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight">New API. <br/></td></tr>
@@ -348,6 +362,27 @@ const <a class="el" href="classbsc_1_1application.html">application</a> *&#160;<
 <tr class="memitem:a4bbcdf6ae79c2fc47a3024dbb7338f32 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bbcdf6ae79c2fc47a3024dbb7338f32"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>aptr</b> (const <a class="el" href="classbsc_1_1application.html">application</a> *rhs) noexcept</td></tr>
 <tr class="separator:a4bbcdf6ae79c2fc47a3024dbb7338f32 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae172c0d4be5ccdaf71d164fc4b676fb4 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae172c0d4be5ccdaf71d164fc4b676fb4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_application</b> () const noexcept</td></tr>
+<tr class="separator:ae172c0d4be5ccdaf71d164fc4b676fb4 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a516ebdad6864419854b2a008dd231 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72a516ebdad6864419854b2a008dd231"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>owns_application</b> () const noexcept</td></tr>
+<tr class="separator:a72a516ebdad6864419854b2a008dd231 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b174d82c03d3341e57a40f8cb9171f9 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b174d82c03d3341e57a40f8cb9171f9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_source_and_destination</b> () const noexcept</td></tr>
+<tr class="separator:a2b174d82c03d3341e57a40f8cb9171f9 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f917ee4580976d30f99708c94b2215 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f917ee4580976d30f99708c94b2215"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepend_source_and_destination</b> ()</td></tr>
+<tr class="separator:a59f917ee4580976d30f99708c94b2215 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544e1279ac59b3d0fde6f27f54dbc66a inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a544e1279ac59b3d0fde6f27f54dbc66a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>do_not_prepend_source_and_destination</b> ()</td></tr>
+<tr class="separator:a544e1279ac59b3d0fde6f27f54dbc66a inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132b03da2bbee36168c4736815535018 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a132b03da2bbee36168c4736815535018"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_header</b> (sys::pstream &amp;out) const </td></tr>
+<tr class="separator:a132b03da2bbee36168c4736815535018 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcc82c8991470ba4a13d35140710016 inherit pub_methods_classbsc_1_1kernel__header"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafcc82c8991470ba4a13d35140710016"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>read_header</b> (sys::pstream &amp;in)</td></tr>
+<tr class="separator:aafcc82c8991470ba4a13d35140710016 inherit pub_methods_classbsc_1_1kernel__header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
