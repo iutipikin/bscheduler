@@ -195,15 +195,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        is_allowed(<span class="keyword">const</span> ifaddr_type&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> this-&gt;_allowedifaddrs.find(rhs) !=</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                   this-&gt;_allowedifaddrs.end();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    };</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> ifaddr_type&amp; ifa : this-&gt;_allowedifaddrs) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">if</span> (ifa.contains(rhs.address())) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
 <div class="ttc" id="classbsc_1_1probe_html"><div class="ttname"><a href="classbsc_1_1probe.html">bsc::probe</a></div><div class="ttdef"><b>Definition:</b> probe.hh:12</div></div>
 <div class="ttc" id="classbsc_1_1network__timer_html"><div class="ttname"><a href="classbsc_1_1network__timer.html">bsc::network_timer</a></div><div class="ttdef"><b>Definition:</b> network_master.hh:16</div></div>
 <div class="ttc" id="classbsc_1_1hierarchy__kernel_html"><div class="ttname"><a href="classbsc_1_1hierarchy__kernel.html">bsc::hierarchy_kernel</a></div><div class="ttdef"><b>Definition:</b> hierarchy_kernel.hh:11</div></div>
