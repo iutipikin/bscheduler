@@ -156,14 +156,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        remove_client(event_handler_ptr ptr)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;has_stopped()) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                this-&gt;stop();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="comment">// this-&gt;factory()-&gt;stop();</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                this-&gt;xstop();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                this-&gt;poller().notify_one();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        process_kernels()<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            lock_type lock(this-&gt;_mutex);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//          lock_type lock(this-&gt;_mutex);</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            std::for_each(</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                queue_popper(this-&gt;_kernels),</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                queue_popper(),</div>
@@ -228,7 +228,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="structbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:32</div></div>
+<div class="ttc" id="structbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="structbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:34</div></div>
 <div class="ttc" id="classbsc_1_1child__process__pipeline_html"><div class="ttname"><a href="classbsc_1_1child__process__pipeline.html">bsc::child_process_pipeline</a></div><div class="ttdef"><b>Definition:</b> child_process_pipeline.hh:16</div></div>
 <div class="ttc" id="classbsc_1_1process__handler_html"><div class="ttname"><a href="classbsc_1_1process__handler.html">bsc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
