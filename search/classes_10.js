@@ -8,6 +8,7 @@ var searchData=
   ['solve_5fyule_5fwalker',['Solve_Yule_Walker',['../structautoreg_1_1Solve__Yule__Walker.html',1,'autoreg']]],
   ['spec_5fapp',['Spec_app',['../structSpec__app.html',1,'']]],
   ['spectrum_5fkernel',['Spectrum_kernel',['../structSpectrum__kernel.html',1,'']]],
+  ['static_5flock',['static_lock',['../classbsc_1_1static__lock.html',1,'bsc']]],
   ['station_5fkernel',['Station_kernel',['../structStation__kernel.html',1,'']]],
   ['surface_5fpart',['Surface_part',['../structautoreg_1_1Surface__part.html',1,'autoreg']]]
 ];

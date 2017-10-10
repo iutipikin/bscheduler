@@ -17,7 +17,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="bsc::basic_socket_pipeline\l\&lt; K, external_process_handler\l\&lt; K, R \&gt; \&gt;">
+<g id="a_node2"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="bsc::basic_socket_pipeline\l\&lt; K, external_process_handler\l\&lt; K, R \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="140.5,-70.5 140.5,-111.5 289.5,-111.5 289.5,-70.5 140.5,-70.5"/>
 <text text-anchor="start" x="148.5" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::basic_socket_pipeline</text>
 <text text-anchor="start" x="148.5" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; K, external_process_handler</text>

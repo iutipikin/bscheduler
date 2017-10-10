@@ -165,18 +165,9 @@ typedef Lock&#160;</td><td class="memItemRight" valign="bottom"><b>lock_type</b>
 <tr class="memitem:aa0347fda6911e7e95b3331c57f95cbc6 inherit pub_types_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0347fda6911e7e95b3331c57f95cbc6"></a>
 typedef Semaphore&#160;</td><td class="memItemRight" valign="bottom"><b>sem_type</b></td></tr>
 <tr class="separator:aa0347fda6911e7e95b3331c57f95cbc6 inherit pub_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a666845ab62ce89ab76499b0f4c93731e inherit pub_types_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a666845ab62ce89ab76499b0f4c93731e"></a>
-typedef std::vector<br class="typebreak"/>
-&lt; std::unique_ptr&lt; kernel_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_sack</b></td></tr>
-<tr class="separator:a666845ab62ce89ab76499b0f4c93731e inherit pub_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761b4df52ac17e635a98af81552af11c inherit pub_types_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a761b4df52ac17e635a98af81552af11c"></a>
 typedef Traits&#160;</td><td class="memItemRight" valign="bottom"><b>traits_type</b></td></tr>
 <tr class="separator:a761b4df52ac17e635a98af81552af11c inherit pub_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d34b1f64ed61d75e7827248f963504 inherit pub_types_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1d34b1f64ed61d75e7827248f963504"></a>
-typedef <br class="typebreak"/>
-sys::queue_pop_iterator<br class="typebreak"/>
-&lt; kernel_pool, traits_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue_popper</b></td></tr>
-<tr class="separator:ae1d34b1f64ed61d75e7827248f963504 inherit pub_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classbsc_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbsc_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></td></tr>
 <tr class="memitem:a800a2f5eb6f9014e8bb0a33f387534f1 inherit pub_types_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800a2f5eb6f9014e8bb0a33f387534f1"></a>
 typedef std::chrono::system_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock_type</b></td></tr>
@@ -296,6 +287,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_classbsc_1_1basic__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classbsc_1_1basic__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classbsc_1_1basic__pipeline.html">bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;</a></td></tr>
+<tr class="memitem:a666845ab62ce89ab76499b0f4c93731e inherit pro_types_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a666845ab62ce89ab76499b0f4c93731e"></a>
+typedef std::vector<br class="typebreak"/>
+&lt; std::unique_ptr&lt; kernel_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_sack</b></td></tr>
+<tr class="separator:a666845ab62ce89ab76499b0f4c93731e inherit pro_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d34b1f64ed61d75e7827248f963504 inherit pro_types_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1d34b1f64ed61d75e7827248f963504"></a>
+typedef <br class="typebreak"/>
+sys::queue_pop_iterator<br class="typebreak"/>
+&lt; kernel_pool, traits_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue_popper</b></td></tr>
+<tr class="separator:ae1d34b1f64ed61d75e7827248f963504 inherit pro_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classbsc_1_1basic__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbsc_1_1basic__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbsc_1_1basic__pipeline.html">bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;</a></td></tr>
 <tr class="memitem:a2f9f40c4df69e801e53c5f28618649d5 inherit pro_attribs_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f9f40c4df69e801e53c5f28618649d5"></a>
 kernel_pool&#160;</td><td class="memItemRight" valign="bottom"><b>_kernels</b></td></tr>

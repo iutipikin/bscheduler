@@ -139,7 +139,7 @@
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;">
+<g id="a_node6"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="304.5,-354.5 304.5,-395.5 417.5,-395.5 417.5,-354.5 304.5,-354.5"/>
 <text text-anchor="start" x="312.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="312.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; K, external_process</text>
@@ -154,7 +154,7 @@
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;">
+<g id="a_node8"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="304.5,-289.5 304.5,-330.5 417.5,-330.5 417.5,-289.5 304.5,-289.5"/>
 <text text-anchor="start" x="312.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="312.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; K, process_handler</text>
@@ -169,7 +169,7 @@
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;">
+<g id="a_node11"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="294.5,-229.5 294.5,-270.5 427.5,-270.5 427.5,-229.5 294.5,-229.5"/>
 <text text-anchor="start" x="302.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="302.5" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, process_handler</text>
@@ -184,7 +184,7 @@
 </g>
 <!-- Node13 -->
 <g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;">
+<g id="a_node13"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="304,-169.5 304,-210.5 418,-210.5 418,-169.5 304,-169.5"/>
 <text text-anchor="start" x="312" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="312" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, remote_client&lt; T,</text>
@@ -199,7 +199,7 @@
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;">
+<g id="a_node15"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;">
 <polygon fill="white" stroke="black" points="294,-121 294,-151 428,-151 428,-121 294,-121"/>
 <text text-anchor="start" x="302" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::basic_socket_pipeline</text>
 <text text-anchor="middle" x="361" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, Handler &gt;</text>

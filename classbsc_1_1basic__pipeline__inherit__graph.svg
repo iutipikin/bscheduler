@@ -19,7 +19,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;">
+<g id="a_node3"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="298.5,-280.5 298.5,-321.5 411.5,-321.5 411.5,-280.5 298.5,-280.5"/>
 <text text-anchor="start" x="306.5" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="306.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; K, external_process</text>
@@ -34,7 +34,7 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;">
+<g id="a_node5"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="298.5,-207.5 298.5,-248.5 411.5,-248.5 411.5,-207.5 298.5,-207.5"/>
 <text text-anchor="start" x="306.5" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="306.5" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; K, process_handler</text>
@@ -49,7 +49,7 @@
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;">
+<g id="a_node8"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="288.5,-147.5 288.5,-188.5 421.5,-188.5 421.5,-147.5 288.5,-147.5"/>
 <text text-anchor="start" x="296.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="296.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, process_handler</text>
@@ -64,7 +64,7 @@
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;">
+<g id="a_node10"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;">
 <polygon fill="white" stroke="black" points="298,-87.5 298,-128.5 412,-128.5 412,-87.5 298,-87.5"/>
 <text text-anchor="start" x="306" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">basic_socket_pipeline</text>
 <text text-anchor="start" x="306" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, remote_client&lt; T,</text>
@@ -79,7 +79,7 @@
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="structbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;">
+<g id="a_node12"><a xlink:href="classbsc_1_1basic__socket__pipeline.html" target="_top" xlink:title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;">
 <polygon fill="white" stroke="black" points="288,-39 288,-69 422,-69 422,-39 288,-39"/>
 <text text-anchor="start" x="296" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">bsc::basic_socket_pipeline</text>
 <text text-anchor="middle" x="355" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T, Handler &gt;</text>

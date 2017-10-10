@@ -8,11 +8,11 @@
 <area shape="rect" id="node21" href="$classbsc_1_1remote__client.html" title="bsc::remote_client\l\&lt; T, Socket, Router \&gt;" alt="" coords="191,561,342,602"/>
 <area shape="rect" id="node3" href="$classbsc_1_1parallel__pipeline.html" title="bsc::parallel_pipeline\&lt; T \&gt;" alt="" coords="399,19,574,45"/>
 <area shape="rect" id="node4" href="$structbsc_1_1io__pipeline.html" title="bsc::io_pipeline\&lt; T \&gt;" alt="" coords="637,5,781,32"/>
-<area shape="rect" id="node6" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;" alt="" coords="411,73,562,129"/>
-<area shape="rect" id="node8" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="411,160,562,216"/>
-<area shape="rect" id="node11" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="398,240,575,296"/>
-<area shape="rect" id="node13" href="$structbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="411,320,563,376"/>
-<area shape="rect" id="node15" href="$structbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;" alt="" coords="397,399,576,441"/>
+<area shape="rect" id="node6" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, external_process\l_handler\&lt; K, R \&gt; \&gt;" alt="" coords="411,73,562,129"/>
+<area shape="rect" id="node8" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="411,160,562,216"/>
+<area shape="rect" id="node11" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="398,240,575,296"/>
+<area shape="rect" id="node13" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, remote_client\&lt; T,\l Socket, Router \&gt; \&gt;" alt="" coords="411,320,563,376"/>
+<area shape="rect" id="node15" href="$classbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; T, Handler \&gt;" alt="" coords="397,399,576,441"/>
 <area shape="rect" id="node16" href="$structbsc_1_1timer__pipeline.html" title="bsc::timer_pipeline\&lt; T \&gt;" alt="" coords="405,465,568,492"/>
 <area shape="rect" id="node7" href="$classbsc_1_1unix__domain__socket__pipeline.html" title="bsc::unix_domain_socket\l_pipeline\&lt; K, R \&gt;" alt="" coords="624,57,795,98"/>
 <area shape="rect" id="node9" href="$classbsc_1_1child__process__pipeline.html" title="bsc::child_process\l_pipeline\&lt; K, R \&gt;" alt="" coords="644,122,775,163"/>

@@ -1,5 +1,5 @@
 <map id="bsc::child_process_pipeline&lt; K, R &gt;" name="bsc::child_process_pipeline&lt; K, R &gt;">
-<area shape="rect" id="node2" href="$structbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; K, process_handler\&lt; K, R \&gt; \&gt;" alt="" coords="187,203,396,245"/>
+<area shape="rect" id="node2" href="$classbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\l\&lt; K, process_handler\&lt; K, R \&gt; \&gt;" alt="" coords="187,203,396,245"/>
 <area shape="rect" id="node3" href="$classbsc_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; K , process_handler\l\&lt; K, R \&gt; &#160;\&gt;" alt="" coords="217,96,367,152"/>
 <area shape="rect" id="node4" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,5,135,32"/>
 </map>
