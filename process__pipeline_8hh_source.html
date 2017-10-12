@@ -117,102 +117,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;bscheduler/kernel/kernel_header.hh&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/application.hh&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/basic_socket_pipeline.hh&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;bscheduler/ppl/process_handler.hh&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>bsc {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> K, <span class="keyword">class</span> R&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classbsc_1_1process__pipeline.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span> <a class="code" href="classbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K,process_handler&lt;K,R&gt;&gt; {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K,process_handler&lt;K, R&gt;</a>&gt; <a class="code" href="classbsc_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::queue_popper;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_ptr;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classbsc_1_1process__handler.html">base_pipeline::event_handler_type</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::mutex_type;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">typedef</span> std::map&lt;application_type,event_handler_ptr&gt; map_type;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> map_type::iterator app_iterator;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">typedef</span> R router_type;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">typedef</span> K kernel_type;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        map_type _apps;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        sys::process_group _procs;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">bool</span> _allowroot = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>bsc {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> K, <span class="keyword">class</span> R&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classbsc_1_1process__pipeline.html">   18</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>: <span class="keyword">public</span> <a class="code" href="classbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a>&lt;K&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline&lt;K&gt;</a> <a class="code" href="classbsc_1_1basic__socket__pipeline.html">base_pipeline</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::queue_popper;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_ptr;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_type;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::mutex_type;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">typedef</span> std::map&lt;application_type,event_handler_ptr&gt; map_type;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> map_type::iterator app_iterator;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">typedef</span> R router_type;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">typedef</span> K kernel_type;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        map_type _apps;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        sys::process_group _procs;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">bool</span> _allowroot = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>(<span class="keyword">const</span> <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>(<span class="keyword">const</span> <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        operator=(<span class="keyword">const</span> <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        operator=(<span class="keyword">const</span> <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>(<a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>(<a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        ~<a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        ~<a class="code" href="classbsc_1_1process__pipeline.html">process_pipeline</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        remove_client(event_handler_ptr ptr) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        process_kernels() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        add(<span class="keyword">const</span> <a class="code" href="classbsc_1_1application.html">application</a>&amp; app) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            lock_type lock(this-&gt;_mutex);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            this-&gt;do_add(app);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            this-&gt;poller().notify_one();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        do_run() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        forward(<a class="code" href="classbsc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        allow_root(<span class="keywordtype">bool</span> rhs) noexcept {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            this-&gt;_allowroot = rhs;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        add(<span class="keyword">const</span> <a class="code" href="classbsc_1_1application.html">application</a>&amp; app) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            lock_type lock(this-&gt;_mutex);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            this-&gt;do_add(app);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        do_run() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        forward(<a class="code" href="classbsc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        allow_root(<span class="keywordtype">bool</span> rhs) noexcept {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            this-&gt;_allowroot = rhs;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        app_iterator</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        do_add(<span class="keyword">const</span> <a class="code" href="classbsc_1_1application.html">application</a>&amp; app);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        process_kernel(kernel_type* k);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        wait_for_all_processes_to_finish();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        app_iterator</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        do_add(<span class="keyword">const</span> <a class="code" href="classbsc_1_1application.html">application</a>&amp; app);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        on_process_exit(<span class="keyword">const</span> sys::process&amp; p, sys::proc_info status);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        process_kernel(kernel_type* k);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        wait_for_all_processes_to_finish();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        on_process_exit(<span class="keyword">const</span> sys::process&amp; p, sys::proc_info status);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">inline</span> app_iterator</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        find_by_app_id(application_type <span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> this-&gt;_apps.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        app_iterator</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        find_by_process_id(sys::pid_type pid);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classbsc_1_1process__pipeline_html"><div class="ttname"><a href="classbsc_1_1process__pipeline.html">bsc::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:19</div></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">inline</span> app_iterator</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        find_by_app_id(application_type <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> this-&gt;_apps.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        app_iterator</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        find_by_process_id(sys::pid_type pid);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1process__notify__handler.html">process_notify_handler</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1process__handler.html">process_handler</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    };</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="classbsc_1_1process__pipeline_html"><div class="ttname"><a href="classbsc_1_1process__pipeline.html">bsc::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:18</div></div>
 <div class="ttc" id="classbsc_1_1application_html"><div class="ttname"><a href="classbsc_1_1application.html">bsc::application</a></div><div class="ttdef"><b>Definition:</b> application.hh:25</div></div>
-<div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:35</div></div>
+<div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:37</div></div>
 <div class="ttc" id="classbsc_1_1kernel__header_html"><div class="ttname"><a href="classbsc_1_1kernel__header.html">bsc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:14</div></div>
-<div class="ttc" id="classbsc_1_1process__handler_html"><div class="ttname"><a href="classbsc_1_1process__handler.html">bsc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:18</div></div>
+<div class="ttc" id="classbsc_1_1process__notify__handler_html"><div class="ttname"><a href="classbsc_1_1process__notify__handler.html">bsc::process_notify_handler</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.cc:16</div></div>
+<div class="ttc" id="classbsc_1_1process__handler_html"><div class="ttname"><a href="classbsc_1_1process__handler.html">bsc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

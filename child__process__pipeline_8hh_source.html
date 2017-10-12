@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::lock_type;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::sem_type;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::kernel_pool;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="classbsc_1_1process__handler.html">base_pipeline::event_handler_type</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_type;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::event_handler_ptr;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::queue_popper;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">using</span> <span class="keyword">typename</span> base_pipeline::traits_type;</div>
@@ -200,11 +200,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            sys::fd_type out = this_application::get_output_fd();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span> (in != -1 &amp;&amp; out != -1) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                this-&gt;poller().emplace(</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    sys::poll_event {in, sys::poll_event::In, 0},</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    sys::epoll_event {in, sys::epoll_event::In, 0},</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    this-&gt;_parent</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                );</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                this-&gt;poller().emplace(</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    sys::poll_event {out, 0, 0},</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    sys::epoll_event {out, 0, 0},</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    this-&gt;_parent</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                );</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                this-&gt;_parent-&gt;set_name(this-&gt;name());</div>
@@ -228,9 +228,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:35</div></div>
+<div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:37</div></div>
 <div class="ttc" id="classbsc_1_1child__process__pipeline_html"><div class="ttname"><a href="classbsc_1_1child__process__pipeline.html">bsc::child_process_pipeline</a></div><div class="ttdef"><b>Definition:</b> child_process_pipeline.hh:16</div></div>
-<div class="ttc" id="classbsc_1_1process__handler_html"><div class="ttname"><a href="classbsc_1_1process__handler.html">bsc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 </article>

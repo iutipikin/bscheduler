@@ -18,5 +18,6 @@ var searchData=
   ['kernel_5ftype_5fregistry',['kernel_type_registry',['../classbsc_1_1kernel__type__registry.html',1,'bsc']]],
   ['kernelstreamtest',['KernelStreamTest',['../structKernelStreamTest.html',1,'']]],
   ['kstream',['kstream',['../structbsc_1_1kstream.html',1,'bsc']]],
-  ['kstream_3c_20k_20_3e',['kstream&lt; K &gt;',['../structbsc_1_1kstream.html',1,'bsc']]]
+  ['kstream_3c_20k_20_3e',['kstream&lt; K &gt;',['../structbsc_1_1kstream.html',1,'bsc']]],
+  ['kstream_3c_20kernel_5ftype_20_3e',['kstream&lt; kernel_type &gt;',['../structbsc_1_1kstream.html',1,'bsc']]]
 ];

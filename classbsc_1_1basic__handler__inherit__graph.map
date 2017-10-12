@@ -1,0 +1,7 @@
+<map id="bsc::basic_handler" name="bsc::basic_handler">
+<area shape="rect" id="node3" href="$classbsc_1_1process__handler.html" title="bsc::process_handler\l\&lt; K, R \&gt;" alt="" coords="372,5,519,46"/>
+<area shape="rect" id="node4" href="$classbsc_1_1process__notify__handler.html" title="bsc::process_notify\l_handler\&lt; K, R \&gt;" alt="" coords="377,70,513,111"/>
+<area shape="rect" id="node5" href="$classbsc_1_1unix__socket__client.html" title="bsc::unix_socket_client\l\&lt; K, R \&gt;" alt="" coords="366,135,525,177"/>
+<area shape="rect" id="node6" href="$classbsc_1_1unix__socket__server.html" title="bsc::unix_socket_server\l\&lt; K, R \&gt;" alt="" coords="363,201,527,242"/>
+<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,77,136,104"/>
+</map>

@@ -114,18 +114,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for bsc::process_handler&lt; K, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1process__handler__inherit__graph.svg" width="158" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1process__handler__inherit__graph.svg" width="158" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for bsc::process_handler&lt; K, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1process__handler__coll__graph.svg" width="158" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1process__handler__coll__graph.svg" width="158" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a1ec1a9bb53e5b1b48fe2b11d56bbe1ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec1a9bb53e5b1b48fe2b11d56bbe1ec"></a>
+typedef K&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
+<tr class="separator:a1ec1a9bb53e5b1b48fe2b11d56bbe1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf360242dc034fad3fd53c442a2aa751"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf360242dc034fad3fd53c442a2aa751"></a>
+typedef R&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
+<tr class="separator:abf360242dc034fad3fd53c442a2aa751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec1a9bb53e5b1b48fe2b11d56bbe1ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec1a9bb53e5b1b48fe2b11d56bbe1ec"></a>
 typedef K&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
 <tr class="separator:a1ec1a9bb53e5b1b48fe2b11d56bbe1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,15 +174,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
 <tr class="memitem:a41d93713f11d52f1696cf0b384c744e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41d93713f11d52f1696cf0b384c744e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *k)</td></tr>
 <tr class="separator:a41d93713f11d52f1696cf0b384c744e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0585a0858216d9728a14513af3b676b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0585a0858216d9728a14513af3b676b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (sys::poll_event &amp;event)</td></tr>
-<tr class="separator:ab0585a0858216d9728a14513af3b676b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea46a101841e277247900e5abea1e100"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea46a101841e277247900e5abea1e100"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (const sys::epoll_event &amp;event) override</td></tr>
+<tr class="separator:aea46a101841e277247900e5abea1e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed54e0f0b4958236efc97b0ae478460e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed54e0f0b4958236efc97b0ae478460e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (<a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
 <tr class="separator:aed54e0f0b4958236efc97b0ae478460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9f3d646f6c79b0d7c41ae28e1df9e90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9f3d646f6c79b0d7c41ae28e1df9e90"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *rhs) noexcept</td></tr>
 <tr class="separator:ab9f3d646f6c79b0d7c41ae28e1df9e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cbcb30aecd3bcac8321e9cf07706ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75cbcb30aecd3bcac8321e9cf07706ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsc_1_1process__handler.html#a75cbcb30aecd3bcac8321e9cf07706ea">process_handler</a> (sys::pid_type &amp;&amp;child, sys::two_way_pipe &amp;&amp;pipe, const <a class="el" href="classbsc_1_1application.html">application</a> &amp;app)</td></tr>
+<tr class="memdesc:a75cbcb30aecd3bcac8321e9cf07706ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from parent process. <br/></td></tr>
+<tr class="separator:a75cbcb30aecd3bcac8321e9cf07706ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc45b861a632c6d29697659eb6164f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdc45b861a632c6d29697659eb6164f9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>process_handler</b> (<a class="el" href="classbsc_1_1process__handler.html">process_handler</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:afdc45b861a632c6d29697659eb6164f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae197418cd603c6bad28eac4fb10200d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae197418cd603c6bad28eac4fb10200d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsc_1_1process__handler.html#ae197418cd603c6bad28eac4fb10200d5">process_handler</a> (sys::pipe &amp;&amp;pipe)</td></tr>
+<tr class="memdesc:ae197418cd603c6bad28eac4fb10200d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from child process. <br/></td></tr>
+<tr class="separator:ae197418cd603c6bad28eac4fb10200d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc3945c6b2c16df887c8e62a550766c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dc3945c6b2c16df887c8e62a550766c"></a>
+const sys::pid_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>childpid</b> () const </td></tr>
+<tr class="separator:a8dc3945c6b2c16df887c8e62a550766c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8060c7cb88fc89102b75947c221fab44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8060c7cb88fc89102b75947c221fab44"></a>
+const <a class="el" href="classbsc_1_1application.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>app</b> () const noexcept</td></tr>
+<tr class="separator:a8060c7cb88fc89102b75947c221fab44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f55573658e7e5c3ef9f25734590597"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2f55573658e7e5c3ef9f25734590597"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="separator:ac2f55573658e7e5c3ef9f25734590597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d93713f11d52f1696cf0b384c744e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41d93713f11d52f1696cf0b384c744e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *k)</td></tr>
+<tr class="separator:a41d93713f11d52f1696cf0b384c744e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea46a101841e277247900e5abea1e100"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea46a101841e277247900e5abea1e100"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (const sys::epoll_event &amp;event) override</td></tr>
+<tr class="separator:aea46a101841e277247900e5abea1e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed54e0f0b4958236efc97b0ae478460e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed54e0f0b4958236efc97b0ae478460e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (<a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
+<tr class="separator:aed54e0f0b4958236efc97b0ae478460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f3d646f6c79b0d7c41ae28e1df9e90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9f3d646f6c79b0d7c41ae28e1df9e90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *rhs) noexcept</td></tr>
+<tr class="separator:ab9f3d646f6c79b0d7c41ae28e1df9e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classbsc_1_1basic__handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbsc_1_1basic__handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbsc_1_1basic__handler.html">bsc::basic_handler</a></td></tr>
+<tr class="memitem:a8a8e0e5905d9563ec7a1e228c6d3031c inherit pub_methods_classbsc_1_1basic__handler"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a8e0e5905d9563ec7a1e228c6d3031c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;out) const =0</td></tr>
+<tr class="separator:a8a8e0e5905d9563ec7a1e228c6d3031c inherit pub_methods_classbsc_1_1basic__handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbsc_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbsc_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></td></tr>
 <tr class="memitem:af4bb964c13092939e4580ed571861f72 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4bb964c13092939e4580ed571861f72"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (<a class="el" href="classbsc_1_1pipeline__base.html">pipeline_base</a> &amp;&amp;)=default</td></tr>
@@ -246,6 +288,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_number</b> = 0</
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/<a class="el" href="process__handler_8hh_source.html">process_handler.hh</a></li>
+<li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/process_pipeline.cc</li>
 <li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/process_handler.cc</li>
 </ul>
 </div><!-- contents -->
