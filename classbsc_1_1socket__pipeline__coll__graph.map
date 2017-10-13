@@ -1,5 +1,5 @@
-<map id="bsc::socket_pipeline&lt; T, Socket, Router &gt;" name="bsc::socket_pipeline&lt; T, Socket, Router &gt;">
-<area shape="rect" id="node2" href="$classbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\&lt; T \&gt;" alt="" coords="187,173,396,200"/>
-<area shape="rect" id="node3" href="$classbsc_1_1basic__pipeline.html" title="Proxy_pipeline_base\&lt; T \&gt;" alt="" coords="205,96,379,123"/>
+<map id="bsc::socket_pipeline&lt; K, S, R &gt;" name="bsc::socket_pipeline&lt; K, S, R &gt;">
+<area shape="rect" id="node2" href="$classbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\&lt; K \&gt;" alt="" coords="186,189,397,216"/>
+<area shape="rect" id="node3" href="$classbsc_1_1basic__pipeline.html" title="Proxy_pipeline_base\l\&lt; K &#160;\&gt;" alt="" coords="221,97,363,138"/>
 <area shape="rect" id="node4" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,5,135,32"/>
 </map>

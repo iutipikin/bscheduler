@@ -1,13 +1,11 @@
 <map id="bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;" name="bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;">
-<area shape="rect" id="node3" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\&lt; K \&gt;" alt="" coords="403,77,586,104"/>
-<area shape="rect" id="node6" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; K, process_handler\l\&lt; K, R \&gt; \&gt;" alt="" coords="419,128,570,184"/>
-<area shape="rect" id="node8" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\l\&lt; T, process_handler\l\&lt; T, basic_router\&lt; T \&gt; \&gt; \&gt;" alt="" coords="406,208,583,264"/>
-<area shape="rect" id="node10" href="$classbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\&lt; T \&gt;" alt="" coords="389,288,600,315"/>
-<area shape="rect" id="node12" href="$structbsc_1_1timer__pipeline.html" title="bsc::timer_pipeline\&lt; T \&gt;" alt="" coords="413,339,576,365"/>
-<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,223,136,249"/>
-<area shape="rect" id="node4" href="$classbsc_1_1process__pipeline.html" title="bsc::process_pipeline\l\&lt; K, R \&gt;" alt="" coords="661,5,809,46"/>
-<area shape="rect" id="node5" href="$classbsc_1_1unix__domain__socket__pipeline.html" title="bsc::unix_domain_socket\l_pipeline\&lt; K, R \&gt;" alt="" coords="649,70,820,111"/>
-<area shape="rect" id="node7" href="$classbsc_1_1child__process__pipeline.html" title="bsc::child_process\l_pipeline\&lt; K, R \&gt;" alt="" coords="669,135,800,177"/>
-<area shape="rect" id="node9" href="$classbsc_1_1child__process__pipeline.html" title="bsc::child_process\l_pipeline\&lt; T, basic\l_router\&lt; T \&gt; \&gt;" alt="" coords="669,208,801,264"/>
-<area shape="rect" id="node11" href="$classbsc_1_1socket__pipeline.html" title="bsc::socket_pipeline\&lt; T \&gt;" alt="" coords="648,288,821,315"/>
+<area shape="rect" id="node3" href="$classbsc_1_1basic__socket__pipeline.html" title="basic_socket_pipeline\&lt; K \&gt;" alt="" coords="403,143,586,169"/>
+<area shape="rect" id="node8" href="$classbsc_1_1basic__socket__pipeline.html" title="bsc::basic_socket_pipeline\&lt; T \&gt;" alt="" coords="389,233,600,260"/>
+<area shape="rect" id="node10" href="$structbsc_1_1timer__pipeline.html" title="bsc::timer_pipeline\&lt; T \&gt;" alt="" coords="413,284,576,311"/>
+<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,233,136,260"/>
+<area shape="rect" id="node4" href="$classbsc_1_1child__process__pipeline.html" title="bsc::child_process\l_pipeline\&lt; K, R \&gt;" alt="" coords="668,5,799,46"/>
+<area shape="rect" id="node5" href="$classbsc_1_1process__pipeline.html" title="bsc::process_pipeline\l\&lt; K, R \&gt;" alt="" coords="659,70,807,111"/>
+<area shape="rect" id="node6" href="$classbsc_1_1socket__pipeline.html" title="bsc::socket_pipeline\l\&lt; K, S, R \&gt;" alt="" coords="663,135,804,177"/>
+<area shape="rect" id="node7" href="$classbsc_1_1unix__domain__socket__pipeline.html" title="bsc::unix_domain_socket\l_pipeline\&lt; K, R \&gt;" alt="" coords="648,201,819,242"/>
+<area shape="rect" id="node9" href="$classbsc_1_1child__process__pipeline.html" title="child_process_pipeline\l\&lt; T, basic_router\&lt; T \&gt; \&gt;" alt="" coords="651,266,816,307"/>
 </map>

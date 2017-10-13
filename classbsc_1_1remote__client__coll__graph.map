@@ -1,3 +1,4 @@
-<map id="bsc::remote_client&lt; T, Socket, Router &gt;" name="bsc::remote_client&lt; T, Socket, Router &gt;">
-<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="15,5,144,32"/>
+<map id="bsc::remote_client&lt; K, S, R &gt;" name="bsc::remote_client&lt; K, S, R &gt;">
+<area shape="rect" id="node2" href="$classbsc_1_1basic__handler.html" title="bsc::basic_handler" alt="" coords="4,80,133,107"/>
+<area shape="rect" id="node3" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="4,5,133,32"/>
 </map>

@@ -1,7 +1,11 @@
 <map id="bsc::basic_handler" name="bsc::basic_handler">
-<area shape="rect" id="node3" href="$classbsc_1_1process__handler.html" title="bsc::process_handler\l\&lt; K, R \&gt;" alt="" coords="372,5,519,46"/>
-<area shape="rect" id="node4" href="$classbsc_1_1process__notify__handler.html" title="bsc::process_notify\l_handler\&lt; K, R \&gt;" alt="" coords="377,70,513,111"/>
-<area shape="rect" id="node5" href="$classbsc_1_1unix__socket__client.html" title="bsc::unix_socket_client\l\&lt; K, R \&gt;" alt="" coords="366,135,525,177"/>
-<area shape="rect" id="node6" href="$classbsc_1_1unix__socket__server.html" title="bsc::unix_socket_server\l\&lt; K, R \&gt;" alt="" coords="363,201,527,242"/>
-<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,77,136,104"/>
+<area shape="rect" id="node3" href="$classbsc_1_1child__notify__handler.html" title="bsc::child_notify_handler\l\&lt; K, R \&gt;" alt="" coords="363,5,530,46"/>
+<area shape="rect" id="node4" href="$classbsc_1_1local__server.html" title="bsc::local_server\&lt;\l K, S, R \&gt;" alt="" coords="382,70,511,111"/>
+<area shape="rect" id="node5" href="$classbsc_1_1process__handler.html" title="bsc::process_handler\l\&lt; K, R \&gt;" alt="" coords="373,135,520,177"/>
+<area shape="rect" id="node6" href="$classbsc_1_1process__notify__handler.html" title="bsc::process_notify\l_handler\&lt; K, R \&gt;" alt="" coords="379,201,515,242"/>
+<area shape="rect" id="node7" href="$classbsc_1_1remote__client.html" title="bsc::remote_client\l\&lt; K, S, R \&gt;" alt="" coords="382,266,511,307"/>
+<area shape="rect" id="node8" href="$classbsc_1_1socket__notify__handler.html" title="bsc::socket_notify\l_handler\&lt; K, S, R \&gt;" alt="" coords="377,331,516,373"/>
+<area shape="rect" id="node9" href="$classbsc_1_1unix__socket__client.html" title="bsc::unix_socket_client\l\&lt; K, R \&gt;" alt="" coords="367,397,526,438"/>
+<area shape="rect" id="node10" href="$classbsc_1_1unix__socket__server.html" title="bsc::unix_socket_server\l\&lt; K, R \&gt;" alt="" coords="365,462,529,503"/>
+<area shape="rect" id="node2" href="$classbsc_1_1pipeline__base.html" title="bsc::pipeline_base" alt="" coords="5,273,136,300"/>
 </map>

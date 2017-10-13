@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Doxygen 1.8.6"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Factory: bsc::remote_client&lt; T, Socket, Router &gt; Class Template Reference</title>
+        <title>Factory: bsc::remote_client&lt; K, S, R &gt; Class Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -106,69 +106,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classbsc_1_1remote__client-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bsc::remote_client&lt; T, Socket, Router &gt; Class Template Reference</div>  </div>
+<div class="title">bsc::remote_client&lt; K, S, R &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for bsc::remote_client&lt; T, Socket, Router &gt;:</div>
+Inheritance diagram for bsc::remote_client&lt; K, S, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1remote__client__inherit__graph.svg" width="160" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1remote__client__inherit__graph.svg" width="139" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for bsc::remote_client&lt; T, Socket, Router &gt;:</div>
+Collaboration diagram for bsc::remote_client&lt; K, S, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1remote__client__coll__graph.svg" width="160" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1remote__client__coll__graph.svg" width="139" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1835e63dedc4f1a73017bf10c2568334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1835e63dedc4f1a73017bf10c2568334"></a>
+<tr class="memitem:a69cb1f1e235484e07c3e22527012476d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69cb1f1e235484e07c3e22527012476d"></a>
 typedef <a class="el" href="classbsc_1_1pipeline__base.html">pipeline_base</a>&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
-<tr class="separator:a1835e63dedc4f1a73017bf10c2568334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed8aab71b588070412366fd3d5a599c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abed8aab71b588070412366fd3d5a599c"></a>
-typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
-<tr class="separator:abed8aab71b588070412366fd3d5a599c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05af4d5962a9a3b30dcd52621a25c4fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05af4d5962a9a3b30dcd52621a25c4fc"></a>
+<tr class="separator:a69cb1f1e235484e07c3e22527012476d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e29a887ca61a5e47363e9fc8a21a9b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e29a887ca61a5e47363e9fc8a21a9b7"></a>
+typedef K&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
+<tr class="separator:a5e29a887ca61a5e47363e9fc8a21a9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183b69ca6e738a81f680a8be23ad7bd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a183b69ca6e738a81f680a8be23ad7bd2"></a>
 typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>Ch</b></td></tr>
-<tr class="separator:a05af4d5962a9a3b30dcd52621a25c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced77c7c1bbf13ac64fcd7a2de3f3a8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aced77c7c1bbf13ac64fcd7a2de3f3a8b"></a>
+<tr class="separator:a183b69ca6e738a81f680a8be23ad7bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa430f950476cd4708a7ef5329296240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa430f950476cd4708a7ef5329296240"></a>
 typedef sys::basic_fildesbuf<br class="typebreak"/>
 &lt; Ch, std::char_traits&lt; Ch &gt;<br class="typebreak"/>
 , sys::socket &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fildesbuf_type</b></td></tr>
-<tr class="separator:aced77c7c1bbf13ac64fcd7a2de3f3a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab074a2cc97c2d67de3fabc53f8f5fbb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab074a2cc97c2d67de3fabc53f8f5fbb5"></a>
+<tr class="separator:aaa430f950476cd4708a7ef5329296240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e961e18ec12ebf910a5b3de37f0dc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7e961e18ec12ebf910a5b3de37f0dc7"></a>
 typedef <a class="el" href="classbsc_1_1basic__kernelbuf.html">basic_kernelbuf</a><br class="typebreak"/>
 &lt; fildesbuf_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_type</b></td></tr>
-<tr class="separator:ab074a2cc97c2d67de3fabc53f8f5fbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f5f8a00bcd608f5f09fc3ff8cbd00e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17f5f8a00bcd608f5f09fc3ff8cbd00e"></a>
+<tr class="separator:ae7e961e18ec12ebf910a5b3de37f0dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde83a65a03e4b4ad3b7f60a69eb440a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acde83a65a03e4b4ad3b7f60a69eb440a"></a>
 typedef std::unique_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classbsc_1_1basic__kernelbuf.html">kernelbuf_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_ptr</b></td></tr>
-<tr class="separator:a17f5f8a00bcd608f5f09fc3ff8cbd00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc8a011221103e3612134e74c161aa6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc8a011221103e3612134e74c161aa6d"></a>
-typedef <a class="el" href="structbsc_1_1kstream.html">kstream</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_type</b></td></tr>
-<tr class="separator:abc8a011221103e3612134e74c161aa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18193051cf0d2790f7dca137f0b7cbf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18193051cf0d2790f7dca137f0b7cbf7"></a>
-typedef <a class="el" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&lt; T, <br class="typebreak"/>
-Router, <a class="el" href="structbsc_1_1bits_1_1forward__to__child.html">bits::forward_to_child</a><br class="typebreak"/>
-&lt; Router &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>protocol_type</b></td></tr>
-<tr class="separator:a18193051cf0d2790f7dca137f0b7cbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a029576d91de28b20f582c48bdc02e328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a029576d91de28b20f582c48bdc02e328"></a>
-typedef Socket&#160;</td><td class="memItemRight" valign="bottom"><b>socket_type</b></td></tr>
-<tr class="separator:a029576d91de28b20f582c48bdc02e328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0ba1a34379147d5c3f6dcc3fbdcec2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb0ba1a34379147d5c3f6dcc3fbdcec2"></a>
-typedef Router&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
-<tr class="separator:aeb0ba1a34379147d5c3f6dcc3fbdcec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4415f9f4f32735632822f5993772e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a4415f9f4f32735632822f5993772e3"></a>
+<tr class="separator:acde83a65a03e4b4ad3b7f60a69eb440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6695c4e962662a3c65bb250d1afc69e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6695c4e962662a3c65bb250d1afc69e"></a>
+typedef <a class="el" href="structbsc_1_1kstream.html">kstream</a>&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_type</b></td></tr>
+<tr class="separator:ad6695c4e962662a3c65bb250d1afc69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3b5e5e387ee76dd5682d60d52b895a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f3b5e5e387ee76dd5682d60d52b895a"></a>
+typedef <a class="el" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&lt; K, R, <br class="typebreak"/>
+<a class="el" href="structbsc_1_1bits_1_1forward__to__child.html">bits::forward_to_child</a>&lt; R &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>protocol_type</b></td></tr>
+<tr class="separator:a4f3b5e5e387ee76dd5682d60d52b895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585a8d6536ba9348a43de724eda381f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a585a8d6536ba9348a43de724eda381f9"></a>
+typedef S&#160;</td><td class="memItemRight" valign="bottom"><b>socket_type</b></td></tr>
+<tr class="separator:a585a8d6536ba9348a43de724eda381f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac80e46285f186c40dc67ab37e30c82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afac80e46285f186c40dc67ab37e30c82"></a>
+typedef R&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
+<tr class="separator:afac80e46285f186c40dc67ab37e30c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50426423970e5f71797ff625de15f08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad50426423970e5f71797ff625de15f08"></a>
 typedef sys::pid_type&#160;</td><td class="memItemRight" valign="bottom"><b>app_type</b></td></tr>
-<tr class="separator:a7a4415f9f4f32735632822f5993772e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b5bc0726e4e48523e31689e82c2165"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2b5bc0726e4e48523e31689e82c2165"></a>
+<tr class="separator:ad50426423970e5f71797ff625de15f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa211ca1f71f9aeb510185e6dc0c887c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa211ca1f71f9aeb510185e6dc0c887c1"></a>
 typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>weight_type</b></td></tr>
-<tr class="separator:ae2b5bc0726e4e48523e31689e82c2165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa211ca1f71f9aeb510185e6dc0c887c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cb1f1e235484e07c3e22527012476d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69cb1f1e235484e07c3e22527012476d"></a>
+typedef <a class="el" href="classbsc_1_1pipeline__base.html">pipeline_base</a>&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
+<tr class="separator:a69cb1f1e235484e07c3e22527012476d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e29a887ca61a5e47363e9fc8a21a9b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e29a887ca61a5e47363e9fc8a21a9b7"></a>
+typedef K&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
+<tr class="separator:a5e29a887ca61a5e47363e9fc8a21a9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183b69ca6e738a81f680a8be23ad7bd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a183b69ca6e738a81f680a8be23ad7bd2"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>Ch</b></td></tr>
+<tr class="separator:a183b69ca6e738a81f680a8be23ad7bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa430f950476cd4708a7ef5329296240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa430f950476cd4708a7ef5329296240"></a>
+typedef sys::basic_fildesbuf<br class="typebreak"/>
+&lt; Ch, std::char_traits&lt; Ch &gt;<br class="typebreak"/>
+, sys::socket &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fildesbuf_type</b></td></tr>
+<tr class="separator:aaa430f950476cd4708a7ef5329296240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e961e18ec12ebf910a5b3de37f0dc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7e961e18ec12ebf910a5b3de37f0dc7"></a>
+typedef <a class="el" href="classbsc_1_1basic__kernelbuf.html">basic_kernelbuf</a><br class="typebreak"/>
+&lt; fildesbuf_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_type</b></td></tr>
+<tr class="separator:ae7e961e18ec12ebf910a5b3de37f0dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde83a65a03e4b4ad3b7f60a69eb440a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acde83a65a03e4b4ad3b7f60a69eb440a"></a>
+typedef std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classbsc_1_1basic__kernelbuf.html">kernelbuf_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernelbuf_ptr</b></td></tr>
+<tr class="separator:acde83a65a03e4b4ad3b7f60a69eb440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6695c4e962662a3c65bb250d1afc69e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6695c4e962662a3c65bb250d1afc69e"></a>
+typedef <a class="el" href="structbsc_1_1kstream.html">kstream</a>&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_type</b></td></tr>
+<tr class="separator:ad6695c4e962662a3c65bb250d1afc69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3b5e5e387ee76dd5682d60d52b895a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f3b5e5e387ee76dd5682d60d52b895a"></a>
+typedef <a class="el" href="classbsc_1_1kernel__protocol.html">kernel_protocol</a>&lt; K, R, <br class="typebreak"/>
+<a class="el" href="structbsc_1_1bits_1_1forward__to__child.html">bits::forward_to_child</a>&lt; R &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>protocol_type</b></td></tr>
+<tr class="separator:a4f3b5e5e387ee76dd5682d60d52b895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585a8d6536ba9348a43de724eda381f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a585a8d6536ba9348a43de724eda381f9"></a>
+typedef S&#160;</td><td class="memItemRight" valign="bottom"><b>socket_type</b></td></tr>
+<tr class="separator:a585a8d6536ba9348a43de724eda381f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac80e46285f186c40dc67ab37e30c82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afac80e46285f186c40dc67ab37e30c82"></a>
+typedef R&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
+<tr class="separator:afac80e46285f186c40dc67ab37e30c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50426423970e5f71797ff625de15f08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad50426423970e5f71797ff625de15f08"></a>
+typedef sys::pid_type&#160;</td><td class="memItemRight" valign="bottom"><b>app_type</b></td></tr>
+<tr class="separator:ad50426423970e5f71797ff625de15f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3388a00d862196cfa6e440465aa78a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe3388a00d862196cfa6e440465aa78a"></a>
+typedef <a class="el" href="classbsc_1_1socket__pipeline.html">socket_pipeline</a>&lt; K, S, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
+<tr class="separator:abe3388a00d862196cfa6e440465aa78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06853fd0b8c0bfb65279a68f4e305fc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06853fd0b8c0bfb65279a68f4e305fc0"></a>
+typedef this_type::weight_type&#160;</td><td class="memItemRight" valign="bottom"><b>weight_type</b></td></tr>
+<tr class="separator:a06853fd0b8c0bfb65279a68f4e305fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classbsc_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbsc_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></td></tr>
 <tr class="memitem:a800a2f5eb6f9014e8bb0a33f387534f1 inherit pub_types_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800a2f5eb6f9014e8bb0a33f387534f1"></a>
 typedef std::chrono::system_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock_type</b></td></tr>
@@ -182,51 +224,105 @@ typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom">
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a495a1ee1ad962f2c94b0f1c6b8cf8a32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a495a1ee1ad962f2c94b0f1c6b8cf8a32"></a>
+<tr class="memitem:a78804d510a23e846c5da733108fc8fc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78804d510a23e846c5da733108fc8fc6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>remote_client</b> (socket_type &amp;&amp;sock, sys::endpoint vaddr)</td></tr>
-<tr class="separator:a495a1ee1ad962f2c94b0f1c6b8cf8a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ab86bcc1f8b265e8f5a9a331ec47d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7ab86bcc1f8b265e8f5a9a331ec47d3"></a>
+<tr class="separator:a78804d510a23e846c5da733108fc8fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd783e4174f293f53b7d0f95e4b8e9c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd783e4174f293f53b7d0f95e4b8e9c3"></a>
 <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;)=delete</td></tr>
-<tr class="separator:aa7ab86bcc1f8b265e8f5a9a331ec47d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b0aa5aae595f640ffaa945edf13e2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53b0aa5aae595f640ffaa945edf13e2d"></a>
+<tr class="separator:abd783e4174f293f53b7d0f95e4b8e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e602404522bd7b5c372a5a4a9693c1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e602404522bd7b5c372a5a4a9693c1c"></a>
 <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&amp;)=delete</td></tr>
-<tr class="separator:a53b0aa5aae595f640ffaa945edf13e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361beff12ec931e60b95dadc04d058b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a361beff12ec931e60b95dadc04d058b4"></a>
+<tr class="separator:a4e602404522bd7b5c372a5a4a9693c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25eed8d39d1378d350bb2ad0357f4b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac25eed8d39d1378d350bb2ad0357f4b8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>remote_client</b> (const <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;)=delete</td></tr>
-<tr class="separator:a361beff12ec931e60b95dadc04d058b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca19cc921daf4a3ae338ae8f56f04dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaca19cc921daf4a3ae338ae8f56f04dd"></a>
+<tr class="separator:ac25eed8d39d1378d350bb2ad0357f4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e994f18e76b13e51630edf7728c3fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63e994f18e76b13e51630edf7728c3fb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>remote_client</b> (<a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&amp;rhs)=delete</td></tr>
-<tr class="separator:aaca19cc921daf4a3ae338ae8f56f04dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adcfab78a124ac9ef1cc553df13e8dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6adcfab78a124ac9ef1cc553df13e8dd"></a>
+<tr class="separator:a63e994f18e76b13e51630edf7728c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7828eedff43ad5df68db7649a97d985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7828eedff43ad5df68db7649a97d985"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *k)</td></tr>
-<tr class="separator:a6adcfab78a124ac9ef1cc553df13e8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69ce11d8e6daa5f4927eed12eb35c3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69ce11d8e6daa5f4927eed12eb35c3f"></a>
+<tr class="separator:ac7828eedff43ad5df68db7649a97d985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6755a9c251429a508265d972921ddcba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6755a9c251429a508265d972921ddcba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (<a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
-<tr class="separator:af69ce11d8e6daa5f4927eed12eb35c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebec93d11498e6af4d6b6671c9edc0ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebec93d11498e6af4d6b6671c9edc0ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (sys::epoll_event &amp;event)</td></tr>
-<tr class="separator:aebec93d11498e6af4d6b6671c9edc0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987de6161e3616bda4ee3721f41f110c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a987de6161e3616bda4ee3721f41f110c"></a>
+<tr class="separator:a6755a9c251429a508265d972921ddcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e5e2e59eca1c6c5388cd08518db193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22e5e2e59eca1c6c5388cd08518db193"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (const sys::epoll_event &amp;event) override</td></tr>
+<tr class="separator:a22e5e2e59eca1c6c5388cd08518db193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603ba7cd5c37884965b7ba30249c7736"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a603ba7cd5c37884965b7ba30249c7736"></a>
 const socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () const noexcept</td></tr>
-<tr class="separator:a987de6161e3616bda4ee3721f41f110c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc8174a58b66fcf8212e3c2d122bf9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc8174a58b66fcf8212e3c2d122bf9b"></a>
+<tr class="separator:a603ba7cd5c37884965b7ba30249c7736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6952d98a5aef398d150fa694846659eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6952d98a5aef398d150fa694846659eb"></a>
 socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () noexcept</td></tr>
-<tr class="separator:adbc8174a58b66fcf8212e3c2d122bf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afffadba98ef7d4a06852b1b78aa3010f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afffadba98ef7d4a06852b1b78aa3010f"></a>
+<tr class="separator:a6952d98a5aef398d150fa694846659eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3c10b7264b17eca28892e068c9e1e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3c10b7264b17eca28892e068c9e1e6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> (sys::socket &amp;&amp;rhs)</td></tr>
-<tr class="separator:afffadba98ef7d4a06852b1b78aa3010f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa376062af50a101a941cc6c8901b51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfa376062af50a101a941cc6c8901b51"></a>
+<tr class="separator:adf3c10b7264b17eca28892e068c9e1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640f5b7cb6fc46a0e24a36424d91a9db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640f5b7cb6fc46a0e24a36424d91a9db"></a>
 weight_type&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> () const noexcept</td></tr>
-<tr class="separator:adfa376062af50a101a941cc6c8901b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48705a90ee6232ca45b913e94e055670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48705a90ee6232ca45b913e94e055670"></a>
+<tr class="separator:a640f5b7cb6fc46a0e24a36424d91a9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301630d29b60617addf0f7d1a5a319e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a301630d29b60617addf0f7d1a5a319e5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> (weight_type rhs) noexcept</td></tr>
-<tr class="separator:a48705a90ee6232ca45b913e94e055670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69fe5cf10d80fcb9f69834af41345cd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69fe5cf10d80fcb9f69834af41345cd1"></a>
+<tr class="separator:a301630d29b60617addf0f7d1a5a319e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfa0545c5d2e4d463a577bd752da3f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dfa0545c5d2e4d463a577bd752da3f1"></a>
 const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vaddr</b> () const noexcept</td></tr>
-<tr class="separator:a69fe5cf10d80fcb9f69834af41345cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19967ca1e22b4885d62b5eddcd66ce85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19967ca1e22b4885d62b5eddcd66ce85"></a>
+<tr class="separator:a8dfa0545c5d2e4d463a577bd752da3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac683b1358213aade0a85370f867fc64a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac683b1358213aade0a85370f867fc64a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *rhs) noexcept</td></tr>
-<tr class="separator:a19967ca1e22b4885d62b5eddcd66ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac683b1358213aade0a85370f867fc64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887dfccb92784c5cc5129a4df6ca2959"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a887dfccb92784c5cc5129a4df6ca2959"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;out) const override</td></tr>
+<tr class="separator:a887dfccb92784c5cc5129a4df6ca2959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1310e20dc78bec20c33db5db73cf74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba1310e20dc78bec20c33db5db73cf74"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>remote_client</b> (socket_type &amp;&amp;sock, sys::endpoint vaddr, <a class="el" href="classbsc_1_1socket__pipeline.html">this_type</a> &amp;ppl)</td></tr>
+<tr class="separator:aba1310e20dc78bec20c33db5db73cf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd783e4174f293f53b7d0f95e4b8e9c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd783e4174f293f53b7d0f95e4b8e9c3"></a>
+<a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;)=delete</td></tr>
+<tr class="separator:abd783e4174f293f53b7d0f95e4b8e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e602404522bd7b5c372a5a4a9693c1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e602404522bd7b5c372a5a4a9693c1c"></a>
+<a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a4e602404522bd7b5c372a5a4a9693c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25eed8d39d1378d350bb2ad0357f4b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac25eed8d39d1378d350bb2ad0357f4b8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>remote_client</b> (const <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;)=delete</td></tr>
+<tr class="separator:ac25eed8d39d1378d350bb2ad0357f4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e994f18e76b13e51630edf7728c3fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63e994f18e76b13e51630edf7728c3fb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>remote_client</b> (<a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;&amp;rhs)=delete</td></tr>
+<tr class="separator:a63e994f18e76b13e51630edf7728c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7828eedff43ad5df68db7649a97d985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7828eedff43ad5df68db7649a97d985"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *k)</td></tr>
+<tr class="separator:ac7828eedff43ad5df68db7649a97d985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6755a9c251429a508265d972921ddcba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6755a9c251429a508265d972921ddcba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forward</b> (<a class="el" href="classbsc_1_1kernel__header.html">kernel_header</a> &amp;hdr, sys::pstream &amp;istr)</td></tr>
+<tr class="separator:a6755a9c251429a508265d972921ddcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e5e2e59eca1c6c5388cd08518db193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22e5e2e59eca1c6c5388cd08518db193"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (const sys::epoll_event &amp;event) override</td></tr>
+<tr class="separator:a22e5e2e59eca1c6c5388cd08518db193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603ba7cd5c37884965b7ba30249c7736"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a603ba7cd5c37884965b7ba30249c7736"></a>
+const socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () const noexcept</td></tr>
+<tr class="separator:a603ba7cd5c37884965b7ba30249c7736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6952d98a5aef398d150fa694846659eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6952d98a5aef398d150fa694846659eb"></a>
+socket_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> () noexcept</td></tr>
+<tr class="separator:a6952d98a5aef398d150fa694846659eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3c10b7264b17eca28892e068c9e1e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf3c10b7264b17eca28892e068c9e1e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> (sys::socket &amp;&amp;rhs)</td></tr>
+<tr class="separator:adf3c10b7264b17eca28892e068c9e1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640f5b7cb6fc46a0e24a36424d91a9db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640f5b7cb6fc46a0e24a36424d91a9db"></a>
+weight_type&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> () const noexcept</td></tr>
+<tr class="separator:a640f5b7cb6fc46a0e24a36424d91a9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301630d29b60617addf0f7d1a5a319e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a301630d29b60617addf0f7d1a5a319e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> (weight_type rhs) noexcept</td></tr>
+<tr class="separator:a301630d29b60617addf0f7d1a5a319e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfa0545c5d2e4d463a577bd752da3f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dfa0545c5d2e4d463a577bd752da3f1"></a>
+const sys::endpoint &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vaddr</b> () const noexcept</td></tr>
+<tr class="separator:a8dfa0545c5d2e4d463a577bd752da3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac683b1358213aade0a85370f867fc64a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac683b1358213aade0a85370f867fc64a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *rhs) noexcept</td></tr>
+<tr class="separator:ac683b1358213aade0a85370f867fc64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887dfccb92784c5cc5129a4df6ca2959"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a887dfccb92784c5cc5129a4df6ca2959"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;out) const override</td></tr>
+<tr class="separator:a887dfccb92784c5cc5129a4df6ca2959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393ec04d6672320ca61460dd4e47460e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a393ec04d6672320ca61460dd4e47460e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> () override</td></tr>
+<tr class="separator:a393ec04d6672320ca61460dd4e47460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbsc_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbsc_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></td></tr>
 <tr class="memitem:af4bb964c13092939e4580ed571861f72 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4bb964c13092939e4580ed571861f72"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pipeline_base</b> (<a class="el" href="classbsc_1_1pipeline__base.html">pipeline_base</a> &amp;&amp;)=default</td></tr>
@@ -278,12 +374,6 @@ template&lt;class... Args&gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (const std::exception &amp;err)</td></tr>
 <tr class="separator:a7d271d4c9dd3022ae6361619ad5d9f34 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a98d3bc302aeda360e56b49ff44c107f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98d3bc302aeda360e56b49ff44c107f1"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classbsc_1_1remote__client.html">remote_client</a> &amp;rhs)</td></tr>
-<tr class="separator:a98d3bc302aeda360e56b49ff44c107f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classbsc_1_1pipeline__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbsc_1_1pipeline__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></td></tr>
@@ -300,8 +390,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b> = &
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_number</b> = 0</td></tr>
 <tr class="separator:a180921c8ed1aaf17197c4576425bde46 inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/<a class="el" href="remote__client_8hh_source.html">remote_client.hh</a></li>
+<li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/socket_pipeline.cc</li>
 </ul>
 </div><!-- contents -->
 

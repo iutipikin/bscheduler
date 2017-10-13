@@ -106,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classbsc_1_1child__process__pipeline-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bsc::child_process_pipeline&lt; K, R &gt; Class Template Reference</div>  </div>
@@ -114,45 +115,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for bsc::child_process_pipeline&lt; K, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1child__process__pipeline__inherit__graph.svg" width="219" height="310"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1child__process__pipeline__inherit__graph.svg" width="222" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for bsc::child_process_pipeline&lt; K, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1child__process__pipeline__coll__graph.svg" width="522" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1child__process__pipeline__coll__graph.svg" width="522" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac7fb148826b659d71c54796e0e24dc33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7fb148826b659d71c54796e0e24dc33"></a>
-typedef <a class="el" href="classbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a><br class="typebreak"/>
-&lt; K, <a class="el" href="classbsc_1_1process__handler.html">process_handler</a>&lt; K, R &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_pipeline</b></td></tr>
-<tr class="separator:ac7fb148826b659d71c54796e0e24dc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391631fe8569ea3511ffc217e56142f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a391631fe8569ea3511ffc217e56142f1"></a>
+typedef K&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
+<tr class="separator:a391631fe8569ea3511ffc217e56142f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35dc365330df1c90f9063c0d76a9d382"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35dc365330df1c90f9063c0d76a9d382"></a>
 typedef R&#160;</td><td class="memItemRight" valign="bottom"><b>router_type</b></td></tr>
 <tr class="separator:a35dc365330df1c90f9063c0d76a9d382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f503a6a111a2f0c70ebcae8bd5a4891"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f503a6a111a2f0c70ebcae8bd5a4891"></a>
-typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_type</b></td></tr>
-<tr class="separator:a1f503a6a111a2f0c70ebcae8bd5a4891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d0dee80492c7a339c7ca9a81537b8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97d0dee80492c7a339c7ca9a81537b8a"></a>
-typedef Mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mutex_type</b></td></tr>
-<tr class="separator:a97d0dee80492c7a339c7ca9a81537b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b7ad32d89aa944923cc3216566cd99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1b7ad32d89aa944923cc3216566cd99"></a>
 typedef Lock&#160;</td><td class="memItemRight" valign="bottom"><b>lock_type</b></td></tr>
 <tr class="separator:ad1b7ad32d89aa944923cc3216566cd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0347fda6911e7e95b3331c57f95cbc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0347fda6911e7e95b3331c57f95cbc6"></a>
-typedef Semaphore&#160;</td><td class="memItemRight" valign="bottom"><b>sem_type</b></td></tr>
-<tr class="separator:aa0347fda6911e7e95b3331c57f95cbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37d60e0d301370087f71e6ae5c158e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac37d60e0d301370087f71e6ae5c158e5"></a>
-typedef Kernels&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_pool</b></td></tr>
-<tr class="separator:ac37d60e0d301370087f71e6ae5c158e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c85877af343f8e2c61b723e2333d1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28c85877af343f8e2c61b723e2333d1d"></a>
-typedef std::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="classbsc_1_1basic__handler.html">handler_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>event_handler_ptr</b></td></tr>
-<tr class="separator:a28c85877af343f8e2c61b723e2333d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K, process_handler&lt; K, R &gt; &gt;</a></td></tr>
+<tr class="inherit_header pub_types_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K &gt;</a></td></tr>
 <tr class="memitem:a6cd401f516905ad7565c2e60ec6988e9 inherit pub_types_classbsc_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cd401f516905ad7565c2e60ec6988e9"></a>
 typedef <a class="el" href="classbsc_1_1basic__handler.html">basic_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handler_type</b></td></tr>
 <tr class="separator:a6cd401f516905ad7565c2e60ec6988e9 inherit pub_types_classbsc_1_1basic__socket__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,19 +218,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a309d81749d0a4673f34e1876ddd04a71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a309d81749d0a4673f34e1876ddd04a71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>child_process_pipeline</b> (<a class="el" href="classbsc_1_1child__process__pipeline.html">child_process_pipeline</a> &amp;&amp;rhs)=default</td></tr>
 <tr class="separator:a309d81749d0a4673f34e1876ddd04a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade97fae1ce9668325899c9bb4290d5d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade97fae1ce9668325899c9bb4290d5d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_client</b> (event_handler_ptr ptr) override</td></tr>
-<tr class="separator:ade97fae1ce9668325899c9bb4290d5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c2507e6adf2fb7fb0b7a14e0ef31fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8c2507e6adf2fb7fb0b7a14e0ef31fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process_kernels</b> () override</td></tr>
-<tr class="separator:af8c2507e6adf2fb7fb0b7a14e0ef31fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490f57b653827aaaea12a42377d18c66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a490f57b653827aaaea12a42377d18c66"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>do_run</b> () override</td></tr>
-<tr class="separator:a490f57b653827aaaea12a42377d18c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00561030b5f9da172f0356ceeda35fe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00561030b5f9da172f0356ceeda35fe7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (kernel_type *k)</td></tr>
 <tr class="separator:a00561030b5f9da172f0356ceeda35fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K, process_handler&lt; K, R &gt; &gt;</a></td></tr>
+<tr class="inherit_header pub_methods_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K &gt;</a></td></tr>
 <tr class="memitem:a509c4dc5a18bcbde1b6dfe454a4e1041 inherit pub_methods_classbsc_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a509c4dc5a18bcbde1b6dfe454a4e1041"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>basic_socket_pipeline</b> (<a class="el" href="classbsc_1_1basic__socket__pipeline.html">basic_socket_pipeline</a> &amp;&amp;rhs) noexcept</td></tr>
 <tr class="separator:a509c4dc5a18bcbde1b6dfe454a4e1041 inherit pub_methods_classbsc_1_1basic__socket__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,6 +322,17 @@ template&lt;class... Args&gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (const std::exception &amp;err)</td></tr>
 <tr class="separator:a7d271d4c9dd3022ae6361619ad5d9f34 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a612806daa147c24d2e7401ee2415b981"><td class="memTemplParams" colspan="2"><a class="anchor" id="a612806daa147c24d2e7401ee2415b981"></a>
+template&lt;class X , class Y &gt; </td></tr>
+<tr class="memitem:a612806daa147c24d2e7401ee2415b981"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>child_notify_handler</b></td></tr>
+<tr class="separator:a612806daa147c24d2e7401ee2415b981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e77c3aa011728f8fb3e1d8500ba7ebc"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0e77c3aa011728f8fb3e1d8500ba7ebc"></a>
+template&lt;class X , class Y &gt; </td></tr>
+<tr class="memitem:a0e77c3aa011728f8fb3e1d8500ba7ebc"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_handler</b></td></tr>
+<tr class="separator:a0e77c3aa011728f8fb3e1d8500ba7ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_classbsc_1_1basic__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classbsc_1_1basic__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classbsc_1_1basic__pipeline.html">bsc::basic_pipeline&lt; T, Kernels, Traits, Threads, Mutex, Lock, Semaphore &gt;</a></td></tr>
@@ -359,7 +345,7 @@ typedef <br class="typebreak"/>
 sys::queue_pop_iterator<br class="typebreak"/>
 &lt; kernel_pool, traits_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue_popper</b></td></tr>
 <tr class="separator:ae1d34b1f64ed61d75e7827248f963504 inherit pro_types_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K, process_handler&lt; K, R &gt; &gt;</a></td></tr>
+<tr class="inherit_header pro_methods_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K &gt;</a></td></tr>
 <tr class="memitem:a9a088f7740dd0650904418f0dfc883e5 inherit pro_methods_classbsc_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a088f7740dd0650904418f0dfc883e5"></a>
 sem_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>poller</b> () noexcept</td></tr>
 <tr class="separator:a9a088f7740dd0650904418f0dfc883e5 inherit pro_methods_classbsc_1_1basic__socket__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,7 +376,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_start_timeout</b>
 <tr class="memitem:a8d9e9fb4cb9ee3429b2daa22437fbab9 inherit pro_methods_classbsc_1_1basic__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d9e9fb4cb9ee3429b2daa22437fbab9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>xstop</b> ()</td></tr>
 <tr class="separator:a8d9e9fb4cb9ee3429b2daa22437fbab9 inherit pro_methods_classbsc_1_1basic__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K, process_handler&lt; K, R &gt; &gt;</a></td></tr>
+<tr class="inherit_header pro_attribs_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K &gt;</a></td></tr>
 <tr class="memitem:a7ee921fd79a86b8d99692a86a47b0941 inherit pro_attribs_classbsc_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ee921fd79a86b8d99692a86a47b0941"></a>
 handler_container_type&#160;</td><td class="memItemRight" valign="bottom"><b>_handlers</b></td></tr>
 <tr class="separator:a7ee921fd79a86b8d99692a86a47b0941 inherit pro_attribs_classbsc_1_1basic__socket__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,13 +409,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b> = &
 <tr class="memitem:a180921c8ed1aaf17197c4576425bde46 inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a180921c8ed1aaf17197c4576425bde46"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_number</b> = 0</td></tr>
 <tr class="separator:a180921c8ed1aaf17197c4576425bde46 inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classbsc_1_1basic__socket__pipeline"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classbsc_1_1basic__socket__pipeline')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline&lt; K, process_handler&lt; K, R &gt; &gt;</a></td></tr>
-<tr class="memitem:a93c4b5e0e0feb21645908f405994d49d inherit pro_static_attribs_classbsc_1_1basic__socket__pipeline"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93c4b5e0e0feb21645908f405994d49d"></a>
-static const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_STOP_ITERATIONS</b></td></tr>
-<tr class="separator:a93c4b5e0e0feb21645908f405994d49d inherit pro_static_attribs_classbsc_1_1basic__socket__pipeline"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/<a class="el" href="child__process__pipeline_8hh_source.html">child_process_pipeline.hh</a></li>
+<li>/home/travis/build/igankevich/bscheduler/src/bscheduler/ppl/child_process_pipeline.cc</li>
 </ul>
 </div><!-- contents -->
 
