@@ -7,6 +7,5 @@ var searchData=
   ['probe',['probe',['../classbsc_1_1probe.html',1,'bsc']]],
   ['prober',['prober',['../classbsc_1_1prober.html',1,'bsc']]],
   ['process_5fhandler',['process_handler',['../classbsc_1_1process__handler.html',1,'bsc']]],
-  ['process_5fnotify_5fhandler',['process_notify_handler',['../classbsc_1_1process__notify__handler.html',1,'bsc']]],
   ['process_5fpipeline',['process_pipeline',['../classbsc_1_1process__pipeline.html',1,'bsc']]]
 ];

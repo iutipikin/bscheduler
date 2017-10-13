@@ -108,13 +108,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#friends">Friends</a> &#124;
 <a href="classbsc_1_1basic__handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bsc::basic_handler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">bsc::basic_handler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
 Inheritance diagram for bsc::basic_handler:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1basic__handler__inherit__graph.svg" width="536" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbsc_1_1basic__handler__inherit__graph.svg" width="534" height="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -126,12 +126,17 @@ Collaboration diagram for bsc::basic_handler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0ae9d07175f22333befcdbf79b776c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ae9d07175f22333befcdbf79b776c6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (const sys::epoll_event &amp;ev)=0</td></tr>
-<tr class="separator:af0ae9d07175f22333befcdbf79b776c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafa4cf2d414e9ec5d3f4ca98b30080d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afafa4cf2d414e9ec5d3f4ca98b30080d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (const sys::epoll_event &amp;ev)</td></tr>
+<tr class="separator:afafa4cf2d414e9ec5d3f4ca98b30080d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45e947bd08cab59bf2520448d34be76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab45e947bd08cab59bf2520448d34be76"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsc_1_1basic__handler.html#ab45e947bd08cab59bf2520448d34be76">remove</a> ()</td></tr>
+<tr class="memdesc:ab45e947bd08cab59bf2520448d34be76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the handler is removed from the poller. <br/></td></tr>
 <tr class="separator:ab45e947bd08cab59bf2520448d34be76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85453460bf7f5a519a49cb13096648b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab85453460bf7f5a519a49cb13096648b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsc_1_1basic__handler.html#ab85453460bf7f5a519a49cb13096648b">flush</a> ()</td></tr>
+<tr class="memdesc:ab85453460bf7f5a519a49cb13096648b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush dirty buffers (if needed). <br/></td></tr>
+<tr class="separator:ab85453460bf7f5a519a49cb13096648b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8813d097250fe99e8966e81845e3d17d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8813d097250fe99e8966e81845e3d17d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;out) const </td></tr>
 <tr class="separator:a8813d097250fe99e8966e81845e3d17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +174,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_stopped</b> () co
 <tr class="memitem:a2028d4c87d97114112ecd894d48cda7b inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2028d4c87d97114112ecd894d48cda7b"></a>
 time_point&#160;</td><td class="memItemRight" valign="bottom"><b>start_time_point</b> () const noexcept</td></tr>
 <tr class="separator:a2028d4c87d97114112ecd894d48cda7b inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2461633c6d5370c523daf489a32d80a1 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2461633c6d5370c523daf489a32d80a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_start_time_point</b> () const noexcept</td></tr>
+<tr class="separator:a2461633c6d5370c523daf489a32d80a1 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96fea956849a18a048c63dd7c512d961 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96fea956849a18a048c63dd7c512d961"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const noexcept</td></tr>
 <tr class="separator:a96fea956849a18a048c63dd7c512d961 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,13 +186,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const c
 <tr class="memitem:a2e4664a46e6d62e245233a84bca683d7 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e4664a46e6d62e245233a84bca683d7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_number</b> (unsigned rhs) noexcept</td></tr>
 <tr class="separator:a2e4664a46e6d62e245233a84bca683d7 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac45aec22174e109fe384137285b47d79 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac45aec22174e109fe384137285b47d79"></a>
+<tr class="memitem:ad7e3ae6dd43ac8c1f1087fd12d9ed07c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad7e3ae6dd43ac8c1f1087fd12d9ed07c"></a>
 template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:ac45aec22174e109fe384137285b47d79 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>log</b> (const Args &amp;...args)</td></tr>
-<tr class="separator:ac45aec22174e109fe384137285b47d79 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d271d4c9dd3022ae6361619ad5d9f34 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d271d4c9dd3022ae6361619ad5d9f34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (const std::exception &amp;err)</td></tr>
-<tr class="separator:a7d271d4c9dd3022ae6361619ad5d9f34 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e3ae6dd43ac8c1f1087fd12d9ed07c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>log</b> (const Args &amp;...args) const </td></tr>
+<tr class="separator:ad7e3ae6dd43ac8c1f1087fd12d9ed07c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299cab4d56381b750f5e61fd4d3ea035 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a299cab4d56381b750f5e61fd4d3ea035"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (const std::exception &amp;err) const </td></tr>
+<tr class="separator:a299cab4d56381b750f5e61fd4d3ea035 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -209,7 +217,7 @@ typedef clock_type::duration&#160;</td><td class="memItemRight" valign="bottom">
 volatile pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b> = pipeline_state::initial</td></tr>
 <tr class="separator:a28d000a597c08053f1a2b9ef1dbcdcdf inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa353b2105d5b43075ad6d1a8852ce55f inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa353b2105d5b43075ad6d1a8852ce55f"></a>
-time_point&#160;</td><td class="memItemRight" valign="bottom"><b>_start</b></td></tr>
+time_point&#160;</td><td class="memItemRight" valign="bottom"><b>_start</b> = time_point(duration::zero())</td></tr>
 <tr class="separator:aa353b2105d5b43075ad6d1a8852ce55f inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff30dfc0578d62a4def9accd9bc41be0 inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff30dfc0578d62a4def9accd9bc41be0"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b> = &quot;ppl&quot;</td></tr>

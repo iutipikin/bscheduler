@@ -147,17 +147,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        add_client(<span class="keyword">const</span> sys::endpoint&amp; addr, sys::socket&amp;&amp; sock);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1unix__socket__server.html">unix_socket_server</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1unix__socket__client.html">unix_socket_client</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        process_kernels()<span class="keyword"> override </span>{}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
-<div class="ttc" id="classbsc_1_1unix__socket__client_html"><div class="ttname"><a href="classbsc_1_1unix__socket__client.html">bsc::unix_socket_client</a></div><div class="ttdef"><b>Definition:</b> unix_domain_socket_pipeline.cc:54</div></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1unix__socket__server.html">unix_socket_server</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1unix__socket__client.html">unix_socket_client</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="classbsc_1_1unix__socket__client_html"><div class="ttname"><a href="classbsc_1_1unix__socket__client.html">bsc::unix_socket_client</a></div><div class="ttdef"><b>Definition:</b> unix_domain_socket_pipeline.cc:57</div></div>
 <div class="ttc" id="classbsc_1_1unix__domain__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1unix__domain__socket__pipeline.html">bsc::unix_domain_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> unix_domain_socket_pipeline.hh:17</div></div>
-<div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:37</div></div>
+<div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:40</div></div>
 <div class="ttc" id="classbsc_1_1unix__socket__server_html"><div class="ttname"><a href="classbsc_1_1unix__socket__server.html">bsc::unix_socket_server</a></div><div class="ttdef"><b>Definition:</b> unix_domain_socket_pipeline.cc:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 

@@ -308,6 +308,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_stopped</b> () co
 <tr class="memitem:a2028d4c87d97114112ecd894d48cda7b inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2028d4c87d97114112ecd894d48cda7b"></a>
 time_point&#160;</td><td class="memItemRight" valign="bottom"><b>start_time_point</b> () const noexcept</td></tr>
 <tr class="separator:a2028d4c87d97114112ecd894d48cda7b inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2461633c6d5370c523daf489a32d80a1 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2461633c6d5370c523daf489a32d80a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_start_time_point</b> () const noexcept</td></tr>
+<tr class="separator:a2461633c6d5370c523daf489a32d80a1 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96fea956849a18a048c63dd7c512d961 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96fea956849a18a048c63dd7c512d961"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const noexcept</td></tr>
 <tr class="separator:a96fea956849a18a048c63dd7c512d961 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,13 +320,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const c
 <tr class="memitem:a2e4664a46e6d62e245233a84bca683d7 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e4664a46e6d62e245233a84bca683d7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_number</b> (unsigned rhs) noexcept</td></tr>
 <tr class="separator:a2e4664a46e6d62e245233a84bca683d7 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac45aec22174e109fe384137285b47d79 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac45aec22174e109fe384137285b47d79"></a>
+<tr class="memitem:ad7e3ae6dd43ac8c1f1087fd12d9ed07c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad7e3ae6dd43ac8c1f1087fd12d9ed07c"></a>
 template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:ac45aec22174e109fe384137285b47d79 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>log</b> (const Args &amp;...args)</td></tr>
-<tr class="separator:ac45aec22174e109fe384137285b47d79 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d271d4c9dd3022ae6361619ad5d9f34 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d271d4c9dd3022ae6361619ad5d9f34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (const std::exception &amp;err)</td></tr>
-<tr class="separator:a7d271d4c9dd3022ae6361619ad5d9f34 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e3ae6dd43ac8c1f1087fd12d9ed07c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>log</b> (const Args &amp;...args) const </td></tr>
+<tr class="separator:ad7e3ae6dd43ac8c1f1087fd12d9ed07c inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299cab4d56381b750f5e61fd4d3ea035 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a299cab4d56381b750f5e61fd4d3ea035"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (const std::exception &amp;err) const </td></tr>
+<tr class="separator:a299cab4d56381b750f5e61fd4d3ea035 inherit pub_methods_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -404,7 +407,7 @@ sem_type&#160;</td><td class="memItemRight" valign="bottom"><b>_semaphore</b></t
 volatile pipeline_state&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b> = pipeline_state::initial</td></tr>
 <tr class="separator:a28d000a597c08053f1a2b9ef1dbcdcdf inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa353b2105d5b43075ad6d1a8852ce55f inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa353b2105d5b43075ad6d1a8852ce55f"></a>
-time_point&#160;</td><td class="memItemRight" valign="bottom"><b>_start</b></td></tr>
+time_point&#160;</td><td class="memItemRight" valign="bottom"><b>_start</b> = time_point(duration::zero())</td></tr>
 <tr class="separator:aa353b2105d5b43075ad6d1a8852ce55f inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff30dfc0578d62a4def9accd9bc41be0 inherit pro_attribs_classbsc_1_1pipeline__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff30dfc0578d62a4def9accd9bc41be0"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b> = &quot;ppl&quot;</td></tr>
