@@ -173,41 +173,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            this-&gt;_allowroot = rhs;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        process_kernels() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        print_state(std::ostream&amp; out);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        app_iterator</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        do_add(<span class="keyword">const</span> <a class="code" href="classbsc_1_1application.html">application</a>&amp; app);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        process_kernels() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        process_kernel(kernel_type* k);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        app_iterator</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        do_add(<span class="keyword">const</span> <a class="code" href="classbsc_1_1application.html">application</a>&amp; app);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        wait_for_all_processes_to_finish();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        process_kernel(kernel_type* k);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        on_process_exit(<span class="keyword">const</span> sys::process&amp; p, sys::proc_info status);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        wait_for_all_processes_to_finish();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">inline</span> app_iterator</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        find_by_app_id(application_type <span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> this-&gt;_apps.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        app_iterator</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        find_by_process_id(sys::pid_type pid);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        on_process_exit(<span class="keyword">const</span> sys::process&amp; p, sys::proc_info status);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">inline</span> app_iterator</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        find_by_app_id(application_type <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> this-&gt;_apps.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span>process_notify_handler;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1process__handler.html">process_handler</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        app_iterator</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        find_by_process_id(sys::pid_type pid);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span>process_notify_handler;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> X, <span class="keyword">class</span> Y&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbsc_1_1process__handler.html">process_handler</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    };</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
 <div class="ttc" id="classbsc_1_1process__pipeline_html"><div class="ttname"><a href="classbsc_1_1process__pipeline.html">bsc::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:19</div></div>
 <div class="ttc" id="classbsc_1_1application_html"><div class="ttname"><a href="classbsc_1_1application.html">bsc::application</a></div><div class="ttdef"><b>Definition:</b> application.hh:25</div></div>
 <div class="ttc" id="classbsc_1_1basic__socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1basic__socket__pipeline.html">bsc::basic_socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> basic_socket_pipeline.hh:40</div></div>
