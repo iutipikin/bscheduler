@@ -738,7 +738,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    }</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    write(sys::pstream&amp; out)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    write(sys::pstream&amp; out)<span class="keyword"> const override </span>{</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        bsc::kernel::write(out);</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        out &lt;&lt; part &lt;&lt; part2;</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        out &lt;&lt; phi &lt;&lt; fsize;</div>
@@ -842,7 +842,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    }</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    write(sys::pstream&amp; out)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    write(sys::pstream&amp; out)<span class="keyword"> const override </span>{</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        bsc::kernel::write(out);</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        out &lt;&lt; phi;</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        out &lt;&lt; fsize;</div>
