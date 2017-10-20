@@ -229,11 +229,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">remove</span>(sys::event_poller&amp; poller) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        forward(<a class="code" href="classbsc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        forward(<a class="code" href="classbsc_1_1foreign__kernel.html">foreign_kernel</a>* k) {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="comment">// remove application before forwarding</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="comment">// to child process</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            hdr.aptr(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            this-&gt;_proto.forward(hdr, istr, this-&gt;_stream);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            k-&gt;aptr(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            this-&gt;_proto.forward(k, this-&gt;_stream);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
@@ -262,15 +262,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="classbsc_1_1foreign__kernel_html"><div class="ttname"><a href="classbsc_1_1foreign__kernel.html">bsc::foreign_kernel</a></div><div class="ttdef"><b>Definition:</b> foreign_kernel.hh:9</div></div>
 <div class="ttc" id="classbsc_1_1process__handler_html_a75cbcb30aecd3bcac8321e9cf07706ea"><div class="ttname"><a href="classbsc_1_1process__handler.html#a75cbcb30aecd3bcac8321e9cf07706ea">bsc::process_handler::process_handler</a></div><div class="ttdeci">process_handler(sys::pid_type &amp;&amp;child, sys::two_way_pipe &amp;&amp;pipe, const application &amp;app)</div><div class="ttdoc">Called from parent process. </div><div class="ttdef"><b>Definition:</b> process_handler.hh:52</div></div>
-<div class="ttc" id="classbsc_1_1kernel__protocol_html"><div class="ttname"><a href="classbsc_1_1kernel__protocol.html">bsc::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:26</div></div>
+<div class="ttc" id="classbsc_1_1kernel__protocol_html"><div class="ttname"><a href="classbsc_1_1kernel__protocol.html">bsc::kernel_protocol</a></div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:27</div></div>
 <div class="ttc" id="classbsc_1_1basic__kernelbuf_html"><div class="ttname"><a href="classbsc_1_1basic__kernelbuf.html">bsc::basic_kernelbuf</a></div><div class="ttdef"><b>Definition:</b> kernelbuf.hh:12</div></div>
-<div class="ttc" id="classbsc_1_1kernel__protocol_html_a3553ca26979a892ba52e5d491fd79e5d"><div class="ttname"><a href="classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d">bsc::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *k, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:72</div></div>
+<div class="ttc" id="classbsc_1_1kernel__protocol_html_a3553ca26979a892ba52e5d491fd79e5d"><div class="ttname"><a href="classbsc_1_1kernel__protocol.html#a3553ca26979a892ba52e5d491fd79e5d">bsc::kernel_protocol::send</a></div><div class="ttdeci">void send(kernel_type *k, stream_type &amp;stream)</div><div class="ttdef"><b>Definition:</b> kernel_protocol.hh:74</div></div>
 <div class="ttc" id="classbsc_1_1process__handler_html_ae197418cd603c6bad28eac4fb10200d5"><div class="ttname"><a href="classbsc_1_1process__handler.html#ae197418cd603c6bad28eac4fb10200d5">bsc::process_handler::process_handler</a></div><div class="ttdeci">process_handler(sys::pipe &amp;&amp;pipe)</div><div class="ttdoc">Called from child process. </div><div class="ttdef"><b>Definition:</b> process_handler.hh:73</div></div>
 <div class="ttc" id="classbsc_1_1process__handler_html_ad7a88b3dce06ec2fb077cd1095003c5c"><div class="ttname"><a href="classbsc_1_1process__handler.html#ad7a88b3dce06ec2fb077cd1095003c5c">bsc::process_handler::flush</a></div><div class="ttdeci">void flush() override</div><div class="ttdoc">Flush dirty buffers (if needed). </div><div class="ttdef"><b>Definition:</b> process_handler.hh:115</div></div>
 <div class="ttc" id="classbsc_1_1basic__handler_html"><div class="ttname"><a href="classbsc_1_1basic__handler.html">bsc::basic_handler</a></div><div class="ttdef"><b>Definition:</b> basic_handler.hh:13</div></div>
 <div class="ttc" id="classbsc_1_1application_html"><div class="ttname"><a href="classbsc_1_1application.html">bsc::application</a></div><div class="ttdef"><b>Definition:</b> application.hh:25</div></div>
-<div class="ttc" id="classbsc_1_1kernel__header_html"><div class="ttname"><a href="classbsc_1_1kernel__header.html">bsc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:14</div></div>
 <div class="ttc" id="structbsc_1_1kstream_html"><div class="ttname"><a href="structbsc_1_1kstream.html">bsc::kstream&lt; K &gt;</a></div></div>
 <div class="ttc" id="classbsc_1_1process__handler_html"><div class="ttname"><a href="classbsc_1_1process__handler.html">bsc::process_handler</a></div><div class="ttdef"><b>Definition:</b> process_handler.hh:21</div></div>
 </div><!-- fragment --></div><!-- contents -->

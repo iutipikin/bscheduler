@@ -234,8 +234,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        forward_child(<a class="code" href="classbsc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            this-&gt;_child.forward(hdr, istr);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        forward_child(<a class="code" href="classbsc_1_1foreign__kernel.html">foreign_kernel</a>* hdr) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            this-&gt;_child.forward(hdr);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">inline</span> external_pipeline_type&amp;</div>
@@ -272,8 +272,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        forward_parent(<a class="code" href="classbsc_1_1kernel__header.html">kernel_header</a>&amp; hdr, sys::pstream&amp; istr) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            this-&gt;_parent.forward(hdr, istr);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        forward_parent(<a class="code" href="classbsc_1_1foreign__kernel.html">foreign_kernel</a>* hdr) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            this-&gt;_parent.forward(hdr);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">        #endif</span></div>
@@ -325,22 +325,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    basic_router&lt;T&gt;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    ::forward(kernel_header&amp; hdr, sys::pstream&amp; istr) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        factory.forward_child(hdr, istr);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    ::forward(foreign_kernel* hdr) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        factory.forward_child(hdr);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    basic_router&lt;T&gt;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    ::forward_child(kernel_header&amp; hdr, sys::pstream&amp; istr) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        factory.forward_child(hdr, istr);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    ::forward_child(foreign_kernel* hdr) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        factory.forward_child(hdr);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    basic_router&lt;T&gt;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    ::forward_parent(kernel_header&amp; hdr, sys::pstream&amp; istr) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        factory.forward_parent(hdr, istr);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    ::forward_parent(foreign_kernel* hdr) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        factory.forward_parent(hdr);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
@@ -354,17 +354,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    basic_router&lt;T&gt;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    ::forward(kernel_header&amp; hdr, sys::pstream&amp; istr) {}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    ::forward(foreign_kernel* hdr) {}</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    basic_router&lt;T&gt;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    ::forward_child(kernel_header&amp; hdr, sys::pstream&amp; istr) {}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    ::forward_child(foreign_kernel* hdr) {}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    basic_router&lt;T&gt;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    ::forward_parent(kernel_header&amp; hdr, sys::pstream&amp; istr) {}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    ::forward_parent(foreign_kernel* hdr) {}</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span></div>
@@ -375,6 +375,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif // vim:filetype=cpp</span></div>
+<div class="ttc" id="classbsc_1_1foreign__kernel_html"><div class="ttname"><a href="classbsc_1_1foreign__kernel.html">bsc::foreign_kernel</a></div><div class="ttdef"><b>Definition:</b> foreign_kernel.hh:9</div></div>
 <div class="ttc" id="classbsc_1_1process__pipeline_html"><div class="ttname"><a href="classbsc_1_1process__pipeline.html">bsc::process_pipeline</a></div><div class="ttdef"><b>Definition:</b> process_pipeline.hh:19</div></div>
 <div class="ttc" id="classbsc_1_1pipeline__base_html"><div class="ttname"><a href="classbsc_1_1pipeline__base.html">bsc::pipeline_base</a></div><div class="ttdef"><b>Definition:</b> pipeline_base.hh:17</div></div>
 <div class="ttc" id="classbsc_1_1Factory_html"><div class="ttname"><a href="classbsc_1_1Factory.html">bsc::Factory</a></div><div class="ttdef"><b>Definition:</b> basic_factory.hh:35</div></div>
@@ -382,7 +383,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structbsc_1_1timer__pipeline_html"><div class="ttname"><a href="structbsc_1_1timer__pipeline.html">bsc::timer_pipeline</a></div><div class="ttdef"><b>Definition:</b> timer_pipeline.hh:29</div></div>
 <div class="ttc" id="structbsc_1_1io__pipeline_html"><div class="ttname"><a href="structbsc_1_1io__pipeline.html">bsc::io_pipeline</a></div><div class="ttdef"><b>Definition:</b> io_pipeline.hh:9</div></div>
 <div class="ttc" id="structbsc_1_1basic__router_html"><div class="ttname"><a href="structbsc_1_1basic__router.html">bsc::basic_router</a></div><div class="ttdef"><b>Definition:</b> basic_router.hh:10</div></div>
-<div class="ttc" id="classbsc_1_1kernel__header_html"><div class="ttname"><a href="classbsc_1_1kernel__header.html">bsc::kernel_header</a></div><div class="ttdef"><b>Definition:</b> kernel_header.hh:14</div></div>
 <div class="ttc" id="classbsc_1_1socket__pipeline_html"><div class="ttname"><a href="classbsc_1_1socket__pipeline.html">bsc::socket_pipeline</a></div><div class="ttdef"><b>Definition:</b> socket_pipeline.hh:31</div></div>
 <div class="ttc" id="classbsc_1_1parallel__pipeline_html"><div class="ttname"><a href="classbsc_1_1parallel__pipeline.html">bsc::parallel_pipeline</a></div><div class="ttdef"><b>Definition:</b> parallel_pipeline.hh:9</div></div>
 <div class="ttc" id="classbsc_1_1child__process__pipeline_html"><div class="ttname"><a href="classbsc_1_1child__process__pipeline.html">bsc::child_process_pipeline</a></div><div class="ttdef"><b>Definition:</b> child_process_pipeline.hh:17</div></div>
