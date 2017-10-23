@@ -348,7 +348,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            bsc::upstream(<span class="keyword">this</span>, <span class="keyword">new</span> Variance_WN&lt;T&gt;(ar_coefs, acf_model));</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*child) == <span class="keyword">typeid</span>(Variance_WN&lt;T&gt;)) {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            T var_wn = <span class="keyword">reinterpret_cast&lt;</span>Variance_WN&lt;T&gt;*<span class="keyword">&gt;</span>(child)-&gt;get_sum();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            T var_wn = <span class="keyword">dynamic_cast&lt;</span>Variance_WN&lt;T&gt;*<span class="keyword">&gt;</span>(child)-&gt;get_sum();</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">        #ifndef NDEBUG</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span>            sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;var(acf) = _&quot;</span>, var_acf(acf_model));</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            sys::log_message(<span class="stringliteral">&quot;autoreg&quot;</span>, <span class="stringliteral">&quot;var(eps) = _&quot;</span>, var_wn);</div>
